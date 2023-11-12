@@ -1,0 +1,98 @@
+[
+    {
+        "Title": "Chris' Journal Entry",
+        "Issue": "Test Issue",
+        "Author": "Chris Moon",
+        "Tags": [
+            "a",
+            "b",
+            "c"
+        ],
+        "Content Type": "Personal Narrative",
+        "Date": {
+            "seconds": 1701925200,
+            "nanoseconds": 451000000
+        },
+        "Text": "I love God."
+    },
+    {
+        "Content Type": "Essay",
+        "Issue": "Test Issue",
+        "Tags": [
+            "a",
+            "c",
+            "e"
+        ],
+        "Date": {
+            "seconds": 1701925200,
+            "nanoseconds": 992000000
+        },
+        "Title": "The Problem of Evil",
+        "Author": "Raphael Cheng",
+        "Text": "I also love God."
+    },
+    {
+        "Issue": "Test Issue",
+        "Date": {
+            "seconds": 1701925200,
+            "nanoseconds": 466000000
+        },
+        "Content Type": "Poetry",
+        "Tags": [
+            "e",
+            "f",
+            "g"
+        ],
+        "Title": "Via's Journal Entry",
+        "Text": "I love God.",
+        "Author": "Olivia Hu"
+    },
+    {
+        "Issue": "Test Issue",
+        "Date": {
+            "seconds": 1701925200,
+            "nanoseconds": 466000000
+        },
+        "Content Type": "Narrative",
+        "Tags": [
+            "e",
+            "f",
+            "g"
+        ],
+        "Title": "Daniels's Journal Entry",
+        "Text": "I love God.",
+        "Author": "Daniel Pan"
+    },
+    {
+        "Issue": "Test Issue",
+        "Date": {
+            "seconds": 1701925200,
+            "nanoseconds": 466000000
+        },
+        "Content Type": "Poetry",
+        "Tags": [
+            "h",
+            "i",
+            "j"
+        ],
+        "Title": "Esther's Journal Entry",
+        "Text": "I love God.",
+        "Author": "Esther Shen"
+    },
+    {
+        "Issue": "Test Issue",
+        "Date": {
+            "seconds": 1701925200,
+            "nanoseconds": 466000000
+        },
+        "Content Type": "Narrative",
+        "Tags": [
+            "k",
+            "l",
+            "m"
+        ],
+        "Title": "Abel's Journal Entry",
+        "Text": "I love God.",
+        "Author": "Abel Chen"
+    },
+]
