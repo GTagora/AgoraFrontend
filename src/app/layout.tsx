@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Agora Website',
-  description: 'Agora seeks to coalesce Christian thought across Georgia Tech’s campus, collect and curate pieces that reflect the vibrant beauty of God’s nature, and offer our unique perspective to the campus dialogue.',
+  description: 'Agora seeks to glorify God as an ecumenical forum and journal of Christian thought. By creating and curating pieces that reflect the vibrant beauty of God’s nature, we offer a collective Christian perspective to the campus dialogue.',
 }
 
 export default function RootLayout({

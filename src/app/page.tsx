@@ -8,10 +8,10 @@ export default function Home() {
       <div className={styles.center}>
         <Image
           className={styles.logo}
-          src="/AgoraLogo.png"
-          width={360}
+          src="/logo-black.png"
+          width={150}
           height={150}
-          priority
+          alt='Agora logo'
         />
       </div>
 

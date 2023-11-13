@@ -1,0 +1,38 @@
+/* import Google fonts info
+
+* https://fonts.google.com/
+* https://www.geeksforgeeks.org/how-to-use-google-fonts-in-reactjs/
+
+to put in public index.html file (idk what we will use):
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+*/
+
+/*
+COLOR GUIDE
+agora green: BFD8C5
+light green: E5ECE7
+neutral tan: F0EDE9
+gray-green: D1D7D3
+
+dark green: 7C9D84
+darkest green: 2C4B33
+*/
+
+h1 {
+    font-family: 'Playfair Display SC';
+}
+
+h2, h3 {
+    font-family: 'EB Garamond';
+}
+
+body {
+    font-family: 'Cormorant Garamond';
+    color: rgb(42, 42, 42);
+
+}
+
+
+
