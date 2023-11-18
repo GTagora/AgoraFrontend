@@ -1,39 +1,64 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
-// import './reference.css'
+import { EB_Garamond, Playfair_Display_SC, Cormorant_Garamond } from '@next/font/google'
+
+const eb_garamond = EB_Garamond( {
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  variable: '--font-ebgaramond',
+  display: 'swap'
+})
+
+const playfair = Playfair_Display_SC({
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap'
+})
+
+const cormorant = Cormorant_Garamond({
+  weight: ['400', '500', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  variable: '--font-cormorant',
+  display: 'swap'
+})
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
-      <div className={styles.heading}>
-        <Image
-          className={styles.logo}
-          src="/logo-black-box.png"
-          width={100}
-          height={100}
-          alt='Agora logo'
-        />
-        <h1>AGORA</h1>
-        <h2>Georgia Tech’s Journal of Christian Thought</h2>
-      </div>
+    <html className={`${eb_garamond.variable} ${playfair.variable} ${cormorant.variable}`}>
+  <main className={styles.main}>
+        <div className={styles.heading}>
+          <Image
+            className={styles.logo}
+            src="/logo-black-box.png"
+            width={100}
+            height={100}
+            alt='Agora logo'
+          />
+          <h1>AGORA</h1>
+          <h2>Georgia Tech’s Journal of Christian Thought</h2>
+        </div>
 
-      <div className={styles.grid}>
-        <Link href="/About" className={styles.card}>
-          <h2>
-            About <span>-&gt;</span>
-          </h2>
-          <p>Placeholder Text</p>
-        </Link>
+        {/* <div className={styles.grid}>
+          <Link href="/About" className={styles.card}>
+            <h2>
+              About <span>-&gt;</span>
+            </h2>
+            <p>Placeholder Text</p>
+          </Link>
 
-        <Link href="/Blog" className={styles.card}>
-          <h2>
-            Blog <span>-&gt;</span>
-          </h2>
-          <p>Placeholder Text</p>
-        </Link>
-      </div>
-    </main>
+          <Link href="/Blog" className={styles.card}>
+            <h2>
+              Blog <span>-&gt;</span>
+            </h2>
+            <p>Placeholder Text</p>
+          </Link>
+        </div> */}
+      </main>
+    </html>
+    
   )
 }
