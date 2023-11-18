@@ -1,0 +1,14 @@
+.navbar{
+    display: flexbox;
+    flex-direction: row;
+}
+
+.navbar-start{}
+
+.navbar-end{}
+
+.navbar-button{}
+
+.navbar-button:hover{
+    color: blue;
+}

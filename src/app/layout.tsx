@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { EB_Garamond, Playfair_Display_SC, Cormorant_Garamond } from '@next/font/google'
+import { EB_Garamond, Playfair_Display_SC, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
 
 const eb_garamond = EB_Garamond( {
