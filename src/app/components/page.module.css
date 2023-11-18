@@ -1,14 +1,32 @@
 .navbar{
-    display: flexbox;
+    display: flex;
+    width: 100%;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbar-start{}
+.logo {
+}
 
-.navbar-end{}
+.navbarEnd{
+    width: 40%;
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20%;
+}
 
-.navbar-button{}
+.navbarButton{
+    color: rgb(64, 64, 64);
+    font-size:larger;
+    font-weight: 700;
+    font-family:var(--font-cormorant);
+    letter-spacing: .1rem;
+    padding: 5px;
+}
 
-.navbar-button:hover{
-    color: blue;
+.navbarButton:hover{
+    color: black;
 }

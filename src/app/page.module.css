@@ -1,9 +1,8 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 2rem;
   min-height: 100vh;
   font-family: var(--font-ebgaramond);
   background-color: whitesmoke;
@@ -15,8 +14,10 @@
   justify-content: center;
   align-items: center;
   width:100%;
+  margin-top: 0px;
 }
 .heading h1 {
+  color: black;
   font-family: var(--font-playfair);
   font-weight: 500;
   font-size: 90px;
@@ -26,6 +27,7 @@
   margin-top: 40px;
 }
 .heading h2 {
+  color: black;
   font-style: italic;
   font-weight: 400;
   font-size: 22px;

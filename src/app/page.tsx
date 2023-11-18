@@ -18,22 +18,6 @@ export default function Home() {
       <h1>AGORA</h1>
       <h2>Georgia Tech’s Journal of Christian Thought</h2>
     </div>
-
-    <div className={styles.grid}>
-      <Link href="/about" className={styles.card}>
-        <h2>
-          About <span>-&gt;</span>
-        </h2>
-        <p>Placeholder Text</p>
-      </Link>
-
-      <Link href="/contact" className={styles.card}>
-        <h2>
-          Contact <span>-&gt;</span>
-        </h2>
-        <p>Placeholder Text</p>
-      </Link>
-    </div>
   </main>
     
   )
