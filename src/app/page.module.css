@@ -1,12 +1,17 @@
 /*
-COLOR GUIDE
-agora green: BFD8C5
-light green: E5ECE7
-neutral tan: F0EDE9
-gray-green: D1D7D3
+CUSTOM VARIABLES
+colors:
+--agora-green: BFD8C5
+--light-green: E5ECE7
+--neutral-tan: F0EDE9
+--gray-green: D1D7D3
+--dark-green: 7C9D84
+--darkest-green: 2C4B33
 
-dark green: 7C9D84
-darkest green: 2C4B33
+fonts:
+--font-ebgaramond
+--font-playfair
+--font-cormorant
 */
 
 .main {
@@ -65,7 +70,7 @@ darkest green: 2C4B33
 }
 
 .card {
-  background-color: #BFD8C5;
+  background-color: var(--agora-green);
   width: 400px;
   height: 400px;
   padding: 1.5rem;
