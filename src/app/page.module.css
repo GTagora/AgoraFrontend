@@ -11,6 +11,7 @@ colors:
 fonts:
 --font-ebgaramond
 --font-playfair
+--font-playfair-sc
 --font-cormorant
 */
 
@@ -30,11 +31,11 @@ fonts:
   justify-content: center;
   align-items: center;
   width:100%;
-  margin-top: 120px;
+  margin-top: 200px;
 }
 .heading h1 {
   color: black;
-  font-family: var(--font-playfair);
+  font-family: var(--font-playfair-sc);
   font-weight: 500;
   font-size: 90px;
   letter-spacing: 1em;
@@ -55,38 +56,110 @@ fonts:
 }
 
 .container {
-  /* background-color: #E5ECE7; */
   width: 100vw;
   height: 200vh;
   margin: 3rem;
   margin-top: 200px;
-  padding: 3rem;
+  padding: 11rem;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .container h1 {
   font-weight: 600;
   letter-spacing: .15rem;
-  padding-left: 40px;
+}
+
+.hbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-block: 3rem;
+  gap: 8%;
+}
+
+.letter {
+  background-color: var(--neutral-tan);
+  width: 400px;
+  height: 600px;
+  padding: 3rem;
+  padding-bottom: 2rem;
+
+  letter-spacing: .095rem;
+  line-height: 2.2rem;
+}
+
+.letter div {
+  font-family: var(--font-ebgaramond);
+  height: 70%;
+  margin-top: 15px;
+  text-overflow: ellipsis;
+  overflow: scroll;
+}
+
+.letter h5 {
+  font-family: var(--font-ebgaramond);
+  font-size: 13pt;
+  font-weight: 450;
+  line-height: 1.7rem;
+  margin-top: 15px;
+}
+
+.feature {
+  background-color: var(--gray-green);
+  flex-grow: 2;
+  width: 600px;
+  height: 600px;
+  padding: 1.5rem;
+}
+
+.articlesContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .card {
-  background-color: var(--agora-green);
   width: 400px;
-  height: 400px;
-  padding: 1.5rem;
-  margin: 3rem;
+  height: 500px;
+  margin-block: 1.5rem;
 }
 
+/* article title */
 .card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
+  font-family: var(--font-ebgaramond);
+  font-weight: 400;
+  text-align: left;
+  padding-left: .5rem;
+  bottom: 5px;
+  position: relative;
 }
 
+/* genre label */
 .card p {
   font-family: 'Arial';
   font-style: italic;
   font-size: 11pt;
   color: rgb(119, 119, 119);
+
+  position: relative;
   text-align: right;
+  top: -370px;
+  right: 30px;
+}
+
+/* default color card */
+.cardColor {
+  background-color: var(--agora-green);
+  width: 400px;
+  height: 400px;
+}
+
+/* article image */
+.cardImage {
+  width: 400px;
+  height: 400px;
 }
 
