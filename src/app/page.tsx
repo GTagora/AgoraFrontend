@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
 import Header from './components/header'
+import Card from './card'
 
 export default function Home() {
   return (
@@ -17,6 +18,11 @@ export default function Home() {
       />
       <h1>AGORA</h1>
       <h2>Georgia Tech’s Journal of Christian Thought</h2>
+    </div>
+    <div className={styles.container}>
+      <h1>Fall '23 Release</h1>
+      <Card title="title 1"/>
+      <Card />
     </div>
   </main>
     
