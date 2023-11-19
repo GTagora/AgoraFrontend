@@ -18,6 +18,9 @@ export default function Home() {
       <h1>AGORA</h1>
       <h2>Georgia Tech’s Journal of Christian Thought</h2>
     </div>
+    <div className={styles.container}>
+      <h1>Fall '23 Release</h1>
+    </div>
   </main>
     
   )
