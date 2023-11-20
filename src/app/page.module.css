@@ -25,10 +25,6 @@ fonts:
   background-color: whitesmoke;
 }
 
-.logo {
-  margin-top: 50px;
-}
-
 .heading {
   display: inherit;
   flex-direction: column;
@@ -56,7 +52,7 @@ fonts:
   text-indent: .1em;
   text-align: center;
 
-  margin-top: 100px;
+  margin-top: 110px;
 }
 
 .heading h3 {
@@ -72,7 +68,7 @@ fonts:
 
 .container {
   width: 100vw;
-  margin-top: 5rem;
+  margin-top: 12rem;
   padding-inline: 11rem;
 
   display: flex;

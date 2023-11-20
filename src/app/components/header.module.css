@@ -6,7 +6,7 @@
     align-items: center;
 
     padding: 25px 30px 15px 30px;
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.9);
     top: 0;
     position: fixed;
 }

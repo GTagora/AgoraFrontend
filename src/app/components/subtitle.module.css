@@ -1,4 +1,14 @@
 .container {
     /* background-color: var(--agora-green); */
-    height: 400px;
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:85vh;
+    height: 80vh;
+    margin-top: 90px;
+}
+
+.logo {
+    margin-top: -50px;
 }

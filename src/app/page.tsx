@@ -14,14 +14,6 @@ export default function Home() {
       <Header />
 
       <div className={styles.heading}>
-        <Image
-          className={styles.logo}
-          src="/logo-black-box.png"
-          width={100}
-          height={100}
-          alt='Agora logo'
-        />
-        <h1>AGORA</h1>
         <Subtitle />
       </div>
 
