@@ -6,9 +6,11 @@
     align-items: center;
 
     padding: 25px 30px 15px 30px;
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.90);
+    /* background: linear-gradient(180deg, rgba(245, 245, 245, 0.9) 0%, rgba(245, 245, 245, 0.9) 80%, rgba(255, 255, 255, 0)95%); */
     top: 0;
     position: fixed;
+    z-index: 1;
 }
 
 .navbarEnd{
