@@ -25,13 +25,17 @@ fonts:
   background-color: whitesmoke;
 }
 
+.logo {
+  margin-top: 50px;
+}
+
 .heading {
   display: inherit;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:100%;
-  margin-top: 200px;
+  width:100vh;
+  height: 90vh;
 }
 .heading h1 {
   color: black;
@@ -52,15 +56,23 @@ fonts:
   text-indent: .1em;
   text-align: center;
 
-  margin-top: 25px;
+  margin-top: 40px;
+}
+
+.heading h3 {
+  margin-top: 90px;
+  font-family: var(--font-cormorant);
+  font-weight: 400;
+  font-size: 14pt;
+  letter-spacing: .06rem;
+  text-align: center;
+  line-height: 2rem;
 }
 
 .container {
   width: 100vw;
-  height: 200vh;
-  margin: 3rem;
-  margin-top: 200px;
-  padding: 11rem;
+  margin-top: 5rem;
+  padding-inline: 11rem;
 
   display: flex;
   flex-direction: column;
@@ -76,6 +88,7 @@ fonts:
   flex-direction: row;
   justify-content: space-evenly;
   padding-block: 3rem;
+  padding-right: 3rem;
   gap: 8%;
 }
 
@@ -116,9 +129,9 @@ fonts:
 
 .articlesContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .card {

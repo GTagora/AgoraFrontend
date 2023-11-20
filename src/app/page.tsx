@@ -19,6 +19,7 @@ export default function Home() {
       />
       <h1>AGORA</h1>
       <h2>Georgia Tech’s Journal of Christian Thought</h2>
+      <h3>A marketplace of ideas and spiritual nourishment — all for His glory.</h3>
     </div>
 
     <div className={styles.container}>
