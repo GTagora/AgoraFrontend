@@ -65,17 +65,21 @@
 .email-button {
     font-family: var(--font-playfair-sc);
     font-size: 18px;
-    letter-spacing: .1rem;
-    background-color: var(--gray-green);
+    letter-spacing: 2px;
     color: black;
     width: 100%;
     height: 100%;
-    border: none;
-    border-radius: 25px;
+    background-color: transparent;
+    border-radius: 4rem;
+    border: 2px solid var(--gray-green);
 }
 
 .email-button:hover {
     cursor: pointer;
+    font-weight: 500;
+    transition: .4s;
+    letter-spacing: 3px;
+    background-color: var(--gray-green);
 }
 
 .connect-container {
@@ -101,7 +105,7 @@
 }
 
 .social-container {
-    width: 25vw;
+    width: 22vw;
     color: black;
     display: flex;
     flex-direction: column;
@@ -120,7 +124,7 @@
 
 .social-buttons {
     min-width: 100%;
-    height: 70px;
+    height: 60px;
     margin: .7rem auto;
     background-color: transparent;
     border: 2px solid lightgray;
@@ -149,15 +153,13 @@
     font-family: var(--font-cormorant);
     letter-spacing: .15rem;
     font-size: 18pt;
-    width: 70%;
+    width: 72%;
     text-align: center;
 }
 
 .social-images {
     height: auto;
-    width: 50px;
     margin: 10px;
-    clear: both;
     border-radius: 30px;
 }
 

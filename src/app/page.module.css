@@ -93,7 +93,6 @@ fonts:
 }
 
 .letter {
-  /* background-color: var(--neutral-tan); */
   width: 400px;
   padding-block: 1rem;
   padding-inline: 3rem;
