@@ -97,13 +97,13 @@ export default function Header() {
             </motion.div>
 
         {/* BLOG */}
-            <motion.div 
+            {/* <motion.div 
                 className={styles.item}
                 variants={itemVars}
                 initial="initial"
                 whileHover="hover">
                 <Link href="/blog"><div className={styles.label} >BLOG</div></Link>
-            </motion.div>
+            </motion.div> */}
         
         {/* JOIN */}
             <motion.div

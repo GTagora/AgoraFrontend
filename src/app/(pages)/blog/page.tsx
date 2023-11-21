@@ -6,7 +6,8 @@ export default function About() {
     <main className={styles.main}>
       <Header />
       <div className={styles.container}>
-        <h1>Blog!</h1>
+        <h1>Blog</h1>
+        <p>Content coming Spring '23!</p>
       </div>
     </main>
     )

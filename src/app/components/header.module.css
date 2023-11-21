@@ -9,12 +9,6 @@
     top: 0;
     position: fixed;
     z-index: 1;
-
-    color: rgb(64, 64, 64);
-    font-size:large;
-    font-weight: 700;
-    font-family:var(--font-cormorant);
-    letter-spacing: .1rem;
 }
 
 .logo {
@@ -29,9 +23,13 @@
     align-items: flex-start;
     padding-left:3rem;
     margin-top: -40px;
+
+    font-family: var(--font-cormorant);
+    letter-spacing: .1rem;
 }
 
 .item {
+    width: 8vw;
     padding: .5rem 1rem;
     text-align: left;
 }

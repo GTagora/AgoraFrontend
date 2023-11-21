@@ -19,8 +19,8 @@ fonts:
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
   min-height: 100vh;
+  padding-top: 2rem;
   font-family: var(--font-ebgaramond);
   background-color: var(--bg-color);
 }
@@ -69,8 +69,7 @@ fonts:
 .container {
   width: 100vw;
   margin-top: 7rem;
-  padding-inline: 11%;
-
+  padding-inline: 15%;
   display: flex;
   flex-direction: column;
 }
@@ -133,46 +132,3 @@ fonts:
   flex-wrap: wrap;
   gap: 3rem;
 }
-
-.card {
-  width: 400px;
-  height: 500px;
-  margin-block: 1.5rem;
-}
-
-/* article title */
-.card h2 {
-  font-family: var(--font-ebgaramond);
-  font-weight: 400;
-  text-align: left;
-  padding-left: .5rem;
-  bottom: 5px;
-  position: relative;
-}
-
-/* genre label */
-.card p {
-  font-family: 'Arial';
-  font-style: italic;
-  font-size: 11pt;
-  color: rgb(119, 119, 119);
-
-  position: relative;
-  text-align: right;
-  top: -370px;
-  right: 30px;
-}
-
-/* default color card */
-.cardColor {
-  background-color: var(--agora-green);
-  width: 400px;
-  height: 400px;
-}
-
-/* article image */
-.cardImage {
-  width: 400px;
-  height: 400px;
-}
-

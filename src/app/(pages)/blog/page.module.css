@@ -1,6 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   padding: 2rem;
   min-height: 100vh;
@@ -11,4 +12,15 @@
 .container {
   margin-top: 100px;
   padding: 3rem;
+  line-height: 5rem;
+  text-align: center;
+}
+
+.container h1 {
+  font-family: var(--font-playfair-sc);
+  letter-spacing: .3rem;
+}
+
+.container p {
+  font-size: 15pts;
 }
