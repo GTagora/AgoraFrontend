@@ -14,15 +14,25 @@ export default function Header() {
                 alt='Agora logo'
             />
         </Link>
-        <div className={styles.navbarEnd}>
-            <div className={styles.navbarButton}>
-                <Link href="/about">ABOUT</Link>
+        <div className={styles.buttons}>
+            <div className={styles.item}>
+                <Link href="/"><div className={styles.label} >HOME</div></Link>
             </div>
-            <div className={styles.navbarButton}>
-                <Link href="/archive">ARCHIVE</Link>
+            <div className={styles.item}>
+                <Link href="/blog"><div className={styles.label} >BLOG</div></Link>
             </div>
-            <div className={styles.navbarButton}>
-                <Link href="/contact">CONTACT</Link>
+            <div className={styles.item}>
+                <Link href="/archive"><div className={styles.label} >ARCHIVE</div></Link>
+                <Link href="/about"><div className={styles.dropdown} >Fall '23</div></Link>
+                <Link href="/about"><div className={styles.dropdown} >Past Issues</div></Link>
+            </div>
+            <div className={styles.item}>
+                <Link href="/about"><div className={styles.label} >ABOUT</div></Link>
+                <Link href="/about"><div className={styles.dropdown} >Mission</div></Link>
+                <Link href="/about"><div className={styles.dropdown} >Staff</div></Link>
+            </div>
+            <div className={styles.item}>
+                <Link href="/contact"><div className={styles.label} >JOIN</div></Link>
             </div>
         </div>
     </div>

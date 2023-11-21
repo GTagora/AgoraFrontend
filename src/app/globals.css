@@ -63,6 +63,19 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* body::-webkit-scrollbar {
+  width: .5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: whitesmoke;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(211, 211, 211);
+  border-radius: 4px;
+} */
+
 a {
   color: inherit;
   text-decoration: none;
