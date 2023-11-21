@@ -71,7 +71,7 @@ fonts:
 
 .container {
   width: 100vw;
-  margin-top: 5rem;
+  margin-top: rem;
   padding-inline: 11%;
 
   display: flex;
@@ -79,31 +79,35 @@ fonts:
 }
 
 .container h1 {
-  font-weight: 600;
-  letter-spacing: .15rem;
+  font-family: var(--font-playfair-sc);
+  font-weight: 550;
+  letter-spacing: .4rem;
+  font-size: 27pt;
+  text-align: center;
 }
 
 .hbox {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-block: 3rem;
+  padding-block: 4rem;
   padding-right: 3rem;
   gap: 8%;
+  max-height: 600px;
 }
 
 .letter {
-  background-color: var(--neutral-tan);
+  /* background-color: var(--neutral-tan); */
   width: 400px;
-  height: 600px;
-  padding: 3rem;
-  padding-bottom: 2rem;
+  padding-block: 1rem;
+  padding-inline: 3rem;
+  border-left: 1.5px solid black;
 
   letter-spacing: .095rem;
   line-height: 2.2rem;
 }
 
-.letter div {
+.letter p {
   font-family: var(--font-ebgaramond);
   height: 70%;
   margin-top: 15px;
@@ -123,7 +127,6 @@ fonts:
   background-color: var(--gray-green);
   flex-grow: 2;
   width: 600px;
-  height: 600px;
   padding: 1.5rem;
 }
 
