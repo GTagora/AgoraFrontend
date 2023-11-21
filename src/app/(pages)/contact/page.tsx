@@ -49,18 +49,30 @@ export default function Contact() {
                 <h1> Our Socials</h1>
             </div>
 
-            <div className={styles['social-buttons']}>
-                <img className={styles['social-images']} src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Minecraft_missing_texture_block.svg/32px-Minecraft_missing_texture_block.svg.png"></img>
-                <p className={styles['social-text']}>Instagram</p>
-            </div>
-            <div className={styles['social-buttons']}>
-            <img className={styles['social-images']} src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Minecraft_missing_texture_block.svg/32px-Minecraft_missing_texture_block.svg.png"></img>
-                <p className={styles['social-text']}>Facebook</p>
-            </div>
-            <div className={styles['social-buttons']}>
-            <img className={styles['social-images']} src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Minecraft_missing_texture_block.svg/32px-Minecraft_missing_texture_block.svg.png"></img>
-                <p className={styles['social-text']}>Email</p>
-            </div>
+            <a href="https://www.instagram.com/gt.agora/" target="blank">
+                <div className={styles['social-buttons']}>
+                    <img className={styles['social-images']} src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Minecraft_missing_texture_block.svg/32px-Minecraft_missing_texture_block.svg.png"></img>
+                    <p className={styles['social-text']}>Instagram</p>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/groups/1308653603346414/" target="blank">
+                <div className={styles['social-buttons']}>
+                    <img className={styles['social-images']} src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Minecraft_missing_texture_block.svg/32px-Minecraft_missing_texture_block.svg.png"></img>
+                    <p className={styles['social-text']}>Facebook</p>
+                </div>
+            </a>
+            <a href="https://join.slack.com/t/agorageorgiat-eig5741/shared_invite/zt-237p10exi-TnyKfsr78OXD_FJ_vIFG7Q" target="blank">
+                <div className={styles['social-buttons']}>
+                    <img className={styles['social-images']} src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Minecraft_missing_texture_block.svg/32px-Minecraft_missing_texture_block.svg.png"></img>
+                    <p className={styles['social-text']}>Slack</p>
+                </div>
+            </a>
+            <a href="mailto:gatechagora@gmail.com" target="blank">
+                <div className={styles['social-buttons']}>
+                    <img className={styles['social-images']} src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Minecraft_missing_texture_block.svg/32px-Minecraft_missing_texture_block.svg.png"></img>
+                    <p className={styles['social-text']}>Email</p>
+                </div>
+            </a>
 
         </div>
 
