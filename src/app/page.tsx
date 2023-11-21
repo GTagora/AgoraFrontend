@@ -30,9 +30,13 @@ export default function Home() {
       </div>
 
         <div className={styles.articlesContainer}>
-          <Card title="i love God" genre="SOMETHING REALLY LONG" />
+          <Card title="i love God" genre="SOMETHING REALLY LONG" preview="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in"/>
           <Card title="I love jesus" />
           <Card title="a really really really really really really really long title" />
+          <Card image="/test.jpg"/>
+          <Card />
+          <Card />
+          <Card />
           <Card />
           <Card />
           <Card />
