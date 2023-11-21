@@ -22,7 +22,7 @@ fonts:
   padding: 2rem;
   min-height: 100vh;
   font-family: var(--font-ebgaramond);
-  background-color: whitesmoke;
+  background-color: var(--bg-color);
 }
 
 .heading {

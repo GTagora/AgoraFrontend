@@ -8,7 +8,7 @@ export default function Header() {
 
     const itemVars= {
         initial: {
-            opacity: .6,
+            opacity: 1,
         },
         hover: {
             opacity: 1,
@@ -58,7 +58,7 @@ export default function Header() {
                 variants={itemVars}
                 initial="initial"
                 whileHover="hover">
-                <Link href="/archive"><div >ARCHIVE</div></Link>
+                <Link href="/archive"><div className={styles.label} >ARCHIVE</div></Link>
 
             {/* CURRENT ISSUE */}
                 <Link href="/about">
@@ -111,7 +111,7 @@ export default function Header() {
                 variants={itemVars}
                 initial="initial"
                 whileHover="hover">
-                <Link href="/contact"><div className={styles.label} >JOIN</div></Link>
+                <Link href="/contact"><div className={styles.label} >CONTACT</div></Link>
             </motion.div>
         </div>
     </div>

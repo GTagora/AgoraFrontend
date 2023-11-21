@@ -25,6 +25,9 @@ darkest green: 2C4B33
   --dark-green: #7C9D84;
   --darkest-green: #2C4B33;
 
+  --gray-text: rgb(128, 128, 128);
+  --bg-color: whitesmoke;
+
 }
 
 @media (prefers-color-scheme: dark) {

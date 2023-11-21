@@ -5,7 +5,7 @@
     justify-content: flex-start;
     align-items: center;
     padding-inline: 25px 15px;
-    background-color: rgba(245, 245, 245, 0.9);
+    background-color: var(--bg-color);
     top: 0;
     position: fixed;
     z-index: 1;
@@ -29,22 +29,36 @@
     align-items: flex-start;
     padding-left:3rem;
     margin-top: -40px;
-    gap: 3vw;
 }
 
 .item {
-    min-width: 6vw;
-    padding-top: 0;
-    padding: 1rem;
+    padding: .5rem 1rem;
+    text-align: left;
+}
+
+.dropdown {
+    font-size: medium;
+    font-weight: 500;
+    color: var(--gray-text);
+    padding: .3rem 0;
+}
+
+.item:hover .label {
+    color: black;
+}
+
+.buttons:hover .item {
+    color: var(--gray-text);
 }
 
 .item:hover {
     font-weight: 900;
-    background-color: rgba(245, 245, 245, 0.9);
+    background-color: var(--bg-color);
 }
 
-.item:hover .dropdown {
-    margin-top: .4rem;
+
+.dropdown:hover {
+    color: black;
     font-weight: 600;
 }
 
