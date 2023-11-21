@@ -154,7 +154,8 @@
 }
 
 .social-images {
-    height: 50px;
+    height: auto;
+    width: 50px;
     margin: 10px;
     clear: both;
     border-radius: 30px;

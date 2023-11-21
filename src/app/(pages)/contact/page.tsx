@@ -1,4 +1,5 @@
 
+import Image from 'next/image'
 import styles from './page.module.css'
 import Header from '@/app/components/header'
 
@@ -51,25 +52,49 @@ export default function Contact() {
 
             <a href="https://www.instagram.com/gt.agora/" target="blank">
                 <div className={styles['social-buttons']}>
-                    <img className={styles['social-images']} src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Minecraft_missing_texture_block.svg/32px-Minecraft_missing_texture_block.svg.png"></img>
+                    <Image 
+                        className={styles['social-images']}
+                        src="/socials/instagram.png"
+                        width={50}
+                        height={50}
+                        alt='instagram icon'
+                    />
                     <p className={styles['social-text']}>Instagram</p>
                 </div>
             </a>
             <a href="https://www.facebook.com/groups/1308653603346414/" target="blank">
                 <div className={styles['social-buttons']}>
-                    <img className={styles['social-images']} src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Minecraft_missing_texture_block.svg/32px-Minecraft_missing_texture_block.svg.png"></img>
+                    <Image 
+                        className={styles['social-images']}
+                        src="/socials/facebook.png"
+                        width={50}
+                        height={50}
+                        alt='facebook icon'
+                    />
                     <p className={styles['social-text']}>Facebook</p>
                 </div>
             </a>
             <a href="https://join.slack.com/t/agorageorgiat-eig5741/shared_invite/zt-237p10exi-TnyKfsr78OXD_FJ_vIFG7Q" target="blank">
                 <div className={styles['social-buttons']}>
-                    <img className={styles['social-images']} src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Minecraft_missing_texture_block.svg/32px-Minecraft_missing_texture_block.svg.png"></img>
+                    <Image 
+                        className={styles['social-images']}
+                        src="/socials/slack.png"
+                        width={50}
+                        height={50}
+                        alt='slack icon'
+                    />
                     <p className={styles['social-text']}>Slack</p>
                 </div>
             </a>
             <a href="mailto:gatechagora@gmail.com" target="blank">
                 <div className={styles['social-buttons']}>
-                    <img className={styles['social-images']} src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Minecraft_missing_texture_block.svg/32px-Minecraft_missing_texture_block.svg.png"></img>
+                    <Image 
+                        className={styles['social-images']}
+                        src="/socials/email.png"
+                        width={50}
+                        height={50}
+                        alt='email icon'
+                    />
                     <p className={styles['social-text']}>Email</p>
                 </div>
             </a>
