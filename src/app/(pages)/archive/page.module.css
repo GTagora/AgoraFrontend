@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: var(--font-ebgaramond);
+  background-color: whitesmoke;
+}
+
+.container {
+  margin-top: 100px;
+  padding: 3rem;
+}
