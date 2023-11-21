@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
-import { motion } from 'framer-motion'
 import styles from './page.module.css'
 import Header from './components/header'
 import Subtitle from './components/subtitle';
