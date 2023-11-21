@@ -5,12 +5,20 @@
   padding: 2rem;
   min-height: 100vh;
   font-family: var(--font-ebgaramond);
-  background-color: whitesmoke;
+  background-color: var(--bg-color);
 }
 
 .container {
   margin-top: 100px;
   padding: 3rem;
+}
+
+.contact-header {
+    font-family: var(--font-playfair-sc);
+    letter-spacing: 5px;
+    color: black;
+    margin-top: 100px;
+    padding: 3rem;
 }
 
 .contact-email-container {
