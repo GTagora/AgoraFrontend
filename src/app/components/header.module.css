@@ -9,7 +9,17 @@
     top: 0;
     position: fixed;
     z-index: 1;
+}
 
+.navbarEnd{
+    width: 40%;
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbarButton{
     color: rgb(64, 64, 64);
     font-size:large;
     font-weight: 700;
