@@ -6,7 +6,16 @@
   padding: 2rem;
   min-height: 100vh;
   font-family: var(--font-ebgaramond);
+<<<<<<< Updated upstream
   background-color: whitesmoke;
+=======
+}
+
+.main h1 {
+  font-family: var(--font-playfair-sc);
+  letter-spacing: .3rem;
+  margin-block: 3rem;
+>>>>>>> Stashed changes
 }
 
 .container {
