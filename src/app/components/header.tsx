@@ -1,10 +1,38 @@
+"use client";
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from './header.module.css'
+import { motion } from 'framer-motion'
 
 export default function Header() {
+
+    const itemVars= {
+        initial: {
+            opacity: .6,
+        },
+        hover: {
+            opacity: 1,
+            transition: {
+                duration: .7,
+                staggerChildren: .1,
+            }
+        }
+    }
+
+    const dropdownVars= {
+        initial: {
+            opacity: 0,
+        },
+        hover: {
+            opacity: 1,
+            y:5,
+            transition: { duration: .7 },
+        },
+    }
+
     return (
     <div className={styles.navbar}>
+    {/* LOGO */}
         <Link href="/">
             <Image
                 className={styles.logo}
@@ -15,25 +43,76 @@ export default function Header() {
             />
         </Link>
         <div className={styles.buttons}>
-            <div className={styles.item}>
+        {/* HOME */}
+            {/* <motion.div 
+                className={styles.item}
+                variants={itemVars}
+                initial="initial"
+                whileHover="hover">
                 <Link href="/"><div className={styles.label} >HOME</div></Link>
-            </div>
-            <div className={styles.item}>
-                <Link href="/blog"><div className={styles.label} >BLOG</div></Link>
-            </div>
-            <div className={styles.item}>
-                <Link href="/archive"><div className={styles.label} >ARCHIVE</div></Link>
-                <Link href="/about"><div className={styles.dropdown} >Fall '23</div></Link>
-                <Link href="/about"><div className={styles.dropdown} >Past Issues</div></Link>
-            </div>
-            <div className={styles.item}>
+            </motion.div> */}
+
+        {/* ARCHIVE */}
+            <motion.div 
+                className={styles.item}
+                variants={itemVars}
+                initial="initial"
+                whileHover="hover">
+                <Link href="/archive"><div >ARCHIVE</div></Link>
+
+            {/* CURRENT ISSUE */}
+                <Link href="/about">
+                    <motion.div 
+                        className={styles.dropdown}
+                        variants={dropdownVars}>
+                    Fall '23</motion.div></Link>
+            {/* PAST ISSUES */}
+                <Link href="/about">
+                    <motion.div 
+                        className={styles.dropdown}
+                        variants={dropdownVars}>
+                    Past Issues</motion.div></Link>
+            </motion.div>
+
+        {/* ABOUT */}
+            <motion.div 
+                className={styles.item}
+                variants={itemVars}
+                initial="initial"
+                whileHover="hover">
                 <Link href="/about"><div className={styles.label} >ABOUT</div></Link>
-                <Link href="/about"><div className={styles.dropdown} >Mission</div></Link>
-                <Link href="/about"><div className={styles.dropdown} >Staff</div></Link>
-            </div>
-            <div className={styles.item}>
+
+            {/* MISSION */}
+                <Link href="/about">
+                    <motion.div 
+                        className={styles.dropdown}
+                        variants={dropdownVars}>
+                    Mission</motion.div></Link>
+            {/* STAFF */}
+                <Link href="/about">
+                    <motion.div 
+                        className={styles.dropdown}
+                        variants={dropdownVars}>
+                    Staff</motion.div></Link>
+            </motion.div>
+
+        {/* BLOG */}
+            <motion.div 
+                className={styles.item}
+                variants={itemVars}
+                initial="initial"
+                whileHover="hover">
+                <Link href="/blog"><div className={styles.label} >BLOG</div></Link>
+            </motion.div>
+        
+        {/* JOIN */}
+            <motion.div
+                className={styles.item}
+                variants={itemVars}
+                initial="initial"
+                whileHover="hover">
                 <Link href="/contact"><div className={styles.label} >JOIN</div></Link>
-            </div>
+            </motion.div>
         </div>
     </div>
 )}

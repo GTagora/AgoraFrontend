@@ -24,22 +24,28 @@
 
 .buttons{
     width: auto;
-    height: auto;
+    height: 0px;
     display: inherit;
     align-items: flex-start;
-    padding-top: 40px;
     padding-left:3rem;
+    margin-top: -40px;
     gap: 3vw;
 }
 
 .item {
     min-width: 6vw;
-    /* background-color: aquamarine; */
+    padding-top: 0;
+    padding: 1rem;
 }
 
-.dropdown {
-    font-weight: 400;
-    margin-top: .5rem;
+.item:hover {
+    font-weight: 900;
+    background-color: rgba(245, 245, 245, 0.9);
+}
+
+.item:hover .dropdown {
+    margin-top: .4rem;
+    font-weight: 600;
 }
 
 
