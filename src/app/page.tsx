@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
 import Header from './components/header'
+import Footer from './components/footer'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
     <div className={styles.container}>
       <h1>Fall '23 Release</h1>
     </div>
+    <Footer />
   </main>
     
   )

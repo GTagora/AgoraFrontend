@@ -6,9 +6,11 @@
   min-height: 100vh;
   font-family: var(--font-ebgaramond);
   background-color: whitesmoke;
+  position: relative;
 }
 
 .container {
   margin-top: 100px;
   padding: 3rem;
+  padding-bottom: 18rem;    /* Footer height */
 }
