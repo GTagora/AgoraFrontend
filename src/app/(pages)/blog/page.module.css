@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8rem;
+  padding-inline: 15%;
+  background-color: var(--bg-color);
+
+  min-height: 100vh;
+  font-family: var(--font-ebgaramond);
+  font-size: 15pt;
+}
+
+.main h1 {
+  font-family: var(--font-playfair-sc);
+  letter-spacing: .3rem;
+  margin-block: 3rem;
+}
+
+.container {
+    padding: 4rem;
+    text-align: center;
+    background-color: var(--light-light-green);
+    border-radius: 1.5rem;
+}
+
+.container p {
+  font-size: 15pt;
+  letter-spacing: .5px;
+}
+
+.button {
+    font-size: 14pt;
+    margin-top: 50px;
+    padding: 1rem;
+    border-radius: 4rem;
+    border: 2px solid var(--gray-green);
+}
+
+.button:hover {
+    background-color: var(--gray-green);
+    font-weight: 500;
+    transition: .4s;
+    letter-spacing: .4px;
+}

@@ -1,30 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Playfair+Display+SC:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
-
 .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    min-height: 100vh;
-    font-family: var(--font-ebgaramond);
-    background-color: whitesmoke;
-    position: relative;
-}
-
-.container {
-    display: inherit;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    margin-top: 200px;
-    padding-bottom: 18rem;    /* Footer height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: var(--font-ebgaramond);
+  background-color: var(--bg-color);
+  position: relative;
+  padding-bottom: 15rem;    /* Footer height */
 }
 
 .contact-header {
-    font-family: 'Playfair Display SC', serif;
+    font-family: var(--font-playfair-sc);
     letter-spacing: 5px;
     color: black;
     margin-top: 100px;
@@ -32,17 +19,20 @@
 }
 
 .contact-email-container {
-    background-color: #E5ECE7;
+    background-color: var(--light-light-green);
     border-radius: 27px;
     width: 730px;
     height: 450px;
     color: black;
-    margin-bottom: 50px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 15pt;
+    line-height: 2rem;
 }
 
 .contact-email-container-text {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 27px;
+    font-family: var(--font-cormorant);
     text-align: center;
     margin-top: 75px;
     margin-inline: 104px;
@@ -64,9 +54,9 @@
 }
 
 .email-input {
-    background-color: whitesmoke;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;
+    background-color: var(--bg-color);
+    font-family: var(--font-cormorant);
+    font-size: 14pt;
     height: 100%;
     width: 100%;
     color: black;
@@ -77,28 +67,34 @@
 }
 
 .email-button {
-    font-family: 'Playfair Display SC', serif;
-    font-size: 17px;
-    background-color: #D1D7D3;
+    font-family: var(--font-playfair-sc);
+    font-size: 18px;
+    letter-spacing: 2px;
     color: black;
     width: 100%;
     height: 100%;
-    border: none;
-    border-radius: 25px;
+    background-color: transparent;
+    border-radius: 4rem;
+    border: 2px solid var(--gray-green);
 }
 
 .email-button:hover {
     cursor: pointer;
+    font-weight: 500;
+    transition: .4s;
+    letter-spacing: 3px;
+    background-color: var(--gray-green);
 }
 
 .connect-container {
     width: 730px;
-    padding-bottom: 3rem;
+    padding-block: 4rem;
+    margin-block: 1rem;
     color: black;
 }
 
 .connect-header {
-    font-family: 'Playfair Display SC', serif;
+    font-family: var(--font-playfair-sc);
     letter-spacing: 5px;
     color: black;
     text-align: center;
@@ -106,20 +102,24 @@
 }
 
 .connect-text {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 27px;
+    font-family: var(--font-cormorant);
+    font-size: 15pt;
     text-align: center;
     margin-inline: 30px;
 }
 
 .social-container {
-    width: 500px;
-    height: 500px;
+    width: 22vw;
     color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-block: 1rem;
+    margin-bottom: 5rem;
 }
 
 .social-header {
-    font-family: 'Playfair Display SC', serif;
+    font-family: var(--font-playfair-sc);
     letter-spacing: 5px;
     color: black;
     text-align: center;
@@ -127,35 +127,43 @@
 }
 
 .social-buttons {
-    width: 450px;
-    height: 80px;
-    margin-inline: auto;
-    background-color: #E5ECE7;
-    margin-bottom: 2rem;
-    border-radius: 30px;
+    min-width: 100%;
+    height: 60px;
+    margin: .7rem auto;
+    background-color: transparent;
+    border: 2px solid lightgray;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .social-buttons:hover {
     cursor: pointer;
+    background-color: var(--light-green);
+    border-color: var(--light-green);
+    transition: .3s;
+}
+
+.social-buttons:hover .social-text {
+    letter-spacing: .19rem;
+    transition: .3s;
+    font-weight: 500;
 }
 
 .social-text {
-    font-family: 'Cormorant Garamond', serif;
-    letter-spacing: 3px;
-    font-size: 27px;
-    float: left;
-    width: 290px;
-    margin-inline: auto;
+    font-family: var(--font-cormorant);
+    letter-spacing: .15rem;
+    font-size: 18pt;
+    width: 72%;
     text-align: center;
-    line-height: 80px;
 }
 
 .social-images {
-    height: 60px;
-    width: 60px;
+    height: auto;
     margin: 10px;
-    float: left;
-    clear: both;
     border-radius: 30px;
 }
 

@@ -2,32 +2,92 @@
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-
-    padding: 40px 30px 20px 30px;
-    background-color: whitesmoke;
+    padding-inline: 25px 15px;
+    background-color: var(--bg-color);
     top: 0;
     position: fixed;
+    z-index: 1;
 }
 
-.navbarEnd{
-    width: 40%;
+.logo {
+    padding-top: 20px;
+    height: auto;
+}
+
+.buttons{
+    width: auto;
+    height: 0px;
     display: inherit;
-    flex-direction: inherit;
-    justify-content: flex-end;
-    align-items: center;
-}
+    align-items: flex-start;
+    padding-left:3rem;
+    margin-top: -40px;
 
-.navbarButton{
-    color: rgb(64, 64, 64);
-    font-size:larger;
-    font-weight: 700;
-    font-family:var(--font-cormorant);
+    font-family: var(--font-cormorant);
     letter-spacing: .1rem;
-    padding-inline: 15%;
 }
 
-.navbarButton:hover{
+.item {
+    width: 8vw;
+    padding: .5rem 1rem;
+    text-align: left;
+}
+
+.dropdown {
+    font-size: medium;
+    font-weight: 500;
+    color: var(--gray-text);
+    padding: .3rem 0;
+}
+
+.item:hover .label {
     color: black;
 }
+
+.buttons:hover .item {
+    color: var(--gray-text);
+}
+
+.item:hover {
+    font-weight: 900;
+    background-color: var(--bg-color);
+}
+
+
+.dropdown:hover {
+    color: black;
+    font-weight: 600;
+}
+
+
+
+/* .buttons:hover .label {
+    opacity: .5;
+}
+
+.button:hover .item:hover .item {
+    opacity: 1;
+    height:60px;
+}
+
+.button:hover .item:hover .label {
+    opacity: 1;
+} */
+
+/* 
+
+.header:hover {
+    color: black;
+}
+
+
+.dropdown {
+    display: none;
+}
+
+.item:hover .dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+} */
