@@ -13,7 +13,8 @@
             "seconds": 1701925200,
             "nanoseconds": 451000000
         },
-        "Text": "I love God."
+        "Text": "I love God.",
+        "Image": "/test_gif.gif"
     },
     {
         "Content Type": "Essay",
@@ -59,7 +60,7 @@
             "f",
             "g"
         ],
-        "Title": "Daniels's Journal Entry",
+        "Title": "Daniel's Journal Entry",
         "Text": "I love God.",
         "Author": "Daniel Pan"
     },
@@ -94,5 +95,5 @@
         "Title": "Abel's Journal Entry",
         "Text": "I love God.",
         "Author": "Abel Chen"
-    },
+    }
 ]

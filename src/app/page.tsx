@@ -30,12 +30,15 @@ export default function Home() {
       </div>
 
         <div className={styles.articlesContainer}>
-          <Card title="i love God" genre="SOMETHING REALLY LONG" />
+          {/* <Card title="i love God" genre="SOMETHING REALLY LONG" />
           <Card title="I love jesus" />
-          <Card title="a really really really really really really really long title" />
-          <Card />
-          <Card />
-          <Card />
+          <Card title="a really really really really really really really long title" /> */}
+          <Card id={0} />
+          <Card id={1} />
+          <Card id={2} />
+          <Card id={3} />
+          <Card id={4} />
+          <Card id={5} />
         </div>
 
       </div>
