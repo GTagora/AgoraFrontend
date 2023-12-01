@@ -4,10 +4,11 @@
   height: 24vw;
   flex-grow: 1;
   margin-block: 2rem;
+  line-height: 30px;
 }
 
 .text {
-  padding-block: 10px 15px;
+  /* padding-block: 10px 15px; */
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -27,17 +28,23 @@
   overflow: hidden;
 }
 
-/* genre label */
 .card h3 {
+  font-family: 'Arial';
+  font-weight: 400;
+  /* font-style: italic; */
+  font-size: 11pt;
+  opacity: .6;
+}
+/* genre label for top right alignment */
+/* .card h3 {
   font-family: 'Arial';
   font-weight: 400;
   font-style: italic;
   font-size: 11pt;
-  line-height: 1.3rem;
   color: rgb(119, 119, 119);
   text-align: right;
   padding-left: 20px;
-}
+} */
 
 /* preview text */
 .card p {
@@ -54,6 +61,7 @@
 
 .readmore {
   opacity: .5;
+  padding-top: 10px;
 }
 
 .card:hover .readmore {
@@ -72,7 +80,7 @@
 /* article image */
 .cardImage {
   width: 100%;
-  height: 60%;
+  height: auto;
   object-fit: cover;
   overflow: hidden;
 }

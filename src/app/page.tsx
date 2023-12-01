@@ -10,7 +10,7 @@ import Card from './(templates)/card'
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Header />
+      {/* <Header /> */}
 
       <div className={styles.heading}>
         <Subtitle />

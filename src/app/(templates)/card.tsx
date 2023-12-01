@@ -27,8 +27,10 @@ export default function Card({id=-1}) {
             }
             <div className={styles.text}> {/* hbox containing text */}
                 <h2>{title}</h2>
-                <h3>{genre}</h3>
+                {/* <h3>{genre}</h3> */}
             </div>
+            <h3>{genre}</h3>
+            {/* <div className={styles.readmore} >Read more</div> */}
         </div>
         </Link>
 )}

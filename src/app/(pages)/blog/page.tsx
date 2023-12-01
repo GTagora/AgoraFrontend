@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 export default function About() {
     return (
     <main className={styles.main}>
-      <Header />
+      {/* <Header /> */}
       <h1>Blog</h1>
       <div className={styles.container}>
         <p>Content coming Spring '23!</p>

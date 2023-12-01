@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Header from './components/header'
 import { EB_Garamond, Playfair_Display_SC, Cormorant_Garamond, Playfair_Display } from 'next/font/google'
 import './globals.css'
 
@@ -45,6 +46,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${eb_garamond.variable} ${playfairDisplaySC.variable} ${playfairDisplay.variable} ${cormorant.variable}`}>
+      <Header />
       <body>{children}</body>
     </html>
   )
