@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
-import Header from './components/header'
 import Subtitle from './components/subtitle';
 import articles from '../JournalEntries.json'
 import Card from './(templates)/card'
@@ -10,7 +9,6 @@ import Card from './(templates)/card'
 export default function Home() {
   return (
     <main className={styles.main}>
-      {/* <Header /> */}
 
       <div className={styles.heading}>
         <Subtitle />

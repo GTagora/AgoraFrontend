@@ -46,7 +46,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${eb_garamond.variable} ${playfairDisplaySC.variable} ${playfairDisplay.variable} ${cormorant.variable}`}>
-      <Header />
+      <Header></Header>
       <body>{children}</body>
     </html>
   )
