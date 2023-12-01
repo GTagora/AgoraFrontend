@@ -22,6 +22,7 @@ fonts:
   min-height: 100vh;
   padding-top: 2rem;
   font-family: var(--font-ebgaramond);
+  position: relative;
   background-color: var(--bg-color);
 }
 
@@ -30,6 +31,7 @@ fonts:
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 200px;
   width:100vh;
   height: 90vh;
 }
@@ -72,6 +74,7 @@ fonts:
   padding-inline: 15%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 15rem;    /* Footer height */
 }
 
 .container h1 {
@@ -96,7 +99,7 @@ fonts:
   width: 400px;
   padding-block: 1rem;
   padding-inline: 3rem;
-  border-left: 1.5px solid black;
+  border-left: 2px solid black;
 
   letter-spacing: .095rem;
   line-height: 2.2rem;
@@ -125,9 +128,40 @@ fonts:
   padding: 1.5rem;
 }
 
+.line {
+  background-color: black;
+  width: 2px;
+  margin: 0;
+}
+
+/* .articlesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+} */
+
 .articlesContainer {
+  margin-top: 3rem;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 2vw;
+}
+
+
+/* button used in not-found page */
+.button {
+  font-size: 14pt;
+  margin-top: 50px;
+  padding: 1rem;
+  border-radius: 4rem;
+  border: 2px solid var(--gray-green);
+}
+
+.button:hover {
+  background-color: var(--gray-green);
+  font-weight: 500;
+  transition: .4s;
+  letter-spacing: .4px;
 }

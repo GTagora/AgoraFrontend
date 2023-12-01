@@ -1,6 +1,7 @@
 
 import styles from './page.module.css'
 import Header from '@/app/components/header'
+import Footer from '../../components/footer'
 
 export default function Archive() {
     return (
@@ -9,6 +10,8 @@ export default function Archive() {
       <div className={styles.container}>
         <h1>Archive page!</h1>
       </div>
+
+      <Footer />
     </main>
     )
 }
