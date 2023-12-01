@@ -7,14 +7,14 @@ import pic from './test_gif.gif'
 
 
 // export default function Card({title = "title", genre = "GENRE", image=0}) { //take in an image id
-export default function Card({id=0}) {
-    const title = articles[id].Title
-    const genre = articles[id]['Content Type']
+export default function Card({id=-1}) {
+    const title = id === -1 ? "Article Title" : articles[id].Title
+    const genre = id === -1 ? "GENRE" : articles[id]['Content Type']
     return (
         <div className={styles.card}>
             {/* if there is no article id, then display a default color block */}
-            {/* { (id == null) && <div className={styles.cardColor} />}  */}
-            { (id != null) &&
+            { (id === -1) && <div className={styles.cardColor} />} 
+            { (id != -1) &&
                 <Image 
                     className={styles.cardImage}
                     src={articles[id].Image as any}

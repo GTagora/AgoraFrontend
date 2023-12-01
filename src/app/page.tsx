@@ -35,13 +35,17 @@ export default function Home() {
           <Card title="I love jesus" />
           <Card title="a really really really really really really really long title" />
           <Card image="/test.jpg"/> */}
-          //TODO: see about extracting articles container component to pass in articles json information
+          {/* TODO: see about extracting articles container component to pass in articles json information */}
           <Card id={0} />
           <Card id={1} />
           <Card id={2} />
           <Card id={3} />
           <Card id={4} />
           <Card id={5} />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
 
       </div>
