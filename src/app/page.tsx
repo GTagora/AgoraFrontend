@@ -4,7 +4,8 @@ import styles from './page.module.css'
 import Footer from './components/footer'
 import Header from './components/header'
 import Subtitle from './components/subtitle';
-import Card from './card'
+import articles from '../JournalEntries.json'
+import Card from './(templates)/card'
 
 
 export default function Home() {
@@ -31,9 +32,11 @@ export default function Home() {
       </div>
 
         <div className={styles.articlesContainer}>
-          <Card title="i love God" genre="SOMETHING REALLY LONG" />
-          <Card title="I love jesus" />
-          <Card title="a really really really really really really really long title" />
+          {/* TODO: see about extracting articles container component to pass in articles json information */}
+          <Card id={0} />
+          <Card id={1} />
+          <Card id={2} />
+          <Card />
           <Card />
           <Card />
           <Card />
