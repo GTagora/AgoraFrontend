@@ -22,6 +22,7 @@ fonts:
   min-height: 100vh;
   padding-top: 2rem;
   font-family: var(--font-ebgaramond);
+  position: relative;
   background-color: var(--bg-color);
 }
 
@@ -30,6 +31,7 @@ fonts:
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 200px;
   width:100vh;
   height: 90vh;
 }
@@ -72,6 +74,7 @@ fonts:
   padding-inline: 15%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 15rem;    /* Footer height */
 }
 
 .container h1 {

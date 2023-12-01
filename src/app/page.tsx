@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
+import Footer from './components/footer'
+import Header from './components/header'
 import Subtitle from './components/subtitle';
 import articles from '../JournalEntries.json'
 import Card from './(templates)/card'
@@ -40,6 +42,7 @@ export default function Home() {
         </div>
 
       </div>
+      <Footer />
     </main>
 
   )

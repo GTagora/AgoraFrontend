@@ -1,7 +1,7 @@
 import styles from './article.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import articles from '../../JournalEntries.json'
+import articles from '../../../JournalEntries.json'
 import pic from 'public/test.jpg'
 
 export default function Article({id=-1}) {

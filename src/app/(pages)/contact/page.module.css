@@ -6,6 +6,8 @@
   min-height: 100vh;
   font-family: var(--font-ebgaramond);
   background-color: var(--bg-color);
+  position: relative;
+  padding-bottom: 15rem;    /* Footer height */
 }
 
 .container {
@@ -28,6 +30,8 @@
     height: 450px;
     color: black;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
     font-size: 15pt;
     line-height: 2rem;
 }
