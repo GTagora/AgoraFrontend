@@ -1,15 +1,34 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: right;
+  padding: 8rem;
+  padding: 12% 15%;
+  background-color: var(--bg-color);
+
+  min-height: 100vh;
+  font-family: var(--font-ebgaramond);
+  background-color: var(--bg-color);
+}
+
+.message {
+  padding-top: 40px;
+  font-size: 15pt;
+}
 
 .button {
     font-size: 14pt;
-    margin-top: 50px;
-    padding: 1rem;
+    margin-top: 30px;
+    width: 150px;
+    padding: 10px;
     border-radius: 4rem;
     border: 2px solid var(--gray-green);
+    text-align: center;
   }
   
   .button:hover {
     background-color: var(--gray-green);
-    font-weight: 500;
     transition: .4s;
     letter-spacing: .4px;
   }

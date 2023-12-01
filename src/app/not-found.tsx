@@ -1,13 +1,17 @@
 import Link from 'next/link'
-import styles from './page.module.css'
+import Header from './components/header'
+import styles from './notfound.module.css'
 
 export default function NotFound() {
     return (
         <div>
-            <h2>There was a problem.</h2>
-            <p>We could not find the page you were looking for.</p>
-            <Link href="/contact">
-            <div className={styles.button}>&#x2192;&nbsp;&nbsp;&nbsp;&nbsp;stay up to date</div>
-        </Link>
+            <Header />
+            <div className={styles.main}>
+                <h1>Hi there!</h1>
+                <p className={styles.message}>Unfortunately, we could not find the page you were looking for.</p>
+                <Link href="/">
+                    <div className={styles.button}>return home</div>
+                </Link>
+            </div>
         </div>
 )}
