@@ -4,7 +4,7 @@ import styles from './page.module.css'
 import Header from './components/header'
 import Subtitle from './components/subtitle';
 import articles from '../JournalEntries.json'
-import Card from './card'
+import Card from './(templates)/card'
 
 
 export default function Home() {
@@ -39,9 +39,6 @@ export default function Home() {
           <Card id={0} />
           <Card id={1} />
           <Card id={2} />
-          <Card id={3} />
-          <Card id={4} />
-          <Card id={5} />
           <Card />
           <Card />
           <Card />
