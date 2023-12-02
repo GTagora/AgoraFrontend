@@ -50,7 +50,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
-        <Footer style={{marginBottom: 0px}} />
+        <Footer />
       </body>
     </html>
   )
