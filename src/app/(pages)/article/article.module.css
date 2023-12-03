@@ -1,0 +1,35 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 2rem 15%;
+    padding-top: 140px;
+    min-height: 100vh;
+    font-family: var(--font-ebgaramond);
+    background-color: var(--bg-color);
+    position: relative;
+    padding-bottom: 15rem;    /* Footer height */
+  }
+  
+  .container {
+    margin-top: 100px;
+    padding: 3rem;
+  }
+
+  .title {
+    font-family: var(--font-playfair);
+    font-weight: 500;
+    font-size: 50pt;
+
+  }
+
+  .image {
+    margin-block: 60px;
+    width: 100%;
+    height: auto;
+  }
+
+  .footer {
+    color: red;
+    margin-bottom: 0px;;
+  }
