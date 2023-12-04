@@ -20,7 +20,6 @@ fonts:
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  padding-top: 2rem;
   font-family: var(--font-ebgaramond);
   position: relative;
   background-color: var(--bg-color);
