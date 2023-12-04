@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Header from './components/header'
+import Hamburger from './components/hamburger'
 import { EB_Garamond, Playfair_Display_SC, Cormorant_Garamond, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import { isBrowser, isMobile } from 'react-device-detect';
@@ -48,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${eb_garamond.variable} ${playfairDisplaySC.variable} ${playfairDisplay.variable} ${cormorant.variable}`}>
       <body>
-        {isBrowser ? <Header /> : <div></div>}
+        {!isBrowser ? <Header /> : <Hamburger />}
         {children}</body>
     </html>
   )
