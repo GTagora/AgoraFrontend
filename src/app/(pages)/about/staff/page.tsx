@@ -1,22 +1,23 @@
 import styles from './staff.module.css'
 import Image from 'next/image';
 import Footer from '@/app/components/footer'
+import defaultimg from 'public/npc.png'
 
 type MemberProps= {
     name: string;
     roles: string[];
-    img: string;
+    img: string; //TYPE DEPENDS ON HOW IMG ID IS READ FROM DATABASE
 }
 
 function Member( { name, roles, img}:MemberProps) {
-    const roleString = roles.join(', ');
+    const roleString = roles.join(', ').toUpperCase();
     return (
         <div className={styles.memberCard}>
             <Image
                 className={styles.headshot}
-                src={img}
-                width={75}
-                height={75}
+                src={img === "" ? defaultimg : img}
+                width={450}
+                height={450}
                 alt={name + ' headshot'}
             />
             <h1>{name}</h1>
@@ -26,7 +27,6 @@ function Member( { name, roles, img}:MemberProps) {
 }
 
 export default function Staff() {
-    let roles=["EIC", "Writer"]
     return (
     <main className={styles.main}>
       <div className={styles.container}>
@@ -34,17 +34,16 @@ export default function Staff() {
 
         <h2 className={styles.sectionHeader}>Executive Staff</h2>
         <div className={styles.section}>
-            <Member name="Chris Moon" roles={["EIC", "Writer"]} img=""/>
+            <Member name="Chris Moon" roles={["Editor-In-Chief"]} img=""/>
+            <Member name="Olivia Hu" roles={["Editor-In-Chief"]} img=""/>
         </div>
 
         <h2 className={styles.sectionHeader}>Contributing Staff</h2>
         <div className={styles.section}>
-            <Member name="Chris Moon" roles={roles} img=""/>
-        </div>
-
-        <h2 className={styles.sectionHeader}>Web Development Team</h2>
-        <div className={styles.section}>
-            <Member name="Chris Moon" roles={roles} img=""/>
+            <Member name="Alex Hom" roles={["Writer"]} img=""/>
+            <Member name="Abel Chen" roles={["Writer", "Editor", "Web Development"]} img=""/>
+            <Member name="Brandon Choi" roles={["Editor"]} img=""/>
+            <Member name="Esther Shen" roles={["Writer", "Editor", "Web Development"]} img=""/>
         </div>
 
       </div>

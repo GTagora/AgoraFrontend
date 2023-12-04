@@ -34,14 +34,19 @@
 }
 .sectionHeader {
     font-family: var(--font-playfair-sc);
-    letter-spacing: 4px;
+    font-size: 22pt;
+    letter-spacing: 3px;
     font-weight: 550;
     margin-top: 50px;
 }
 
 .memberCard {
-    background-color: antiquewhite;
+    border: 1px solid transparent;
+    border-radius: 14px;
+    background-color: var(--light-light-green);
+    padding: 30px;
     font-family: var(--font-ebgaramond);
+    width: 240px;
 }
 
 /* member name */
@@ -53,10 +58,18 @@
 
 /* member roles */
 .memberCard h2 {
-    font-size: 15pt;
-    letter-spacing: 1px;
-    font-style: italic;
+    font-size: 11pt;
+    letter-spacing: .5px;
+    line-height: 130%;
     font-weight: 400;
-    font-family: var(--font-ebgaramond);
+    font-family: "Arial";
+    color: gray;
 
+}
+
+.headshot {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
 }
