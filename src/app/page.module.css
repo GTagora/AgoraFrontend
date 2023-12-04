@@ -147,20 +147,3 @@ fonts:
   flex-wrap: wrap;
   gap: 2vw;
 }
-
-
-/* button used in not-found page */
-.button {
-  font-size: 14pt;
-  margin-top: 50px;
-  padding: 1rem;
-  border-radius: 4rem;
-  border: 2px solid var(--gray-green);
-}
-
-.button:hover {
-  background-color: var(--gray-green);
-  font-weight: 500;
-  transition: .4s;
-  letter-spacing: .4px;
-}
