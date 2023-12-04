@@ -1,0 +1,25 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-family: var(--font-ebgaramond);
+    background-color: whitesmoke;
+    position: relative;
+  }
+  
+  .container {
+    margin-top: 100px;
+    min-height: 110vh;
+    width: 70vw;
+    background-color: rgb(218, 214, 201);
+    padding-bottom: 15rem;    /* Footer height */
+  }
+
+  .pageHeader {
+    font-family: var(--font-playfair-sc);
+    text-align: left;
+    letter-spacing: 5px;
+    color: black;
+    padding: 3rem;
+}
