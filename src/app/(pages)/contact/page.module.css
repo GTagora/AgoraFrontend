@@ -134,7 +134,7 @@
 }
 
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 480px) {
     .main {
     display: flex;
     flex-direction: column;
