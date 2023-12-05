@@ -60,7 +60,6 @@
 
 .footerLink:hover {
     color: rgb(0, 0, 0);
-    font-weight: 500;
     transition: 200ms ease-in;
 }
 
@@ -154,15 +153,14 @@
         text-decoration: none;
     }
 
-    .footerLink:hover {
+    .footerLink:hover, .heading:hover {
         color: white;
-        font-weight: 500;
         transition: 200ms ease-in;
     }
     
     .heading {
         font-size: 24px;
-        color: #fff;
+        color: rgb(225, 225, 225);
         margin-bottom: 20px;
         font-weight: 600;
     }
