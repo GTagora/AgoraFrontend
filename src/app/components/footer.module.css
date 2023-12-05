@@ -1,7 +1,6 @@
-
 .box {
-    padding: 5% 2.5%;
-    background: black;
+    padding: 5% 5%;
+    background: var(--bg-color);
     position: absolute;
     bottom: 0;
     height: 15rem;
@@ -10,29 +9,31 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-right: 5rem;
- 
+    letter-spacing: 2px;
+    font-family: var(--font-ebgaramond);
+
     @media (max-width: 1000px) {
         padding: 70px 30px;
     }
 }
- 
+
 .footerContainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     width: 100%;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0;
+    padding-inline: 40px;
 }
 
 .column {
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin-left: 60px;
+    min-width: 180px;
 }
- 
+
 .row {
     display: flex;
     justify-content: flex-end;
@@ -41,7 +42,7 @@
         minmax(185px, 1fr)
     );
     grid-gap: 20px;
- 
+
     @media (max-width: 1000px) {
         grid-template-columns: repeat(
             auto-fill,
@@ -49,48 +50,140 @@
         );
     }
 }
- 
+
 .footerLink {
-    color: #fff;
-    margin-bottom: 10px;
+    color: rgb(78, 78, 78);
+    margin-bottom: 8px;
     font-size: 18px;
     text-decoration: none;
 }
 
 .footerLink:hover {
-    color: #BFD8C5;
+    color: rgb(0, 0, 0);
     transition: 200ms ease-in;
 }
- 
+
 .heading {
     font-size: 24px;
-    color: #fff;
-    margin-bottom: 40px;
-    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.logo {
+    margin-left: 40px;
 }
 
 .socialRow {
     display: flex;
-    justify-content: center;
-    grid-template-columns: repeat(
-        auto-fill,
-        minmax(185px, 1fr)
-    );
-    grid-gap: 20px;
- 
-    @media (max-width: 1000px) {
-        grid-template-columns: repeat(
-            auto-fill,
-            minmax(200px, 1fr)
-        );
-    }
+    justify-content: flex-start;
+    gap: 13px;
+    margin-top: 13px;
+    padding-left: 40px;
 }
 
 .socialImages {
-    height: 40px;
-    width: 40px;
-    margin: 10px;
+    height: 30px;
+    width: 30px;
     float: left;
     clear: both;
     border-radius: 30px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .box {
+        padding: 5% 2.5%;
+        background: black;
+        position: absolute;
+        bottom: 0;
+        height: 15rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-right: 5rem;
+        letter-spacing: 2px;
+        font-family: var(--font-ebgaramond);
+    
+        @media (max-width: 1000px) {
+            padding: 70px 30px;
+        }
+    }
+    
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0;
+        padding-inline: 40px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        min-width: 180px;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: flex-end;
+        grid-template-columns: repeat(
+            auto-fill,
+            minmax(185px, 1fr)
+        );
+        grid-gap: 20px;
+    
+        @media (max-width: 1000px) {
+            grid-template-columns: repeat(
+                auto-fill,
+                minmax(200px, 1fr)
+            );
+        }
+    }
+    
+    .footerLink {
+        color: rgb(206, 206, 206);
+        margin-bottom: 8px;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .footerLink:hover, .heading:hover {
+        color: white;
+        transition: 200ms ease-in;
+    }
+    
+    .heading {
+        font-size: 24px;
+        color: rgb(225, 225, 225);
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    .logo {
+        margin-left: 40px;
+        filter: invert(100%)
+    }
+
+    .socialRow {
+        display: flex;
+        justify-content: flex-start;
+        gap: 13px;
+        margin-top: 13px;
+        padding-left: 40px;
+        filter: invert(100%)
+    }
+
+    .socialImages {
+        height: 30px;
+        width: 30px;
+        float: left;
+        clear: both;
+        border-radius: 30px;
+    }
 }

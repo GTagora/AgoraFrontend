@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Header from './components/header'
 import { EB_Garamond, Playfair_Display_SC, Cormorant_Garamond, Playfair_Display } from 'next/font/google'
+import Footer from './components/footer'
 import './globals.css'
 
 const eb_garamond = EB_Garamond( {
@@ -35,7 +36,7 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
-  title: 'Agora | Georgia Tech',
+  title: 'Agora Website',
   description: 'Agora seeks to glorify God as an ecumenical forum and journal of Christian thought. By creating and curating pieces that reflect the vibrant beauty of God’s nature, we offer a collective Christian perspective to the campus dialogue.',
 }
 
@@ -48,7 +49,8 @@ export default function RootLayout({
     <html lang="en" className={`${eb_garamond.variable} ${playfairDisplaySC.variable} ${playfairDisplay.variable} ${cormorant.variable}`}>
       <body>
         <Header />
-        {children}</body>
+        {children}
+      </body>
     </html>
   )
 }

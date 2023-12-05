@@ -30,7 +30,7 @@
 }
 
 .item {
-    width: 8vw;
+    min-width: 10vw;
     padding: .5rem 1rem;
     text-align: left;
 }
