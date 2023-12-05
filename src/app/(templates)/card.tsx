@@ -31,7 +31,6 @@ export default function Card({article}: Card) {
             </div>
             <h3>{genre}</h3>
             {/* <div className={styles.readmore} >Read more</div> */}
-            <p>{link}</p>
         </div>
         </Link>
 )}
