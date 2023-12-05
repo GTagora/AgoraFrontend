@@ -21,7 +21,13 @@ export default function Home() {
 
       <div className={styles.hbox}>
         <div className={styles.feature} >
-          <p>carousel?</p>
+            <Image
+                className={styles.img}
+                src="/pantheon.jpg"
+                width={6000}
+                height={4000}
+                alt='Agora logo'
+            />
         </div>
         <div className={styles.letter}>
           <h2>Letter from the editors:</h2>

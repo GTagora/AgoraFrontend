@@ -30,7 +30,7 @@ fonts:
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 30px;
   width:100vh;
   height: 90vh;
 }
@@ -124,7 +124,13 @@ fonts:
   background-color: var(--gray-green);
   flex-grow: 2;
   width: 600px;
-  padding: 1.5rem;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .line {
