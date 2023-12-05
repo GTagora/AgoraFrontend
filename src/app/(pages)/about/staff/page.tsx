@@ -9,6 +9,12 @@ type MemberProps= {
     img: string; //TYPE DEPENDS ON HOW IMG ID IS READ FROM DATABASE
 }
 
+async function getStaff() {
+    const res = await fetch(`https://agora-backend-sxd6.onrender.com/contacts/getStaff`, { cache: 'force-cache' });
+    const data = res.json();
+    return data;
+}
+
 function Member( { name, roles, img}:MemberProps) {
     const roleString = roles.join(', ').toUpperCase();
     return (
@@ -26,7 +32,8 @@ function Member( { name, roles, img}:MemberProps) {
     )
 }
 
-export default function Staff() {
+export default async function Staff() {
+    const staff = await getStaff();
     return (
     <main className={styles.main}>
       <div className={styles.container}>
@@ -34,16 +41,20 @@ export default function Staff() {
 
         <h2 className={styles.sectionHeader}>Executive Staff</h2>
         <div className={styles.section}>
-            <Member name="Chris Moon" roles={["Editor-In-Chief"]} img=""/>
-            <Member name="Olivia Hu" roles={["Editor-In-Chief"]} img=""/>
+            {staff && staff.map(async (person: any) => {
+                    if (person.Title === "Chief Staff") {
+                        return <Member name={person.Name} roles={person.Roles} img={person.Image}/>
+                    }
+                })}
         </div>
 
         <h2 className={styles.sectionHeader}>Contributing Staff</h2>
         <div className={styles.section}>
-            <Member name="Alex Hom" roles={["Writer"]} img=""/>
-            <Member name="Abel Chen" roles={["Writer", "Editor", "Web Development"]} img=""/>
-            <Member name="Brandon Choi" roles={["Editor"]} img=""/>
-            <Member name="Esther Shen" roles={["Writer", "Editor", "Web Development"]} img=""/>
+            {staff && staff.map(async (person: any) => {
+                    if (person.Title === "Contributor") {
+                        return <Member name={person.Name} roles={person.Roles} img={person.Image}/>
+                    }
+                })}
         </div>
 
       </div>
