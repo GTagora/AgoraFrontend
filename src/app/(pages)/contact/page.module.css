@@ -11,12 +11,12 @@
 }
 
 .container {
-  margin-top: 100px;
   padding: 3rem;
 }
 
 .contact-header {
     font-family: var(--font-playfair-sc);
+    text-align: center;
     letter-spacing: 5px;
     color: black;
     margin-top: 100px;

@@ -89,7 +89,7 @@ export default function Header() {
                         variants={dropdownVars}>
                     Mission</motion.div></Link>
             {/* STAFF */}
-                <Link href="/about">
+                <Link href="/about/staff">
                     <motion.div 
                         className={styles.dropdown}
                         variants={dropdownVars}>
