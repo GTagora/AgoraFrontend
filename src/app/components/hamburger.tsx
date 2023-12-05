@@ -21,7 +21,7 @@ export default function Hamburger() {
                 <span className={styles.bar2}></span>
                 <span className={styles.bar3}></span>
 
-                <div className={styles.dim}></div>
+                <div className={styles.dim} />
                 <div className={styles.buttons}>
                     <Link href="/"><div className={styles.label}>HOME</div></Link>
 
@@ -38,12 +38,11 @@ export default function Hamburger() {
                     <Link href="/contact"><div className={styles.label} >CONTACT</div></Link>
                 </div>
             </div>
-            <Link href="/">
+            <Link href="/" className={styles.logo}>
                 <Image
-                    className={styles.logo}
                     src="/logo-black-box.png"
-                    width={60}
-                    height={60}
+                    width={55}
+                    height={55}
                     alt='Agora logo'
                 />
             </Link>
