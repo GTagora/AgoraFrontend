@@ -80,8 +80,8 @@ export default async function Home() {
                         <Card article={article}></Card>
                 ))}
             </div>
-            <Footer />
         </div>
+        <Footer />
     </div>
 )}
     
