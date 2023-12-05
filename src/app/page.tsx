@@ -1,8 +1,6 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import styles from './page.module.css'
 import Footer from './components/footer'
-import Header from './components/header'
 import Subtitle from './components/subtitle'
 import Card from './(templates)/card'
 
@@ -48,7 +46,6 @@ export default async function Home() {
       </div>
 
         <div className={styles.articlesContainer}>
-          {/* TODO: see about extracting articles container component to pass in articles json information */}
           {articles && articles.map(async (article: any) => (
                 <Card article={article}></Card>
             ))}
