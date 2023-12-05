@@ -9,7 +9,7 @@ import Card from './(templates)/card'
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 
-function Mobile() {
+function Mobile( { articles }:{ articles:Array<any> } ) {
     return (
         <div className={mobile.main}>
             <div className={mobile.heading}>
@@ -24,6 +24,7 @@ function Mobile() {
             </div>
 
             <div className={mobile.container}>
+                <hr />
                 <h1>Fall '23 Release</h1>
                 <div className={mobile.letter}>
                     <h2>Letter from the editors:</h2>
@@ -32,14 +33,9 @@ function Mobile() {
                 </div>
             </div>
             <div className={mobile.articlesContainer}>
-            {/* TODO: see about extracting articles container component to pass in articles json information */}
-                {/* <Card id={0} />
-                <Card id={1} />
-                <Card id={2} />
-                <Card />
-                <Card />
-                <Card />
-                <Card /> */}
+                {articles && articles.map(async (article: any) => (
+                        <Card article={article}></Card>
+                ))}
             </div>
 
         </div>
@@ -60,7 +56,7 @@ export default async function Home() {
     const articles = await getArticles();
 
     return isMobile ? 
-    <Mobile /> : (
+    <Mobile articles={articles}/> : (
     <div className={styles.main}>
 
         <div className={styles.heading}>
@@ -81,13 +77,12 @@ export default async function Home() {
                 </div>
             </div>
 
-                <div className={styles.articlesContainer}>
+            <div className={styles.articlesContainer}>
                 {articles && articles.map(async (article: any) => (
                         <Card article={article}></Card>
-                    ))}
-
-                </div>
-                <Footer />
+                ))}
+            </div>
+            <Footer />
         </div>
     </div>
 )}
