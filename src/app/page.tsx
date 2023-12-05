@@ -3,12 +3,23 @@ import Link from 'next/link'
 import styles from './page.module.css'
 import Footer from './components/footer'
 import Header from './components/header'
-import Subtitle from './components/subtitle';
-import articles from '../JournalEntries.json'
+import Subtitle from './components/subtitle'
 import Card from './(templates)/card'
 
+interface Home {
+  articles: Array<any>;
+}
 
-export default function Home() {
+async function getArticles() {
+  const res = await fetch(`https://agora-backend-sxd6.onrender.com/getJournalEntries`, { cache: 'force-cache' });
+  const data = res.json();
+  return data;
+}
+
+
+export default async function Home() {
+  const articles = await getArticles();
+
   return (
     <main className={styles.main}>
 
@@ -38,13 +49,9 @@ export default function Home() {
 
         <div className={styles.articlesContainer}>
           {/* TODO: see about extracting articles container component to pass in articles json information */}
-          <Card id={0} />
-          <Card id={1} />
-          <Card id={2} />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {articles && articles.map(async (article: any) => (
+                <Card article={article}></Card>
+            ))}
         </div>
 
       </div>
