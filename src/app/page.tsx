@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
+import mobile from './mobile.module.css'
 import Footer from './components/footer'
 import Header from './components/header'
 import Subtitle from './components/subtitle';
@@ -8,11 +9,14 @@ import articles from '../JournalEntries.json'
 import Card from './(templates)/card'
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
-
+function Mobile() {
+    return (
+        <div className={mobile.main}>mobile view!</div>
+)}
 
 export default function Home() {
-    return isMobile ? (
-        <div>mobile view</div>
+    return !isMobile ? (
+        <Mobile />
     ) :
     (
     <main className={styles.main}>
