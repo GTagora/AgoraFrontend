@@ -1,12 +1,10 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import styles from './page.module.css'
 import mobile from './mobile.module.css'
 import Footer from './components/footer'
-import Header from './components/header'
 import Subtitle from './components/subtitle'
 import Card from './(templates)/card'
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { isMobile } from 'react-device-detect';
 
 
 function Mobile( { articles }:{ articles:Array<any> } ) {
