@@ -11,7 +11,7 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 
 
 export default function Home() {
-    return !isMobile ? (
+    return isMobile ? (
         <div>mobile view</div>
     ) :
     (
