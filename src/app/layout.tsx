@@ -38,6 +38,18 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   title: 'Agora Website',
   description: 'Agora seeks to glorify God as an ecumenical forum and journal of Christian thought. By creating and curating pieces that reflect the vibrant beauty of God’s nature, we offer a collective Christian perspective to the campus dialogue.',
+  icons: {
+    icon: [
+      {
+        url: '/logo-black.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/logo-white.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({
