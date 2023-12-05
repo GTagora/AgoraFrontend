@@ -1,26 +1,26 @@
 import styles from './card.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import articles from '../../JournalEntries.json'
 import pic from 'public/test.jpg'
 
+interface Card {
+    article: { [key:string]: any };
+}
 
-// export default function Card({title = "title", genre = "GENRE", image=0}) { //take in an image id
-export default function Card({id=-1}) {
-    const title = id === -1 ? "Article Title" : articles[id].Title
-    const genre = id === -1 ? "GENRE" : articles[id]['Content Type'].toUpperCase()
-    const issue = id === -1 ? "" : articles[id].Issue
-    const link = id === -1 ? "" : "/" + issue.toLowerCase().replaceAll(" ", "-") + "/" + title.toLowerCase().replaceAll(" ", "-").replace(/[^a-zA-Z0-9 -]/g,"")
+export default function Card({article}: Card) {
+    const image = article.Image
+    const title = article.Title
+    const genre = String(article['Content Type']).toUpperCase()
+    const issue = article.Issue
+    const link = issue.toLowerCase().replaceAll(" ", "-") + "/" + title.toLowerCase().replaceAll(" ", "-").replace(/[^a-zA-Z0-9 -]/g,"")
     return (
         <Link href={link}>
         <div className={styles.card}>
             {/* if there is no article id, then display a default color block */}
-            { (id === -1) && <div className={styles.cardColor} />} 
-            { (id != -1) &&
-                <Image 
+            {!title && <div className={styles.cardColor} />} 
+            { <Image 
                     className={styles.cardImage}
-                    // src={articles[id].Image as any}
-                    src={pic}
+                    src={image ? image : pic}
                     width={400}
                     height={400}
                     alt='article image'/>
