@@ -5,15 +5,20 @@
 }
 
 .container {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-inline: 40px;
     margin-top: 110px;
+=======
+  padding: 3rem;
+>>>>>>> ce9e90173f240cf639b99aaf2a15a44132b3af54
 }
 .header {
     font-family: var(--font-playfair-sc);
+    text-align: center;
     letter-spacing: 5px;
     color: black;
     margin-top: 40px;

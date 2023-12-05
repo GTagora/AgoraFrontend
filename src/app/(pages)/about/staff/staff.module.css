@@ -1,0 +1,75 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-family: var(--font-ebgaramond);
+    background-color: whitesmoke;
+    position: relative;
+  }
+  
+.container {
+    margin-top: 100px;
+    min-height: 110vh;
+    width: 70vw;
+    padding: 50px;
+    padding-bottom: 15rem;    /* Footer height */
+  }
+
+.pageHeader {
+    font-family: var(--font-playfair-sc);
+    text-align: left;
+    letter-spacing: 5px;
+    color: black;
+}
+
+.section{
+    margin-block: 30px;
+    font-family: var(--font-ebgaramond);
+
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+.sectionHeader {
+    font-family: var(--font-playfair-sc);
+    font-size: 22pt;
+    letter-spacing: 3px;
+    font-weight: 550;
+    margin-top: 50px;
+}
+
+.memberCard {
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background-color: var(--light-light-green);
+    padding: 30px;
+    font-family: var(--font-ebgaramond);
+    width: 240px;
+}
+
+/* member name */
+.memberCard h1 {
+    font-size: 15pt;
+    letter-spacing: 1px;
+    line-height: 170%;
+}
+
+/* member roles */
+.memberCard h2 {
+    font-size: 10pt;
+    letter-spacing: .5px;
+    line-height: 130%;
+    font-weight: 400;
+    font-family: "Arial";
+    color: gray;
+
+}
+
+.headshot {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
