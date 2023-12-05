@@ -10,8 +10,8 @@ interface Card {
     article: { [key:string]: any };
 }
 
-// export default function Card({title = "title", genre = "GENRE", image=0}) { //take in an image id
 export default function Card({article}: Card) {
+    const image = article.Image
     const title = article.Title
     const genre = String(article['Content Type']).toUpperCase()
     const issue = article.Issue
@@ -25,8 +25,7 @@ export default function Card({article}: Card) {
             {!title && <div className={styles.cardColor} />} 
             { <Image 
                     className={styles.cardImage}
-                    // src={articles[id].Image as any}
-                    src={pic}
+                    src={image ? image : pic}
                     width={400}
                     height={400}
                     alt='article image'/>

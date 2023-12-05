@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Header from './components/header'
 import Hamburger from './components/hamburger'
 import { EB_Garamond, Playfair_Display_SC, Cormorant_Garamond, Playfair_Display } from 'next/font/google'
+import Footer from './components/footer'
 import './globals.css'
 import { isBrowser, isMobile } from 'react-device-detect';
 
@@ -37,7 +38,7 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
-  title: 'Agora | Georgia Tech',
+  title: 'Agora Website',
   description: 'Agora seeks to glorify God as an ecumenical forum and journal of Christian thought. By creating and curating pieces that reflect the vibrant beauty of God’s nature, we offer a collective Christian perspective to the campus dialogue.',
 }
 
