@@ -42,7 +42,7 @@
 
 .memberCard {
     border: 1px solid transparent;
-    border-radius: 14px;
+    border-radius: 12px;
     background-color: var(--light-light-green);
     padding: 30px;
     font-family: var(--font-ebgaramond);
@@ -58,7 +58,7 @@
 
 /* member roles */
 .memberCard h2 {
-    font-size: 11pt;
+    font-size: 10pt;
     letter-spacing: .5px;
     line-height: 130%;
     font-weight: 400;
