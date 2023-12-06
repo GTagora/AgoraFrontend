@@ -8,12 +8,17 @@
     font-family: var(--font-ebgaramond);
     background-color: var(--bg-color);
     position: relative;
-    padding-bottom: 15rem;    /* Footer height */
+    padding-bottom: 15rem;
 }
 
 .container {
     margin-top: 100px;
     padding: 3rem;
+    padding-bottom: 15rem;    /* Footer height */
+}
+
+.footer {
+    padding-right: -100%;
 }
 
 .title {
@@ -48,4 +53,8 @@
     line-height: 200%;
     font-size: 16pt;
     white-space: pre-line;
+}
+
+.rightAlign {
+    text-align: right;
 }
