@@ -1,8 +1,9 @@
+import Image from 'next/image'
 import styles from './page.module.css'
 import Footer from '../../components/footer'
 import Header from '@/app/components/header'
 
-import logo from "../../../../public/logo-white-footer.png";
+import logo from "../../../../public/logo-white-full.png";
 
 export default function About() {
     return (
@@ -62,8 +63,7 @@ export default function About() {
 
                     <h1 className={styles['section-header']}> Our Logo </h1>
 
-                    {/* i don't understand why i can't put a src image here with the logo imported */}
-                    <img src="LOGO PATH HERE" alt="i dont know why <img src...> doesn't work"></img>
+                    <Image src={logo} width={300} height={112} alt="logo"/>
 
                     <p className={styles['section-text']}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </div>
