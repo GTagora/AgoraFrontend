@@ -20,6 +20,7 @@
     font-family: var(--font-playfair);
     font-weight: 500;
     font-size: 50pt;
+    margin-block: 40px;
 }
 
 .image {
@@ -48,4 +49,15 @@
     line-height: 200%;
     font-size: 16pt;
     white-space: pre-line;
+}
+
+.footer {
+    z-index: 9;
+    /* margin-bottom: 0; */
+    background-color: red;
+}
+
+.page {
+    display: flex;
+    justify-content: space-between;
 }
