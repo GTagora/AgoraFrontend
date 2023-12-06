@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import Footer from './@/app/components/footer'
-import pic from 'public/pantheon.jpg'
+import pic from 'public/test.jpg'
 
 interface Articles {
     article: { [key:string]: any };
@@ -33,7 +33,7 @@ export default async function Article({ params }: any) {
                 <h1 className={styles.title}>{title}</h1>
                 <Image 
                     className={styles.image}
-                    src={image}
+                    src={image ? image : pic}
                     width={600}
                     height={600}
                     alt='article image'/>
