@@ -27,6 +27,7 @@
     opacity: .85;
 }
 
+/*-------------------hamburger components-------------------*/
 /* x symbol on top of hamburger, hidden */
 .input {
     display: block;
@@ -93,6 +94,8 @@
   transform: rotate(-45deg) translate(0, -1px);
 }
 
+
+/*-------------------menu component-------------------*/
 /* menu slides in from the left */
 .input:checked ~ .buttons {
     transform: none;
@@ -138,22 +141,23 @@
 }
 
 
+/*-------------------background dim-------------------*/
+
 /* dims background when menu is opened */
 .dim {
     position: absolute;
-    width: 100vw;
-    height: 110vh;
-    margin: -180px -50px;
+    width: 35vw;
+    height: 150vh;
+    margin: -180px 65vw;
     background-color: black;
     opacity: 0;
     z-index: 2;
     transform-origin: 0% 0%;
-    
-    transition: 0.7s;
+    /* transform: translate(150%, 0); */
+    transition: .7s;
 }
 
 .input:checked ~ .dim {
     transform: none;
     opacity: .28;
 }
-
