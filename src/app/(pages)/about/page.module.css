@@ -38,6 +38,11 @@
     line-height: 50px;
 }
 
+.section-text > ul > li {
+    list-style-position: inside;
+    padding-left: 15px;
+}
+
 .vision-container {
     font-family: var(--font-ebgaramond);
     letter-spacing: 0.4px;
@@ -46,11 +51,6 @@
 
     border-radius: 1rem;
     padding: 3rem;
-}
-
-.vision-container > p > ul > li {
-    list-style-position: inside;
-    padding-left: 15px;
 }
 
 .why-and-logo-container {
@@ -70,11 +70,6 @@
     min-width: 65%;
 }
 
-.why-container > p > ul > li {
-    list-style-position: inside;
-    padding-left: 15px;
-}
-
 .logo-container {
     font-family: var(--font-ebgaramond);
     letter-spacing: 0.4px;
@@ -86,5 +81,13 @@
 }
 
 .logo {
-    /* logo stuff that doesn't */
+    /* logo stuff that would be here if i wasn't insane */
+}
+
+.acvf-container {
+    border-radius: 1rem;
+    padding: 2rem;
+
+    min-width: 65%;
+    margin-bottom: 125px;
 }

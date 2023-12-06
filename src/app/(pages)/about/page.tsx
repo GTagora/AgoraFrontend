@@ -70,6 +70,17 @@ export default function About() {
 
             </div>
 
+            <div className={styles['acvf-container']}>
+                <h1 className={styles['section-header']}> Augustine Collective & Veritas Forum </h1>
+
+                <p className={styles['section-text']}>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    </ul>
+                </p>
+            </div>
+
 
 
         </div>
