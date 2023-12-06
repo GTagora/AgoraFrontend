@@ -17,7 +17,7 @@ export default function Card({article}: Card) {
     const issue = article.Issue
     const link = issue.toLowerCase().replaceAll(" ", "-") + "/" + title.toLowerCase().replaceAll(" ", "-").replace(/[^a-zA-Z0-9 -]/g,"")
 
-    const styles = !isMobile ? mobilestyles : deskstyles;
+    const styles = isMobile ? mobilestyles : deskstyles;
     return (
         <Link href={link}>
         <div className={styles.card}>
