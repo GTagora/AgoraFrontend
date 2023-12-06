@@ -64,7 +64,7 @@
     line-height: 27px;
 
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 3rem;
     background-color: var(--neutral-tan);
 
     min-width: 65%;
@@ -86,7 +86,7 @@
 
 .acvf-container {
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 3rem;
 
     min-width: 65%;
     margin-bottom: 125px;
