@@ -13,7 +13,7 @@ interface Card {
 export default function Card({article}: Card) {
     const image = article.Image
     const title = article.Title
-    const genre = String(article['Content Type']).toUpperCase()
+    const genre = String(article.Content_Type).toUpperCase()
     const issue = article.Issue
     const link = issue.toLowerCase().replaceAll(" ", "-") + "/" + title.toLowerCase().replaceAll(" ", "-").replace(/[^a-zA-Z0-9 -]/g,"")
 
@@ -34,6 +34,10 @@ export default function Card({article}: Card) {
                 <h2>{title}</h2>
             </div>
             <h3>{genre}</h3>
+<<<<<<< HEAD
+=======
+            {/* <div className={styles.readmore} >Read more</div> */}
+>>>>>>> 2e1202317c4e07bcd2a28b0d4108978cbe8ab19c
         </div>
         </Link>
 )}

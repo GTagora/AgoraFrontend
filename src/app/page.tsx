@@ -57,8 +57,39 @@ export default async function Home() {
     <Mobile articles={articles}/> : (
     <div className={styles.main}>
 
+<<<<<<< HEAD
         <div className={styles.heading}>
             <Subtitle />
+=======
+      <div className={styles.heading}>
+        <Subtitle />
+      </div>
+
+      <div className={styles.container}>
+        <h1>Fall '23 Release</h1>
+
+      <div className={styles.hbox}>
+        <div className={styles.feature} >
+            <Image
+                className={styles.img}
+                src="/pantheon.jpg"
+                width={6000}
+                height={4000}
+                alt='Agora logo'
+            />
+        </div>
+        <div className={styles.letter}>
+          <h2>Letter from the editors:</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+          <h5>With love, <br /> Chris & Via</h5>
+        </div>
+      </div>
+
+        <div className={styles.articlesContainer}>
+          {articles && articles.map(async (article: any) => (
+                <Card article={article}></Card>
+            ))}
+>>>>>>> 2e1202317c4e07bcd2a28b0d4108978cbe8ab19c
         </div>
 
         <div className={styles.container}>

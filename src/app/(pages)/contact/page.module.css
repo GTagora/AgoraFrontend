@@ -68,6 +68,7 @@
 }
 
 .email-button {
+    cursor: pointer;
     font-family: var(--font-playfair-sc);
     font-size: 18px;
     letter-spacing: 2px;
@@ -79,6 +80,20 @@
     border: 2px solid var(--gray-green);
 }
 
+<<<<<<< HEAD
+=======
+/* framer motion is better since it also provides exit animations */
+/* font weight is manually set to avoid unnecessary errors in console */
+.email-button:hover {
+    /* cursor: pointer; */
+    font-weight: 500;
+    /* transition: .3s; */
+    /* letter-spacing: 3px; */
+    /* background-color: var(--dark-gray-green); */
+    /* border-color: var(--dark-gray-green); */
+}
+
+>>>>>>> 2e1202317c4e07bcd2a28b0d4108978cbe8ab19c
 .connect-container {
     padding-block: 4rem;
     margin-block: 1rem;
@@ -111,24 +126,58 @@
 }
 
 .social-buttons {
+<<<<<<< HEAD
     min-width: 250px;
     height: 55px;
     margin-block: 10px;
     background-color: var(--light-green);
+=======
+    min-width: 100%;
+    height: 60px;
+    margin: .7rem auto;
+
+    /* transparent background slightly messes up the transition, so this probably can be reverted back to "transparent" */
+    background-color: #FFFFFF;
+    
+    border: 2px solid lightgray;
+>>>>>>> 2e1202317c4e07bcd2a28b0d4108978cbe8ab19c
     border-radius: 50px;
 
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    letter-spacing: 0.15rem;
 }
 
+<<<<<<< HEAD
 
 .social-text {
     font-family: var(--font-cormorant);
     font-size: 15pt;
     letter-spacing: 2px;
     width: 56%;
+=======
+/* also converted to framer motion */
+/* .social-buttons:hover {
+    cursor: pointer;
+    background-color: var(--light-green);
+    border-color: var(--light-green);
+    transition: .3s;
+} */
+
+.social-buttons:hover .social-text {
+    /* letter-spacing: .19rem;
+    transition: .3s; */
+    font-weight: 500;
+}
+
+.social-text {
+    font-family: var(--font-cormorant);
+    /* letter-spacing: .15rem; */
+    font-size: 18pt;
+    width: 72%;
+>>>>>>> 2e1202317c4e07bcd2a28b0d4108978cbe8ab19c
     text-align: center;
 }
 

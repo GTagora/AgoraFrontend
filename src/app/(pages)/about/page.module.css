@@ -1,16 +1,89 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  min-height: 100vh;
-  font-family: var(--font-ebgaramond);
-  background-color: whitesmoke;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    font-family: var(--font-ebgaramond);
+    background-color: whitesmoke;
+    position: relative;
 }
 
 .container {
-  margin-top: 100px;
-  padding: 3rem;
-  padding-bottom: 15rem;    /* Footer height */
+    margin-top: 100px;
+    padding-bottom: 15rem;    /* Footer height */
+
+    max-width: 1000px;
+}
+
+.mission-container {
+    background-color: var(--neutral-tan);
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.section-header {
+    font-family: var(--font-playfair);
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    font-family: var(--font-ebgaramond);
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    line-height: 30px;
+}
+
+.section-text > ul > li {
+    list-style-position: inside;
+    padding-left: 15px;
+}
+
+.vision-container {
+    font-family: var(--font-ebgaramond);
+    letter-spacing: 0.4px;
+    margin-top: 10px;
+    line-height: 27px;
+
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.why-and-logo-container {
+    display: flex;
+}
+
+.why-container {
+    font-family: var(--font-ebgaramond);
+    letter-spacing: 0.4px;
+    margin-top: 10px;
+    line-height: 27px;
+
+    border-radius: 1rem;
+    padding: 3rem;
+    background-color: var(--neutral-tan);
+
+    min-width: 65%;
+}
+
+.logo-container {
+    font-family: var(--font-ebgaramond);
+    letter-spacing: 0.4px;
+    margin-top: 10px;
+    line-height: 27px;
+
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.acvf-container {
+    border-radius: 1rem;
+    padding: 3rem;
+
+    min-width: 65%;
+    margin-bottom: 125px;
 }
