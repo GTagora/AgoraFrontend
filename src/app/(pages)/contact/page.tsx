@@ -2,13 +2,9 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import Footer from '../../components/footer'
-<<<<<<< HEAD
 import { isMobile } from 'react-device-detect';
-
-=======
 import Header from '@/app/components/header'
 import { motion } from 'framer-motion'
->>>>>>> 2e1202317c4e07bcd2a28b0d4108978cbe8ab19c
 
 function socialButton(name:string, img:string, alt:string, link:string) {
     return (<a href={link} target="blank">
@@ -17,8 +13,6 @@ function socialButton(name:string, img:string, alt:string, link:string) {
                 whileHover={{
                     backgroundColor: "var(--light-green)",
                     borderColor: "var(--light-green)",
-
-                    // not 0.19rem, but same effect
                     letterSpacing: "3px"
                 }}
                 transition={{
@@ -71,12 +65,8 @@ export default function Contact() {
                         
                 </div>
 
-<<<<<<< HEAD
-                <div className={styles['connect-container']}>
-=======
                 <div className={styles['contact-email-container-button']}> 
                     <motion.button 
-                    
                         whileHover={{
                             letterSpacing: "3px", 
                             backgroundColor: "var(--dark-gray-green)", 
@@ -87,29 +77,24 @@ export default function Contact() {
                     className={styles['email-button']}>
                         Submit
                     </motion.button>
-                </div>            
-                    
-            </div>
->>>>>>> 2e1202317c4e07bcd2a28b0d4108978cbe8ab19c
+                </div>
 
-                    <div className={styles.header}> <h1>Connect</h1> </div>
+                <div className={styles.header}> <h1>Connect</h1> </div>
                     <div className={styles['connect-text']}>
                         <p>For inquiries regarding content, submissions, or otherwise, email us at gatechagora@gmail.com.</p>
                     </div>
                 </div>
 
-                </div>
-
                 <div className={styles['social-container']}>
-                <div className={styles.header}> 
-                    <h1> Our Socials</h1>
-                </div>
+                    <div className={styles.header}> 
+                        <h1> Our Socials</h1>
+                    </div>
                     {socialButton("Instagram", "/socials/instagram.png", "instagram icon", "https://www.instagram.com/gt.agora/")}
                     {socialButton("Facebook", "/socials/facebook.png", "facebook icon", "https://www.facebook.com/groups/1308653603346414/")}
                     {socialButton("Slack", "/socials/slack.png", "slack icon", "https://join.slack.com/t/agorageorgiat-eig5741/shared_invite/zt-237p10exi-TnyKfsr78OXD_FJ_vIFG7Q")}
                     {socialButton("Email", "/socials/email.png", "email icon", "mailto:gatechagora@gmail.com")}
                 </div>
-            {isMobile && <Footer />}
+            {!isMobile && <Footer />}
 
         </main>
     )
