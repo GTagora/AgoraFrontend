@@ -25,7 +25,7 @@
     font-family: var(--font-playfair);
     font-weight: 500;
     font-size: 50pt;
-    margin-block: 40px;
+    margin-block: 20px 40px;
 }
 
 .image {
