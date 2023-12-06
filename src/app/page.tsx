@@ -32,8 +32,8 @@ function Mobile( { articles }:{ articles:Array<any> } ) {
             </div>
             <div className={mobile.articlesContainer}>
                 {articles && articles.map(async (article: any) => (
-                        <Card article={article}></Card>
-                ))}
+                            <Card article={article}></Card>
+                        ))}
             </div>
 
         </div>

@@ -1,8 +1,10 @@
-import styles from './article.module.css'
+import mobilestyles from './mobilearticle.module.css'
+import deskstyles from './article.module.css'
 import { GetStaticPaths } from 'next'
 import Image from 'next/image'
 import Footer from '../../../components/footer'
 import pic from 'public/test.jpg'
+import { isMobile } from 'react-device-detect';
 
 interface Articles {
     article: { [key:string]: any };
@@ -25,10 +27,11 @@ export default async function Article({ params }: any) {
     const date = article.Date
     const text = article.Text
 
+    const styles = !isMobile ? mobilestyles : deskstyles;
+
     return (
         <div>
             <div className={styles.main}>
-                {/* <div className={styles.container}> */}
                     <h1 className={styles.title}>{title}</h1>
                     <Image 
                         className={styles.image}
@@ -39,10 +42,7 @@ export default async function Article({ params }: any) {
                     <h2 className={styles.author}>BY {author.toUpperCase()}</h2>
                     <h3 className={styles.date}>{date}</h3>
                     <div className={styles.text} dangerouslySetInnerHTML={{ __html: text.replace(/\\n/g, '\n')}}></div>
-                {/* </div> */}
-                {/* <div className={styles.footer}><Footer/></div> */}
             </div>
-            {/* <div className={styles.footer}><Footer/></div> */}
         </div>
 )};
 

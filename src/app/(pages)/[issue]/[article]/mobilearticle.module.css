@@ -1,0 +1,60 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 2rem 18%;
+    padding-top: 140px;
+    min-height: 100vh;
+    font-family: var(--font-ebgaramond);
+    background-color: var(--bg-color);
+    position: relative;
+    padding-bottom: 15rem;
+}
+
+.container {
+    margin-top: 100px;
+    padding: 3rem;
+    padding-bottom: 15rem;    /* Footer height */
+}
+
+.footer {
+    padding-right: -100%;
+}
+
+.title {
+    font-family: var(--font-playfair);
+    font-weight: 500;
+    font-size: 50pt;
+}
+
+.image {
+    margin-block: 30px 40px;
+    width: 100%;
+    max-width: 70vw;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.author {
+    font-size: 20pt;
+    font-family: var(--font-cormorant);
+    font-weight: 600;
+}
+
+.date {
+    font-size: 16pt;
+    font-family: var(--font-eb-garamond);
+    font-weight: 400;
+    margin-block: 10px 50px;
+}
+
+.text {
+    line-height: 200%;
+    font-size: 16pt;
+    white-space: pre-line;
+}
+
+.rightAlign {
+    text-align: right;
+}
