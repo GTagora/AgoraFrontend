@@ -1,9 +1,12 @@
 import styles from './article.module.css'
-import { GetStaticPaths, GenerateStaticParams } from 'next'
-import Link from 'next/link'
+import { GetStaticPaths } from 'next'
 import Image from 'next/image'
+<<<<<<< HEAD
 import { useRouter } from 'next/navigation'
 import Footer from '@/app/components/footer'
+=======
+import Footer from '../../../components/footer'
+>>>>>>> 2e1202317c4e07bcd2a28b0d4108978cbe8ab19c
 import pic from 'public/test.jpg'
 
 interface Articles {
@@ -30,6 +33,7 @@ export default async function Article({ params }: any) {
     return (
         <div>
             <div className={styles.main}>
+<<<<<<< HEAD
                 <Image 
                     className={styles.image}
                     src={image ? image : pic}
@@ -40,6 +44,21 @@ export default async function Article({ params }: any) {
                 <h2 className={styles.author}>BY {author.toUpperCase()}</h2>
                 <h3 className={styles.date}>{date}</h3>
                 <div className={styles.text}>{text.replace(/\\n/g, '\n')}</div>
+=======
+                {/* <div className={styles.container}> */}
+                    <h1 className={styles.title}>{title}</h1>
+                    <Image 
+                        className={styles.image}
+                        src={image ? image : pic}
+                        width={600}
+                        height={600}
+                        alt='article image'/>
+                    <h2 className={styles.author}>BY {author.toUpperCase()}</h2>
+                    <h3 className={styles.date}>{date}</h3>
+                    <div className={styles.text} dangerouslySetInnerHTML={{ __html: text.replace(/\\n/g, '\n')}}></div>
+                {/* </div> */}
+                {/* <div className={styles.footer}><Footer/></div> */}
+>>>>>>> 2e1202317c4e07bcd2a28b0d4108978cbe8ab19c
             </div>
             {/* <div className={styles.footer}><Footer/></div> */}
         </div>

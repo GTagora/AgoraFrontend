@@ -8,12 +8,17 @@
     font-family: var(--font-ebgaramond);
     background-color: var(--bg-color);
     position: relative;
-    padding-bottom: 15rem;    /* Footer height */
+    padding-bottom: 15rem;
 }
 
 .container {
     margin-top: 100px;
     padding: 3rem;
+    padding-bottom: 15rem;    /* Footer height */
+}
+
+.footer {
+    padding-right: -100%;
 }
 
 .title {
@@ -51,13 +56,11 @@
     white-space: pre-line;
 }
 
-.footer {
-    z-index: 9;
-    /* margin-bottom: 0; */
-    background-color: red;
-}
-
 .page {
     display: flex;
     justify-content: space-between;
+}
+
+.rightAlign {
+    text-align: right;
 }

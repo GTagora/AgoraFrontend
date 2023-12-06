@@ -39,25 +39,25 @@ const Footer = () => {
             <div className={styles.footerContainer}>
                 <div className={styles.row}>
                     <div className={styles.column}>
-                        <a href="about" className={styles.heading}>About</a>
-                        <a className={styles.footerLink} href="about">
+                        <a href="/about" className={styles.heading}>About</a>
+                        <a className={styles.footerLink} href="/about">
                             Mission
                         </a>
-                        <a className={styles.footerLink}  href="staff">
+                        <a className={styles.footerLink}  href="/about/staff">
                             Staff
                         </a>
                     </div>
                     <div className={styles.column}>
-                        <a href="archive" className={styles.heading}>Archive</a>
-                        <a className={styles.footerLink} href="archive">
+                        <a href="/archive" className={styles.heading}>Archive</a>
+                        <a className={styles.footerLink} href="/archive">
                             Fall '23
                         </a>
-                        <a className={styles.footerLink}  href="archive">
+                        <a className={styles.footerLink}  href="/archive">
                             Past Issues
                         </a>
                     </div>
                     <div className={styles.column}>
-                        <a href="contact" className={styles.heading}>Contact</a>
+                        <a href="/contact" className={styles.heading}>Contact</a>
                         <a className={styles.footerLink}  href="https://linktr.ee/gtagora" target="_blank">
                             Linktree
                         </a>
