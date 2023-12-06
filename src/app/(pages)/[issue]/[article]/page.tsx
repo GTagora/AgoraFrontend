@@ -27,7 +27,7 @@ export default async function Article({ params }: any) {
     const date = article.Date
     const text = article.Text
 
-    const styles = isMobile ? mobilestyles : deskstyles;
+    const styles = !isMobile ? mobilestyles : deskstyles;
 
     return (
         <div>
