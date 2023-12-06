@@ -16,7 +16,7 @@ export default function Header() {
                 duration: .7,
                 staggerChildren: .1,
             }
-        }
+        },
     }
 
     const dropdownVars= {

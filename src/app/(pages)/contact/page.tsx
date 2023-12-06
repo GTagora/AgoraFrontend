@@ -1,12 +1,26 @@
-
+"use client";
 import Image from 'next/image'
 import styles from './page.module.css'
 import Footer from '../../components/footer'
 import Header from '@/app/components/header'
+import { motion } from 'framer-motion'
 
 function socialButton(name:string, img:string, alt:string, link:string) {
     return (<a href={link} target="blank">
-            <div className={styles['social-buttons']}>
+            <motion.div 
+            
+                whileHover={{
+                    backgroundColor: "var(--light-green)",
+                    borderColor: "var(--light-green)",
+
+                    // not 0.19rem, but same effect
+                    letterSpacing: "3px"
+                }}
+                transition={{
+                    duration: 0.3
+                }}
+            
+                className={styles['social-buttons']}>
                 <Image 
                     className={styles['social-images']}
                     src={img}
@@ -15,7 +29,7 @@ function socialButton(name:string, img:string, alt:string, link:string) {
                     alt={alt}
                 />
                 <p className={styles['social-text']}>{name}</p>
-            </div>
+            </motion.div>
     </a>)
 }
 
@@ -46,9 +60,18 @@ export default function Contact() {
                 </div>
 
                 <div className={styles['contact-email-container-button']}> 
-                    <button className={styles['email-button']}>
+                    <motion.button 
+                    
+                        whileHover={{
+                            letterSpacing: "3px", 
+                            backgroundColor: "var(--dark-gray-green)", 
+                            borderColor: "var(--dark-gray-green)"
+                        }}
+                        transition={{duration: 0.3}}
+
+                    className={styles['email-button']}>
                         Submit
-                    </button>
+                    </motion.button>
                 </div>            
                     
             </div>
