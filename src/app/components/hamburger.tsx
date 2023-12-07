@@ -24,7 +24,7 @@ export default function Hamburger() {
                 </div>
 
                 <div className={styles.dim} />
-                <div className={styles.buttons}>
+                <div className={ open? styles.activebuttons : styles.buttons }>
                     <Link href="/"><div className={styles.label}>HOME</div></Link>
 
                     <Link href="/archive"><div className={styles.label}>ARCHIVE</div></Link>

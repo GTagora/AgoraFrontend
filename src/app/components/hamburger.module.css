@@ -167,6 +167,28 @@
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
+.activebuttons {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    color: rgb(52, 52, 52);
+    opacity: 1;
+
+    position: absolute;
+    z-index: 3;
+    width: 75vw;
+    height: 110vh;
+    margin: -180px -50px;
+    padding: 230px 50px;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    
+    transform-origin: 0% 0%;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+}
+
 .label {
     padding-block: 17px;
     font-size: 16pt;
