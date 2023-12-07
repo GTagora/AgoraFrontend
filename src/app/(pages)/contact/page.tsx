@@ -39,6 +39,7 @@ export default function Contact() {
             <div className={styles.container}>
                 <div className={styles.header}>
                     <h1>Contact</h1>
+                    <p>For inquiries regarding content, submissions, or otherwise, <br /> email us at gatechagora@gmail.com.</p>
                 </div>
 
                 {/* the first big green rectangle */}
@@ -46,7 +47,7 @@ export default function Contact() {
                 
                     <div className={styles['contact-email-container-text']}>
                         <p className={styles['paragraph-spacing']}>Hi there!</p>
-                        <p className={styles['paragraph-spacing']}>If you’d like to get involved with Agora, please enter your email below and we’ll be in touch!</p>             
+                        <p className={styles['paragraph-spacing']}>If you’d like to get involved with <i>Agora</i>, please enter your email below and we’ll be in touch!</p>             
                     </div>
 
                     <div className={styles['contact-email-container-input']}>
@@ -55,35 +56,22 @@ export default function Contact() {
                             type="text"
                             placeholder="email@example.com"
                         />
-                    </div>
-
+                    </div>        
                     <div className={styles['contact-email-container-button']}> 
-                        <button className={styles['email-button']}>
+                        <motion.button 
+                            whileHover={{
+                                letterSpacing: "3px", 
+                                backgroundColor: "var(--dark-gray-green)", 
+                                borderColor: "var(--dark-gray-green)"
+                            }}
+                            transition={{duration: 0.3}}
+
+                        className={styles['email-button']}>
                             Submit
-                        </button>
-                    </div>            
-                        
+                        </motion.button>
+                    </div>  
                 </div>
 
-                <div className={styles['contact-email-container-button']}> 
-                    <motion.button 
-                        whileHover={{
-                            letterSpacing: "3px", 
-                            backgroundColor: "var(--dark-gray-green)", 
-                            borderColor: "var(--dark-gray-green)"
-                        }}
-                        transition={{duration: 0.3}}
-
-                    className={styles['email-button']}>
-                        Submit
-                    </motion.button>
-                </div>
-
-                <div className={styles.header}> <h1>Connect</h1> </div>
-                    <div className={styles['connect-text']}>
-                        <p>For inquiries regarding content, submissions, or otherwise, email us at gatechagora@gmail.com.</p>
-                    </div>
-                </div>
 
                 <div className={styles['social-container']}>
                     <div className={styles.header}> 
@@ -94,6 +82,8 @@ export default function Contact() {
                     {socialButton("Slack", "/socials/slack.png", "slack icon", "https://join.slack.com/t/agorageorgiat-eig5741/shared_invite/zt-237p10exi-TnyKfsr78OXD_FJ_vIFG7Q")}
                     {socialButton("Email", "/socials/email.png", "email icon", "mailto:gatechagora@gmail.com")}
                 </div>
+            </div>
+            
             {!isMobile && <Footer />}
 
         </main>

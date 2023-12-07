@@ -1,19 +1,33 @@
-
+/* ---------MOBILE VIEW----------- */
+@media screen and (max-width: 500px) {
 .main {
     font-family: var(--font-ebgaramond);
     background-color: var(--bg-color);
+    letter-spacing: 1px;
+
+    display: flex;
+    background-color: aquamarine;
+
 }
 
 .container {
-  padding: 3rem;
+    padding: 3rem;
 }
+
 .header {
     font-family: var(--font-playfair-sc);
     text-align: center;
     letter-spacing: 5px;
     color: black;
-    margin-top: 40px;
-    text-align: center;
+    background-color: aquamarine;
+}
+
+.header p {
+    font-family: var(--font-cormorant);
+    letter-spacing: 1px;
+    font-size: 15pt;
+    margin-block-start: 30px;
+    line-height: 200%;
 }
 
 .contact-email-container {
@@ -22,8 +36,8 @@
     color: black;
     font-size: 15pt;
     line-height: 150%;
-    padding: 30px;
-    margin-block: 30px;
+    margin-block: 20px;
+    margin-inline:auto;
     width: 85vw;
 }
 
@@ -36,7 +50,6 @@
     margin-inline: auto;
     height: 58px;
     color: black;
-    margin-block: 20px 40px;
 }
 
 .contact-email-container-button {
@@ -49,6 +62,7 @@
     background-color: var(--bg-color);
     font-family: var(--font-cormorant);
     font-size: 14pt;
+    letter-spacing: 1px;
     height: 100%;
     width: 100%;
     color: black;
@@ -97,12 +111,12 @@
 
 .social-container {
     color: black;
+    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-block: 1rem;
-    margin-bottom: 5rem;
+    margin-block: 1rem 5rem;
 }
 
 .social-header {
@@ -131,14 +145,6 @@
     letter-spacing: 0.15rem;
 }
 
-/* also converted to framer motion */
-/* .social-buttons:hover {
-    cursor: pointer;
-    background-color: var(--light-green);
-    border-color: var(--light-green);
-    transition: .3s;
-} */
-
 .social-buttons:hover .social-text {
     /* letter-spacing: .19rem;
     transition: .3s; */
@@ -158,8 +164,9 @@
     margin: 10px;
     border-radius: 30px;
 }
+}
 
-
+/* ---------DESKTOP VIEW----------- */
 @media screen and (min-width: 480px) {
     .main {
     display: flex;
@@ -170,11 +177,11 @@
     font-family: var(--font-ebgaramond);
     background-color: var(--bg-color);
     position: relative;
-    padding-bottom: 15rem;    /* Footer height */
+    padding-bottom: 15rem;  
     }
 
     .container {
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 3rem;
     }
 
