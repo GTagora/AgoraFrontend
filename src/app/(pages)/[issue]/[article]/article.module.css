@@ -12,9 +12,7 @@
 }
 
 .container {
-    margin-top: 100px;
-    padding: 3rem;
-    padding-bottom: 15rem;    /* Footer height */
+    position: relative;
 }
 
 .footer {
@@ -57,4 +55,9 @@
 
 .rightAlign {
     text-align: right;
+}
+
+.audio {
+    position: fixed;
+    right: 5%;
 }
