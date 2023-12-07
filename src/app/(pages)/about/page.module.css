@@ -1,3 +1,5 @@
+/* ---------MOBILE VIEW----------- */
+@media screen and (max-width: 549px) {
 .main {
     display: flex;
     flex-direction: column;
@@ -11,9 +13,9 @@
 
 .container {
     margin-top: 100px;
-    padding-bottom: 15rem;    /* Footer height */
-
-    max-width: 1000px;
+    padding-bottom: 15rem;
+    padding-inline: 30px;
+    width: 90vw;
 }
 
 .page {
@@ -28,18 +30,30 @@
     padding: 3rem;
 }
 
+.mission-container h1 {
+    font-family: var(--font-playfair);
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.mission-container p {
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    line-height: 30px;
+}
+
 .section-header {
     font-family: var(--font-playfair);
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     height: 50px;
-    margin-bottom: 20px;
 }
 
 .section-text {
     font-family: var(--font-ebgaramond);
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 0.4px;
     line-height: 30px;
 }
@@ -92,4 +106,120 @@
 
     min-width: 65%;
     margin-bottom: 125px;
+}
+}
+
+/* ---------DESKTOP VIEW----------- */
+@media screen and (min-width: 550px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        min-height: 100vh;
+        font-family: var(--font-ebgaramond);
+        background-color: whitesmoke;
+        position: relative;
+    }
+    
+    .container {
+        margin-top: 100px;
+        padding-bottom: 15rem;    /* Footer height */
+    
+        max-width: 1000px;
+    }
+    
+    .page {
+        font-family: var(--font-playfair-sc);
+        letter-spacing: .3rem;
+        margin-block: 3rem;
+    }
+    
+    .mission-container {
+        background-color: var(--neutral-tan);
+        border-radius: 1rem;
+        padding: 3rem;
+    }
+
+    .mission-container h1 {
+        font-family: var(--font-playfair);
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .mission-container p {
+        font-family: var(--font-ebgaramond);
+        font-size: 20px;
+        letter-spacing: 0.4px;
+        line-height: 30px;
+    }
+    
+    .section-header {
+        font-family: var(--font-playfair);
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .section-text {
+        font-family: var(--font-ebgaramond);
+        font-size: 20px;
+        letter-spacing: 0.4px;
+        line-height: 30px;
+    }
+    
+    .section-text > ul > li {
+        list-style-position: inside;
+        padding-left: 15px;
+    }
+    
+    .vision-container {
+        font-family: var(--font-ebgaramond);
+        letter-spacing: 0.4px;
+        margin-top: 10px;
+        line-height: 27px;
+    
+        border-radius: 1rem;
+        padding: 3rem;
+    }
+    
+    .why-and-logo-container {
+        display: flex;
+    }
+    
+    .why-container {
+        font-family: var(--font-ebgaramond);
+        letter-spacing: 0.4px;
+        margin-top: 10px;
+        line-height: 27px;
+    
+        border-radius: 1rem;
+        padding: 3rem;
+        background-color: var(--neutral-tan);
+    
+        min-width: 65%;
+    }
+    
+    .logo-container {
+        font-family: var(--font-ebgaramond);
+        letter-spacing: 0.4px;
+        margin-top: 10px;
+        line-height: 27px;
+    
+        border-radius: 1rem;
+        padding: 3rem;
+    }
+    
+    .acvf-container {
+        border-radius: 1rem;
+        padding: 3rem;
+    
+        min-width: 65%;
+        margin-bottom: 125px;
+    }
 }
