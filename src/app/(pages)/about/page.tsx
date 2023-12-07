@@ -11,8 +11,8 @@ export default function About() {
             <h1 className={styles.page}>Mission Statment & Rationale</h1>
             
             <div className={styles['mission-container']}>
-                <h1> Mission Statement </h1>
-                <p> Agora seeks to <b> glorify God </b> as an ecumenical forum and journal of Christian thought. By creating and curating pieces that reflect the vibrant beauty of God’s nature, we offer a collective Christian perspective to the campus dialogue. </p>
+                <h1 className={styles['section-header']}> Mission Statement </h1>
+                <p className={styles['section-text']}> Agora seeks to <b> glorify God </b> as an ecumenical forum and journal of Christian thought. By creating and curating pieces that reflect the vibrant beauty of God’s nature, we offer a collective Christian perspective to the campus dialogue. </p>
 
             </div>
 
@@ -61,7 +61,7 @@ export default function About() {
 
                     <h1 className={styles['section-header']}> Our Logo </h1>
 
-                    <Image src={"/logo-footer.png"} width={300} height={90} alt="logo"/>
+                    <Image className={styles.logo} src={"/logo-footer.png"} width={300} height={90} alt="logo"/>
 
                     <p className={styles['section-text']}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </div>
