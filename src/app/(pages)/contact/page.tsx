@@ -39,7 +39,7 @@ export default function Contact() {
             <div className={styles.container}>
                 <div className={styles.header}>
                     <h1>Contact</h1>
-                    <p>For inquiries regarding content, submissions, or otherwise, <br /> email us at gatechagora@gmail.com.</p>
+                    <p>For inquiries regarding content, submissions, or otherwise, <br /> email us at <a href="mailto:gatechagora@gmail.com"><u>gatechagora@gmail.com.</u></a></p>
                 </div>
 
                 <div className={styles['contact-email-container']}>
