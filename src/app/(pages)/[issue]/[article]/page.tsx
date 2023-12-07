@@ -1,8 +1,10 @@
-import styles from './article.module.css'
+import mobilestyles from './mobilearticle.module.css'
+import deskstyles from './article.module.css'
 import { GetStaticPaths } from 'next'
 import Image from 'next/image'
 import Footer from '../../../components/footer'
 import pic from 'public/test.jpg'
+import { isMobile } from 'react-device-detect';
 
 interface Articles {
     article: { [key:string]: any };
@@ -24,6 +26,8 @@ export default async function Article({ params }: any) {
     const title = article.Title
     const date = article.Date
     const text = article.Text
+
+    const styles = isMobile ? mobilestyles : deskstyles;
 
     return (
         <div>

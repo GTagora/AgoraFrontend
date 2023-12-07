@@ -1,0 +1,132 @@
+/*
+CUSTOM VARIABLES
+colors:
+--agora-green: BFD8C5
+--light-green: E5ECE7
+--neutral-tan: F0EDE9
+--gray-green: D1D7D3
+--dark-green: 7C9D84
+--darkest-green: 2C4B33
+
+fonts:
+--font-ebgaramond
+--font-playfair
+--font-playfair-sc
+--font-cormorant
+*/
+
+.main {
+display: flex;
+flex-direction: column;
+align-items: center;
+min-height: 100vh;
+padding-top: 30px;
+padding-inline: 20px;
+
+font-family: var(--font-ebgaramond);
+position: relative;
+background-color: var(--bg-color);
+}
+
+.logo {
+width: 75px;
+height: auto;
+}
+
+.heading {
+display: inherit;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width:100vw;
+height: 90vh;
+}
+
+.heading h1 {
+color: black;
+font-family: var(--font-playfair-sc);
+font-weight: 500;
+font-size: 40px;
+letter-spacing: 1em;
+text-indent: 1em;
+
+margin-top: 40px;
+}
+
+.heading h2 {
+color: black;
+font-style: italic;
+font-weight: 400;
+font-size: 22px;
+letter-spacing: .1em;
+text-indent: .1em;
+text-align: center;
+line-height: 170%;
+padding-inline: 20px;
+
+margin-top: 80px;
+}
+
+
+
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    font-family: var(--font-playfair-sc);
+    font-weight: 550;
+    font-size: 20pt;
+    letter-spacing: .4rem;
+    text-align: center;
+    margin-block: 20px 25px;
+}
+
+.container hr {
+    width: 50%;
+    margin-block: 50px;
+}
+.letter {
+    margin-block: 30px;
+    padding-block: 40px;
+    padding-inline: 55px;
+    border-radius: 20px;
+    background-color: var(--neutral-tan);
+    filter: drop-shadow(4px 4px 6px rgba(210, 210, 210, 0.677));
+    margin-inline: 30px;
+
+    letter-spacing: .095rem;
+    line-height: 2.2rem;
+}
+
+.letter p {
+    font-family: var(--font-ebgaramond);
+    height: 70%;
+    margin-top: 15px;
+    text-overflow: ellipsis;
+    overflow: scroll;
+}
+
+.letter h5 {
+    font-family: var(--font-ebgaramond);
+    font-size: 13pt;
+    font-weight: 450;
+    line-height: 1.7rem;
+    margin-top: 15px;
+}
+
+
+.articlesContainer {
+    margin-block: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    width: 100vw;
+}

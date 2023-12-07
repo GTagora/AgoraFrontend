@@ -5,6 +5,7 @@
   flex-grow: 1;
   margin-block: 2rem;
   line-height: 30px;
+
 }
 
 .text {
@@ -84,4 +85,3 @@
   object-fit: cover;
   overflow: hidden;
 }
-
