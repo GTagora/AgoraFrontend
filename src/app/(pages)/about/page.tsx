@@ -3,13 +3,12 @@ import styles from './page.module.css'
 import Footer from '../../components/footer'
 import Header from '@/app/components/header'
 
-import logo from "../../../../public/logo-white-full.png";
-
 export default function About() {
     return (
     <main className={styles.main}>
-    <Header />
         <div className={styles.container}>
+
+            <h1 className={styles.page}>Mission Statment & Rationale</h1>
             
             <div className={styles['mission-container']}>
                 
@@ -63,7 +62,7 @@ export default function About() {
 
                     <h1 className={styles['section-header']}> Our Logo </h1>
 
-                    <Image src={logo} width={300} height={112} alt="logo"/>
+                    <Image src={"/logo-footer.png"} width={300} height={90} alt="logo"/>
 
                     <p className={styles['section-text']}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </div>

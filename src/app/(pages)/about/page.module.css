@@ -16,6 +16,12 @@
     max-width: 1000px;
 }
 
+.page {
+    font-family: var(--font-playfair-sc);
+    letter-spacing: .3rem;
+    margin-block: 3rem;
+}
+
 .mission-container {
     background-color: var(--neutral-tan);
     border-radius: 1rem;
