@@ -1,16 +1,50 @@
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  padding: 2rem;
+  padding: 8rem;
+  padding-inline: 15%;
+  background-color: var(--bg-color);
+
   min-height: 100vh;
   font-family: var(--font-ebgaramond);
-  background-color: whitesmoke;
-  position: relative;
+  background-color: var(--bg-color);
+}
+
+.main h1 {
+  font-family: var(--font-playfair-sc);
+  letter-spacing: .3rem;
+  margin-block: 3rem;
 }
 
 .container {
-  margin-top: 100px;
-  padding: 3rem;
-  padding-bottom: 15rem;    /* Footer height */
+    padding: 4rem;
+    text-align: center;
+    background-color: var(--neutral-tan);
+    border-radius: 1.5rem;
+}
+
+.container p {
+  font-size: 15pt;
+  letter-spacing: .5px;
+  line-height: 200%;
+}
+
+.button {
+    font-size: 14pt;
+    margin-top: 50px;
+    margin-inline: auto;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 4rem;
+    border: 2px solid rgb(223, 222, 220);
+    letter-spacing: .4px;
+}
+
+.button:hover {
+    background-color: rgb(223, 222, 220);
+    font-weight: 500;
+    transition: .4s;
+    letter-spacing: .7px;
 }
