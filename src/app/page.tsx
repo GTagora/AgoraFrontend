@@ -52,7 +52,7 @@ async function getArticles() {
 
 export default async function Home() {
     const articles = await getArticles();
-        return !isMobile ? 
+        return isMobile ? 
         <Mobile articles={articles}/> : (
         <div className={styles.main}>
 
