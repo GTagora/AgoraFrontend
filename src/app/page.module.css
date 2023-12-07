@@ -147,8 +147,8 @@ fonts:
 .articlesContainer {
   margin-top: 3rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 2vw;
+  gap: 4vw;
   padding-bottom: 150px;
 }
