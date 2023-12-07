@@ -96,20 +96,24 @@ fonts:
 
 .letter {
   width: 400px;
+  max-height: 100%;
   padding-block: 1rem;
   padding-inline: 3rem;
   border-left: 2px solid black;
 
   letter-spacing: .095rem;
-  line-height: 2.2rem;
+  line-height: 220%;
+  background-color: transparent;
 }
 
 .letter p {
   font-family: var(--font-ebgaramond);
-  height: 70%;
+  max-height: 70%;
   margin-top: 15px;
   text-overflow: ellipsis;
-  overflow: scroll;
+  overflow: clip;
+  scrollbar-gutter: var(--bg-color);
+  scrollbar-width: 1px;
 }
 
 .letter h5 {
@@ -117,7 +121,7 @@ fonts:
   font-size: 13pt;
   font-weight: 450;
   line-height: 1.7rem;
-  margin-top: 15px;
+  margin-top: 18px;
 }
 
 .feature {
@@ -139,12 +143,6 @@ fonts:
   margin: 0;
 }
 
-/* .articlesContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-} */
 
 .articlesContainer {
   margin-top: 3rem;
@@ -152,4 +150,5 @@ fonts:
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 2vw;
+  padding-bottom: 150px;
 }

@@ -1,9 +1,11 @@
-import styles from './article.module.css'
+import mobilestyles from './mobilearticle.module.css'
+import deskstyles from './article.module.css'
 import { GetStaticPaths } from 'next'
 import Image from 'next/image'
 import AudioPlayer from '../../../components/audioPlayer'
 import Footer from '../../../components/footer'
 import pic from 'public/test.jpg'
+import { isMobile } from 'react-device-detect';
 
 interface Articles {
     article: { [key:string]: any };
@@ -33,6 +35,8 @@ export default async function Article({ params }: any) {
         audioSrc: article.Audio
     }]
 
+    const styles = isMobile ? mobilestyles : deskstyles;
+
     return (
         <div>
             <div className={styles.main}>
@@ -44,16 +48,16 @@ export default async function Article({ params }: any) {
                         width={600}
                         height={600}
                         alt='article image'/>
+                    <h1 className={styles.title}>{title}</h1>
                     <h2 className={styles.author}>BY {author.toUpperCase()}</h2>
                     <h3 className={styles.date}>{date}</h3>
                     <div className={styles.text} dangerouslySetInnerHTML={{ __html: text.replace(/\\n/g, '\n')}}></div>
+
                 </div>
                 <div className={styles.audio}>
                     {article.Audio ? <AudioPlayer tracks={audio} />: null}
                 </div>
-                {/* <div className={styles.footer}><Footer/></div> */}
             </div>
-            {/* <div className={styles.footer}><Footer/></div> */}
         </div>
 )};
 

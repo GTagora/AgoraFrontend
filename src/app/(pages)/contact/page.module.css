@@ -1,60 +1,47 @@
+
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  min-height: 100vh;
-  font-family: var(--font-ebgaramond);
-  background-color: var(--bg-color);
-  position: relative;
-  padding-bottom: 15rem;    /* Footer height */
+    font-family: var(--font-ebgaramond);
+    background-color: var(--bg-color);
 }
 
 .container {
   padding: 3rem;
 }
-
-.contact-header {
+.header {
     font-family: var(--font-playfair-sc);
     text-align: center;
     letter-spacing: 5px;
     color: black;
-    margin-top: 100px;
-    padding: 3rem;
+    margin-top: 40px;
+    text-align: center;
 }
 
 .contact-email-container {
     background-color: var(--light-light-green);
-    border-radius: 27px;
-    width: 730px;
-    height: 450px;
+    border-radius: 20px;
     color: black;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
     font-size: 15pt;
-    line-height: 2rem;
+    line-height: 150%;
+    padding: 30px;
+    margin-block: 30px;
+    width: 85vw;
 }
 
 .contact-email-container-text {
     font-family: var(--font-cormorant);
     text-align: center;
-    margin-top: 75px;
-    margin-inline: 104px;
-    margin-bottom: 50px;
 }
 
 .contact-email-container-input {
     margin-inline: auto;
     height: 58px;
-    width: 513px;
     color: black;
-    margin-bottom: 50px;
+    margin-block: 20px 40px;
 }
 
 .contact-email-container-button {
     margin-inline: auto;
-    width: 220px;
+    width: 200px;
     height: 50px;
 }
 
@@ -96,33 +83,24 @@
 }
 
 .connect-container {
-    width: 730px;
     padding-block: 4rem;
     margin-block: 1rem;
     color: black;
 }
 
-.connect-header {
-    font-family: var(--font-playfair-sc);
-    letter-spacing: 5px;
-    color: black;
-    text-align: center;
-    padding-bottom: 2rem;
-}
-
 .connect-text {
     font-family: var(--font-cormorant);
-    font-size: 15pt;
+    font-size: 14pt;
     text-align: center;
-    margin-inline: 30px;
+    margin-top: 20px;
 }
 
 .social-container {
-    width: 22vw;
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     margin-block: 1rem;
     margin-bottom: 5rem;
 }
@@ -132,7 +110,7 @@
     letter-spacing: 5px;
     color: black;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 80px;
 }
 
 .social-buttons {
@@ -181,6 +159,168 @@
     border-radius: 30px;
 }
 
-.paragraph-spacing {
-    padding-bottom: 7px;
+
+@media screen and (min-width: 480px) {
+    .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    font-family: var(--font-ebgaramond);
+    background-color: var(--bg-color);
+    position: relative;
+    padding-bottom: 15rem;    /* Footer height */
+    }
+
+    .container {
+    margin-top: 100px;
+    padding: 3rem;
+    }
+
+    .header {
+        font-family: var(--font-playfair-sc);
+        letter-spacing: 5px;
+        color: black;
+        margin-top: 100px;
+        padding: 3rem;
+    }
+
+    .contact-email-container {
+        background-color: var(--light-light-green);
+        border-radius: 27px;
+        width: 730px;
+        height: 450px;
+        color: black;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        font-size: 15pt;
+        line-height: 2rem;
+    }
+
+    .contact-email-container-text {
+        font-family: var(--font-cormorant);
+        text-align: center;
+        margin-top: 75px;
+        margin-inline: 104px;
+        margin-bottom: 50px;
+    }
+
+    .contact-email-container-input {
+        margin-inline: auto;
+        height: 58px;
+        width: 513px;
+        color: black;
+        margin-bottom: 50px;
+    }
+
+    .contact-email-container-button {
+        margin-inline: auto;
+        width: 220px;
+        height: 50px;
+    }
+
+    .email-input {
+        background-color: var(--bg-color);
+        font-family: var(--font-cormorant);
+        font-size: 14pt;
+        height: 100%;
+        width: 100%;
+        color: black;
+        padding-left: 20px;
+        border: none;
+        outline: none;
+        border-radius: 19px;
+    }
+
+    .email-button {
+        font-family: var(--font-playfair-sc);
+        font-size: 18px;
+        letter-spacing: 2px;
+        color: black;
+        width: 100%;
+        height: 100%;
+        background-color: var(--gray-green);
+        border-radius: 4rem;
+        border: 2px solid var(--gray-green);
+    }
+
+    .email-button:hover {
+        cursor: pointer;
+        font-weight: 500;
+        transition: .3s;
+        letter-spacing: 3px;
+        background-color: var(--dark-gray-green);
+        border-color: var(--dark-gray-green);
+    }
+
+    .connect-container {
+        width: 730px;
+        padding-block: 4rem;
+        margin-block: 1rem;
+        color: black;
+    }
+
+    .connect-text {
+        font-family: var(--font-cormorant);
+        font-size: 15pt;
+        text-align: center;
+        margin-inline: 30px;
+    }
+
+    .social-container {
+        width: 22vw;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-block: 1rem;
+        margin-bottom: 5rem;
+    }
+
+    .social-buttons {
+        min-width: 100%;
+        height: 60px;
+        margin: .7rem auto;
+        background-color: transparent;
+        border: 2px solid lightgray;
+        border-radius: 50px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .social-buttons:hover {
+        cursor: pointer;
+        background-color: var(--light-green);
+        border-color: var(--light-green);
+        transition: .3s;
+    }
+
+    .social-buttons:hover .social-text {
+        letter-spacing: .19rem;
+        transition: .3s;
+        font-weight: 500;
+    }
+
+    .social-text {
+        font-family: var(--font-cormorant);
+        letter-spacing: .15rem;
+        font-size: 18pt;
+        width: 72%;
+        text-align: center;
+    }
+
+    .social-images {
+        height: auto;
+        margin: 10px;
+        border-radius: 30px;
+    }
+
+    .paragraph-spacing {
+        padding-bottom: 7px;
+    }
 }
