@@ -36,7 +36,7 @@ export default function Header() {
         <Link href="/">
             <Image
                 className={styles.logo}
-                src="/logo-black-box-ora.png"
+                src="/logo-black-box.png"
                 width={75}
                 height={75}
                 alt='Agora logo'

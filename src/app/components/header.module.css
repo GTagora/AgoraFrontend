@@ -13,8 +13,9 @@
 }
 
 .logo {
-    padding-top: 20px;
-    height: auto;
+    padding-block: 20px 10px;
+    height: 80px;
+    width: auto;
 }
 
 .buttons{
