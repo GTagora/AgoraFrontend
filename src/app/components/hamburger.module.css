@@ -66,32 +66,76 @@
 }
 
 /* make sure the bars rotate around the right axis */
-.bar1 { transform-origin: 0; }
+/* .bar1 { transform-origin: 0; } */
 
-.bar3 { transform-origin: 5px 3px; }
+.bar3 { transform-origin: 2px 0px; }
 
 /* Transform all the slices of hamburger into a crossmark. */
 /* top bar rotates down 45 degrees */
-.input:checked ~ .bar1
+.openBar1
 {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: rgb(47, 47, 47);
+    border-radius: 3px;
+    
+    z-index: 4;
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+    
+    transform: rotate(45deg) translate(-2px, -1px);
 }
 
 /* let's hide the middle one. */
-.input:checked ~ .bar2
+.openBar2
 {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: rgb(47, 47, 47);
+    border-radius: 3px;
+    opacity: 0;
+    
+    z-index: 4;
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+    transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 /*
  * the last one rotates up 45 degrees
  */
-.input:checked ~ .bar3
+ .openBar3
 {
-  transform: rotate(-45deg) translate(0, -1px);
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: rgb(47, 47, 47);
+    border-radius: 3px;
+    
+    z-index: 4;
+    transform-origin: 2px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+    transform: rotate(-45deg) translate(-1px, 0px);
 }
 
 

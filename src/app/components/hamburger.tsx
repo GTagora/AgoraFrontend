@@ -1,8 +1,8 @@
-// "use client";
+"use client";
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from './hamburger.module.css'
-// import { useState } from'react'
+import { useState } from'react'
 
 /**
  * Hamburger component for hamburger menu
@@ -11,15 +11,17 @@ import styles from './hamburger.module.css'
  */
 export default function Hamburger() {
 
-    // const [menuOpen, setMenuOpen] = useState(false);
+    const [open, setOpen] = useState(false);
 
     return (
         <div>
-            <div className={styles.navbar}>
-                <input type="checkbox" className={styles.input}/>
-                <span className={styles.bar1}></span>
-                <span className={styles.bar2}></span>
-                <span className={styles.bar3}></span>
+            <div className={styles.navbar} onClick={ () => setOpen(!open)} >
+                {/* <input type="checkbox" className={styles.input}/> */}
+                <div className={open ? styles.openBar : styles.bar }>
+                    <span className={open ? styles.openBar1 : styles.bar1 }></span>
+                    <span className={open ? styles.openBar2 : styles.bar2 }></span>
+                    <span className={open ? styles.openBar3 : styles.bar3 }></span>
+                </div>
 
                 <div className={styles.dim} />
                 <div className={styles.buttons}>
