@@ -11,7 +11,7 @@ export default function Archive() {
         <p>No archive yet, as this is our debute issue!</p>
         <p>Check back in next semester!</p>
         <Link href="/#fall-23-release">
-            <div className={styles.button}>&#x2192;&nbsp;&nbsp;&nbsp;&nbsp;Fall '23 Release</div>
+            <div className={styles.button}>&#x2192;&nbsp;&nbsp;&nbsp;&nbsp;Fall &apos;23 Release</div>
         </Link>
       </div>
       <Footer />

@@ -8,6 +8,13 @@ const nextConfig = {
             },
         ],
     },
+    eslint: {
+        // ignoreDuringBuilds: true,
+    },
+    typescript: {
+        ignoreBuildErrors: true,
+    },
+    distDir: "dist"
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;

@@ -50,7 +50,7 @@ const Footer = () => {
                     <div className={styles.column}>
                         <a href="/archive" className={styles.heading}>Archive</a>
                         <a className={styles.footerLink} href="/#fall-23-release">
-                            Fall '23
+                            Fall &apos;23
                         </a>
                         <a className={styles.footerLink}  href="/archive">
                             Past Issues

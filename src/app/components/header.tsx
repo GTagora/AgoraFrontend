@@ -87,7 +87,7 @@ export default function Header() {
                     <motion.div 
                         className={styles.dropdown}
                         variants={dropdownVars}>
-                    Fall '23</motion.div></Link>
+                    Fall &apos;23</motion.div></Link>
             {/* PAST ISSUES */}
                 <Link href="/archive">
                     <motion.div 

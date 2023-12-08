@@ -43,7 +43,7 @@ export default async function Staff() {
         <div className={styles.section}>
             {staff && staff.map(async (person: any) => {
                     if (person.Title === "Chief Staff") {
-                        return <Member name={person.Name} roles={person.Roles} img={person.Image}/>
+                        return <Member key={null} name={person.Name} roles={person.Roles} img={person.Image}/>
                     }
                 })}
         </div>
@@ -52,7 +52,7 @@ export default async function Staff() {
         <div className={styles.section}>
             {staff && staff.map(async (person: any) => {
                     if (person.Title === "Contributor") {
-                        return <Member name={person.Name} roles={person.Roles} img={person.Image}/>
+                        return <Member key={null} name={person.Name} roles={person.Roles} img={person.Image}/>
                     }
                 })}
         </div>

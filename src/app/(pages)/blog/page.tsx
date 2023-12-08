@@ -6,7 +6,7 @@ export default function About() {
     <main className={styles.main}>
       <h1>Blog</h1>
       <div className={styles.container}>
-        <p>Content coming Spring '24!</p>
+        <p>Content coming Spring &apos;24!</p>
         <Link href="/contact">
             <div className={styles.button}>&#x2192;&nbsp;&nbsp;&nbsp;&nbsp;stay up to date</div>
         </Link>
