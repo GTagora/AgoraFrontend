@@ -52,7 +52,7 @@ export default function Contact() {
                     {socialButton("Email", "/socials/email.png", "email icon", "mailto:gatechagora@gmail.com")}
                 </div>
             </div>
-            <div className={styles.footer}><Footer /></div>
+            <Footer />
 
         </main>
     )

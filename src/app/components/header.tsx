@@ -73,6 +73,15 @@ export default function Header() {
                         variants={dropdownVars}>
                     Staff</motion.div></Link>
             </motion.div>
+        
+        {/* CONTACT */}
+            <motion.div
+                className={styles.item}
+                variants={itemVars}
+                initial="initial"
+                whileHover="hover">
+                <Link href="/contact"><div className={styles.label} >CONTACT</div></Link>
+            </motion.div>
 
         {/* ARCHIVE */}
             <motion.div 
@@ -105,14 +114,6 @@ export default function Header() {
                 <Link href="/blog"><div className={styles.label} >BLOG</div></Link>
             </motion.div>
         
-        {/* JOIN */}
-            <motion.div
-                className={styles.item}
-                variants={itemVars}
-                initial="initial"
-                whileHover="hover">
-                <Link href="/contact"><div className={styles.label} >CONTACT</div></Link>
-            </motion.div>
         </div>
     </div>
 )}
