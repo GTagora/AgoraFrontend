@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import Footer from '../../components/footer'
-import { isMobile } from 'react-device-detect';
 
 function socialButton(name:string, img:string, alt:string, link:string) {
     return (<a href={link} target="blank">
@@ -53,8 +52,7 @@ export default function Contact() {
                     {socialButton("Email", "/socials/email.png", "email icon", "mailto:gatechagora@gmail.com")}
                 </div>
             </div>
-            
-            {!isMobile && <Footer />}
+            <div className={styles.footer}><Footer /></div>
 
         </main>
     )

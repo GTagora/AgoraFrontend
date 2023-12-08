@@ -272,6 +272,7 @@
     font-family: var(--font-playfair-sc);
     font-size: 18px;
     letter-spacing: 2px;
+    text-align: center;
     color: black;
     margin-inline: 20%;
     width: 60%;
@@ -317,6 +318,10 @@
     height: auto;
     margin: 10px;
     border-radius: 30px;
+}
+
+.page_footer__7oxrI {
+    display: none;
 }
 
 }
