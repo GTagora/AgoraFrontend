@@ -42,7 +42,7 @@ export default function Hamburger() {
             </div>
             <Link href="/" className={styles.logo}>
                 <Image
-                    src="/logo-black-box-ora.png"
+                    src="/logo-black-box.png"
                     width={55}
                     height={55}
                     alt='Agora logo'

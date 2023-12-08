@@ -60,6 +60,7 @@ export default async function Home() {
                 <Subtitle />
             </div>
 
+            <a id="fall-23-release"></a>
             <div className={styles.container}>
                 <h1>Fall '23 Release</h1>
 

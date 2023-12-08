@@ -36,7 +36,7 @@ export default function Header() {
         <Link href="/">
             <Image
                 className={styles.logo}
-                src="/logo-black-box-ora.png"
+                src="/logo-black-box.png"
                 width={75}
                 height={75}
                 alt='Agora logo'
@@ -51,28 +51,6 @@ export default function Header() {
                 whileHover="hover">
                 <Link href="/"><div className={styles.label} >HOME</div></Link>
             </motion.div> */}
-
-        {/* ARCHIVE */}
-            <motion.div 
-                className={styles.item}
-                variants={itemVars}
-                initial="initial"
-                whileHover="hover">
-                <Link href="/archive"><div className={styles.label} >ARCHIVE</div></Link>
-
-            {/* CURRENT ISSUE */}
-                <Link href="/archive">
-                    <motion.div 
-                        className={styles.dropdown}
-                        variants={dropdownVars}>
-                    Fall '23</motion.div></Link>
-            {/* PAST ISSUES */}
-                <Link href="/archive">
-                    <motion.div 
-                        className={styles.dropdown}
-                        variants={dropdownVars}>
-                    Past Issues</motion.div></Link>
-            </motion.div>
 
         {/* ABOUT */}
             <motion.div 
@@ -94,6 +72,28 @@ export default function Header() {
                         className={styles.dropdown}
                         variants={dropdownVars}>
                     Staff</motion.div></Link>
+            </motion.div>
+
+        {/* ARCHIVE */}
+            <motion.div 
+                className={styles.item}
+                variants={itemVars}
+                initial="initial"
+                whileHover="hover">
+                <Link href="/archive"><div className={styles.label} >ARCHIVE</div></Link>
+
+            {/* CURRENT ISSUE */}
+                <Link href="/#fall-23-release">
+                    <motion.div 
+                        className={styles.dropdown}
+                        variants={dropdownVars}>
+                    Fall '23</motion.div></Link>
+            {/* PAST ISSUES */}
+                <Link href="/archive">
+                    <motion.div 
+                        className={styles.dropdown}
+                        variants={dropdownVars}>
+                    Past Issues</motion.div></Link>
             </motion.div>
 
         {/* BLOG */}

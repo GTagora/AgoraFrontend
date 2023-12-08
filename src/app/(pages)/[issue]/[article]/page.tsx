@@ -41,7 +41,6 @@ export default async function Article({ params }: any) {
         <div>
             <div className={styles.main}>
                 <div className={styles.container}>
-                    <h1 className={styles.title}>{title}</h1>
                     <Image 
                         className={styles.image}
                         src={image ? image : pic}
