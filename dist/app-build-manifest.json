@@ -1,0 +1,57 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/error": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/error.js"
+    ],
+    "/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/not-found.css",
+      "static/chunks/app/not-found.js"
+    ],
+    "/(pages)/[issue]/[article]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/[issue]/[article]/page.css",
+      "static/chunks/app/(pages)/[issue]/[article]/page.js"
+    ],
+    "/(pages)/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/contact/page.css",
+      "static/chunks/app/(pages)/contact/page.js"
+    ],
+    "/(pages)/blog/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/blog/page.css",
+      "static/chunks/app/(pages)/blog/page.js"
+    ],
+    "/(pages)/archive/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/archive/page.css",
+      "static/chunks/app/(pages)/archive/page.js"
+    ],
+    "/(pages)/about/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/about/page.css",
+      "static/chunks/app/(pages)/about/page.js"
+    ]
+  }
+}

@@ -41,7 +41,7 @@ export default function About() {
                 
                 <div className={styles['why-container']}> 
                 
-                    <h1 className={styles['section-header']}> Why "Agora" </h1>
+                    <h1 className={styles['section-header']}> Why &quot;Agora&quot; </h1>
 
                     <p className={styles['section-text']}> <b> agora </b> (n): a gathering place, a market </p>
 

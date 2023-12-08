@@ -23,7 +23,7 @@ function Mobile( { articles }:{ articles:Array<any> } ) {
 
             <div className={mobile.container}>
                 <hr />
-                <h1>Fall '23 Release</h1>
+                <h1>Fall &apos;23 Release</h1>
                 <div className={mobile.letter}>
                     <h2>Letter from the editors:</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
@@ -32,7 +32,7 @@ function Mobile( { articles }:{ articles:Array<any> } ) {
             </div>
             <div className={mobile.articlesContainer}>
                 {articles && articles.map(async (article: any) => (
-                            <Card article={article}></Card>
+                            <Card key={null} article={article}></Card>
                         ))}
             </div>
 
@@ -62,7 +62,7 @@ export default async function Home() {
 
             <a id="fall-23-release"></a>
             <div className={styles.container}>
-                <h1>Fall '23 Release</h1>
+                <h1>Fall &apos;23 Release</h1>
 
                 <div className={styles.hbox}>
                     <div className={styles.feature} >
@@ -83,7 +83,7 @@ export default async function Home() {
 
                 <div className={styles.articlesContainer}>
                     {articles && articles.map(async (article: any) => (
-                            <Card article={article}></Card>
+                            <Card key={null} article={article}></Card>
                         ))}
                 </div>
             </div>
