@@ -19,15 +19,20 @@
 }
 
 .buttons{
-    width: auto;
+    min-width: 20vw;
     height: 0px;
     display: inherit;
     align-items: flex-start;
-    padding-left:3rem;
+    padding-left: 30px;
     margin-top: -40px;
 
     font-family: var(--font-cormorant);
     letter-spacing: .1rem;
+}
+
+.label {
+    text-align: center;
+    margin-inline: 15px;
 }
 
 .item {
@@ -41,6 +46,7 @@
     font-weight: 500;
     color: var(--gray-text);
     padding: .3rem 0;
+    margin-left: 15px;
 }
 
 .item:hover .label {
@@ -61,35 +67,3 @@
     color: black;
     font-weight: 600;
 }
-
-
-
-/* .buttons:hover .label {
-    opacity: .5;
-}
-
-.button:hover .item:hover .item {
-    opacity: 1;
-    height:60px;
-}
-
-.button:hover .item:hover .label {
-    opacity: 1;
-} */
-
-/* 
-
-.header:hover {
-    color: black;
-}
-
-
-.dropdown {
-    display: none;
-}
-
-.item:hover .dropdown {
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
-} */
