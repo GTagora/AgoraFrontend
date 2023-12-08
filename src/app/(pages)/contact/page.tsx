@@ -3,23 +3,10 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import Footer from '../../components/footer'
 import { isMobile } from 'react-device-detect';
-import { motion } from 'framer-motion'
 
 function socialButton(name:string, img:string, alt:string, link:string) {
     return (<a href={link} target="blank">
-            <motion.div 
-            
-                whileHover={{
-                    backgroundColor: "var(--gray-green)",
-                    borderColor: "var(--gray-green)",
-                    letterSpacing: "3px",
-                    fontWeight: "500"
-                }}
-                transition={{
-                    duration: 0.3
-                }}
-            
-                className={styles['social-buttons']}>
+            <div className={styles['social-buttons']}>
                     <Image 
                         className={styles['social-images']}
                         src={img}
@@ -28,7 +15,7 @@ function socialButton(name:string, img:string, alt:string, link:string) {
                         alt={alt}
                     />
                 <p className={styles['social-text']}>{name}</p>
-            </motion.div>
+            </div>
     </a>)
 }
 
@@ -54,20 +41,8 @@ export default function Contact() {
                             type="text"
                             placeholder="email@example.com"
                         />
-                    </div>        
-                    <div> 
-                        <motion.button 
-                            whileHover={{
-                                letterSpacing: "3px", 
-                                backgroundColor: "var(--dark-gray-green)", 
-                                borderColor: "var(--dark-gray-green)"
-                            }}
-                            transition={{duration: 0.3}}
-
-                            className={styles['email-button']}>
-                                Submit
-                        </motion.button>
                     </div>  
+                    <div className={styles['email-button']}>Submit</div>
                 </div>
                     
                 <div className={styles.header}> <h1> Our Socials</h1></div>

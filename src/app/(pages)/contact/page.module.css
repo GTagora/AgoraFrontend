@@ -210,13 +210,24 @@
         font-family: var(--font-playfair-sc);
         font-size: 18px;
         letter-spacing: 2px;
-        color: black;
+        text-align: center;
         margin-inline: 20%;
+        padding-top: 5px;
+
         width: 60%;
         height: 50px;
+
         background-color: var(--gray-green);
         border-radius: 4rem;
         border: 2px solid var(--gray-green);
+        color: black;
+    }
+
+    .email-button:hover {
+        background-color: var(--dark-gray-green);
+        border-color: var(--dark-gray-green);
+        transition: .4s;
+        letter-spacing: 3px;
     }
 
     .social-container {
@@ -241,6 +252,13 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+    }
+
+    .social-buttons:hover {
+        background-color: var(--gray-green);
+        border-color: var(--gray-green);
+        letter-spacing: 3px;
+        transition: .3s;
     }
 
     .social-text {
