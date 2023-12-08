@@ -206,6 +206,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        margin-bottom: 30px;
     }
 
     .footer_logo__3VAec {
@@ -298,144 +299,159 @@ fonts:
 --font-cormorant
 */
 
-.page_main__GlU4n {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  font-family: var(--font-ebgaramond);
-  position: relative;
-  background-color: var(--bg-color);
+/* ---------MOBILE VIEW----------- */
+@media screen and (max-width: 549px) {
+  .page_desk__fBnxX {
+    display: none;
+  }
 }
 
-.page_heading__ZPgh_ {
-  display: inherit;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  width:100vh;
-  height: 90vh;
+/* ---------DESKTOP VIEW----------- */
+@media screen and (min-width: 550px) {
+
+  .page_mobileView__5nm8u {
+    display:none;
+  }
+
+  .page_desk__fBnxX {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--font-ebgaramond);
+    position: relative;
+    background-color: var(--bg-color);
+  }
+
+  .page_heading__ZPgh_ {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width:100vh;
+    height: 90vh;
+  }
+  .page_heading__ZPgh_ h1 {
+    color: black;
+    font-family: var(--font-playfair-sc);
+    font-weight: 500;
+    font-size: 90px;
+    letter-spacing: 1em;
+    text-indent: 1em;
+
+    margin-top: 40px;
+  }
+  .page_heading__ZPgh_ h2 {
+    color: black;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: .1em;
+    text-indent: .1em;
+    text-align: center;
+
+    margin-top: 110px;
+  }
+
+  .page_heading__ZPgh_ h3 {
+    font-family: var(--font-cormorant);
+    font-weight: 400;
+    font-size: 15pt;
+    letter-spacing: .06rem;
+    text-align: center;
+    line-height: 2rem;
+  }
+
+
+
+  .page_container__aoG4z {
+    width: 100vw;
+    margin-top: 7rem;
+    padding-inline: 15%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15rem;    /* Footer height */
+  }
+
+  .page_container__aoG4z h1 {
+    font-family: var(--font-playfair-sc);
+    font-weight: 550;
+    letter-spacing: .4rem;
+    font-size: 27pt;
+    text-align: center;
+  }
+
+  .page_hbox__JuGrR {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-block: 4rem;
+    padding-right: 3rem;
+    gap: 8%;
+    max-height: 600px;
+  }
+
+  .page_letter__XfUe_ {
+    width: 400px;
+    max-height: 100%;
+    padding-block: 1rem;
+    padding-inline: 3rem;
+    border-left: 2px solid black;
+
+    letter-spacing: .095rem;
+    line-height: 220%;
+    background-color: transparent;
+  }
+
+  .page_letter__XfUe_ p {
+    font-family: var(--font-ebgaramond);
+    max-height: 70%;
+    margin-top: 15px;
+    text-overflow: ellipsis;
+    overflow: clip;
+    scrollbar-gutter: var(--bg-color);
+    scrollbar-width: 1px;
+  }
+
+  .page_letter__XfUe_ h5 {
+    font-family: var(--font-ebgaramond);
+    font-size: 13pt;
+    font-weight: 450;
+    line-height: 1.7rem;
+    margin-top: 18px;
+  }
+
+  .page_feature__CrGCB {
+    background-color: var(--gray-green);
+    flex-grow: 2;
+    width: 600px;
+  }
+
+  .page_img__434ND {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .page_line__ZGPps {
+    background-color: black;
+    width: 2px;
+    margin: 0;
+  }
+
+
+  .page_articlesContainer__Vbkpl {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 4vw;
+    padding-bottom: 150px;
+  }
+
 }
-.page_heading__ZPgh_ h1 {
-  color: black;
-  font-family: var(--font-playfair-sc);
-  font-weight: 500;
-  font-size: 90px;
-  letter-spacing: 1em;
-  text-indent: 1em;
-
-  margin-top: 40px;
-}
-.page_heading__ZPgh_ h2 {
-  color: black;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 22px;
-  letter-spacing: .1em;
-  text-indent: .1em;
-  text-align: center;
-
-  margin-top: 110px;
-}
-
-.page_heading__ZPgh_ h3 {
-  font-family: var(--font-cormorant);
-  font-weight: 400;
-  font-size: 15pt;
-  letter-spacing: .06rem;
-  text-align: center;
-  line-height: 2rem;
-}
-
-
-
-.page_container__aoG4z {
-  width: 100vw;
-  margin-top: 7rem;
-  padding-inline: 15%;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 15rem;    /* Footer height */
-}
-
-.page_container__aoG4z h1 {
-  font-family: var(--font-playfair-sc);
-  font-weight: 550;
-  letter-spacing: .4rem;
-  font-size: 27pt;
-  text-align: center;
-}
-
-.page_hbox__JuGrR {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding-block: 4rem;
-  padding-right: 3rem;
-  gap: 8%;
-  max-height: 600px;
-}
-
-.page_letter__XfUe_ {
-  width: 400px;
-  max-height: 100%;
-  padding-block: 1rem;
-  padding-inline: 3rem;
-  border-left: 2px solid black;
-
-  letter-spacing: .095rem;
-  line-height: 220%;
-  background-color: transparent;
-}
-
-.page_letter__XfUe_ p {
-  font-family: var(--font-ebgaramond);
-  max-height: 70%;
-  margin-top: 15px;
-  text-overflow: ellipsis;
-  overflow: clip;
-  scrollbar-gutter: var(--bg-color);
-  scrollbar-width: 1px;
-}
-
-.page_letter__XfUe_ h5 {
-  font-family: var(--font-ebgaramond);
-  font-size: 13pt;
-  font-weight: 450;
-  line-height: 1.7rem;
-  margin-top: 18px;
-}
-
-.page_feature__CrGCB {
-  background-color: var(--gray-green);
-  flex-grow: 2;
-  width: 600px;
-}
-
-.page_img__434ND {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-.page_line__ZGPps {
-  background-color: black;
-  width: 2px;
-  margin: 0;
-}
-
-
-.page_articlesContainer__Vbkpl {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 4vw;
-  padding-bottom: 150px;
-}
-
 /*!*********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/mobile.module.css ***!
   \*********************************************************************************************************************************************************************************************************************************************************************/
@@ -550,7 +566,7 @@ margin-top: 80px;
     height: 70%;
     margin-top: 15px;
     text-overflow: ellipsis;
-    overflow: scroll;
+    overflow: clip;
 }
 
 .mobile_letter__clA5H h5 {

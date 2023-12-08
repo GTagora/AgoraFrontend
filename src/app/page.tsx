@@ -52,43 +52,45 @@ async function getArticles() {
 
 export default async function Home() {
     const articles = await getArticles();
-        return isMobile ? 
-        <Mobile articles={articles}/> : (
-        <div className={styles.main}>
+        return (
+        <>
+            <div className={styles.mobileView} ><Mobile articles={articles}/></div>
+            <div className={styles.desk}>
 
-            <div className={styles.heading}>
-                <Subtitle />
-            </div>
-
-            <a id="fall-23-release"></a>
-            <div className={styles.container}>
-                <h1>Fall &apos;23 Release</h1>
-
-                <div className={styles.hbox}>
-                    <div className={styles.feature} >
-                        <Image
-                            className={styles.img}
-                            src="/pantheon.jpg"
-                            width={6000}
-                            height={4000}
-                            alt='Agora logo'
-                        />
-                    </div>
-                    <div className={styles.letter}>
-                        <h2>Letter from the editors:</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
-                        <h5>With love, <br /> Chris & Via</h5>
-                    </div>
+                <div className={styles.heading}>
+                    <Subtitle />
                 </div>
 
-                <div className={styles.articlesContainer}>
-                    {articles && articles.map(async (article: any) => (
-                            <Card key={null} article={article}></Card>
-                        ))}
+                <a id="fall-23-release"></a>
+                <div className={styles.container}>
+                    <h1>Fall &apos;23 Release</h1>
+
+                    <div className={styles.hbox}>
+                        <div className={styles.feature} >
+                            <Image
+                                className={styles.img}
+                                src="/pantheon.jpg"
+                                width={6000}
+                                height={4000}
+                                alt='Agora logo'
+                            />
+                        </div>
+                        <div className={styles.letter}>
+                            <h2>Letter from the editors:</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+                            <h5>With love, <br /> Chris & Via</h5>
+                        </div>
+                    </div>
+
+                    <div className={styles.articlesContainer}>
+                        {articles && articles.map(async (article: any) => (
+                                <Card key={null} article={article}></Card>
+                            ))}
+                    </div>
                 </div>
+                <Footer />
             </div>
-            <Footer />
-        </div>
+        </>
 )}
     
 
