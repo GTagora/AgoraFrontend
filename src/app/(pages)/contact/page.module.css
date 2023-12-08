@@ -247,6 +247,7 @@
         background-color: var(--bg-color);
         border: 2px solid lightgray;
         border-radius: 50px;
+        letter-spacing: 1px;
 
         display: flex;
         flex-direction: row;

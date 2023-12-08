@@ -31,12 +31,12 @@
 }
 
 .label {
-    text-align: center;
+    text-align: left;
     margin-inline: 15px;
 }
 
 .item {
-    min-width: 10vw;
+    /* min-width: 12vw; */
     padding: .5rem 1rem;
     text-align: left;
 }
@@ -46,7 +46,8 @@
     font-weight: 500;
     color: var(--gray-text);
     padding: .3rem 0;
-    margin-left: 15px;
+    margin-left: 16px;
+    text-align: left;
 }
 
 .item:hover .label {
@@ -58,7 +59,7 @@
 }
 
 .item:hover {
-    font-weight: 900;
+    font-weight: 700;
     background-color: var(--bg-color);
 }
 
