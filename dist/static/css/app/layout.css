@@ -943,6 +943,13 @@
     transform: none;
     opacity: .28;
 }
+
+
+@media screen and (min-width: 699px) {
+    .hamburger_body__zxBGR {
+        display: none;
+    }
+}
 /*!********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/components/header.module.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************************/
@@ -1016,6 +1023,12 @@
     font-weight: 600;
 }
 
+
+@media screen and (max-width: 699px) {
+    .header_navbar__pxQ7t {
+        display: none;
+    }
+}
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./src/app/globals.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
@@ -1061,9 +1074,6 @@ body {
   background-color: var(--bg-color);
 }
 
-Footer {
-  margin-bottom: 0px;
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -1083,20 +1093,6 @@ Footer {
   padding: 0;
   margin: 0;
 }
-
-
-/* body::-webkit-scrollbar {
-  width: .5rem;
-}
-
-body::-webkit-scrollbar-track {
-  background: whitesmoke;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: rgb(211, 211, 211);
-  border-radius: 4px;
-} */
 
 a {
   color: inherit;

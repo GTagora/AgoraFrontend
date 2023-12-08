@@ -67,3 +67,10 @@
     color: black;
     font-weight: 600;
 }
+
+
+@media screen and (max-width: 699px) {
+    .navbar {
+        display: none;
+    }
+}
