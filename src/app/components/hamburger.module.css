@@ -227,3 +227,10 @@
     transform: none;
     opacity: .28;
 }
+
+
+@media screen and (min-width: 699px) {
+    .body {
+        display: none;
+    }
+}

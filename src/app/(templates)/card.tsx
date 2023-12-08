@@ -1,4 +1,4 @@
-import deskstyles from './card.module.css'
+import styles from './card.module.css'
 import mobilestyles from './mobilecard.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -16,8 +16,6 @@ export default function Card({article}: Card) {
     const genre = String(article.Content_Type).toUpperCase()
     const issue = article.Issue
     const link = issue.toLowerCase().replaceAll(" ", "-") + "/" + title.toLowerCase().replaceAll(" ", "-").replace(/[^a-zA-Z0-9 -]/g,"")
-
-    const styles = isMobile ? mobilestyles : deskstyles;
     return (
         <Link href={link}>
         <div className={styles.card}>

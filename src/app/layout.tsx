@@ -2,9 +2,7 @@ import type { Metadata } from 'next'
 import Header from './components/header'
 import Hamburger from './components/hamburger'
 import { EB_Garamond, Playfair_Display_SC, Cormorant_Garamond, Playfair_Display } from 'next/font/google'
-import Footer from './components/footer'
 import './globals.css'
-import { isBrowser, isMobile } from 'react-device-detect';
 
 const eb_garamond = EB_Garamond( {
   style: ['normal', 'italic'],
@@ -62,7 +60,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${eb_garamond.variable} ${playfairDisplaySC.variable} ${playfairDisplay.variable} ${cormorant.variable}`}>
       <body>
-        {isMobile ? <Hamburger /> : <Header /> }
+        <Hamburger />
+        <Header />
         {children}</body>
     </html>
   )

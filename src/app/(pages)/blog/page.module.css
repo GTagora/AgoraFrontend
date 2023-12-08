@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 8rem;
+  padding-top: 8rem;
   padding-inline: 15%;
   background-color: var(--bg-color);
 
@@ -43,4 +43,11 @@
     font-weight: 500;
     transition: .4s;
     letter-spacing: .4px;
+}
+
+/* ---------MOBILE FOOTER----------- */
+@media screen and (max-width: 549px) {
+.footer {
+  display: none;
+}
 }

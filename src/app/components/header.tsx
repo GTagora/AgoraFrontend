@@ -104,8 +104,8 @@ export default function Header() {
                 whileHover="hover">
                 <Link href="/blog"><div className={styles.label} >BLOG</div></Link>
             </motion.div>
-        
-        {/* JOIN */}
+
+        {/* CONTACT */}
             <motion.div
                 className={styles.item}
                 variants={itemVars}
@@ -113,6 +113,7 @@ export default function Header() {
                 whileHover="hover">
                 <Link href="/contact"><div className={styles.label} >CONTACT</div></Link>
             </motion.div>
+        
         </div>
     </div>
 )}

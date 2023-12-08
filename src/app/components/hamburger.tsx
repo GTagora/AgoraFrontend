@@ -14,7 +14,7 @@ export default function Hamburger() {
     const [open, setOpen] = useState(false);
 
     return (
-        <div>
+        <div className={styles.body}>
             <div className={styles.navbar} onClick={ () => setOpen(!open)} >
                 {/* <input type="checkbox" className={styles.input}/> */}
                 <div className={open ? styles.openBar : styles.bar }>
@@ -27,13 +27,13 @@ export default function Hamburger() {
                 <div className={ open? styles.activebuttons : styles.buttons }>
                     <Link href="/"><div className={styles.label}>HOME</div></Link>
 
-                    <Link href="/archive"><div className={styles.label}>ARCHIVE</div></Link>
-                        {/* <Link href="/archive" className={styles.indent}>Fall '23</Link>
-                        <Link href="/archive" className={styles.indent}>Past Issues</Link> */}
-
                     <Link href="/about"><div className={styles.label}>ABOUT</div></Link>
                         <Link href="/about"><div className={styles.indent}>Mission</div></Link>
                         <Link href="/about/staff"><div className={styles.indent}>Staff</div></Link>
+
+                    <Link href="/archive"><div className={styles.label}>ARCHIVE</div></Link>
+                        {/* <Link href="/archive" className={styles.indent}>Fall '23</Link>
+                        <Link href="/archive" className={styles.indent}>Past Issues</Link> */}
 
                     <Link href="/blog"><div className={styles.label}>BLOG</div></Link>
                     
