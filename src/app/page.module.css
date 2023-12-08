@@ -79,8 +79,6 @@ fonts:
     line-height: 2rem;
   }
 
-
-
   .container {
     width: 100vw;
     margin-top: 7rem;
@@ -114,6 +112,7 @@ fonts:
     padding-block: 1rem;
     padding-inline: 3rem;
     border-left: 2px solid black;
+    flex-grow: 2;
 
     letter-spacing: .095rem;
     line-height: 220%;
@@ -125,7 +124,7 @@ fonts:
     max-height: 70%;
     margin-top: 15px;
     text-overflow: ellipsis;
-    overflow: clip;
+    overflow: scroll;
     scrollbar-gutter: var(--bg-color);
     scrollbar-width: 1px;
   }
@@ -140,8 +139,8 @@ fonts:
 
   .feature {
     background-color: var(--gray-green);
-    flex-grow: 2;
-    width: 600px;
+    /* flex-grow: 2; */
+    width: 300px;
   }
 
   .img {
