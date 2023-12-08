@@ -63,7 +63,10 @@ export default function About() {
 
                     <Image className={styles.logo} src={"/logo-footer.png"} width={300} height={90} alt="logo"/>
 
-                    <p className={styles['section-text']}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p className={styles['section-text']}> Agora’s logo depicts the letters “A” and “g” as symbols; these can be interpreted as both quotation marks and commas. <br /> <br />
+                        Like the Ancient Greek marketplace, Agora seeks to be a place of exchange. For us, this means the exchange of ideas, thoughts, and expressions regarding our faith; a dialogue. While we may write in pertinence to experiences from our own life, we ultimately seek to glorify God; His Word, through our words. Our logo depicted by quotation marks aims to convey these beliefs. <br /><br />
+                        Whereas other punctuation marks may indicate the end of a sentence, a comma implies a continuation; Agora does not seek to be a publication that preaches ultimatums, but rather provides the start of an ongoing conversation with our audience.
+                    </p>
                 </div>
 
             </div>
@@ -73,8 +76,8 @@ export default function About() {
 
                 <p className={styles['section-text']}>
                     <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li>The Augustine Collective (AC) is a network of student-lead, Christian thought journals on university campuses across the US and the UK. The AC operates under the Veritas Forum, a nonprofit organization that seeks to foster faith exploration and the pursuit of truth surrounding the ideas that shape our lives.</li>
+                        <li>Agora is one of over thirty member journals within the AC network. While each journal shares the overarching vision of the AC, Agora platforms the unique creative perspectives from the Christian dialogue on Georgia Tech’s campus.</li>
                     </ul>
                 </p>
             </div>

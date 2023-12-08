@@ -39,6 +39,7 @@
     font-weight: bold;
     letter-spacing: 2px;
     height: 50px;
+    margin-bottom: 40px;
 }
 
 .page_section-text__dZC5a {
@@ -69,6 +70,10 @@
     border-radius: 1rem;
     padding: 3rem;
     background-color: var(--neutral-tan);
+}
+
+.page_why-and-logo-container__uRT9L .page_section-header__OxVHu {
+    margin-bottom: 1px;
 }
 
 .page_why-container__6suod {
@@ -168,9 +173,13 @@
         border-radius: 1rem;
         padding: 3rem;
     }
-    
+
     .page_why-and-logo-container__uRT9L {
         display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        padding: 3rem;
+        background-color: var(--neutral-tan);
     }
     
     .page_why-container__6suod {
@@ -178,27 +187,20 @@
         letter-spacing: 0.4px;
         margin-top: 10px;
         line-height: 27px;
-    
-        border-radius: 1rem;
-        padding: 3rem;
-        background-color: var(--neutral-tan);
-    
-        min-width: 65%;
     }
     
     .page_logo-container__Ih4Xs {
         font-family: var(--font-ebgaramond);
         letter-spacing: 0.4px;
-        margin-top: 10px;
+        margin-top: 50px;
         line-height: 27px;
     
         border-radius: 1rem;
-        padding: 3rem;
     }
-
+    
     .page_logo__sI6el {
-        margin-bottom: 20px;
-        height: 60px;
+        margin-bottom: 10px;
+        height: 50px;
         width: auto;
     }
     

@@ -36,6 +36,7 @@
     font-weight: bold;
     letter-spacing: 2px;
     height: 50px;
+    margin-bottom: 40px;
 }
 
 .section-text {
@@ -66,6 +67,10 @@
     border-radius: 1rem;
     padding: 3rem;
     background-color: var(--neutral-tan);
+}
+
+.why-and-logo-container .section-header {
+    margin-bottom: 1px;
 }
 
 .why-container {
@@ -165,9 +170,13 @@
         border-radius: 1rem;
         padding: 3rem;
     }
-    
+
     .why-and-logo-container {
         display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        padding: 3rem;
+        background-color: var(--neutral-tan);
     }
     
     .why-container {
@@ -175,27 +184,20 @@
         letter-spacing: 0.4px;
         margin-top: 10px;
         line-height: 27px;
-    
-        border-radius: 1rem;
-        padding: 3rem;
-        background-color: var(--neutral-tan);
-    
-        min-width: 65%;
     }
     
     .logo-container {
         font-family: var(--font-ebgaramond);
         letter-spacing: 0.4px;
-        margin-top: 10px;
+        margin-top: 50px;
         line-height: 27px;
     
         border-radius: 1rem;
-        padding: 3rem;
     }
-
+    
     .logo {
-        margin-bottom: 20px;
-        height: 60px;
+        margin-bottom: 10px;
+        height: 50px;
         width: auto;
     }
     
