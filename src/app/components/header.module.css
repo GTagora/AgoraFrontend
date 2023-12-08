@@ -19,7 +19,6 @@
 }
 
 .buttons{
-    min-width: 20vw;
     height: 0px;
     display: inherit;
     align-items: flex-start;
