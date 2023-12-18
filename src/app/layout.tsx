@@ -61,8 +61,8 @@ export default function RootLayout({
     <html lang="en" className={`${eb_garamond.variable} ${playfairDisplaySC.variable} ${playfairDisplay.variable} ${cormorant.variable}`}>
       <body>
         <Hamburger />
-        {/* <Header /> */}
-        {/* {children} */}
+        <Header />
+        {children}
       </body>
     </html>
   )

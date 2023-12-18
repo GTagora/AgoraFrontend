@@ -45,6 +45,10 @@
     -webkit-touch-callout: none;
 }
 
+.bar, .openBar {
+    cursor: pointer;
+}
+
 /* hamburger bar components base styling */
 .bar1, .bar2, .bar3 {
     display: block;
@@ -75,7 +79,7 @@
 .openBar1
 {
     display: block;
-    width: 33px;
+    width: 34.5px;
     height: 4px;
     margin-bottom: 5px;
     position: relative;
@@ -135,7 +139,7 @@
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
-    transform: rotate(-45deg) translate(-1px, 0px);
+    transform: rotate(-45deg) translate(-1.5px, -1.5px);
 }
 
 
@@ -199,6 +203,7 @@
     padding-left: 15px;
     padding-block: 10px;
     font-size: 14.5pt;
+    letter-spacing: 1px;
 }
 
 .label:hover, .indent:hover {
