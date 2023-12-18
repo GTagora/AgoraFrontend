@@ -950,85 +950,6 @@
         display: none;
     }
 }
-/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/components/header.module.css ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************/
-.header_navbar__pxQ7t{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding-inline: 25px 15px;
-    font-size: 15pt;
-    background-color: var(--bg-color);
-    top: 0;
-    position: fixed;
-    z-index: 1;
-}
-
-.header_logo__PkDFG {
-    padding-block: 20px 10px;
-    height: 80px;
-    width: auto;
-}
-
-.header_buttons__WCgbf{
-    height: 0px;
-    display: inherit;
-    align-items: flex-start;
-    padding-left: 30px;
-    margin-top: -40px;
-
-    font-family: var(--font-cormorant);
-    letter-spacing: .1rem;
-}
-
-.header_label__bfTzN {
-    text-align: left;
-    margin-inline: 15px;
-}
-
-.header_item__0_C1N {
-    /* min-width: 12vw; */
-    padding: .5rem 1rem;
-    text-align: left;
-}
-
-.header_dropdown__VoV8A {
-    font-size: large;
-    font-weight: 500;
-    color: var(--gray-text);
-    padding: .3rem 0;
-    margin-left: 16px;
-    text-align: left;
-}
-
-.header_item__0_C1N:hover .header_label__bfTzN {
-    color: black;
-}
-
-.header_buttons__WCgbf:hover .header_item__0_C1N {
-    color: var(--gray-text);
-}
-
-.header_item__0_C1N:hover {
-    font-weight: 700;
-    background-color: var(--bg-color);
-}
-
-
-.header_dropdown__VoV8A:hover {
-    color: black;
-    font-weight: 600;
-}
-
-
-@media screen and (max-width: 699px) {
-    .header_navbar__pxQ7t {
-        display: none;
-    }
-}
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./src/app/globals.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
@@ -1104,4 +1025,3 @@ a {
     color-scheme: dark;
   }
 }
-

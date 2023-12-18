@@ -4,7 +4,6 @@ import mobile from './mobile.module.css'
 import Footer from './components/footer'
 import Subtitle from './components/subtitle'
 import Card from './(templates)/card'
-import { isMobile } from 'react-device-detect';
 
 
 function Mobile( { articles }:{ articles:Array<any> } ) {
