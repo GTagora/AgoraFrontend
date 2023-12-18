@@ -16,14 +16,14 @@ fonts:
 */
 
 /* ---------MOBILE VIEW----------- */
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 699px) {
   .desk {
     display: none;
   }
 }
 
 /* ---------DESKTOP VIEW----------- */
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 700px) {
 
   .mobileView {
     display:none;

@@ -33,7 +33,7 @@ function Mobile( { articles }:{ articles:Array<any> } ) {
 
                             And so, Reader, we invite you to step foot into our agora and partake in the fruits of His generosity. We hope and pray that our words and voices presented here will bring His glory into focus and spiritually nourish you.<br /><br />
                             </p>
-                    <h5>With love, <br /> Chris & Via <i>Editors-in-Chief</i></h5>
+                    <h5>With love, <br /> Chris & Via <br /> <i>Editors-in-Chief</i></h5>
                 </div>
             </div>
             <div className={mobile.articlesContainer}>
@@ -41,7 +41,7 @@ function Mobile( { articles }:{ articles:Array<any> } ) {
                             <Card key={null} article={article}></Card>
                         ))}
             </div>
-
+            <Footer />
         </div>
 )}
 

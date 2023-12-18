@@ -202,6 +202,14 @@
         display: none;
     }
 
+    .footer_box__f2GXS {
+        margin-block: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .footer_socialRow__Yk2NK {
         display: flex;
         flex-direction: row;
@@ -259,14 +267,14 @@ fonts:
 */
 
 /* ---------MOBILE VIEW----------- */
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 699px) {
   .page_desk__fBnxX {
     display: none;
   }
 }
 
 /* ---------DESKTOP VIEW----------- */
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 700px) {
 
   .page_mobileView__5nm8u {
     display:none;

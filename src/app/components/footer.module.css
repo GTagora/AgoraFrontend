@@ -199,6 +199,14 @@
         display: none;
     }
 
+    .box {
+        margin-block: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .socialRow {
         display: flex;
         flex-direction: row;
