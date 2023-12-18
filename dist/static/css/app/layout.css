@@ -482,28 +482,13 @@
 
 /*-------------------hamburger components-------------------*/
 /* x symbol on top of hamburger, hidden */
-.hamburger_input__oZNS0 {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    
-    cursor: pointer;
-    
-    opacity: 0; /* hide this */
-    z-index: 5; /* and place it over the hamburger */
-    
-    -webkit-touch-callout: none;
-}
 
 .hamburger_bar__hisD4, .hamburger_openBar__Q_zzQ {
     cursor: pointer;
 }
 
 /* hamburger bar components base styling */
-.hamburger_bar1__zdTde, .hamburger_bar2__ANTSP, .hamburger_bar3__UqUSW {
+.hamburger_bar1__zdTde, .hamburger_bar2__ANTSP, .hamburger_bar3__UqUSW, .hamburger_openBar1__hR57A, .hamburger_openBar2__SfLcx, .hamburger_openBar3__reMCm {
     display: block;
     width: 33px;
     height: 4px;
@@ -531,44 +516,13 @@
 /* top bar rotates down 45 degrees */
 .hamburger_openBar1__hR57A
 {
-    display: block;
-    width: 35px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    
-    background: rgb(47, 47, 47);
-    border-radius: 3px;
-    
-    z-index: 4;
-    transform-origin: 4px 0px;
-    
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-    
-    transform: rotate(45deg) translate(-2px, -1px);
+   transform: rotate(45deg) translate(-2px, -1px);
 }
 
 /* let's hide the middle one. */
 .hamburger_openBar2__SfLcx
 {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    
-    background: rgb(47, 47, 47);
-    border-radius: 3px;
     opacity: 0;
-    
-    z-index: 4;
-    transform-origin: 4px 0px;
-    
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
@@ -577,30 +531,13 @@
  */
  .hamburger_openBar3__reMCm
 {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    
-    background: rgb(47, 47, 47);
-    border-radius: 3px;
-    
-    z-index: 4;
     transform-origin: 2px 0px;
-    
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
     transform: rotate(-45deg) translate(-1.5px, -1.5px);
 }
 
 
 /*-------------------menu component-------------------*/
 /* menu slides in from the left */
-.hamburger_input__oZNS0:checked ~ .hamburger_buttons__AF7gb {
-    transform: none;
-}
 
 .hamburger_buttons__AF7gb {
     display: flex;
@@ -679,11 +616,6 @@
     transform-origin: 0% 0%;
     /* transform: translate(150%, 0); */
     transition: .7s;
-}
-
-.hamburger_input__oZNS0:checked ~ .hamburger_dim__tPNui {
-    transform: none;
-    opacity: .28;
 }
 
 
