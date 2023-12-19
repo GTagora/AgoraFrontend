@@ -91,35 +91,6 @@ margin-top: 80px;
     width: 50%;
     margin-block: 50px;
 }
-/* .letter {
-    margin-block: 30px;
-    padding-block: 40px;
-    padding-inline: 55px;
-    border-radius: 20px;
-    background-color: var(--neutral-tan);
-    filter: drop-shadow(4px 4px 6px rgba(210, 210, 210, 0.677));
-    margin-inline: 30px;
-
-    letter-spacing: .095rem;
-    line-height: 2.2rem;
-}
-
-.letter p {
-    font-family: var(--font-ebgaramond);
-    height: 70%;
-    margin-top: 15px;
-    text-overflow: ellipsis;
-    overflow: clip;
-}
-
-.letter h5 {
-    font-family: var(--font-ebgaramond);
-    font-size: 13pt;
-    font-weight: 450;
-    line-height: 1.7rem;
-    margin-top: 15px;
-} */
-
 
 .articlesContainer {
     margin-block: 50px;

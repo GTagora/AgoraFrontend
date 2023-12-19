@@ -316,16 +316,6 @@
     font-size: 11pt;
     opacity: .6;
   }
-  /* genre label for top right alignment */
-  /* .card h3 {
-    font-family: 'Arial';
-    font-weight: 400;
-    font-style: italic;
-    font-size: 11pt;
-    color: rgb(119, 119, 119);
-    text-align: right;
-    padding-left: 20px;
-  } */
 
   /* preview text */
   .card_card__wb15F p {
@@ -418,7 +408,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
 }
 
@@ -734,35 +724,6 @@ margin-top: 80px;
     width: 50%;
     margin-block: 50px;
 }
-/* .letter {
-    margin-block: 30px;
-    padding-block: 40px;
-    padding-inline: 55px;
-    border-radius: 20px;
-    background-color: var(--neutral-tan);
-    filter: drop-shadow(4px 4px 6px rgba(210, 210, 210, 0.677));
-    margin-inline: 30px;
-
-    letter-spacing: .095rem;
-    line-height: 2.2rem;
-}
-
-.letter p {
-    font-family: var(--font-ebgaramond);
-    height: 70%;
-    margin-top: 15px;
-    text-overflow: ellipsis;
-    overflow: clip;
-}
-
-.letter h5 {
-    font-family: var(--font-ebgaramond);
-    font-size: 13pt;
-    font-weight: 450;
-    line-height: 1.7rem;
-    margin-top: 15px;
-} */
-
 
 .mobile_articlesContainer__9eq_0 {
     margin-block: 50px;

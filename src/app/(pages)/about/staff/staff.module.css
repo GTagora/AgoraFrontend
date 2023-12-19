@@ -1,3 +1,4 @@
+
 .main {
     display: flex;
     flex-direction: column;
@@ -6,6 +7,7 @@
     font-family: var(--font-ebgaramond);
     background-color: whitesmoke;
     position: relative;
+
   }
   
 .container {
@@ -14,6 +16,10 @@
     width: 70vw;
     padding: 50px;
     padding-bottom: 15rem;    /* Footer height */
+
+    @media screen and (max-width: 600px) {
+        padding-inline: 0px;
+    }
   }
 
 .pageHeader {
@@ -31,6 +37,11 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 2vw;
+
+    @media screen and (max-width: 1000px) {
+        gap: 70px;
+        align-items: center;
+    }
 }
 .sectionHeader {
     font-family: var(--font-playfair-sc);
@@ -41,12 +52,23 @@
 }
 
 .memberCard {
+    width: 300px;
     border: 1px solid transparent;
     border-radius: 12px;
     background-color: var(--light-light-green);
     padding: 30px;
     font-family: var(--font-ebgaramond);
-    width: 240px;
+    line-height: 30px;
+    filter: drop-shadow(4px 4px 6px rgba(210, 210, 210, 0.677));
+
+    @media screen and (max-width: 1000px) {
+        width: 50vw;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 60vw;
+    }
+    
 }
 
 /* member name */

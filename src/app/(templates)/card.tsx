@@ -1,9 +1,7 @@
 import styles from './card.module.css'
-import mobilestyles from './mobilecard.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import pic from 'public/test.jpg'
-import { isMobile } from 'react-device-detect';
 
 
 interface Card {
