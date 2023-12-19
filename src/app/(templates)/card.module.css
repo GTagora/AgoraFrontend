@@ -1,5 +1,5 @@
 /* ---------MOBILE VIEW----------- */
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 599px) {
   .card {
     width: 87vw;
     flex-grow: 1;
@@ -42,7 +42,7 @@
 
 
 /* ---------DESKTOP VIEW----------- */
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 600px) {
  
   .card {
     width: 20vw;

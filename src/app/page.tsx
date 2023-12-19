@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import mobile from './mobile.module.css'
 import Footer from './components/footer'
 import Subtitle from './components/subtitle'
 import Letter from './components/letter'
@@ -9,10 +8,10 @@ import Card from './(templates)/card'
 
 function Mobile( { articles }:{ articles:Array<any> } ) {
     return (
-        <div className={mobile.main}>
-            <div className={mobile.heading}>
+        <div className={styles.main}>
+            <div className={styles.heading}>
                 <Image
-                    className={mobile.logo}
+                    className={styles.logo}
                     src="/logo-black.png"
                     width={100}
                     height={100}
@@ -21,12 +20,12 @@ function Mobile( { articles }:{ articles:Array<any> } ) {
                 <h2>Georgia Tech’s Journal of Christian Thought</h2>
             </div>
 
-            <div className={mobile.container}>
+            <div className={styles.container}>
                 <hr />
                 <h1>Fall &apos;23 Release</h1>
                 <Letter />
             </div>
-            <div className={mobile.articlesContainer}>
+            <div className={styles.articlesContainer}>
                 {articles && articles.map(async (article: any) => (
                             <Card key={null} article={article}></Card>
                         ))}

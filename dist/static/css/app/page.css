@@ -233,7 +233,7 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/(templates)/card.module.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************/
 /* ---------MOBILE VIEW----------- */
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 599px) {
   .card_card__wb15F {
     width: 87vw;
     flex-grow: 1;
@@ -276,7 +276,7 @@
 
 
 /* ---------DESKTOP VIEW----------- */
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 600px) {
  
   .card_card__wb15F {
     width: 20vw;
@@ -480,6 +480,92 @@ fonts:
   .page_desk__fBnxX {
     display: none;
   }
+
+  .page_main__GlU4n {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 30px;
+    padding-inline: 20px;
+    
+    font-family: var(--font-ebgaramond);
+    position: relative;
+    background-color: var(--bg-color);
+    }
+    
+    .page_logo__7fc9l {
+    width: 75px;
+    height: auto;
+    }
+    
+    .page_heading__ZPgh_ {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height: 90vh;
+    }
+    
+    .page_heading__ZPgh_ h1 {
+    color: black;
+    font-family: var(--font-playfair-sc);
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 1em;
+    text-indent: 1em;
+    
+    margin-top: 40px;
+    }
+    
+    .page_heading__ZPgh_ h2 {
+    color: black;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: .1em;
+    text-indent: .1em;
+    text-align: center;
+    line-height: 170%;
+    padding-inline: 20px;
+    
+    margin-top: 80px;
+    }
+    
+    
+    .page_container__aoG4z {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .page_container__aoG4z h1 {
+        font-family: var(--font-playfair-sc);
+        font-weight: 550;
+        font-size: 20pt;
+        letter-spacing: .4rem;
+        text-align: center;
+        margin-block: 20px 25px;
+    }
+    
+    .page_container__aoG4z hr {
+        width: 50%;
+        margin-block: 50px;
+    }
+    
+    .page_articlesContainer__Vbkpl {
+        margin-block: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 50px;
+        width: 100vw;
+    }
+    
 }
 
 
@@ -628,110 +714,3 @@ fonts:
   }
 
 }
-/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/mobile.module.css ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************/
-/*
-CUSTOM VARIABLES
-colors:
---agora-green: BFD8C5
---light-green: E5ECE7
---neutral-tan: F0EDE9
---gray-green: D1D7D3
---dark-green: 7C9D84
---darkest-green: 2C4B33
-
-fonts:
---font-ebgaramond
---font-playfair
---font-playfair-sc
---font-cormorant
-*/
-
-.mobile_main__d2JUj {
-display: flex;
-flex-direction: column;
-align-items: center;
-min-height: 100vh;
-padding-top: 30px;
-padding-inline: 20px;
-
-font-family: var(--font-ebgaramond);
-position: relative;
-background-color: var(--bg-color);
-}
-
-.mobile_logo__eHiNI {
-width: 75px;
-height: auto;
-}
-
-.mobile_heading__PwMQb {
-display: inherit;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-width:100vw;
-height: 90vh;
-}
-
-.mobile_heading__PwMQb h1 {
-color: black;
-font-family: var(--font-playfair-sc);
-font-weight: 500;
-font-size: 40px;
-letter-spacing: 1em;
-text-indent: 1em;
-
-margin-top: 40px;
-}
-
-.mobile_heading__PwMQb h2 {
-color: black;
-font-style: italic;
-font-weight: 400;
-font-size: 22px;
-letter-spacing: .1em;
-text-indent: .1em;
-text-align: center;
-line-height: 170%;
-padding-inline: 20px;
-
-margin-top: 80px;
-}
-
-
-
-
-.mobile_container__xhqbk {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.mobile_container__xhqbk h1 {
-    font-family: var(--font-playfair-sc);
-    font-weight: 550;
-    font-size: 20pt;
-    letter-spacing: .4rem;
-    text-align: center;
-    margin-block: 20px 25px;
-}
-
-.mobile_container__xhqbk hr {
-    width: 50%;
-    margin-block: 50px;
-}
-
-.mobile_articlesContainer__9eq_0 {
-    margin-block: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 50px;
-    width: 100vw;
-}
-
