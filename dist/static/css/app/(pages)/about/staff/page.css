@@ -101,25 +101,24 @@
 /*!********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/components/footer.module.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************************/
+/* ---------DESKTOP VIEW----------- */
 @media screen and (min-width: 950px) {
     .footer_box__f2GXS {
-    padding: 5% 5%;
     background: var(--bg-color);
     position: absolute;
     bottom: 0;
     margin-top: -15rem;
+    padding: 70px 30px;
     height: 15rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
     letter-spacing: 2px;
     font-family: var(--font-ebgaramond);
 
-    @media (max-width: 1000px) {
-        padding: 70px 30px;
-    }
 }
 
 .footer_footerContainer__1HxpD {
@@ -211,10 +210,6 @@
         padding-right: 5rem;
         letter-spacing: 2px;
         font-family: var(--font-ebgaramond);
-    
-        @media (max-width: 1000px) {
-            padding: 70px 30px;
-        }
     }
     
     .footer_footerContainer__1HxpD {
@@ -295,7 +290,7 @@
 }
 
 
-/* ---------HALF SCREN VIEW----------- */
+/* ---------MOBILE & HALF SCREN VIEW----------- */
 @media screen and (max-width: 949px) {
 
     .footer_footerContainer__1HxpD {
