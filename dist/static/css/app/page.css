@@ -421,6 +421,33 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
+
+.letter_letter__lpZMB {
+    margin-block: 30px;
+    padding-block: 40px;
+    padding-inline: 55px;
+    border-radius: 20px;
+    background-color: var(--neutral-tan);
+    filter: drop-shadow(4px 4px 6px rgba(210, 210, 210, 0.677));
+    margin-inline: 30px;
+
+    letter-spacing: .095rem;
+    line-height: 2.2rem;
+}
+
+.letter_letter__lpZMB p {
+    font-family: var(--font-ebgaramond);
+    height: 70%;
+    margin-top: 15px;
+}
+
+.letter_letter__lpZMB h5 {
+    font-family: var(--font-ebgaramond);
+    font-size: 13pt;
+    font-weight: 450;
+    line-height: 1.7rem;
+    margin-top: 15px;
+}
 /*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/components/subtitle.module.css ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************/
@@ -707,7 +734,7 @@ margin-top: 80px;
     width: 50%;
     margin-block: 50px;
 }
-.mobile_letter__clA5H {
+/* .letter {
     margin-block: 30px;
     padding-block: 40px;
     padding-inline: 55px;
@@ -720,7 +747,7 @@ margin-top: 80px;
     line-height: 2.2rem;
 }
 
-.mobile_letter__clA5H p {
+.letter p {
     font-family: var(--font-ebgaramond);
     height: 70%;
     margin-top: 15px;
@@ -728,13 +755,13 @@ margin-top: 80px;
     overflow: clip;
 }
 
-.mobile_letter__clA5H h5 {
+.letter h5 {
     font-family: var(--font-ebgaramond);
     font-size: 13pt;
     font-weight: 450;
     line-height: 1.7rem;
     margin-top: 15px;
-}
+} */
 
 
 .mobile_articlesContainer__9eq_0 {

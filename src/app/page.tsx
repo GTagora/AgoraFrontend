@@ -39,11 +39,12 @@ function Mobile( { articles }:{ articles:Array<any> } ) {
             <div className={mobile.container}>
                 <hr />
                 <h1>Fall &apos;23 Release</h1>
-                <div className={mobile.letter}>
+                {/* <div className={mobile.letter}>
                     <h2>Letter from the editors:</h2>
                     <p>Dear Reader,</p>
                     <Letter text={<Text />}/>
-                </div>
+                </div> */}
+                <Letter />
             </div>
             <div className={mobile.articlesContainer}>
                 {articles && articles.map(async (article: any) => (
