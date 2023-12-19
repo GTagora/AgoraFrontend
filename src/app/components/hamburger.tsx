@@ -22,7 +22,7 @@ export default function Hamburger() {
                     <span className={open ? styles.openBar3 : styles.bar3 }></span>
                 </div>
 
-                {/* <div className={styles.dim} /> */}
+                <div className={open ? styles.openDim : styles.dim} />
                 <div className={ open? styles.activebuttons : styles.buttons }>
                     <Link href="/"><div className={styles.label}>HOME</div></Link>
 

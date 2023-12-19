@@ -152,16 +152,20 @@
 /*-------------------background dim-------------------*/
 
 /* dims background when menu is opened */
-.dim {
+.dim, .openDim {
     position: absolute;
-    width: 35vw;
+    width: 140vw;
     height: 150vh;
-    margin: -180px 65vw;
+    translate: -50px -150px;
     background-color: black;
-    opacity: 0;
+    opacity: .3;
     z-index: 2;
-    transform-origin: 0% 0%;
-    transition: .7s;
+    transition: 2s;
+}
+
+.dim {
+    display: none;
+    transition: 2s;
 }
 
 
