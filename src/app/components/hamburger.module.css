@@ -161,7 +161,6 @@
     opacity: 0;
     z-index: 2;
     transform-origin: 0% 0%;
-    /* transform: translate(150%, 0); */
     transition: .7s;
 }
 
@@ -169,5 +168,11 @@
 @media screen and (min-width: 699px) {
     .body {
         display: none;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .body {
+        font-size: 13pt;
     }
 }

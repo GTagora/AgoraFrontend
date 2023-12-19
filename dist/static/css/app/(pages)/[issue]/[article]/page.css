@@ -8,7 +8,7 @@
         flex-direction: column;
         align-items: left;
     
-        padding: 2rem 18%;
+        padding: 1rem 10%;
         padding-top: 140px;
     
         min-height: 100vh;
@@ -17,12 +17,20 @@
     
         position: relative;
         padding-bottom: 15rem;
+
+        @media screen and (max-width: 549px) {
+            padding: 20px 10%;
+        }
+
     
     }
     
     .article_container__2vXF_ {
         margin-top: 100px;
-        padding: 3rem;
+
+        @media screen and (max-width: 549px) {
+            padding: 10px 10%;
+        }
     }
     
     .article_image__Ecvqg {
@@ -39,6 +47,10 @@
         font-weight: 500;
         font-size: 30pt;
         margin-block: 20px;
+
+        @media screen and (max-width: 549px) {
+            font-size: 25pt;
+        }
     }
     
     .article_author__XJuw_ {
@@ -46,6 +58,10 @@
         font-family: var(--font-cormorant);
         font-weight: 600;
         margin-block: 12px 7px;
+
+        @media screen and (max-width: 549px) {
+            font-size: 13.5pt;
+        }
     }
     
     .article_date__PgGGx {
@@ -53,12 +69,20 @@
         font-family: var(--font-eb-garamond);
         font-weight: 400;
         margin-bottom: 30px;
+
+        @media screen and (max-width: 549px) {
+            font-size: 13.5pt;
+        }
     }
     
     .article_text__FrMmG {
         line-height: 200%;
         font-size: 15pt;
         white-space: pre-line;
+
+        @media screen and (max-width: 549px) {
+            font-size: 13.5pt;
+        }
     }
     
     .article_rightAlign__ba90g {
@@ -69,7 +93,7 @@
 /* ---------DESKTOP VIEW----------- */
 @media screen and (min-width: 700px) {
     .article_main__HuXj_ {
-        /* display: flex;
+        display: flex;
         flex-direction: column;
         align-items: left;
         padding: 2rem 18%;
@@ -78,16 +102,8 @@
         font-family: var(--font-ebgaramond);
         background-color: var(--bg-color);
         position: relative;
-        padding-bottom: 15rem; */
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-height: 100vh;
-        font-family: var(--font-ebgaramond);
-        position: relative;
         padding-bottom: 15rem;
-        background-color: var(--bg-color);
+
     }
 
     .article_container__2vXF_ {
