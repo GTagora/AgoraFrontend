@@ -367,10 +367,10 @@
   }
 
 }
-/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/components/readmore.module.css ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************/
-.readmore_box__FhpD1 {
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/components/letter.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.letter_box__XIY5Y {
     display: flex;
     align-items: flex-end;
     color: gray;
@@ -379,17 +379,17 @@
     transition: .4s;
 }
 
-.readmore_box__FhpD1:hover {
+.letter_box__XIY5Y:hover {
     cursor: pointer;
     color: black;
     transition: .4s;
 }
 
-.readmore_box__FhpD1 p {
+.letter_box__XIY5Y p {
     margin-left: -10px;
 }
 
-.readmore_hbar__kkKDH, .readmore_vbar__ueU6P, .readmore_openhbar__DYXo2, .readmore_openvbar__mgQGi {
+.letter_hbar__xnmGg, .letter_vbar__VEJJe, .letter_openhbar__5PJZv, .letter_openvbar__UsOML {
     width: 20px;
     height: 3px;
     margin-bottom: 17px;
@@ -401,20 +401,20 @@
               opacity 0.4s ease;
 }
 
-.readmore_box__FhpD1:hover .readmore_hbar__kkKDH,.readmore_box__FhpD1:hover .readmore_vbar__ueU6P,.readmore_box__FhpD1:hover .readmore_openhbar__DYXo2,.readmore_box__FhpD1:hover .readmore_openvbar__mgQGi {
+.letter_box__XIY5Y:hover .letter_hbar__xnmGg,.letter_box__XIY5Y:hover .letter_vbar__VEJJe,.letter_box__XIY5Y:hover .letter_openhbar__5PJZv,.letter_box__XIY5Y:hover .letter_openvbar__UsOML {
     background: black;
 }
 
-.readmore_vbar__ueU6P {
+.letter_vbar__VEJJe {
     translate: -20px;
     transform: rotate(90deg);
 }
 
-.readmore_openvbar__mgQGi {
+.letter_openvbar__UsOML {
     translate: -20px;
 }
 
-.readmore_hideText__qZhkY {
+.letter_hideText__cU44A {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;

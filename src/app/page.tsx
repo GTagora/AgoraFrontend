@@ -3,10 +3,10 @@ import styles from './page.module.css'
 import mobile from './mobile.module.css'
 import Footer from './components/footer'
 import Subtitle from './components/subtitle'
-import ReadMore from './components/readmore'
+import Letter from './components/letter'
 import Card from './(templates)/card'
 
-const Letter = () => {
+const Text = () => {
     return (
             <p>
                     We are so excited and joyful to invite you to read this debut issue of our journal, <i>Agora</i>. 
@@ -42,7 +42,7 @@ function Mobile( { articles }:{ articles:Array<any> } ) {
                 <div className={mobile.letter}>
                     <h2>Letter from the editors:</h2>
                     <p>Dear Reader,</p>
-                    <ReadMore text={<Letter />}/>
+                    <Letter text={<Text />}/>
                 </div>
             </div>
             <div className={mobile.articlesContainer}>
