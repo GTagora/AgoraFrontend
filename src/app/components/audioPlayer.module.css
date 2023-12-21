@@ -6,7 +6,7 @@
     bottom: 0;
     left: 0;
     width: 100vw;
-    height: 15vh;
+    height: 14vh;
     opacity: .9;
     padding: 20px;
     background-color: var(--bg-color);
@@ -24,32 +24,48 @@
   }
   
   .title {
-    display: none;
+    font-size: 13pt;
+    margin-bottom: 10px;
   }
   
   .artist {
     display: none;
   }
+
+  .hbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
   
   .audio-controls {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     width: 75%;
-    margin: 0 auto 15px;
+    margin: 15px;
   }
   
-  .play {
+  .play, .pause, .increment {
     border: none;
     background-color: transparent; 
+    padding-block: auto;
+    opacity: .9;
   }
 
-  .pause {
-    border: none; 
-    background-color: transparent;  
+  .increment {
+    margin-inline: 9px;
+    margin-bottom: 3px;
+    transition: .2s;
+    opacity: .8;
   }
 
-  .play:hover, .pause:hover {
+  .play:hover, .pause:hover, .increment:hover {
     cursor: pointer;
+    opacity: 1;
+    transition: .2s;
   }
 
   .audio-controls path {
@@ -62,12 +78,13 @@
 
   .progress {
     border-radius: 0px;
-    width: 80vw;
+    width: 70vw;
     outline: none;
   }
 
   .timer {
     font-family: 'Arial';
+    font-size: 10.5pt;
   }
   
 
@@ -101,33 +118,46 @@
   
   .title {
     font-weight: 700;
-    margin-bottom: 4px;
+    margin-block: 11px;
   }
   
   .artist {
-    font-weight: 300;
-    margin-top: 0;
+    display: none;
+  }
+
+  .hbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 9px;
   }
   
   .audio-controls {
     display: flex;
     justify-content: space-between;
     width: 75%;
-    margin: 0 auto 15px;
+    margin: 15px;
   }
   
-  .play {
+  .play, .pause, .increment {
+    border: none;
+    background-color: transparent;
+    opacity: .8; 
+  }
+
+  .increment {
     border: none;
     background-color: transparent; 
+    margin-inline: 10px;
+    margin-bottom: 4px;
+    opacity: .8;
   }
 
-  .pause {
-    border: none; 
-    background-color: transparent;  
-  }
-
-  .play:hover, .pause:hover {
+  .play:hover, .pause:hover, .increment:hover {
     cursor: pointer;
+    opacity: 1;
   }
 
   .audio-controls path {
@@ -137,6 +167,11 @@
   .progress {
     border-radius: 8px;
     outline: none;
+  }
+
+  .timer {
+    font-family: 'Arial';
+    font-size: 10.5pt;
   }
   
 

@@ -133,19 +133,22 @@ const AudioPlayer = ({ tracks }: { tracks:any }) => {
           incrementTime={incrementTime}
           onPlayPauseClick={setIsPlaying}
         />
-        <input
-          type="range"
-          value={trackProgress}
-          step="1"
-          min="0"
-          max={duration ? duration : `${duration}`}
-          className={styles.progress}
-          onChange={(e) => onScrub(e.target.value)}
-          onMouseUp={onScrubEnd}
-          onKeyUp={onScrubEnd}
-          style={{ background: trackStyling }}
-        />
-        <p className={styles.timer}>{formatTime(audioRef.current.currentTime)}</p>
+        <div className={styles.hbox}>
+          <p className={styles.timer}>{formatTime(audioRef.current.currentTime)}</p>
+          <input
+            type="range"
+            value={trackProgress}
+            step="1"
+            min="0"
+            max={duration ? duration : `${duration}`}
+            className={styles.progress}
+            onChange={(e) => onScrub(e.target.value)}
+            onMouseUp={onScrubEnd}
+            onKeyUp={onScrubEnd}
+            style={{ background: trackStyling }}
+          />
+          <p className={styles.timer}>{formatTime(duration)}</p>
+        </div>
       </div>
       <Backdrop
         trackIndex={trackIndex}

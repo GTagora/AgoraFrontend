@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/(pages)/[issue]/[article]/page",{
+
+/***/ "(app-pages-browser)/./src/app/components/audioPlayer.module.css":
+/*!***************************************************!*\
+  !*** ./src/app/components/audioPlayer.module.css ***!
+  \***************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+eval(__webpack_require__.ts("// extracted by mini-css-extract-plugin\nmodule.exports = {\"audio-player\":\"audioPlayer_audio-player__EkVfM\",\"artwork\":\"audioPlayer_artwork__diUG1\",\"track-info\":\"audioPlayer_track-info__zcQON\",\"title\":\"audioPlayer_title__w_4ns\",\"artist\":\"audioPlayer_artist__eRtjc\",\"hbox\":\"audioPlayer_hbox__hiYOs\",\"audio-controls\":\"audioPlayer_audio-controls__wdcL1\",\"play\":\"audioPlayer_play__9aJnX\",\"pause\":\"audioPlayer_pause__110x_\",\"increment\":\"audioPlayer_increment__Db9eG\",\"progress\":\"audioPlayer_progress__dfxDF\",\"timer\":\"audioPlayer_timer___jo4O\"};\n    if(true) {\n      // 1703195983302\n      var cssReload = __webpack_require__(/*! ./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js */ \"(app-pages-browser)/./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js\")(module.id, {\"publicPath\":\"/_next/\",\"esModule\":false,\"locals\":true});\n      module.hot.dispose(cssReload);\n      \n    }\n  \nmodule.exports.__checksum = \"316c55058039\"\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL3NyYy9hcHAvY29tcG9uZW50cy9hdWRpb1BsYXllci5tb2R1bGUuY3NzIiwibWFwcGluZ3MiOiJBQUFBO0FBQ0Esa0JBQWtCO0FBQ2xCLE9BQU8sSUFBVTtBQUNqQjtBQUNBLHNCQUFzQixtQkFBTyxDQUFDLHdNQUFvSSxjQUFjLHNEQUFzRDtBQUN0TyxNQUFNLFVBQVU7QUFDaEI7QUFDQTtBQUNBO0FBQ0EseUJBQXlCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vX05fRS8uL3NyYy9hcHAvY29tcG9uZW50cy9hdWRpb1BsYXllci5tb2R1bGUuY3NzP2U1MGQiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5tb2R1bGUuZXhwb3J0cyA9IHtcImF1ZGlvLXBsYXllclwiOlwiYXVkaW9QbGF5ZXJfYXVkaW8tcGxheWVyX19Fa1ZmTVwiLFwiYXJ0d29ya1wiOlwiYXVkaW9QbGF5ZXJfYXJ0d29ya19fZGlVRzFcIixcInRyYWNrLWluZm9cIjpcImF1ZGlvUGxheWVyX3RyYWNrLWluZm9fX3pjUU9OXCIsXCJ0aXRsZVwiOlwiYXVkaW9QbGF5ZXJfdGl0bGVfX3dfNG5zXCIsXCJhcnRpc3RcIjpcImF1ZGlvUGxheWVyX2FydGlzdF9fZVJ0amNcIixcImhib3hcIjpcImF1ZGlvUGxheWVyX2hib3hfX2hpWU9zXCIsXCJhdWRpby1jb250cm9sc1wiOlwiYXVkaW9QbGF5ZXJfYXVkaW8tY29udHJvbHNfX3dkY0wxXCIsXCJwbGF5XCI6XCJhdWRpb1BsYXllcl9wbGF5X185YUpuWFwiLFwicGF1c2VcIjpcImF1ZGlvUGxheWVyX3BhdXNlX18xMTB4X1wiLFwiaW5jcmVtZW50XCI6XCJhdWRpb1BsYXllcl9pbmNyZW1lbnRfX0RiOWVHXCIsXCJwcm9ncmVzc1wiOlwiYXVkaW9QbGF5ZXJfcHJvZ3Jlc3NfX2RmeERGXCIsXCJ0aW1lclwiOlwiYXVkaW9QbGF5ZXJfdGltZXJfX19qbzRPXCJ9O1xuICAgIGlmKG1vZHVsZS5ob3QpIHtcbiAgICAgIC8vIDE3MDMxOTU5ODMzMDJcbiAgICAgIHZhciBjc3NSZWxvYWQgPSByZXF1aXJlKFwiL1VzZXJzL29saXZpYWh1L0RvY3VtZW50cy9naXRodWIvQWdvcmFGcm9udGVuZC9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2NvbXBpbGVkL21pbmktY3NzLWV4dHJhY3QtcGx1Z2luL2htci9ob3RNb2R1bGVSZXBsYWNlbWVudC5qc1wiKShtb2R1bGUuaWQsIHtcInB1YmxpY1BhdGhcIjpcIi9fbmV4dC9cIixcImVzTW9kdWxlXCI6ZmFsc2UsXCJsb2NhbHNcIjp0cnVlfSk7XG4gICAgICBtb2R1bGUuaG90LmRpc3Bvc2UoY3NzUmVsb2FkKTtcbiAgICAgIFxuICAgIH1cbiAgXG5tb2R1bGUuZXhwb3J0cy5fX2NoZWNrc3VtID0gXCIzMTZjNTUwNTgwMzlcIlxuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(app-pages-browser)/./src/app/components/audioPlayer.module.css\n"));
+
+/***/ })
+
+});
