@@ -171,6 +171,7 @@
     bottom: 0;
     left: 0;
     width: 100vw;
+    height: 15vh;
     opacity: .9;
     padding: 20px;
     background-color: var(--bg-color);
@@ -220,10 +221,18 @@
     fill: var(--white);
   }
 
+  .audioPlayer_audio-controls__wdcL1 button:hover {
+    width: 20px;
+  }
+
   .audioPlayer_progress__dfxDF {
     border-radius: 0px;
     width: 80vw;
     outline: none;
+  }
+
+  .audioPlayer_timer___jo4O {
+    font-family: 'Arial';
   }
   
 

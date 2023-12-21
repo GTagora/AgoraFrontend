@@ -67,15 +67,26 @@ const AudioPlayer = ({ tracks }: { tracks:any }) => {
     startTimer();
   };
 
+  const incrementTime = (num) => {
+    clearInterval(intervalRef.current);
+    audioRef.current.currentTime += num;
+    setTrackProgress(audioRef.current.currentTime);
+    startTimer();
+  }
+
   const toPrevTrack = () => {
     if (trackIndex - 1 < 0) {
       setTrackIndex(tracks.length - 1);
     } else {
       setTrackIndex(trackIndex - 1);
     }
+    console.log("prev clicked");
   };
 
-  
+  const formatTime = (num) => {
+    let min = Math.floor(num/60);
+    return min + ":" + ("0" + Math.round(num%60)).slice(-2);
+  }
 
   useEffect(() => {
     if (isPlaying) {
@@ -116,11 +127,10 @@ const AudioPlayer = ({ tracks }: { tracks:any }) => {
       <div className={styles['track-info']}>
         <Image className={styles.artwork} src={image} height={400} width={400} alt='Article Image'/>
         <h2 className={styles.title}>{title}</h2>
-        {/* <h3 className={styles.artist}>{artist}</h3> */}
+        <h3 className={styles.artist}>{artist}</h3>
         <AudioControls
           isPlaying={isPlaying}
-          onPrevClick={toPrevTrack}
-          onNextClick={toNextTrack}
+          incrementTime={incrementTime}
           onPlayPauseClick={setIsPlaying}
         />
         <input
@@ -135,6 +145,7 @@ const AudioPlayer = ({ tracks }: { tracks:any }) => {
           onKeyUp={onScrubEnd}
           style={{ background: trackStyling }}
         />
+        <p className={styles.timer}>{formatTime(audioRef.current.currentTime)}</p>
       </div>
       <Backdrop
         trackIndex={trackIndex}
