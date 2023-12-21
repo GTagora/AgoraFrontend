@@ -159,7 +159,7 @@
     translate: -50px -150px;
     background-color: black;
     opacity: .3;
-    z-index: 2;
+    z-index: 3;
     transition: 2s;
 }
 

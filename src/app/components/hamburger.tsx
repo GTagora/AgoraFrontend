@@ -31,7 +31,7 @@ export default function Hamburger() {
                         <Link href="/about/staff"><div className={styles.indent}>Staff</div></Link>
 
                     <Link href="/archive"><div className={styles.label}>ARCHIVE</div></Link>
-                        <Link href="/archive" className={styles.indent}>Fall '23</Link>
+                        <Link href="/#fall-23-release" className={styles.indent}>Fall '23</Link>
                         <Link href="/archive" className={styles.indent}>Past Issues</Link>
 
                     <Link href="/blog"><div className={styles.label}>BLOG</div></Link>
