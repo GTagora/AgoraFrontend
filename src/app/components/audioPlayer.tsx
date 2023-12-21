@@ -116,7 +116,7 @@ const AudioPlayer = ({ tracks }: { tracks:any }) => {
       <div className={styles['track-info']}>
         <Image className={styles.artwork} src={image} height={400} width={400} alt='Article Image'/>
         <h2 className={styles.title}>{title}</h2>
-        <h3 className={styles.artist}>{artist}</h3>
+        {/* <h3 className={styles.artist}>{artist}</h3> */}
         <AudioControls
           isPlaying={isPlaying}
           onPrevClick={toPrevTrack}
