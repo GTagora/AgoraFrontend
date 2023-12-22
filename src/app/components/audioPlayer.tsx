@@ -16,7 +16,7 @@ const AudioPlayer = ({ tracks }: { tracks:any }) => {
 
   // Refs
   const audioRef = useRef(new Audio(audioSrc));
-  const intervalRef = useRef();
+  const intervalRef:any = useRef(0);
   const isReady = useRef(false);
 
   // Destructure for conciseness
@@ -29,30 +29,21 @@ const AudioPlayer = ({ tracks }: { tracks:any }) => {
     -webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(${currentPercentage}, #fff), color-stop(${currentPercentage}, #777))
   `;
 
-  const toNextTrack = useCallback(() => {
-    if (trackIndex < tracks.length - 1) {
-        setTrackIndex(trackIndex + 1);
-      } else {
-        setTrackIndex(0);
-      }
-  }, [trackIndex, tracks.length]);
-
   const startTimer = useCallback(() => {
-
-    // Clear any timers already running
-    clearInterval(intervalRef.current);
 
     intervalRef.current = setInterval(() => {
         if (audioRef.current.ended) {
-        toNextTrack();
+          setTrackProgress(0);
         } else {
-        setTrackProgress(audioRef.current.currentTime);
+          setTrackProgress(audioRef.current.currentTime);
         }
-    }, [1000]);
+        // Clear any timers already running
+        return clearInterval(intervalRef.current);
+    }, 1000);
 
-  }, [toNextTrack]); 
+  }, []); 
 
-  const onScrub = (value) => {
+  const onScrub = (value:any) => {
     // Clear any timers already running
     clearInterval(intervalRef.current);
     audioRef.current.currentTime = value;
@@ -67,23 +58,14 @@ const AudioPlayer = ({ tracks }: { tracks:any }) => {
     startTimer();
   };
 
-  const incrementTime = (num) => {
+  const incrementTime = (num:any) => {
     clearInterval(intervalRef.current);
     audioRef.current.currentTime += num;
     setTrackProgress(audioRef.current.currentTime);
     startTimer();
   }
 
-  const toPrevTrack = () => {
-    if (trackIndex - 1 < 0) {
-      setTrackIndex(tracks.length - 1);
-    } else {
-      setTrackIndex(trackIndex - 1);
-    }
-    console.log("prev clicked");
-  };
-
-  const formatTime = (num) => {
+  const formatTime = (num:any) => {
     let min = Math.floor(num/60);
     return min + ":" + ("0" + Math.round(num%60)).slice(-2);
   }
@@ -98,21 +80,21 @@ const AudioPlayer = ({ tracks }: { tracks:any }) => {
   }, [startTimer, isPlaying]);
 
   // Handles cleanup and setup when changing tracks
-  useEffect(() => {
-    audioRef.current.pause();
+  // useEffect(() => {
+  //   audioRef.current.pause();
 
-    audioRef.current = new Audio(audioSrc);
-    setTrackProgress(audioRef.current.currentTime);
+  //   audioRef.current = new Audio(audioSrc);
+  //   setTrackProgress(audioRef.current.currentTime);
 
-    if (isReady.current) {
-      audioRef.current.play();
-      setIsPlaying(true);
-      startTimer();
-    } else {
-      // Set the isReady ref as true for the next pass
-      isReady.current = true;
-    }
-  }, [audioSrc, startTimer, trackIndex]);
+  //   if (isReady.current) {
+  //     audioRef.current.play();
+  //     setIsPlaying(true);
+  //     startTimer();
+  //   } else {
+  //     // Set the isReady ref as true for the next pass
+  //     isReady.current = true;
+  //   }
+  // }, [audioSrc, startTimer, trackIndex]);
 
   useEffect(() => {
     // Pause and clean up on unmount
@@ -160,3 +142,22 @@ const AudioPlayer = ({ tracks }: { tracks:any }) => {
 };
 
 export default AudioPlayer;
+
+
+
+// const toNextTrack = useCallback(() => {
+  //   if (trackIndex < tracks.length - 1) {
+  //       setTrackIndex(trackIndex + 1);
+  //     } else {
+  //       setTrackIndex(0);
+  //     }
+  // }, [trackIndex, tracks.length]);
+
+
+  // const toPrevTrack = () => {
+  //   if (trackIndex - 1 < 0) {
+  //     setTrackIndex(tracks.length - 1);
+  //   } else {
+  //     setTrackIndex(trackIndex - 1);
+  //   }
+  // };
