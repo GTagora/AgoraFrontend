@@ -11,11 +11,18 @@ const AudioPlayer = ({ tracks }: { tracks:any }) => {
   const [trackProgress, setTrackProgress] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
 
+  // const [audioRef, setAudio] = useState(new Audio(audioSrc))
+  //   useEffect(() => {
+  //     setAudio(new Audio(audioSrc))
+  //   // only run once on the first render on the client
+  //   }, [])
+
   // Destructure for conciseness
   const { title, artist, color, image, audioSrc } = tracks[trackIndex];
 
   // Refs
   const audioRef = useRef(new Audio(audioSrc));
+  
   const intervalRef:any = useRef(0);
   const isReady = useRef(false);
 
@@ -79,23 +86,6 @@ const AudioPlayer = ({ tracks }: { tracks:any }) => {
     }
   }, [startTimer, isPlaying]);
 
-  // Handles cleanup and setup when changing tracks
-  // useEffect(() => {
-  //   audioRef.current.pause();
-
-  //   audioRef.current = new Audio(audioSrc);
-  //   setTrackProgress(audioRef.current.currentTime);
-
-  //   if (isReady.current) {
-  //     audioRef.current.play();
-  //     setIsPlaying(true);
-  //     startTimer();
-  //   } else {
-  //     // Set the isReady ref as true for the next pass
-  //     isReady.current = true;
-  //   }
-  // }, [audioSrc, startTimer, trackIndex]);
-
   useEffect(() => {
     // Pause and clean up on unmount
     return () => {
@@ -145,6 +135,8 @@ export default AudioPlayer;
 
 
 
+/** These methods aren't needed because we'd only ever have one track per article page **/
+
 // const toNextTrack = useCallback(() => {
   //   if (trackIndex < tracks.length - 1) {
   //       setTrackIndex(trackIndex + 1);
@@ -161,3 +153,20 @@ export default AudioPlayer;
   //     setTrackIndex(trackIndex - 1);
   //   }
   // };
+
+  // Handles cleanup and setup when changing tracks
+  // useEffect(() => {
+  //   audioRef.current.pause();
+
+  //   audioRef.current = new Audio(audioSrc);
+  //   setTrackProgress(audioRef.current.currentTime);
+
+  //   if (isReady.current) {
+  //     audioRef.current.play();
+  //     setIsPlaying(true);
+  //     startTimer();
+  //   } else {
+  //     // Set the isReady ref as true for the next pass
+  //     isReady.current = true;
+  //   }
+  // }, [audioSrc, startTimer, trackIndex]);
