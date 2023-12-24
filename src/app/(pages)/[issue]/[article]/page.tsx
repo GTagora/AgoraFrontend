@@ -1,7 +1,7 @@
 import styles from './article.module.css'
 import { GetStaticPaths } from 'next'
 import Image from 'next/image'
-import AudioPlayer from '../../../components/audioPlayer'
+// import AudioPlayer from '../../../components/audioPlayer'
 import Footer from '../../../components/footer'
 import pic from 'public/test.jpg'
 
@@ -49,7 +49,7 @@ export default async function Article({ params }: any) {
                     <div className={styles.text} dangerouslySetInnerHTML={{ __html: text.replace(/\\n/g, '\n')}}></div>
                 </div>
                 <div className={styles.audio}>
-                    {article.Audio ? <AudioPlayer tracks={audio} />: null}
+                    {/* {article.Audio ? <AudioPlayer tracks={audio} />: null} */}
                 </div>
             </div>
         </div>
