@@ -85,6 +85,13 @@
     .rightAlign {
         text-align: right;
     }
+
+    .video {
+        margin-block: 30px 40px;
+        width: 100%;
+        min-height: 30vh;
+        max-width: 70vw;
+    }
 }
 
 /* ---------DESKTOP VIEW----------- */
@@ -155,5 +162,12 @@
     .audio {
         position: fixed;
         right: 5%;
+    }
+
+    .video {
+        margin-block: 30px 40px;
+        width: 100%;
+        min-height: 60vh;
+        max-width: 70vw;
     }
 }
