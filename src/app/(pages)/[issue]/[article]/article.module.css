@@ -91,6 +91,7 @@
         width: 100%;
         min-height: 30vh;
         max-width: 70vw;
+        border-width: 0;
     }
 }
 
@@ -169,5 +170,6 @@
         width: 100%;
         min-height: 60vh;
         max-width: 70vw;
+        border-width: 0;
     }
 }
