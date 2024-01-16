@@ -121,7 +121,7 @@
     .article_title__KEuBJ {
         font-family: var(--font-playfair);
         font-weight: 500;
-        font-size: 50pt;
+        font-size: 40pt;
         margin-block: 20px 40px;
     }
 
@@ -136,13 +136,13 @@
     }
 
     .article_author__XJuw_ {
-        font-size: 20pt;
+        font-size: 16pt;
         font-family: var(--font-cormorant);
         font-weight: 600;
     }
 
     .article_date__PgGGx {
-        font-size: 16pt;
+        font-size: 14pt;
         font-family: var(--font-eb-garamond);
         font-weight: 400;
         margin-block: 10px 50px;
@@ -150,7 +150,7 @@
 
     .article_text__FrMmG {
         line-height: 200%;
-        font-size: 16pt;
+        font-size: 13pt;
         white-space: pre-line;
     }
 
