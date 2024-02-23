@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 {}
+=======
+{
+  "/page": "app/page.js",
+  "/(pages)/[issue]/[article]/page": "app/(pages)/[issue]/[article]/page.js"
+}
+>>>>>>> video

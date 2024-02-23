@@ -8,7 +8,7 @@ export default function About() {
     <main className={styles.main}>
         <div className={styles.container}>
 
-            <h1 className={styles.page}>Mission Statment & Rationale</h1>
+            <h1 className={styles.page}>Mission Statement & Rationale</h1>
             
             <div className={styles['mission-container']}>
                 <h1 className={styles['section-header']}> Mission Statement </h1>
