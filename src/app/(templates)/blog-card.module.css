@@ -1,7 +1,7 @@
 /* ---------MOBILE VIEW----------- */
 @media screen and (max-width: 699px) {
     .card {
-        width: 87vw;
+        width: 70vw;
         flex-grow: 1;
         padding: 30px;
         line-height: 30px;
@@ -49,7 +49,7 @@
         flex-grow: 1;
         margin-block: 2rem;
         line-height: 30px;
-        width: 100%;
+        width: 60vw;
         border-radius: 10px;
         overflow: hidden;
         position: relative;

@@ -4,7 +4,7 @@ import Footer from '@/app/components/footer'
 import BlogCard from '@/app/(templates)/blog-card'
 
 async function getArticles() {
-    const res = await fetch(`https://agora-backend-sxd6.onrender.com/getJournalEntries`, { cache: 'force-cache' });
+    const res = await fetch(`https://agora-backend-sxd6.onrender.com/getBlogEntries`, { cache: 'force-cache' });
     const data = res.json();
     return data;
 }

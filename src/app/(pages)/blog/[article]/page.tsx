@@ -8,7 +8,7 @@ interface Articles {
 }
 
 async function getArticles() {
-    const res = await fetch(`https://agora-backend-sxd6.onrender.com/getJournalEntries`, { cache: 'no-store' });
+    const res = await fetch(`https://agora-backend-sxd6.onrender.com/getBlogEntries`, { cache: 'no-store' });
     const data = res.json();
   
     return data;
@@ -24,13 +24,13 @@ export default async function Article({ params }: any) {
     const date = article.Date
     const text = article.Text
     const video = article.Video
-    const audio = [{
-        title: article.Title,
-        artist: String(article.Author),
-        color: '#E5ECE7',
-        image: article.Image,
-        audioSrc: article.Audio
-    }]
+    // const audio = [{
+    //     title: article.Title,
+    //     artist: String(article.Author),
+    //     color: '#E5ECE7',
+    //     image: article.Image,
+    //     audioSrc: article.Audio
+    // }]
 
     return (
         <div>

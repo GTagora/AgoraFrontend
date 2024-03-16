@@ -30,7 +30,7 @@ export default function BlogCard({ article }: BlogCard) {
                     <h2>{title}</h2>
                 </div>
                 <h3>{genre}</h3>
-                <h4>02.20.24</h4>
+                <h4><i>02.20.24</i></h4>
             </div>
         </Link>
     )
