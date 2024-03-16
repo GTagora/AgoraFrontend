@@ -45,11 +45,10 @@
 @media screen and (min-width: 700px) {
 
     .card {
+        width: 50vw;
         height: 175px;
         flex-grow: 1;
-        margin-block: 2rem;
         line-height: 30px;
-        width: 60vw;
         border-radius: 10px;
         overflow: hidden;
         position: relative;
