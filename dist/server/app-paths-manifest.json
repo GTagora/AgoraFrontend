@@ -1,5 +1,5 @@
 {
-  "/(pages)/[issue]/[article]/page": "app/(pages)/[issue]/[article]/page.js",
+  "/page": "app/page.js",
   "/(pages)/blog/page": "app/(pages)/blog/page.js",
   "/(pages)/blog/[article]/page": "app/(pages)/blog/[article]/page.js"
 }
