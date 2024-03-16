@@ -16,14 +16,13 @@ export default function Hamburger() {
     return (
         <div className={styles.body}>
             <div className={styles.navbar} onClick={ () => setOpen(!open)} >
-                {/* <input type="checkbox" className={styles.input}/> */}
                 <div className={open ? styles.openBar : styles.bar }>
                     <span className={open ? styles.openBar1 : styles.bar1 }></span>
                     <span className={open ? styles.openBar2 : styles.bar2 }></span>
                     <span className={open ? styles.openBar3 : styles.bar3 }></span>
                 </div>
 
-                <div className={styles.dim} />
+                <div className={open ? styles.openDim : styles.dim} />
                 <div className={ open? styles.activebuttons : styles.buttons }>
                     <Link href="/"><div className={styles.label}>HOME</div></Link>
 
@@ -32,8 +31,8 @@ export default function Hamburger() {
                         <Link href="/about/staff"><div className={styles.indent}>Staff</div></Link>
 
                     <Link href="/archive"><div className={styles.label}>ARCHIVE</div></Link>
-                        {/* <Link href="/archive" className={styles.indent}>Fall '23</Link>
-                        <Link href="/archive" className={styles.indent}>Past Issues</Link> */}
+                        <Link href="/#fall-23-release" className={styles.indent}>Fall &apos;23</Link>
+                        <Link href="/archive" className={styles.indent}>Past Issues</Link>
 
                     <Link href="/blog"><div className={styles.label}>BLOG</div></Link>
                     

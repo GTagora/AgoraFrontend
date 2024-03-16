@@ -1,18 +1,33 @@
 import styles from './page.module.css'
 import Link from 'next/link'
 import Footer from '@/app/components/footer'
+import BlogCard from '@/app/(templates)/blog-card'
 
-export default function About() {
+async function getBlogArticles() {
+    const res = await fetch(`https://agora-backend-sxd6.onrender.com/getBlogEntries`, { cache: 'force-cache' });
+    const data = res.json();
+    return data;
+}
+
+export default async function Blog() {
+    const articles = await getBlogArticles();
     return (
-    <main className={styles.main}>
-      <h1>Blog</h1>
-      <div className={styles.container}>
-        <p>Content coming Spring &apos;24!</p>
-        <Link href="/contact">
-            <div className={styles.button}>&#x2192;&nbsp;&nbsp;&nbsp;&nbsp;stay up to date</div>
-        </Link>
-      </div>
-      {/* <div className={styles.footer}><Footer /></div> */}
-    </main>
+        <main className={styles.main}>
+            <h1>Blog</h1>
+            <div className={styles.allcards}>
+                {articles && articles.map(async (article: any) => (
+                    <BlogCard key={null} article={article}></BlogCard>
+                ))}
+            </div>
+        </main>
     )
 }
+
+
+{/* COMING SOON BOX
+<div className={styles.container}>
+    <p>Content coming Spring &apos;24!</p>
+    <Link href="/contact">
+        <div className={styles.button}>&#x2192;&nbsp;&nbsp;&nbsp;&nbsp;stay up to date</div>
+    </Link>
+</div> */}

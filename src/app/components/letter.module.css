@@ -1,0 +1,78 @@
+.box {
+    display: flex;
+    align-items: flex-end;
+    color: gray;
+    width: 55%;
+    padding: 0;
+    transition: .4s;
+}
+
+.box:hover {
+    cursor: pointer;
+    color: black;
+    transition: .4s;
+}
+
+.box p {
+    margin-left: -10px;
+}
+
+.hbar, .vbar, .openhbar, .openvbar {
+    width: 20px;
+    height: 3px;
+    margin-bottom: 17px;
+    border-radius: 3px;
+    background: gray;
+
+    transition: transform 0.4s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.4s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.4s ease;
+}
+
+.box:hover .hbar,.box:hover .vbar,.box:hover .openhbar,.box:hover .openvbar {
+    background: black;
+}
+
+.vbar {
+    translate: -20px;
+    transform: rotate(90deg);
+}
+
+.openvbar {
+    translate: -20px;
+}
+
+.hideText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.letter {
+    margin-block: 30px;
+    padding-block: 40px;
+    padding-inline: 55px;
+    border-radius: 20px;
+    background-color: var(--neutral-tan);
+    filter: drop-shadow(4px 4px 6px rgba(210, 210, 210, 0.677));
+    margin-inline: 30px;
+
+    letter-spacing: .095rem;
+    line-height: 2.2rem;
+}
+
+.letter p {
+    font-family: var(--font-ebgaramond);
+    height: 70%;
+    margin-top: 15px;
+}
+
+.letter h5 {
+    font-family: var(--font-ebgaramond);
+    font-size: 13pt;
+    font-weight: 450;
+    line-height: 1.7rem;
+    margin-top: 15px;
+}

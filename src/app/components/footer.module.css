@@ -1,22 +1,21 @@
+/* ---------DESKTOP VIEW----------- */
 @media screen and (min-width: 950px) {
     .box {
-    padding: 5% 5%;
     background: var(--bg-color);
     position: absolute;
     bottom: 0;
     margin-top: -15rem;
+    padding: 70px 30px;
     height: 15rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
     letter-spacing: 2px;
     font-family: var(--font-ebgaramond);
 
-    @media (max-width: 1000px) {
-        padding: 70px 30px;
-    }
 }
 
 .footerContainer {
@@ -108,10 +107,6 @@
         padding-right: 5rem;
         letter-spacing: 2px;
         font-family: var(--font-ebgaramond);
-    
-        @media (max-width: 1000px) {
-            padding: 70px 30px;
-        }
     }
     
     .footerContainer {
@@ -192,11 +187,19 @@
 }
 
 
-/* ---------HALF SCREN VIEW----------- */
+/* ---------MOBILE & HALF SCREN VIEW----------- */
 @media screen and (max-width: 949px) {
 
     .footerContainer {
         display: none;
+    }
+
+    .box {
+        margin-block: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .socialRow {

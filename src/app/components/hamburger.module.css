@@ -29,24 +29,13 @@
 
 /*-------------------hamburger components-------------------*/
 /* x symbol on top of hamburger, hidden */
-.input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    
+
+.bar, .openBar {
     cursor: pointer;
-    
-    opacity: 0; /* hide this */
-    z-index: 5; /* and place it over the hamburger */
-    
-    -webkit-touch-callout: none;
 }
 
 /* hamburger bar components base styling */
-.bar1, .bar2, .bar3 {
+.bar1, .bar2, .bar3, .openBar1, .openBar2, .openBar3 {
     display: block;
     width: 33px;
     height: 4px;
@@ -74,44 +63,13 @@
 /* top bar rotates down 45 degrees */
 .openBar1
 {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    
-    background: rgb(47, 47, 47);
-    border-radius: 3px;
-    
-    z-index: 4;
-    transform-origin: 4px 0px;
-    
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-    
-    transform: rotate(45deg) translate(-2px, -1px);
+   transform: rotate(45deg) translate(-2px, -1px);
 }
 
 /* let's hide the middle one. */
 .openBar2
 {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    
-    background: rgb(47, 47, 47);
-    border-radius: 3px;
     opacity: 0;
-    
-    z-index: 4;
-    transform-origin: 4px 0px;
-    
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
@@ -120,30 +78,13 @@
  */
  .openBar3
 {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    
-    background: rgb(47, 47, 47);
-    border-radius: 3px;
-    
-    z-index: 4;
     transform-origin: 2px 0px;
-    
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-    transform: rotate(-45deg) translate(-1px, 0px);
+    transform: rotate(-45deg) translate(-1.5px, -1.5px);
 }
 
 
 /*-------------------menu component-------------------*/
 /* menu slides in from the left */
-.input:checked ~ .buttons {
-    transform: none;
-}
 
 .buttons {
     display: flex;
@@ -199,6 +140,7 @@
     padding-left: 15px;
     padding-block: 10px;
     font-size: 14.5pt;
+    letter-spacing: 1px;
 }
 
 .label:hover, .indent:hover {
@@ -210,27 +152,31 @@
 /*-------------------background dim-------------------*/
 
 /* dims background when menu is opened */
-.dim {
+.dim, .openDim {
     position: absolute;
-    width: 35vw;
+    width: 140vw;
     height: 150vh;
-    margin: -180px 65vw;
+    translate: -50px -150px;
     background-color: black;
-    opacity: 0;
-    z-index: 2;
-    transform-origin: 0% 0%;
-    /* transform: translate(150%, 0); */
-    transition: .7s;
+    opacity: .3;
+    z-index: 3;
+    transition: 2s;
 }
 
-.input:checked ~ .dim {
-    transform: none;
-    opacity: .28;
+.dim {
+    display: none;
+    transition: 2s;
 }
 
 
 @media screen and (min-width: 699px) {
     .body {
         display: none;
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .body {
+        font-size: 13pt;
     }
 }

@@ -1,22 +1,29 @@
-'use client';
-import React, { useState, useEffect, useRef, useCallback } from "react";
-import AudioControls from "./audioControls";
-import Backdrop from "./backdrop";
-import Image from "next/image";
-import styles from "./audioPlayer.module.css";
+// 'use client';
+// import React, { useState, useEffect, useRef, useCallback } from "react";
+// import AudioControls from "./audioControls";
+// import Backdrop from "./backdrop";
+// import Image from "next/image";
+// import styles from "./audioPlayer.module.css";
 
-const AudioPlayer = ({ tracks }: any) => {
+// const AudioPlayer = ({ tracks }: { tracks:any }) => {
 //   // State
 //   const [trackIndex, setTrackIndex] = useState(0);
 //   const [trackProgress, setTrackProgress] = useState(0);
 //   const [isPlaying, setIsPlaying] = useState(false);
+
+//   // const [audioRef, setAudio] = useState(new Audio(audioSrc))
+//   //   useEffect(() => {
+//   //     setAudio(new Audio(audioSrc))
+//   //   // only run once on the first render on the client
+//   //   }, [])
 
 //   // Destructure for conciseness
 //   const { title, artist, color, image, audioSrc } = tracks[trackIndex];
 
 //   // Refs
 //   const audioRef = useRef(new Audio(audioSrc));
-//   const intervalRef = useRef();
+  
+//   const intervalRef:any = useRef(0);
 //   const isReady = useRef(false);
 
 //   // Destructure for conciseness
@@ -29,30 +36,21 @@ const AudioPlayer = ({ tracks }: any) => {
 //     -webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(${currentPercentage}, #fff), color-stop(${currentPercentage}, #777))
 //   `;
 
-//   const toNextTrack = useCallback(() => {
-//     if (trackIndex < tracks.length - 1) {
-//         setTrackIndex(trackIndex + 1);
-//       } else {
-//         setTrackIndex(0);
-//       }
-//   }, [trackIndex, tracks.length]);
-
 //   const startTimer = useCallback(() => {
-
-//     // Clear any timers already running
-//     clearInterval(intervalRef.current);
 
 //     intervalRef.current = setInterval(() => {
 //         if (audioRef.current.ended) {
-//         toNextTrack();
+//           setTrackProgress(0);
 //         } else {
-//         setTrackProgress(audioRef.current.currentTime);
+//           setTrackProgress(audioRef.current.currentTime);
 //         }
-//     }, [1000]);
+//         // Clear any timers already running
+//         return clearInterval(intervalRef.current);
+//     }, 1000);
 
-//   }, [toNextTrack]); 
+//   }, []); 
 
-//   const onScrub = (value) => {
+//   const onScrub = (value:any) => {
 //     // Clear any timers already running
 //     clearInterval(intervalRef.current);
 //     audioRef.current.currentTime = value;
@@ -67,15 +65,17 @@ const AudioPlayer = ({ tracks }: any) => {
 //     startTimer();
 //   };
 
-//   const toPrevTrack = () => {
-//     if (trackIndex - 1 < 0) {
-//       setTrackIndex(tracks.length - 1);
-//     } else {
-//       setTrackIndex(trackIndex - 1);
-//     }
-//   };
+//   const incrementTime = (num:any) => {
+//     clearInterval(intervalRef.current);
+//     audioRef.current.currentTime += num;
+//     setTrackProgress(audioRef.current.currentTime);
+//     startTimer();
+//   }
 
-  
+//   const formatTime = (num:any) => {
+//     let min = Math.floor(num/60);
+//     return min + ":" + ("0" + Math.round(num%60)).slice(-2);
+//   }
 
 //   useEffect(() => {
 //     if (isPlaying) {
@@ -85,23 +85,6 @@ const AudioPlayer = ({ tracks }: any) => {
 //       audioRef.current.pause();
 //     }
 //   }, [startTimer, isPlaying]);
-
-//   // Handles cleanup and setup when changing tracks
-//   useEffect(() => {
-//     audioRef.current.pause();
-
-//     audioRef.current = new Audio(audioSrc);
-//     setTrackProgress(audioRef.current.currentTime);
-
-//     if (isReady.current) {
-//       audioRef.current.play();
-//       setIsPlaying(true);
-//       startTimer();
-//     } else {
-//       // Set the isReady ref as true for the next pass
-//       isReady.current = true;
-//     }
-//   }, [audioSrc, startTimer, trackIndex]);
 
 //   useEffect(() => {
 //     // Pause and clean up on unmount
@@ -119,22 +102,25 @@ const AudioPlayer = ({ tracks }: any) => {
 //         <h3 className={styles.artist}>{artist}</h3>
 //         <AudioControls
 //           isPlaying={isPlaying}
-//           onPrevClick={toPrevTrack}
-//           onNextClick={toNextTrack}
+//           incrementTime={incrementTime}
 //           onPlayPauseClick={setIsPlaying}
 //         />
-//         <input
-//           type="range"
-//           value={trackProgress}
-//           step="1"
-//           min="0"
-//           max={duration ? duration : `${duration}`}
-//           className={styles.progress}
-//           onChange={(e) => onScrub(e.target.value)}
-//           onMouseUp={onScrubEnd}
-//           onKeyUp={onScrubEnd}
-//           style={{ background: trackStyling }}
-//         />
+//         <div className={styles.hbox}>
+//           <p className={styles.timer}>{formatTime(audioRef.current.currentTime)}</p>
+//           <input
+//             type="range"
+//             value={trackProgress}
+//             step="1"
+//             min="0"
+//             max={duration ? duration : `${duration}`}
+//             className={styles.progress}
+//             onChange={(e) => onScrub(e.target.value)}
+//             onMouseUp={onScrubEnd}
+//             onKeyUp={onScrubEnd}
+//             style={{ background: trackStyling }}
+//           />
+//           <p className={styles.timer}>{formatTime(duration)}</p>
+//         </div>
 //       </div>
 //       <Backdrop
 //         trackIndex={trackIndex}
@@ -143,6 +129,44 @@ const AudioPlayer = ({ tracks }: any) => {
 //       />
 //     </div>
 //   );
-};
+// };
 
-export default AudioPlayer;
+// export default AudioPlayer;
+
+
+
+// /** These methods aren't needed because we'd only ever have one track per article page **/
+
+// // const toNextTrack = useCallback(() => {
+//   //   if (trackIndex < tracks.length - 1) {
+//   //       setTrackIndex(trackIndex + 1);
+//   //     } else {
+//   //       setTrackIndex(0);
+//   //     }
+//   // }, [trackIndex, tracks.length]);
+
+
+//   // const toPrevTrack = () => {
+//   //   if (trackIndex - 1 < 0) {
+//   //     setTrackIndex(tracks.length - 1);
+//   //   } else {
+//   //     setTrackIndex(trackIndex - 1);
+//   //   }
+//   // };
+
+//   // Handles cleanup and setup when changing tracks
+//   // useEffect(() => {
+//   //   audioRef.current.pause();
+
+//   //   audioRef.current = new Audio(audioSrc);
+//   //   setTrackProgress(audioRef.current.currentTime);
+
+//   //   if (isReady.current) {
+//   //     audioRef.current.play();
+//   //     setIsPlaying(true);
+//   //     startTimer();
+//   //   } else {
+//   //     // Set the isReady ref as true for the next pass
+//   //     isReady.current = true;
+//   //   }
+//   // }, [audioSrc, startTimer, trackIndex]);

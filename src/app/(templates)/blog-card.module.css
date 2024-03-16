@@ -1,0 +1,145 @@
+/* ---------MOBILE VIEW----------- */
+@media screen and (max-width: 699px) {
+    .card {
+        width: 70vw;
+        flex-grow: 1;
+        padding: 30px;
+        line-height: 30px;
+        background-color: rgb(249, 249, 249);
+        border-radius: 13px;
+        filter: drop-shadow(4px 4px 6px rgba(210, 210, 210, 0.677));
+    }
+
+    /* article image */
+    .cardImage {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .card h2 {
+        font-family: var(--font-ebgaramond);
+        font-size: 17pt;
+        font-weight: 600;
+        text-align: left;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .card h3 {
+        font-family: 'Arial';
+        font-weight: 400;
+        font-size: 11pt;
+        font-style: italic;
+        opacity: .6;
+    }
+}
+
+
+/* ---------DESKTOP VIEW----------- */
+@media screen and (min-width: 700px) {
+
+    .card {
+        width: 50vw;
+        height: 175px;
+        flex-grow: 1;
+        line-height: 30px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .text {
+        /* padding-block: 10px 15px; */
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        z-index: 10;
+        color: white;
+
+        /* Really bad invert colors based on background, we'd probably need a script for this */
+        mix-blend-mode: difference;
+    }
+
+    /* article title */
+    .card h2 {
+        font-family: var(--font-ebgaramond);
+        font-size: 16pt;
+        font-weight: 600;
+        text-align: left;
+        letter-spacing: 1px;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+    }
+
+    .card h3 {
+        font-family: 'Arial';
+        font-weight: 400;
+        font-style: italic;
+        font-size: 11pt;
+        opacity: .6;
+        position: absolute;
+        top: 50px;
+        left: 25px;
+    }
+
+    .card h4 {
+        font-family: 'Arial';
+        font-weight: 400;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    /* preview text */
+    .card p {
+        font-size: 14pt;
+        height: 70px;
+        margin-bottom: 1rem;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .readmore {
+        opacity: .5;
+        padding-top: 10px;
+    }
+
+    .card:hover .readmore {
+        opacity: 1;
+        transition: .3s;
+        letter-spacing: .2px;
+    }
+
+    /* default color card */
+    .cardColor {
+        background-color: var(--agora-green);
+        width: 100%;
+        height: 60%;
+    }
+
+    /* article image */
+    .cardImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        filter: blur(5px) grayscale(50%);
+        scale: 105%;
+    }
+
+}

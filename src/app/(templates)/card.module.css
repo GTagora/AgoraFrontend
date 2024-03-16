@@ -1,5 +1,5 @@
 /* ---------MOBILE VIEW----------- */
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 699px) {
   .card {
     width: 87vw;
     flex-grow: 1;
@@ -42,7 +42,7 @@
 
 
 /* ---------DESKTOP VIEW----------- */
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 700px) {
  
   .card {
     width: 20vw;
@@ -82,16 +82,6 @@
     font-size: 11pt;
     opacity: .6;
   }
-  /* genre label for top right alignment */
-  /* .card h3 {
-    font-family: 'Arial';
-    font-weight: 400;
-    font-style: italic;
-    font-size: 11pt;
-    color: rgb(119, 119, 119);
-    text-align: right;
-    padding-left: 20px;
-  } */
 
   /* preview text */
   .card p {

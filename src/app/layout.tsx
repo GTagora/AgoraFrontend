@@ -36,7 +36,7 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
-  title: 'Agora Website',
+  title: 'Agora | Georgia Tech’s Christian Thought Journal',
   description: 'Agora seeks to glorify God as an ecumenical forum and journal of Christian thought. By creating and curating pieces that reflect the vibrant beauty of God’s nature, we offer a collective Christian perspective to the campus dialogue.',
   icons: {
     icon: [
@@ -62,7 +62,8 @@ export default function RootLayout({
       <body>
         <Hamburger />
         <Header />
-        {children}</body>
+        {children}
+      </body>
     </html>
   )
 }

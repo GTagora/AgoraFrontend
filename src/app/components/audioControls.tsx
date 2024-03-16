@@ -1,41 +1,40 @@
 import React, { useState } from "react";
 import Image from 'next/image'
-import play from "public/audio-buttons/play.png";
-import playHover from "public/audio-buttons/play-black.png";
-import pause from "public/audio-buttons/pause.png";
-import pauseHover from "public/audio-buttons/pause-black.png";
+import play from "public/audio-buttons/play-black.png";
+import pause from "public/audio-buttons/pause-black.png";
+import prev from "public/audio-buttons/minus_ten.png";
+import next from "public/audio-buttons/plus_ten.png";
 import styles from "./audioPlayer.module.css";
 
+
 const AudioControls = ({
-  onPlayPauseClick,
-}: any) => {
-    const [isHoveringPlay, setIsHoveredPlay] = useState(false);
-    const [isHoveringPause, setIsHoveredPause] = useState(false);
-    const onMouseEnterPlay = () => setIsHoveredPlay(true);
-    const onMouseLeavePlay = () => setIsHoveredPlay(false);
-    const onMouseEnterPause = () => setIsHoveredPause(true);
-    const onMouseLeavePause = () => setIsHoveredPause(false);
+  isPlaying=true, incrementTime, onPlayPauseClick,
+}: {isPlaying:boolean, incrementTime:any, onPlayPauseClick:any}) => {
     return (
         <div className="audio-controls">
             <button
-                onMouseEnter={onMouseEnterPlay}
-                onMouseLeave={onMouseLeavePlay}
                 type="button"
-                className={styles.play}
-                onClick={() => onPlayPauseClick(true)}
+                className={styles.increment}
+                onClick={() => incrementTime(-10)}
                 aria-label="Play"
             >
-                {isHoveringPlay ? <Image src={playHover} height={40} width={40} alt='Play'/> : <Image src={play} height={40} width={40} alt='Play'/>}
+                <Image className={styles.increment} src={prev} height={26} width={26} alt='Play'/>
             </button>
             <button
-                onMouseEnter={onMouseEnterPause}
-                onMouseLeave={onMouseLeavePause}
                 type="button"
-                className={styles.pause}
-                onClick={() => onPlayPauseClick(false)}
-                aria-label="Pause"
+                className={styles.play}
+                onClick={() => onPlayPauseClick(!isPlaying)}
+                aria-label="Play"
             >
-                {isHoveringPause ? <Image src={pauseHover} height={40} width={40} alt='Play'/> : <Image src={pause} height={40} width={40} alt='Play'/>}
+                {isPlaying ? <Image className={styles.play} src={pause} height={34} width={34} alt='Play'/> : <Image className={styles.play} src={play} height={34} width={34} alt='Play'/>}
+            </button>
+            <button
+                type="button"
+                className={styles.increment}
+                onClick={() => incrementTime(10)}
+                aria-label="Play"
+            >
+                <Image className={styles.increment} src={next} height={26} width={26} alt='Play'/>
             </button>
         </div>
 )};
