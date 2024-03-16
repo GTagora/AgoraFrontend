@@ -1,7 +1,6 @@
 import styles from './article.module.css'
 import { GetStaticPaths } from 'next'
 import Image from 'next/image'
-import Footer from '../../../components/footer'
 
 interface Articles {
     article: { [key:string]: any };
