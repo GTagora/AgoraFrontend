@@ -22,6 +22,30 @@
       "static/chunks/main-app.js",
       "static/css/app/(pages)/[issue]/page.css",
       "static/chunks/app/(pages)/[issue]/page.js"
+    ],
+    "/(pages)/archive/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/archive/page.css",
+      "static/chunks/app/(pages)/archive/page.js"
+    ],
+    "/(pages)/[issue]/[article]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/[issue]/[article]/page.css",
+      "static/chunks/app/(pages)/[issue]/[article]/page.js"
+    ],
+    "/(pages)/blog/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/blog/page.css",
+      "static/chunks/app/(pages)/blog/page.js"
+    ],
+    "/(pages)/blog/[article]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/blog/[article]/page.css",
+      "static/chunks/app/(pages)/blog/[article]/page.js"
     ]
   }
 }
