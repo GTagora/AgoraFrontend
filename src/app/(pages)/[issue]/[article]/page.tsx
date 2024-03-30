@@ -51,13 +51,13 @@ export default async function Article({ params }: any) {
         </div>
 )};
 
-// export const getStaticPaths: GetStaticPaths = async () => {
-//     const articles = await getArticles();
-//     const paths = articles.map((article: any) => ({
-//         params: { article: article.Title.toLowerCase().replaceAll(" ", "-").replace(/[^a-zA-Z0-9 -]/g,"").toString(),
-//                   issue: article.Issue.toLowerCase().replaceAll(" ", "-")
-//                 }
-//     }));
+export const getStaticPaths: GetStaticPaths = async () => {
+    const articles = await getArticles();
+    const paths = articles.map((article: any) => ({
+        params: { article: article.Title.toLowerCase().replaceAll(" ", "-").replace(/[^a-zA-Z0-9 -]/g,"").toString(),
+                  issue: article.Issue.toLowerCase().replaceAll(" ", "-")
+                }
+    }));
   
-//     return { paths, fallback: true };
-//   };
+    return { paths, fallback: true };
+  };

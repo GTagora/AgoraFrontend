@@ -1,9 +1,9 @@
-/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/(pages)/[issue]/article.module.css ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/(pages)/[issue]/page.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
 /* ---------MOBILE VIEW----------- */
 @media screen and (max-width: 699px) {
-    .article_main__oVTBa {
+    .page_main___32g7 {
         display: flex;
         flex-direction: column;
         align-items: left;
@@ -25,7 +25,7 @@
     
     }
     
-    .article_container__sfMTH {
+    .page_container__IX8BQ {
         margin-top: 100px;
 
         @media screen and (max-width: 549px) {
@@ -33,7 +33,7 @@
         }
     }
     
-    .article_image__bS2qU {
+    .page_image__YH75z {
         width: 100%;
         max-width: 80vw;
         height: 100%;
@@ -42,7 +42,7 @@
         margin-block: 20px;
     }
     
-    .article_title__lcifj {
+    .page_title__54geV {
         font-family: var(--font-playfair);
         font-weight: 500;
         font-size: 30pt;
@@ -53,7 +53,7 @@
         }
     }
     
-    .article_author__4Xprb {
+    .page_author__6t8TZ {
         font-size: 15pt;
         font-family: var(--font-cormorant);
         font-weight: 600;
@@ -64,7 +64,7 @@
         }
     }
     
-    .article_date__KRV_k {
+    .page_date__Zpc_Q {
         font-size: 14pt;
         font-family: var(--font-eb-garamond);
         font-weight: 400;
@@ -75,7 +75,7 @@
         }
     }
     
-    .article_text__h6k1I {
+    .page_text__Nvpwh {
         line-height: 200%;
         font-size: 15pt;
         white-space: pre-line;
@@ -85,11 +85,11 @@
         }
     }
     
-    .article_rightAlign__JXAiq {
+    .page_rightAlign__arPc1 {
         text-align: right;
     }
 
-    .article_video__Qx8ky {
+    .page_video__9QdX_ {
         margin-block: 30px 40px;
         width: 100%;
         min-height: 30vh;
@@ -100,7 +100,7 @@
 
 /* ---------DESKTOP VIEW----------- */
 @media screen and (min-width: 700px) {
-    .article_main__oVTBa {
+    .page_main___32g7 {
         display: flex;
         flex-direction: column;
         align-items: left;
@@ -114,18 +114,18 @@
 
     }
 
-    .article_container__sfMTH {
+    .page_container__IX8BQ {
         /* position: relative; */
     }
 
-    .article_title__lcifj {
+    .page_title__54geV {
         font-family: var(--font-playfair);
         font-weight: 500;
         font-size: 40pt;
         margin-block: 20px 40px;
     }
 
-    .article_image__bS2qU {
+    .page_image__YH75z {
         margin-block: 30px 40px;
         width: 100%;
         max-width: 70vw;
@@ -135,40 +135,40 @@
         overflow: hidden;
     }
 
-    .article_author__4Xprb {
+    .page_author__6t8TZ {
         font-size: 16pt;
         font-family: var(--font-cormorant);
         font-weight: 600;
     }
 
-    .article_date__KRV_k {
+    .page_date__Zpc_Q {
         font-size: 14pt;
         font-family: var(--font-eb-garamond);
         font-weight: 400;
         margin-block: 10px 50px;
     }
 
-    .article_text__h6k1I {
+    .page_text__Nvpwh {
         line-height: 200%;
         font-size: 13pt;
         white-space: pre-line;
     }
 
-    .article_page__EOBgK {
+    .page_page__di99d {
         display: flex;
         justify-content: space-between;
     }
 
-    .article_rightAlign__JXAiq {
+    .page_rightAlign__arPc1 {
         text-align: right;
     }
 
-    .article_audio__icltv {
+    .page_audio__laCPc {
         position: fixed;
         right: 5%;
     }
 
-    .article_video__Qx8ky {
+    .page_video__9QdX_ {
         margin-block: 30px 40px;
         width: 100%;
         min-height: 60vh;
