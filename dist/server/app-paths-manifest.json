@@ -1,5 +1,3 @@
 {
-  "/page": "app/page.js",
-  "/(pages)/blog/page": "app/(pages)/blog/page.js",
-  "/(pages)/blog/[article]/page": "app/(pages)/blog/[article]/page.js"
+  "/(pages)/archive/page": "app/(pages)/archive/page.js"
 }
