@@ -1,8 +1,8 @@
-// File: /Users/oliviahu/code/AgoraFrontend/src/app/page.tsx
-import * as entry from '../../../src/app/page.js'
+// File: /Users/oliviahu/code/AgoraFrontend/src/app/(pages)/archive/page.tsx
+import * as entry from '../../../../../src/app/(pages)/archive/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../src/app/page.js')
+type TEntry = typeof import('../../../../../src/app/(pages)/archive/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{

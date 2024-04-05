@@ -48,3 +48,17 @@
     transition: .4s;
     letter-spacing: .7px;
 }
+
+.card {
+    padding: 2rem;
+    margin-block: 1rem;
+    text-align: center;
+    background-color: var(--neutral-tan);
+    border-radius: 1.5rem;
+    width: 50vw;
+    height: 7vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

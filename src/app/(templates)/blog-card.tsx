@@ -13,6 +13,7 @@ export default function BlogCard({ article }: BlogCard) {
     const title = article.Title
     const genre = String(article.Content_Type).toUpperCase()
     const issue = article.Issue
+    const date = article.Date
     const link = issue.toLowerCase().replaceAll(" ", "-") + "/" + title.toLowerCase().replaceAll(" ", "-").replace(/[^a-zA-Z0-9 -]/g, "")
     return (
         <Link href={link}>
@@ -30,7 +31,7 @@ export default function BlogCard({ article }: BlogCard) {
                     <h2>{title}</h2>
                 </div>
                 <h3>{genre}</h3>
-                <h4><i>02.20.24</i></h4>
+                <h4><i>{date}</i></h4>
             </div>
         </Link>
     )
