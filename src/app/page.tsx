@@ -23,7 +23,7 @@ function Mobile( { articles }:{ articles:Array<any> } ) {
             <div className={styles.container}>
                 <hr />
                 <h1>Fall &apos;23 Release</h1>
-                <Letter />
+                <Letter letter="" />
             </div>
             <div className={styles.articlesContainer}>
                 {articles && articles.map(async (article: any) => (
@@ -67,7 +67,7 @@ export default async function Home() {
                                 src="/pantheon.jpg"
                                 width={6000}
                                 height={4000}
-                                alt='Agora logo'
+                                alt='Issue cover'
                             />
                         </div>
                         <div className={styles.letter}>
