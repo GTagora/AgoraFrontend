@@ -83,7 +83,7 @@ export default function Header() {
                 <Link href="/archive"><div className={styles.label} >ARCHIVE</div></Link>
 
             {/* CURRENT ISSUE */}
-                <Link href="/#fall-23-release">
+                <Link href="/fall-23">
                     <motion.div 
                         className={styles.dropdown}
                         variants={dropdownVars}>
