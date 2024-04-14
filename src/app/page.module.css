@@ -178,10 +178,19 @@ fonts:
   .container h1 {
     font-family: var(--font-playfair-sc);
     font-weight: 550;
-    letter-spacing: .4rem;
-    font-size: 27pt;
+    letter-spacing: .5rem;
+    font-size: 40pt;
     text-align: center;
   }
+
+  .container h4 {
+    font-family: 'Geneva';
+    font-weight: 550;
+    font-size: 11pt;
+    letter-spacing: .15rem;
+    text-align: center;
+    margin-block: 20px 25px;
+}
 
   .hbox {
     display: flex;
@@ -251,6 +260,13 @@ fonts:
     flex-wrap: wrap;
     gap: 4vw;
     padding-bottom: 150px;
+  }
+
+  .text {
+    /* padding-block: 10px 15px; */
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
   }
 
 }
