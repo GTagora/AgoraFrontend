@@ -22,6 +22,8 @@ async function getArticles() {
     return data;
 }
 
+const RenderHTML = (props:any) => (<span dangerouslySetInnerHTML={{__html:props.HTML}}></span>)
+
 
 export default async function Issue({ params }: any) {
     const issues = await getIssues();
@@ -41,22 +43,12 @@ export default async function Issue({ params }: any) {
 
     return (
         <div>
-            {/* <div className={styles.main}>
-                <p>semester: {semester}</p>
-                <p>volume {volume} | issue {iss}</p>
-                <div className={styles.letter} dangerouslySetInnerHTML={{ __html: letter.replace(/\\n/g, '\n')}}></div>
-                <div className={styles.articlesContainer}>
-                    {articles && articles.map(async (article: any) => (
-                            <Card key={null} article={article}></Card>
-                    ))}
-                </div>
-            </div> */}
             <div className={styles.container}>
                 <h1>{theme}</h1>
                 <h2>{semester.toUpperCase()} | vol. {volume}, iss. {iss}</h2>
                 <div className={styles.letter}>
                     <h3>Letter from the editors</h3>
-                    <p >{letter}</p>
+                    <RenderHTML HTML={letter} />
                 </div>
 
                 <div className={styles.articlesContainer}>
