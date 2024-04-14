@@ -217,20 +217,12 @@ fonts:
 
   .letter p {
     font-family: var(--font-ebgaramond);
-    max-height: 70%;
+    max-height: 90%;
     margin-top: 15px;
     text-overflow: ellipsis;
     overflow: scroll;
     scrollbar-gutter: var(--bg-color);
     scrollbar-width: 1px;
-  }
-
-  .letter h5 {
-    font-family: var(--font-ebgaramond);
-    font-size: 13pt;
-    font-weight: 450;
-    line-height: 1.7rem;
-    margin-top: 18px;
   }
 
   .feature {
@@ -250,6 +242,12 @@ fonts:
     background-color: black;
     width: 2px;
     margin: 0;
+  }
+
+  .issu {
+    width: 40vw;
+    justify-self: center;
+    align-self: center;
   }
 
 

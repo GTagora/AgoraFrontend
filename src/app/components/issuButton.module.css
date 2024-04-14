@@ -5,6 +5,7 @@
     padding-inline: 2rem;
     border-radius: 4rem;
     border: 2px solid var(--gray-green);
+    text-align: center;
 }
 
 .button:hover {

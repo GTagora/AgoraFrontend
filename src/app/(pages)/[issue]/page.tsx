@@ -3,6 +3,7 @@ import { GetStaticPaths } from 'next'
 import Card from '@/app/(templates)/card';
 import Image from 'next/image'
 import Link from 'next/link';
+import IssuButton from '@/app/components/issuButton';
 
 interface Article {
     theme: string
@@ -47,10 +48,7 @@ export default async function Issue({ params }: any) {
             <div className={styles.container}>
                 <h1>{theme}</h1>
                 <h5>{semester.toUpperCase()} | VOL. {volume}, NO. {iss}</h5>
-                {issu ?
-                <Link href={issu} target="_blank">
-                    <div className={styles.button}>check out our print issue online! &#x2192;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                </Link> : null }
+                {issu ? <IssuButton link={issu}/> : null}
                     <div className={styles.letter}>
                         <h3>Letter from the editors</h3>
                         <RenderHTML HTML={letter} />
