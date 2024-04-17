@@ -1,0 +1,16 @@
+.button {
+    font-size: 12pt;
+    letter-spacing: .05rem;
+    padding: 1rem;
+    padding-inline: 2rem;
+    border-radius: 4rem;
+    border: 2px solid var(--gray-green);
+    text-align: center;
+}
+
+.button:hover {
+    background-color: var(--gray-green);
+    font-weight: 500;
+    transition: .4s;
+    letter-spacing: .08rem;
+}

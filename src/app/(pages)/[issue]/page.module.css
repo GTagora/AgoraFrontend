@@ -1,175 +1,260 @@
 /* ---------MOBILE VIEW----------- */
 @media screen and (max-width: 699px) {
+    .desk {
+      display: none;
+    }
+  
     .main {
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-    
-        padding: 1rem 10%;
-        padding-top: 140px;
-    
-        min-height: 100vh;
-        font-family: var(--font-ebgaramond);
-        background-color: var(--bg-color);
-    
-        position: relative;
-        padding-bottom: 15rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding-top: 30px;
+      padding-inline: 20px;
+      
+      font-family: var(--font-ebgaramond);
+      position: relative;
+      background-color: var(--bg-color);
+      }
+      
+      .logo {
+      width: 75px;
+      height: auto;
+      }
+      
+      .heading {
+      display: inherit;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width:100vw;
+      height: 90vh;
+      }
+      
+      .heading h1 {
+      color: black;
+      font-family: var(--font-playfair-sc);
+      font-weight: 500;
+      font-size: 40px;
+      letter-spacing: 1em;
+      text-indent: 1em;
+      
+      margin-top: 40px;
+      }
+      
+      .heading h2 {
+      color: black;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 20px;
+      letter-spacing: .1em;
+      text-indent: .1em;
+      text-align: center;
+      line-height: 170%;
+      padding-inline: 20px;
+      
+      margin-top: 80px;
+      }
+      
+      
+      .container {
+          width: 100vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+      
+      .container h1 {
+          font-family: var(--font-playfair-sc);
+          font-weight: 550;
+          font-size: 20pt;
+          letter-spacing: .4rem;
+          text-align: center;
+          margin-block: 20px 25px;
+      }
+      
+      .container hr {
+          width: 50%;
+          margin-block: 50px;
+      }
 
-        @media screen and (max-width: 549px) {
-            padding: 20px 10%;
-        }
-
-    
-    }
-    
-    .container {
-        margin-top: 100px;
-
-        @media screen and (max-width: 549px) {
-            padding: 10px 10%;
-        }
-    }
-    
-    .image {
+      .img {
         width: 100%;
-        max-width: 80vw;
         height: 100%;
+        max-width:80vw;
         object-fit: cover;
         overflow: hidden;
-        margin-block: 20px;
+      }
+      
+      .articlesContainer {
+          margin-block: 50px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 50px;
+          width: 100vw;
+      }
+      
+  }
+  
+  
+  /* ---------DESKTOP VIEW----------- */
+  @media screen and (min-width: 700px) {
+  
+    .mobileView {
+      display:none;
     }
-    
-    .title {
-        font-family: var(--font-playfair);
-        font-weight: 500;
-        font-size: 30pt;
-        margin-block: 20px;
-
-        @media screen and (max-width: 549px) {
-            font-size: 25pt;
-        }
+  
+    .desk {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      font-family: var(--font-ebgaramond);
+      position: relative;
+      background-color: var(--bg-color);
     }
-    
-    .author {
-        font-size: 15pt;
-        font-family: var(--font-cormorant);
-        font-weight: 600;
-        margin-block: 12px 7px;
-
-        @media screen and (max-width: 549px) {
-            font-size: 13.5pt;
-        }
+  
+    .heading {
+      display: inherit;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      width:100vh;
+      height: 90vh;
     }
-    
-    .date {
-        font-size: 14pt;
-        font-family: var(--font-eb-garamond);
-        font-weight: 400;
-        margin-bottom: 30px;
-
-        @media screen and (max-width: 549px) {
-            font-size: 13.5pt;
-        }
+    .heading h1 {
+      color: black;
+      font-family: var(--font-playfair-sc);
+      font-weight: 500;
+      font-size: 90px;
+      letter-spacing: 1em;
+      text-indent: 1em;
+  
+      margin-top: 40px;
     }
-    
-    .text {
-        line-height: 200%;
-        font-size: 15pt;
-        white-space: pre-line;
-
-        @media screen and (max-width: 549px) {
-            font-size: 13.5pt;
-        }
+    .heading h2 {
+      color: black;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 22px;
+      letter-spacing: .1em;
+      text-indent: .1em;
+      text-align: center;
+  
+      margin-top: 110px;
     }
-    
-    .rightAlign {
-        text-align: right;
+  
+    .heading h3 {
+      font-family: var(--font-cormorant);
+      font-weight: 400;
+      font-size: 15pt;
+      letter-spacing: .06rem;
+      text-align: center;
+      line-height: 2rem;
     }
-
-    .video {
-        margin-block: 30px 40px;
-        width: 100%;
-        min-height: 30vh;
-        max-width: 70vw;
-        border-width: 0;
-    }
-}
-
-/* ---------DESKTOP VIEW----------- */
-@media screen and (min-width: 700px) {
-    .main {
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        padding: 2rem 18%;
-        padding-top: 140px;
-        min-height: 100vh;
-        font-family: var(--font-ebgaramond);
-        background-color: var(--bg-color);
-        position: relative;
-        padding-bottom: 15rem;
-
-    }
-
+  
     .container {
-        /* position: relative; */
+      width: 100vw;
+      margin-top: 7rem;
+      padding-inline: 15%;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 15rem;    /* Footer height */
+
+      align-items: center;
+    }
+  
+    .container h1 {
+      font-family: var(--font-playfair-sc);
+      font-weight: 550;
+      letter-spacing: .4rem;
+      font-size: 27pt;
+      text-align: center;
     }
 
-    .title {
-        font-family: var(--font-playfair);
-        font-weight: 500;
-        font-size: 40pt;
-        margin-block: 20px 40px;
+    .container h5 {
+        font-family: 'Geneva';
+        font-weight: 550;
+        font-size: 10pt;
+        letter-spacing: .1rem;
+        text-align: center;
+        margin-block: 20px 25px;
     }
 
-    .image {
-        margin-block: 30px 40px;
-        width: 100%;
-        max-width: 70vw;
-        max-height: 70vh;
-        height: 100%;
-        object-fit: cover;
-        overflow: hidden;
-    }
-
-    .author {
-        font-size: 16pt;
-        font-family: var(--font-cormorant);
-        font-weight: 600;
-    }
-
-    .date {
-        font-size: 14pt;
-        font-family: var(--font-eb-garamond);
-        font-weight: 400;
-        margin-block: 10px 50px;
-    }
-
-    .text {
-        line-height: 200%;
-        font-size: 13pt;
-        white-space: pre-line;
-    }
-
-    .page {
+    /* .hbox {
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-block: 4rem;
+        padding-right: 3rem;
+        gap: 8%;
+        max-height: 600px;
+      } */
+  
+    .letter {
+      width: 70vw;
+      max-height: 100%;
+      padding-block: 1rem;
+      padding-inline: 3rem;
+      flex-grow: 2;
+
+  
+      letter-spacing: .095rem;
+      line-height: 220%;
+      background-color: transparent;
     }
 
-    .rightAlign {
-        text-align: right;
+  
+    .letter p {
+      font-family: var(--font-ebgaramond);
+      max-height: 70%;
+      margin-top: 15px;
+      text-overflow: ellipsis;
+      overflow: scroll;
+      scrollbar-gutter: var(--bg-color);
+      scrollbar-width: 1px;
     }
-
-    .audio {
-        position: fixed;
-        right: 5%;
+  
+    .letter h5 {
+      font-family: var(--font-ebgaramond);
+      font-size: 13pt;
+      font-weight: 450;
+      line-height: 1.7rem;
+      margin-top: 18px;
     }
-
-    .video {
-        margin-block: 30px 40px;
-        width: 100%;
-        min-height: 60vh;
-        max-width: 70vw;
-        border-width: 0;
+  
+    .feature {
+      background-color: var(--gray-green);
+      /* flex-grow: 2; */
+      width: 300px;
     }
-}
+  
+    .img {
+      width: 34vw;
+      height: 100%;
+      /* max-width:40vw; */
+      object-fit: cover;
+      overflow: hidden;
+    }
+  
+    .line {
+      background-color: black;
+      width: 2px;
+      margin: 0;
+    }
+  
+  
+    .articlesContainer {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 4vw;
+      padding-bottom: 150px;
+    }
+  
+  }
