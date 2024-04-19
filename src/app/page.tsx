@@ -61,7 +61,7 @@ export default async function Home() {
                     <Subtitle />
                 </div>
 
-                <a id="spring-24-release"></a>
+                <a id="current-issue" />
                 <div className={styles.container}>
                     <h1>Cycles</h1>
                     <h4>SPRING &apos;24 | VOL. 1 NO. 2</h4>

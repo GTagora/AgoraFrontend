@@ -49,8 +49,8 @@ const Footer = () => {
                     </div>
                     <div className={styles.column}>
                         <a href="/archive" className={styles.heading}>Archive</a>
-                        <a className={styles.footerLink} href="/#fall-23-release">
-                            Fall &apos;23
+                        <a className={styles.footerLink} href="/#current-issue">
+                            Spring &apos;24
                         </a>
                         <a className={styles.footerLink}  href="/archive">
                             Past Issues
