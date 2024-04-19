@@ -124,7 +124,7 @@
         max-width: 70vw;
         max-height: 70vh;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         overflow: hidden;
     }
 

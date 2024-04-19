@@ -1,15 +1,11 @@
 /* ---------MOBILE VIEW----------- */
 @media screen and (max-width: 699px) {
-    .desk {
-      display: none;
-    }
-  
-    .main {
+    .container {
       display: flex;
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
-      padding-top: 30px;
+      padding-top: 10vh;
       padding-inline: 20px;
       
       font-family: var(--font-ebgaramond);
@@ -17,85 +13,46 @@
       background-color: var(--bg-color);
       }
       
-      .logo {
-      width: 75px;
-      height: auto;
-      }
-      
-      .heading {
-      display: inherit;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width:100vw;
-      height: 90vh;
-      }
-      
-      .heading h1 {
-      color: black;
-      font-family: var(--font-playfair-sc);
-      font-weight: 500;
-      font-size: 40px;
-      letter-spacing: 1em;
-      text-indent: 1em;
-      
-      margin-top: 40px;
-      }
-      
-      .heading h2 {
-      color: black;
-      font-style: italic;
-      font-weight: 400;
-      font-size: 20px;
-      letter-spacing: .1em;
-      text-indent: .1em;
-      text-align: center;
-      line-height: 170%;
-      padding-inline: 20px;
-      
-      margin-top: 80px;
-      }
-      
-      
-      .container {
-          width: 100vw;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-      }
-      
-      .container h1 {
-          font-family: var(--font-playfair-sc);
-          font-weight: 550;
-          font-size: 20pt;
-          letter-spacing: .4rem;
-          text-align: center;
-          margin-block: 20px 25px;
-      }
-      
-      .container hr {
-          width: 50%;
-          margin-block: 50px;
-      }
+    .container h1 {
+        font-family: var(--font-playfair-sc);
+        font-weight: 550;
+        font-size: 20pt;
+        letter-spacing: .4rem;
+        text-align: center;
+        margin-block: 20px 25px;
+    }
 
-      .img {
-        width: 100%;
-        height: 100%;
-        max-width:80vw;
-        object-fit: cover;
-        overflow: hidden;
-      }
-      
-      .articlesContainer {
-          margin-block: 50px;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: center;
-          gap: 50px;
-          width: 100vw;
-      }
+    .container h5 {
+      font-family: 'Geneva';
+      font-weight: 550;
+      font-size: 10pt;
+      letter-spacing: .1rem;
+      text-align: center;
+      margin-block: 2px 20px;
+    }
+
+    .issuuButton {
+      margin-block: 20px;
+    }
+
+    .letter {
+      margin-top: 30px;
+      margin-inline: 2.5vw;
+      background-color: var(--neutral-tan);
+      padding: 2rem;
+      border-radius: 1rem;
+      line-height: 170%;
+    }
+
+    .articlesContainer {
+        margin-block: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        width: 100vw;
+    }
       
   }
   
@@ -203,8 +160,8 @@
       flex-grow: 2;
 
   
-      letter-spacing: .05rem;
-      line-height: 220%;
+      letter-spacing: .03rem;
+      line-height: 180%;
       background-color: transparent;
     }
 

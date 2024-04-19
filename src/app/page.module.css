@@ -110,7 +110,7 @@ fonts:
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        gap: 50px;
+        gap: 30px;
         width: 100vw;
     }
     

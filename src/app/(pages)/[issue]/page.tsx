@@ -48,7 +48,7 @@ export default async function Issue({ params }: any) {
         <div className={styles.container}>
             <h1>{theme}</h1>
             <h5>{semester.toUpperCase()} | VOL. {volume}, NO. {iss}</h5>
-            {issuu ? <IssuuButton link={issuu}/> : null}
+            {issuu ? <IssuuButton  link={issuu}/> : null}
                 <div className={styles.letter}>
                     <h3>Letter from the editors</h3>
                     <RenderHTML HTML={letter} />
@@ -58,7 +58,7 @@ export default async function Issue({ params }: any) {
                         <Card key={null} article={article}></Card>
                     ))}
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
 )};
 
