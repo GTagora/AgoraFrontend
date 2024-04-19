@@ -53,7 +53,7 @@ fonts:
     font-family: var(--font-playfair-sc);
     font-weight: 500;
     font-size: 40px;
-    letter-spacing: 1em;
+    letter-spacing: 1rem;
     text-indent: 1em;
     
     margin-top: 40px;
@@ -89,6 +89,14 @@ fonts:
         letter-spacing: .4rem;
         text-align: center;
         margin-block: 20px 25px;
+    }
+    .container h4 {
+      font-family: 'Geneva';
+      font-weight: 550;
+      font-size: 9pt;
+      letter-spacing: .15rem;
+      text-align: center;
+      margin-bottom: 15px;
     }
     
     .container hr {
@@ -197,8 +205,8 @@ fonts:
     flex-direction: row;
     justify-content: space-evenly;
     padding-block: 4rem;
-    padding-right: 3rem;
-    gap: 8%;
+    /* padding-right: 3rem; */
+    gap: 4%;
     max-height: 600px;
   }
 
@@ -217,6 +225,7 @@ fonts:
 
   .letter p {
     font-family: var(--font-ebgaramond);
+    letter-spacing: .06rem;
     max-height: 90%;
     margin-top: 15px;
     text-overflow: ellipsis;
@@ -228,7 +237,7 @@ fonts:
   .feature {
     background-color: var(--gray-green);
     /* flex-grow: 2; */
-    width: 300px;
+    width: 400px;
   }
 
   .img {

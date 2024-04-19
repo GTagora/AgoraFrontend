@@ -5,7 +5,7 @@ import Subtitle from './components/subtitle'
 import Letter from './components/letter'
 import Card from './(templates)/card'
 import Link from 'next/link'
-import IssuButton from './components/issuButton'
+import IssuuButton from './components/issuuButton'
 
 
 function Mobile( { articles }:{ articles:Array<any> } ) {
@@ -24,7 +24,8 @@ function Mobile( { articles }:{ articles:Array<any> } ) {
 
             <div className={styles.container}>
                 <hr />
-                <h1>Fall &apos;23 Release</h1>
+                <h1>Cycles</h1>
+                <h4>SPRING &apos;24 | VOL. 1 NO. 2</h4>
                 <Letter/>
             </div>
             <div className={styles.articlesContainer}>
@@ -76,19 +77,18 @@ export default async function Home() {
                             />
                         </div>
                         <div className={styles.letter}>
-                            <h2>Letter from the editors</h2>
+                            <h2>Letter from the EIC</h2>
                             <p>Dear Reader, <br/><br/>
-                                We are so excited and joyful to invite you to read this debut issue of our journal, <i>Agora</i>. 
-                                In this endeavor, we were reminded that even the mustard tree sprouts from the smallest of seeds; that&apos;s exactly how our journal started. God planted an idea and nurtured it through countless miracles to bring this journal to you today. A pipe dream, held in fragile human hands, was built on His strength as He provided the interest, facilities, talent, and resources that gave this vision physicality. Then He provided a name, <i>Agora</i>, a marketplace of nourishment and ideas, where each merchant&apos;s individual wares bring diversity to the market&apos;s offerings. Our journal embodies this image of harmony and communal provision by gathering each contributor&apos;s unique perspective through dialogue, reflection, composition, and fellowship founded upon our faith. <br /><br />
-
-                                While we didn&apos;t establish an overarching theme for this issue, these first few months have been characterized by His provision and our gratitude. We started this journal to glorify God; His steadfast provision has magnified His presence and power on this campus. <br /><br />
-
-                                And so, Reader, we invite you to step foot into our agora and partake in the fruits of His generosity. We hope and pray that our words and voices presented here will bring His glory into focus and spiritually nourish you.<br /><br />
-                                With love, <br /> Chris & Via <i>Editors-in-Chief</i>
+                            What a blessing it is to bring you this second issue of <i>Agora</i>! I thank God that you&apos;re here, however it is that you&apos;ve happened upon this journal. And whether He is a stranger or an old friend, just know that He sits beside you as you flip through this issue on Cycles.<br/><br/>
+                            We all experience this world in a certain rhythm, as a life of constant novelty and unpredictability would be impossible to comprehend. So our lives are benchmarked by these patterns, which characterize the natural ebb and flow of the human experience: daily habits, transformation, the swell of seasons, in nature and in life. It follows that God speaks through these cycles as He shapes us, grows us, and brings us back to Him.<br/><br/>
+                            This semester, our writers reflected on this theme and now offer you their take on Cycles, in hurt or condemnation, in relationships, in iterations of sin, repentance, and restoration. This writing process, though arduous, was a revelation of God&apos;s provision and a gift of fellowship, and I hope its fruit is as much a blessing to you as it was to us.<br/><br/>
+                            And so, dear Reader, I invite you to take a breath, dwell here, and find nourishment in these reflections, knowing He is here with you.<br/><br/>
+                            Happy reading, until we meet face to face.<br/><br/>
+                            Yours in Chris,<br /> Via<br /><i>Editor-in-Chief</i>
                             </p>
                         </div>
                     </div>
-                    <div className={styles.issu}><IssuButton link="https://issuu.com/gtagora/docs/agora_fall_23_issue"/></div>
+                    <div className={styles.issuu}><IssuuButton link="https://issuu.com/gtagora/docs/agora_s24"/></div>
                     <div className={styles.articlesContainer}>
                         {articles && articles.map(async (article: any) => (
                                 <Card key={null} article={article}></Card>

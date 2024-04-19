@@ -3,7 +3,7 @@ import { GetStaticPaths } from 'next'
 import Card from '@/app/(templates)/card';
 import Image from 'next/image'
 import Link from 'next/link';
-import IssuButton from '@/app/components/issuButton';
+import IssuuButton from '@/app/components/issuuButton';
 
 interface Article {
     theme: string
@@ -35,7 +35,7 @@ export default async function Issue({ params }: any) {
     const semester = issue.Semester;
     const letter = issue.Letter;
     const theme = issue.Theme;
-    const issu = issue.Issu;
+    const issuu = issue.Issuu;
     const image = issue.Image;
 
     let articles = await getArticles()
@@ -48,7 +48,7 @@ export default async function Issue({ params }: any) {
             <div className={styles.container}>
                 <h1>{theme}</h1>
                 <h5>{semester.toUpperCase()} | VOL. {volume}, NO. {iss}</h5>
-                {issu ? <IssuButton link={issu}/> : null}
+                {issuu ? <IssuuButton link={issuu}/> : null}
                     <div className={styles.letter}>
                         <h3>Letter from the editors</h3>
                         <RenderHTML HTML={letter} />
