@@ -1,3 +1,5 @@
+/* ---------DESKTOP VIEW----------- */
+@media screen and (min-width: 700px) {
 .main {
   display: flex;
   flex-direction: column;
@@ -61,4 +63,74 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+}
+
+/* ---------MOBILE VIEW----------- */
+@media screen and (max-width: 699px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 7rem;
+    background-color: var(--bg-color);
+  
+    min-height: 100vh;
+    font-family: var(--font-ebgaramond);
+  }
+  
+  .main h1 {
+    font-family: var(--font-playfair-sc);
+    letter-spacing: .3rem;
+    font-size: 28px;;
+    margin-bottom: 20px;
+  }
+  
+  /* .container {
+      padding: 4rem;
+      text-align: center;
+      background-color: var(--neutral-tan);
+      border-radius: 1.5rem;
+  }
+  
+  .container p {
+    font-size: 15pt;
+    letter-spacing: .5px;
+    line-height: 200%;
+  }
+  
+  .button {
+      font-size: 14pt;
+      margin-top: 50px;
+      margin-inline: auto;
+      width: 80%;
+      padding: 1rem;
+      border-radius: 4rem;
+      border: 2px solid rgb(223, 222, 220);
+      letter-spacing: .4px;
+  } 
+  
+  .button:hover {
+      background-color: rgb(223, 222, 220);
+      font-weight: 500;
+      transition: .4s;
+      letter-spacing: .7px;
+  }*/
+  
+  .card {
+    width: 80vw;
+      padding: 2rem;
+      margin-block: 1rem;
+      text-align: center;
+      background-color: var(--neutral-tan);
+      border-radius: 1rem;
+      width: 50vw;
+      height: 7vw;
+  
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
 }

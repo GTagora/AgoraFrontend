@@ -1,6 +1,7 @@
 {
-  "/page": "app/page.js",
   "/(pages)/[issue]/page": "app/(pages)/[issue]/page.js",
   "/(pages)/blog/page": "app/(pages)/blog/page.js",
-  "/(pages)/about/page": "app/(pages)/about/page.js"
+  "/(pages)/about/page": "app/(pages)/about/page.js",
+  "/page": "app/page.js",
+  "/(pages)/archive/page": "app/(pages)/archive/page.js"
 }

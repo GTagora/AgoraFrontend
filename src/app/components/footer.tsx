@@ -24,8 +24,8 @@ const Footer = () => {
                     <Image
                         className={styles.logo}
                         src="/logo-footer.png"
-                        width={205}
-                        height={60}
+                        width={160}
+                        height={50}
                         alt='Agora logo'
                     />
                 </Link>
@@ -58,8 +58,8 @@ const Footer = () => {
                     </div>
                     <div className={styles.column}>
                         <a href="/contact" className={styles.heading}>Contact</a>
-                        <a className={styles.footerLink}  href="https://linktr.ee/gtagora" target="_blank">
-                            Linktree
+                        <a className={styles.footerLink}  href="mailto:gatechagora@gmail.com" target="_blank">
+                            Email
                         </a>
                         <a className={styles.footerLink}  href="https://www.instagram.com/gt.agora/" target="_blank">
                             Instagram

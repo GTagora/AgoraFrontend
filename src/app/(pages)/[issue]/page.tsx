@@ -4,6 +4,7 @@ import Card from '@/app/(templates)/card';
 import Image from 'next/image'
 import Link from 'next/link';
 import IssuuButton from '@/app/components/issuuButton';
+import Footer from '@/app/components/footer';
 
 interface Article {
     theme: string
@@ -44,21 +45,20 @@ export default async function Issue({ params }: any) {
     });
 
     return (
-        <div>
-            <div className={styles.container}>
-                <h1>{theme}</h1>
-                <h5>{semester.toUpperCase()} | VOL. {volume}, NO. {iss}</h5>
-                {issuu ? <IssuuButton link={issuu}/> : null}
-                    <div className={styles.letter}>
-                        <h3>Letter from the editors</h3>
-                        <RenderHTML HTML={letter} />
-                    </div>
-                <div className={styles.articlesContainer}>
-                    {articles && articles.map(async (article: any) => (
-                            <Card key={null} article={article}></Card>
-                        ))}
+        <div className={styles.container}>
+            <h1>{theme}</h1>
+            <h5>{semester.toUpperCase()} | VOL. {volume}, NO. {iss}</h5>
+            {issuu ? <IssuuButton link={issuu}/> : null}
+                <div className={styles.letter}>
+                    <h3>Letter from the editors</h3>
+                    <RenderHTML HTML={letter} />
                 </div>
+            <div className={styles.articlesContainer}>
+                {articles && articles.map(async (article: any) => (
+                        <Card key={null} article={article}></Card>
+                    ))}
             </div>
+            <Footer />
         </div>
 )};
 

@@ -219,7 +219,7 @@
 @media screen and (min-width: 950px) {
     .footer_box__f2GXS {
     background: var(--bg-color);
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     margin-top: -15rem;
     padding: 70px 30px;
@@ -230,7 +230,7 @@
     align-items: center;
     width: 100%;
 
-    letter-spacing: 2px;
+    letter-spacing: .05rem;
     font-family: var(--font-ebgaramond);
 
 }
@@ -301,8 +301,8 @@
 }
 
 .footer_socialImages__ekmGS {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     float: left;
     clear: both;
     border-radius: 30px;
