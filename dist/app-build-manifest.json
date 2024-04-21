@@ -23,41 +23,23 @@
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
-    "/(pages)/[issue]/[article]/page": [
+    "/(pages)/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(pages)/[issue]/[article]/page.css",
-      "static/chunks/app/(pages)/[issue]/[article]/page.js"
+      "static/css/app/(pages)/about/page.css",
+      "static/chunks/app/(pages)/about/page.js"
     ],
-    "/(pages)/archive/page": [
+    "/(pages)/about/staff/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(pages)/archive/page.css",
-      "static/chunks/app/(pages)/archive/page.js"
+      "static/css/app/(pages)/about/staff/page.css",
+      "static/chunks/app/(pages)/about/staff/page.js"
     ],
     "/(pages)/[issue]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/(pages)/[issue]/page.css",
       "static/chunks/app/(pages)/[issue]/page.js"
-    ],
-    "/(pages)/blog/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(pages)/blog/page.css",
-      "static/chunks/app/(pages)/blog/page.js"
-    ],
-    "/(pages)/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(pages)/contact/page.css",
-      "static/chunks/app/(pages)/contact/page.js"
-    ],
-    "/(pages)/about/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(pages)/about/page.css",
-      "static/chunks/app/(pages)/about/page.js"
     ]
   }
 }

@@ -32,11 +32,10 @@
 
 .section-header {
     font-family: var(--font-playfair);
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bold;
     letter-spacing: 2px;
     height: 50px;
-    margin-bottom: 40px;
 }
 
 .section-text {
@@ -91,14 +90,14 @@
 
 .logo {
     margin-bottom: 10px;
-    height: 50px;
+    height: 40px;
     width: auto;
 }
 
 .acvf-container {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 30px;
     border-radius: 1rem;
     padding: 3rem;
 
@@ -142,9 +141,9 @@
     
     .section-header {
         font-family: var(--font-playfair);
-        font-size: 30px;
+        font-size: 25px;
         font-weight: bold;
-        letter-spacing: 3px;
+        letter-spacing: .07rem;
         height: 50px;
         margin-bottom: 10px;
     }
