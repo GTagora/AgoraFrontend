@@ -58,7 +58,9 @@ export default async function Issue({ params }: any) {
                         <Card key={null} article={article}></Card>
                     ))}
             </div>
-            <Footer />
+            <div className={styles.footer}>
+                <Footer />
+            </div>
         </div>
 )};
 

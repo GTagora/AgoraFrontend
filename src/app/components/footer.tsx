@@ -8,8 +8,8 @@ function socialButton(img:string, alt:string, link:string) {
                 <Image 
                     className={styles['social-images']}
                     src={img}
-                    width={34}
-                    height={34}
+                    width={28}
+                    height={28}
                     alt={alt}
                 />
             </div>

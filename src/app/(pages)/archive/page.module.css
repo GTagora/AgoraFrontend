@@ -1,3 +1,5 @@
+/* ---------MOBILE VIEW----------- */
+@media screen and (max-width: 699px) {}
 /* ---------DESKTOP VIEW----------- */
 @media screen and (min-width: 700px) {
 .main {
@@ -21,10 +23,10 @@
 }
 
 .container {
-    padding: 4rem;
-    text-align: center;
-    background-color: var(--neutral-tan);
-    border-radius: 1.5rem;
+  padding: 4rem;
+  text-align: center;
+  background-color: var(--neutral-tan);
+  border-radius: 1.5rem;
 }
 
 .container p {
@@ -64,6 +66,12 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+}
+
 }
 
 /* ---------MOBILE VIEW----------- */
@@ -87,37 +95,6 @@
     margin-bottom: 20px;
   }
   
-  /* .container {
-      padding: 4rem;
-      text-align: center;
-      background-color: var(--neutral-tan);
-      border-radius: 1.5rem;
-  }
-  
-  .container p {
-    font-size: 15pt;
-    letter-spacing: .5px;
-    line-height: 200%;
-  }
-  
-  .button {
-      font-size: 14pt;
-      margin-top: 50px;
-      margin-inline: auto;
-      width: 80%;
-      padding: 1rem;
-      border-radius: 4rem;
-      border: 2px solid rgb(223, 222, 220);
-      letter-spacing: .4px;
-  } 
-  
-  .button:hover {
-      background-color: rgb(223, 222, 220);
-      font-weight: 500;
-      transition: .4s;
-      letter-spacing: .7px;
-  }*/
-  
   .card {
     width: 80vw;
       padding: 2rem;
@@ -132,5 +109,42 @@
       justify-content: space-between;
       align-items: center;
   }
+
+  .footer {
+    margin-top: 50px;
+  }
   
 }
+
+
+/* archive coming soon box
+.container {
+    padding: 4rem;
+    text-align: center;
+    background-color: var(--neutral-tan);
+    border-radius: 1.5rem;
+}
+
+.container p {
+  font-size: 15pt;
+  letter-spacing: .5px;
+  line-height: 200%;
+}
+
+.button {
+    font-size: 14pt;
+    margin-top: 50px;
+    margin-inline: auto;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 4rem;
+    border: 2px solid rgb(223, 222, 220);
+    letter-spacing: .4px;
+} 
+
+.button:hover {
+    background-color: rgb(223, 222, 220);
+    font-weight: 500;
+    transition: .4s;
+    letter-spacing: .7px;
+}*/

@@ -57,161 +57,132 @@
   }
   
   
-  /* ---------DESKTOP VIEW----------- */
-  @media screen and (min-width: 700px) {
-  
-    .mobileView {
-      display:none;
-    }
-  
-    .desk {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      font-family: var(--font-ebgaramond);
-      position: relative;
-      background-color: var(--bg-color);
-    }
-  
-    .heading {
-      display: inherit;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 30px;
-      width:100vh;
-      height: 90vh;
-    }
-    .heading h1 {
-      color: black;
-      font-family: var(--font-playfair-sc);
-      font-weight: 500;
-      font-size: 90px;
-      letter-spacing: 1em;
-      text-indent: 1em;
-  
-      margin-top: 40px;
-    }
-    .heading h2 {
-      color: black;
-      font-style: italic;
-      font-weight: 400;
-      font-size: 22px;
-      letter-spacing: .1em;
-      text-indent: .1em;
-      text-align: center;
-  
-      margin-top: 110px;
-    }
-  
-    .heading h3 {
-      font-family: var(--font-cormorant);
-      font-weight: 400;
-      font-size: 15pt;
-      letter-spacing: .06rem;
-      text-align: center;
-      line-height: 2rem;
-    }
-  
-    .container {
-      width: 100vw;
-      margin-top: 7rem;
-      padding-inline: 15%;
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 15rem;    /* Footer height */
-
-      align-items: center;
-    }
-  
-    .container h1 {
-      font-family: var(--font-playfair-sc);
-      font-weight: 550;
-      letter-spacing: .4rem;
-      font-size: 27pt;
-      text-align: center;
-    }
-
-    .container h5 {
-        font-family: 'Geneva';
-        font-weight: 550;
-        font-size: 10pt;
-        letter-spacing: .1rem;
-        text-align: center;
-        margin-block: 20px 25px;
-    }
-
-    /* .hbox {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding-block: 4rem;
-        padding-right: 3rem;
-        gap: 8%;
-        max-height: 600px;
-      } */
-  
-    .letter {
-      width: 70vw;
-      max-height: 100%;
-      padding-block: 1rem;
-      padding-inline: 3rem;
-      flex-grow: 2;
-
-  
-      letter-spacing: .03rem;
-      line-height: 180%;
-      background-color: transparent;
-    }
-
-  
-    .letter p {
-      font-family: var(--font-ebgaramond);
-      max-height: 70%;
-      margin-top: 15px;
-      text-overflow: ellipsis;
-      overflow: scroll;
-      scrollbar-gutter: var(--bg-color);
-      scrollbar-width: 1px;
-    }
-  
-    .letter h5 {
-      font-family: var(--font-ebgaramond);
-      font-size: 13pt;
-      font-weight: 450;
-      line-height: 1.7rem;
-      margin-top: 18px;
-    }
-  
-    .feature {
-      background-color: var(--gray-green);
-      /* flex-grow: 2; */
-      width: 300px;
-    }
-  
-    .img {
-      width: 34vw;
-      height: 100%;
-      /* max-width:40vw; */
-      object-fit: cover;
-      overflow: hidden;
-    }
-  
-    .line {
-      background-color: black;
-      width: 2px;
-      margin: 0;
-    }
-  
-  
-    .articlesContainer {
-      margin-top: 3rem;
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      gap: 4vw;
-      padding-bottom: 150px;
-    }
-  
+/* ---------DESKTOP VIEW----------- */
+@media screen and (min-width: 700px) {
+  .heading {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width:100vh;
+    height: 90vh;
   }
+  .heading h1 {
+    color: black;
+    font-family: var(--font-playfair-sc);
+    font-weight: 500;
+    font-size: 90px;
+    letter-spacing: 1em;
+    text-indent: 1em;
+
+    margin-top: 40px;
+  }
+  .heading h2 {
+    color: black;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: .1em;
+    text-indent: .1em;
+    text-align: center;
+
+    margin-top: 110px;
+  }
+
+  .container {
+    width: 100vw;
+    height: 90vh;
+    margin-top: 7rem;
+    padding-inline: 15%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .container h1 {
+    font-family: var(--font-playfair-sc);
+    font-weight: 550;
+    letter-spacing: .4rem;
+    font-size: 27pt;
+    text-align: center;
+  }
+
+  .container h5 {
+      font-family: 'Geneva';
+      font-weight: 550;
+      font-size: 10pt;
+      letter-spacing: .1rem;
+      text-align: center;
+      margin-block: 20px 25px;
+  }
+
+  .letter {
+    width: 70vw;
+    max-height: 100%;
+    padding-block: 1rem;
+    padding-inline: 3rem;
+    flex-grow: 2;
+
+
+    letter-spacing: .03rem;
+    line-height: 180%;
+    background-color: transparent;
+  }
+
+
+  .letter p {
+    font-family: var(--font-ebgaramond);
+    max-height: 70%;
+    margin-top: 15px;
+    text-overflow: ellipsis;
+    overflow: scroll;
+    scrollbar-gutter: var(--bg-color);
+    scrollbar-width: 1px;
+  }
+
+  .letter h5 {
+    font-family: var(--font-ebgaramond);
+    font-size: 13pt;
+    font-weight: 450;
+    line-height: 1.7rem;
+    margin-top: 18px;
+  }
+
+  .feature {
+    background-color: var(--gray-green);
+    width: 300px;
+  }
+
+  .img {
+    width: 34vw;
+    height: 100%;
+    /* max-width:40vw; */
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .line {
+    background-color: black;
+    width: 2px;
+    margin: 0;
+  }
+
+
+  .articlesContainer {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 4vw;
+    padding-bottom: 150px;
+  }
+
+  .footer {
+    padding-top: 200px;
+    position: relative;
+    bottom: 0px;
+  }
+
+}
