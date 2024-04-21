@@ -149,7 +149,7 @@
   }
   
   /* article image */
-.card_cardImage__qPMj1 {
+  .card_cardImage__qPMj1 {
     max-width: 150px;
     max-height: 150px;
     object-fit: cover;
@@ -176,7 +176,7 @@
     font-style: bold;
     letter-spacing: .04rem;
     opacity: .6;
-  }
+  } 
 }
 
 

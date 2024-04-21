@@ -3,6 +3,7 @@ import styles from './page.module.css'
 import { GetStaticPaths } from 'next'
 import Link from 'next/link'
 import Footer from '@/app/components/footer'
+import Image from 'next/image'
 
 interface Issues {
   slug: string;
@@ -19,10 +20,18 @@ const IssueCard = ({ issue } : any ) => {
     const semester = issue.Semester;
     const theme = issue.Theme;
     const slug = issue.Slug;
+    const img = issue.Image;
     return (<Link href={slug}>
         <div className={styles.card}>
-            <p>{theme}</p>
-            <p>{semester}</p>
+            <Image
+                className={styles.img}
+                src={img}
+                width={300}
+                height={500}
+                alt='Issue cover'
+            />
+            <h1>{theme.toUpperCase()}</h1>
+            <p>{semester.toUpperCase()}</p>
         </div>
     </Link>);
 }
@@ -33,8 +42,9 @@ export default async function Archive({ params }: any) {
     return (
     <main className={styles.main}>
         <h1>Past Issues</h1>
-        <div>{issues.map((issue:any, i:number) => (
-            <IssueCard issue={issues[i]} />))}
+        <div className={styles.container}>
+            {issues.map((issue:any, i:number) => (
+            <IssueCard issue={issues[issues.length - i - 1]} />))}
         </div>
         <div className={styles.footer}>
             <Footer />
