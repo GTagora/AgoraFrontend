@@ -16,7 +16,7 @@ async function getStaff() {
 }
 
 function Member( { name, roles, img}:MemberProps) {
-    const roleString = roles.join(', ').toUpperCase();
+    const roleString = roles.join(', ');
     return (
         <div className={styles.memberCard}>
             <Image
@@ -42,7 +42,7 @@ export default async function Staff() {
         <h2 className={styles.sectionHeader}>Executive Staff</h2>
         <div className={styles.section}>
             {staff && staff.map(async (person: any) => {
-                    if (person.Title === "Chief Staff") {
+                    if (person.Active && person.Title === "Chief Staff") {
                         return <Member key={null} name={person.Name} roles={person.Roles} img={person.Image}/>
                     }
                 })}
@@ -51,7 +51,7 @@ export default async function Staff() {
         <h2 className={styles.sectionHeader}>Contributing Staff</h2>
         <div className={styles.section}>
             {staff && staff.map(async (person: any) => {
-                    if (person.Title === "Contributor") {
+                    if (person.Active && person.Title === "Contributor") {
                         return <Member key={null} name={person.Name} roles={person.Roles} img={person.Image}/>
                     }
                 })}
