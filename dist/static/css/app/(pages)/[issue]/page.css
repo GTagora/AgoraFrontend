@@ -182,23 +182,25 @@
 @media screen and (max-width: 699px) {
   .issue-card_card__T_vuB {
     width: 87vw;
-    flex-grow: 1;
-    padding: 20px;
-    line-height: 30px;
+    height: 210px;
+    padding: 30px;
     background-color: rgb(249, 249, 249);
     border-radius: 13px;
     filter: drop-shadow(4px 4px 6px rgba(210, 210, 210, 0.677));
 
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 30px;
   }
-  
-  /* article image */
-  .issue-card_cardImage__CMpbr {
-    max-width: 150px;
-    max-height: 150px;
-    object-fit: cover;
+
+  .issue-card_text__YIRD4 {
+    width: 60%;
+    line-height: 190%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
     overflow: hidden;
   }
 
@@ -207,6 +209,7 @@
     font-size: 17pt;
     font-weight: 600;
     text-align: left;
+    color: black;
   
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -217,12 +220,37 @@
   
   .issue-card_card__T_vuB h3 {
     font-family: 'Arial';
+    color: black;
     font-weight: 400;
     font-size: 9pt;
     font-style: bold;
     letter-spacing: .04rem;
     opacity: .6;
+    margin-block: 10px;
   } 
+
+  .issue-card_preview__92_s3 {
+    font-style: normal;
+    font-size: 10pt;
+    line-height: 150%;
+    width: 100%;
+    opacity: .7;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  /* article image */
+  .issue-card_cardImage__CMpbr {
+    width: 200px;
+    max-height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+  }
+
 }
 
 
