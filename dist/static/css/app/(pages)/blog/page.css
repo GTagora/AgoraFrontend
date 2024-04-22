@@ -1,0 +1,229 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/(pages)/blog/page.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.page_main__1rluh {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 8rem;
+    padding-inline: 15%;
+    background-color: var(--bg-color);
+
+    font-family: var(--font-ebgaramond);
+    background-color: var(--bg-color);
+}
+.page_comingsoon__N1Y1c {
+    padding: 4rem;
+    text-align: center;
+    background-color: var(--light-light-green);
+    border-radius: 1.5rem;
+    width: 30vw;
+    font-size: 15pt;
+    letter-spacing: .5px;
+}
+
+.page_button__mTN_m {
+    font-size: 14pt;
+    margin-top: 50px;
+    padding: 1rem;
+    border-radius: 4rem;
+    border: 2px solid var(--gray-green);
+}
+
+.page_button__mTN_m:hover {
+    background-color: var(--gray-green);
+    font-weight: 500;
+    transition: .4s;
+    letter-spacing: .4px;
+}
+/* ---------HALF SCREEN VIEW----------- */
+@media screen and (max-width: 1299px) and (min-width: 700px){
+    .page_comingsoon__N1Y1c {
+        padding: 4rem;
+        text-align: center;
+        background-color: var(--light-light-green);
+        border-radius: 1.5rem;
+        width: 50vw;
+        font-size: 14pt;
+        letter-spacing: .03rem;
+    }
+}
+
+/* ---------MOBILE VIEW----------- */
+@media screen and (max-width: 699px) {
+    .page_comingsoon__N1Y1c {
+        padding: 4rem;
+        text-align: center;
+        background-color: var(--light-light-green);
+        border-radius: 1.5rem;
+        width: 70vw;
+        font-size: 13pt;
+        letter-spacing: .03rem;
+    }
+}
+
+/* div that contains all the cards */
+.page_allcards__FXSdC {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.page_main__1rluh h1 {
+    font-family: var(--font-playfair-sc);
+    letter-spacing: .3rem;
+    margin-block: 25px 30px;
+}
+
+.page_container__kNSE0 {
+    padding: 4rem;
+    text-align: center;
+    background-color: var(--light-light-green);
+    border-radius: 1.5rem;
+}
+
+.page_container__kNSE0 p {
+    font-size: 15pt;
+    letter-spacing: .5px;
+}
+
+.page_footer__DLM81 {
+    display: show;
+    width: 100vw;
+    position:absolute;
+    bottom: 0px;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/components/footer.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+/* ---------DESKTOP VIEW----------- */
+@media screen and (min-width: 950px) {
+    .footer_box__f2GXS {
+    background: var(--bg-color);
+    /* position: absolute; */
+    bottom: 0;
+    margin-top: -15rem;
+    padding: 70px 30px;
+    height: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    letter-spacing: .05rem;
+    font-family: var(--font-ebgaramond);
+
+}
+
+.footer_footerContainer__1HxpD {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0;
+    padding-inline: 40px;
+}
+
+.footer_column__bKAIp {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    min-width: 180px;
+}
+
+.footer_row__AvUsW {
+    display: flex;
+    justify-content: flex-end;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(185px, 1fr)
+    );
+    grid-gap: 20px;
+
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(
+            auto-fill,
+            minmax(200px, 1fr)
+        );
+    }
+}
+
+.footer_footerLink__KfIK8 {
+    color: rgb(78, 78, 78);
+    margin-bottom: 8px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer_footerLink__KfIK8:hover {
+    color: rgb(0, 0, 0);
+    transition: 200ms ease-in;
+}
+
+.footer_heading__y3ULN {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer_logo__3VAec {
+    height: 50px;
+    margin-left: 20px;
+}
+
+.footer_socialRow__Yk2NK {
+    display: flex;
+    justify-content: flex-start;
+    gap: 13px;
+    margin-top: 13px;
+    padding-left: 25px;
+}
+
+.footer_socialImages__ekmGS {
+    float: left;
+    clear: both;
+    border-radius: 30px;
+}
+}
+
+
+/* ---------MOBILE & HALF SCREN VIEW----------- */
+@media screen and (max-width: 949px) {
+
+    .footer_footerContainer__1HxpD {
+        display: none;
+    }
+
+    .footer_box__f2GXS {
+        margin-block: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_socialRow__Yk2NK {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+
+    .footer_logo__3VAec {
+        height: 35px;
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+    .footer_social-images__UK7yX {
+        height: 20px;
+        width: auto;
+    }
+}
+

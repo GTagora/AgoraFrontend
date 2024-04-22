@@ -3,61 +3,72 @@
   \***********************************************************************************************************************************************************************************************************************************************************************************/
 /* ---------MOBILE VIEW----------- */
 @media screen and (max-width: 699px) {
-    .page_container__IX8BQ {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      padding-top: 10vh;
-      padding-inline: 20px;
-      
-      font-family: var(--font-ebgaramond);
-      position: relative;
-      background-color: var(--bg-color);
-      }
-      
-    .page_container__IX8BQ h1 {
-        font-family: var(--font-playfair-sc);
-        font-weight: 550;
-        font-size: 20pt;
-        letter-spacing: .4rem;
-        text-align: center;
-        margin-block: 20px 25px;
-    }
+.page_main___32g7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 10vh;
+  
+  font-family: var(--font-ebgaramond);
+  position: relative;
+  background-color: var(--bg-color);
+  }
+  
+  .page_main___32g7 h1 {
+    font-family: var(--font-playfair-sc);
+    font-weight: 550;
+    letter-spacing: .4rem;
+    font-size: 27pt;
+    text-align: center;
+  }
 
-    .page_container__IX8BQ h5 {
+  .page_main___32g7 h5 {
       font-family: 'Geneva';
       font-weight: 550;
       font-size: 10pt;
       letter-spacing: .1rem;
       text-align: center;
-      margin-block: 2px 20px;
-    }
-
-    .page_issuuButton__LxFo7 {
-      margin-block: 20px;
-    }
-
-    .page_letter__rYM6n {
-      margin-top: 30px;
-      margin-inline: 2.5vw;
-      background-color: var(--neutral-tan);
-      padding: 2rem;
-      border-radius: 1rem;
-      line-height: 170%;
-    }
-
-    .page_articlesContainer__c4SXD {
-        margin-block: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 30px;
-        width: 100vw;
-    }
-      
+      margin-block: 20px 25px;
   }
+
+.page_issuuButton__LxFo7 {
+  margin-block: 20px;
+}
+
+.page_hbox___X9Nl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page_letter__rYM6n {
+  width: 90vw;
+  margin-top: 50px;
+  margin-inline: 2.5vw;
+  background-color: var(--neutral-tan);
+  padding: 2rem;
+  border-radius: 1rem;
+  line-height: 170%;
+}
+
+.page_articlesContainer__c4SXD {
+    margin-block: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    width: 100vw;
+}
+
+.page_footer__h2xI2 {
+  margin-top: 100px;
+}
+      
+}
   
   
 /* ---------DESKTOP VIEW----------- */
@@ -126,15 +137,14 @@
     flex-direction: row-reverse;
     align-items: flex-start;
     justify-content: flex-start;
+    gap: 40px;
   }
 
   .page_letter__rYM6n {
     width: 30vw;
     max-height: 100%;
-    padding-block: 1rem;
+    padding-block: 60px;
     padding-inline: 3rem;
-    /* flex-grow: 2; */
-
 
     letter-spacing: .03rem;
     line-height: 180%;
