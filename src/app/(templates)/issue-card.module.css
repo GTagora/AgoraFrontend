@@ -1,0 +1,123 @@
+/* ---------MOBILE VIEW----------- */
+@media screen and (max-width: 699px) {
+  .card {
+    width: 87vw;
+    flex-grow: 1;
+    padding: 20px;
+    line-height: 30px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 13px;
+    filter: drop-shadow(4px 4px 6px rgba(210, 210, 210, 0.677));
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  /* article image */
+  .cardImage {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .card h2 {
+    font-family: var(--font-ebgaramond);
+    font-size: 17pt;
+    font-weight: 600;
+    text-align: left;
+  
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  .card h3 {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 9pt;
+    font-style: bold;
+    letter-spacing: .04rem;
+    opacity: .6;
+  } 
+}
+
+
+/* ---------DESKTOP VIEW----------- */
+@media screen and (min-width: 700px) {
+ 
+  .card {
+    width: 40vw;
+    height: 210px;
+    padding: 30px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 13px;
+    filter: drop-shadow(4px 4px 6px rgba(210, 210, 210, 0.677));
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .text {
+    width: 60%;
+    line-height: 190%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .card h2 {
+    font-family: var(--font-ebgaramond);
+    font-size: 17pt;
+    font-weight: 600;
+    text-align: left;
+    color: black;
+  
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  .card h3 {
+    font-family: 'Arial';
+    color: black;
+    font-weight: 400;
+    font-size: 9pt;
+    font-style: bold;
+    letter-spacing: .04rem;
+    opacity: .6;
+    margin-block: 10px;
+  } 
+
+  .preview {
+    font-style: normal;
+    font-size: 10pt;
+    line-height: 150%;
+    width: 100%;
+    opacity: .7;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  /* article image */
+  .cardImage {
+    width: 200px;
+    max-height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+  }
+
+}

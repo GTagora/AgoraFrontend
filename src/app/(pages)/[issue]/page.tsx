@@ -1,8 +1,6 @@
 import styles from './page.module.css'
 import { GetStaticPaths } from 'next'
-import Card from '@/app/(templates)/card';
-import Image from 'next/image'
-import Link from 'next/link';
+import IssueCard from '@/app/(templates)/issue-card';
 import IssuuButton from '@/app/components/issuuButton';
 import Footer from '@/app/components/footer';
 
@@ -56,7 +54,7 @@ export default async function Issue({ params }: any) {
                 </div>
                 <div className={styles.articlesContainer}>
                     {articles && articles.map(async (article: any) => (
-                            <Card key={null} article={article}></Card>
+                            <IssueCard key={null} article={article}></IssueCard>
                         ))}
                 </div>
             </div>
