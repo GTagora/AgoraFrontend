@@ -174,6 +174,16 @@ fonts:
     line-height: 2rem;
   }
 
+  .arrow {
+    opacity: .5;
+    transition: .5s;
+  }
+
+  .arrow:hover {
+    opacity: 1;
+    transition: .5s;
+  }
+
   .container {
     width: 100vw;
     margin-top: 7rem;
@@ -220,7 +230,8 @@ fonts:
 
     letter-spacing: .095rem;
     line-height: 220%;
-    background-color: transparent;
+    background-color: var(--bg-color);
+    scrollbar-color: lightgray var(--bg-color);
   }
 
   .letter p {

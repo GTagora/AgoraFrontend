@@ -1,10 +1,8 @@
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/(pages)/archive/page.module.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************/
-/* ---------MOBILE VIEW----------- */
-@media screen and (max-width: 699px) {}
 /* ---------DESKTOP VIEW----------- */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 950px) {
 .page_main__obNp7 {
   height: 100vh;
   display: flex;
@@ -26,16 +24,17 @@
 
 .page_container__qg4r0 {
   display: flex;
+  align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 40px;
 }
 
 .page_card__DdEUv {
-  width: 300px;
+  width: 350px;
   border: 1px solid transparent;
   border-radius: 12px;
-  background-color: rgb(241, 241, 241);
+  background-color: white;
   padding: 30px;
   font-family: var(--font-ebgaramond);
   filter: drop-shadow(4px 4px 6px rgba(210, 210, 210, 0.677));
@@ -61,8 +60,8 @@
 }
 
 .page_img__y0vK9 {
-  height: 300px;
-  width: 230px;
+  height: 330px;
+  width: 90%;
   object-fit: cover;
   overflow: hidden;
 }
@@ -75,7 +74,7 @@
 }
 
 /* ---------MOBILE VIEW----------- */
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 949px) {
   .page_main__obNp7 {
     display: flex;
     flex-direction: column;
@@ -98,7 +97,7 @@
     margin-block: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     width: 100vw;
@@ -108,7 +107,7 @@
     width: 70vw;
     border: 1px solid transparent;
     border-radius: 12px;
-    background-color: rgb(241, 241, 241);
+    background-color: white;
     padding: 30px;
     font-family: var(--font-ebgaramond);
     filter: drop-shadow(4px 4px 6px rgba(210, 210, 210, 0.677));
@@ -141,7 +140,9 @@
   }
 
   .page_footer__Vj5CG {
-    margin-top: 50px;
+    position: relative;
+    margin-top: 100px;
+    bottom: 0px;
   }
   
 }

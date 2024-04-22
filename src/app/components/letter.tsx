@@ -21,7 +21,7 @@ export default function Letter() {
                 And so, dear Reader, I invite you to take a breath, dwell here, and find nourishment in these reflections, knowing He is here with you.<br/><br/>
 
                 Happy reading, until we meet face to face.<br/><br/>
-                Yours in Chris,<br /> Via<br /><i>Editor-in-Chief</i>
+                Yours in Christ,<br /> Via<br /><i>Editor-in-Chief</i>
             </p>
             <div className={styles.box} onClick={() => setShow(!show)}>
                 <span className={show ? styles.openhbar : styles.hbar }/>

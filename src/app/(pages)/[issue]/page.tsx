@@ -45,23 +45,25 @@ export default async function Issue({ params }: any) {
     });
 
     return (
-        <div className={styles.container}>
+        <main className={styles.main}>
             <h1>{theme}</h1>
             <h5>{semester.toUpperCase()} | VOL. {volume}, NO. {iss}</h5>
             {issuu ? <IssuuButton  link={issuu}/> : null}
+            <div className={styles.hbox}>
                 <div className={styles.letter}>
                     <h3>Letter from the editors</h3>
                     <RenderHTML HTML={letter} />
                 </div>
-            <div className={styles.articlesContainer}>
-                {articles && articles.map(async (article: any) => (
-                        <Card key={null} article={article}></Card>
-                    ))}
+                <div className={styles.articlesContainer}>
+                    {articles && articles.map(async (article: any) => (
+                            <Card key={null} article={article}></Card>
+                        ))}
+                </div>
             </div>
             <div className={styles.footer}>
                 <Footer />
             </div>
-        </div>
+        </main>
 )};
 
 export const getStaticPaths: GetStaticPaths = async () => {

@@ -559,6 +559,16 @@ fonts:
     line-height: 2rem;
   }
 
+  .page_arrow__cks_j {
+    opacity: .5;
+    transition: .5s;
+  }
+
+  .page_arrow__cks_j:hover {
+    opacity: 1;
+    transition: .5s;
+  }
+
   .page_container__aoG4z {
     width: 100vw;
     margin-top: 7rem;
@@ -605,7 +615,8 @@ fonts:
 
     letter-spacing: .095rem;
     line-height: 220%;
-    background-color: transparent;
+    background-color: var(--bg-color);
+    scrollbar-color: lightgray var(--bg-color);
   }
 
   .page_letter__XfUe_ p {

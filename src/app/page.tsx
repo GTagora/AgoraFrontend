@@ -60,7 +60,17 @@ export default async function Home() {
                 <div className={styles.heading}>
                     <Subtitle />
                 </div>
-
+                <div>
+                    <Link href="#latest-issue">
+                        <Image
+                                className={styles.arrow}
+                                src="/arrow.png"
+                                width={25}
+                                height={25}
+                                alt='arrow'
+                            />
+                    </Link>
+                </div>
                 <a id="latest-issue" />
                 <div className={styles.container}>
                     <h1>Cycles</h1>
@@ -84,7 +94,7 @@ export default async function Home() {
                             This semester, our writers reflected on this theme and now offer you their take on Cycles, in hurt or condemnation, in relationships, in iterations of sin, repentance, and restoration. This writing process, though arduous, was a revelation of God&apos;s provision and a gift of fellowship, and I hope its fruit is as much a blessing to you as it was to us.<br/><br/>
                             And so, dear Reader, I invite you to take a breath, dwell here, and find nourishment in these reflections, knowing He is here with you.<br/><br/>
                             Happy reading, until we meet face to face.<br/><br/>
-                            Yours in Chris,<br /> Via<br /><i>Editor-in-Chief</i>
+                            Yours in Christ,<br /> Via<br /><i>Editor-in-Chief</i>
                             </p>
                         </div>
                     </div>
