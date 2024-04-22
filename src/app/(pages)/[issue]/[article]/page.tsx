@@ -19,6 +19,7 @@ export default async function Article({ params }: any) {
     const article = articles.find((a: any) => a.Slug === slug);
     const author = String(article.Author)
     const image = article.Image
+    const credit = article.Image_Credit
     const title = article.Title
     const date = article.Date
     const text = article.Text
@@ -42,6 +43,7 @@ export default async function Article({ params }: any) {
                                 width={600}
                                 height={600}
                                 alt='article image'/> }
+                    <p className = {styles.credit}>{credit}</p>
                     <h1 className={styles.title}>{title}</h1>
                     <h2 className={styles.author}>BY {author.toUpperCase()}</h2>
                     <h3 className={styles.date}>{date}</h3>
