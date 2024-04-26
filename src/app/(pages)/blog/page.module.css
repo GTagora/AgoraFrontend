@@ -10,15 +10,6 @@
     font-family: var(--font-ebgaramond);
     background-color: var(--bg-color);
 }
-.comingsoon {
-    padding: 4rem;
-    text-align: center;
-    background-color: var(--light-light-green);
-    border-radius: 1.5rem;
-    width: 30vw;
-    font-size: 15pt;
-    letter-spacing: .5px;
-}
 
 .button {
     font-size: 14pt;
@@ -34,6 +25,24 @@
     transition: .4s;
     letter-spacing: .4px;
 }
+
+/* ---------FULL SCREEN VIEW----------- */
+@media screen and (min-width: 1300px){
+    .comingsoon {
+        padding: 4rem;
+        text-align: center;
+        background-color: var(--light-light-green);
+        border-radius: 1.5rem;
+        width: 30vw;
+        font-size: 15pt;
+        letter-spacing: .5px;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
 /* ---------HALF SCREEN VIEW----------- */
 @media screen and (max-width: 1299px) and (min-width: 700px){
     .comingsoon {
@@ -44,6 +53,10 @@
         width: 50vw;
         font-size: 14pt;
         letter-spacing: .03rem;
+    }
+
+    .footer {
+        display: none;
     }
 }
 
