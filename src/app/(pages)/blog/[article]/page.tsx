@@ -1,6 +1,7 @@
 import styles from './article.module.css'
 import { GetStaticPaths } from 'next'
 import Image from 'next/image'
+import Footer from '@/app/components/footer'
 
 interface Articles {
     article: { [key:string]: any };
@@ -49,6 +50,7 @@ export default async function BlogArticle({ params }: any) {
                     <div className={styles.text} dangerouslySetInnerHTML={{ __html: text.replace(/\\n/g, '\n')}}></div>
                 </div>
             </div>
+            <Footer />
         </div>
 )};
 
