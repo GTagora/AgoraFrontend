@@ -113,7 +113,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 2rem;
+        padding-inline: 20vw;
         min-height: 100vh;
         font-family: var(--font-ebgaramond);
         background-color: whitesmoke;
@@ -122,8 +122,6 @@
     
     .container {
         margin-top: 100px;
-        padding-bottom: 15rem;    /* Footer height */
-    
         max-width: 1000px;
     }
     
@@ -141,9 +139,9 @@
     
     .section-header {
         font-family: var(--font-playfair);
-        font-size: 25px;
+        font-size: 24px;
         font-weight: bold;
-        letter-spacing: .07rem;
+        letter-spacing: .12rem;
         height: 50px;
         margin-bottom: 10px;
     }
@@ -203,8 +201,6 @@
     .acvf-container {
         border-radius: 1rem;
         padding: 3rem;
-    
         min-width: 65%;
-        margin-bottom: 125px;
     }
 }

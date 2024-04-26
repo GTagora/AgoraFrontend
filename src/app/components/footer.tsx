@@ -36,7 +36,7 @@ const Footer = () => {
                     {socialButton("/socials/email.png", "email icon", "mailto:gatechagora@gmail.com")}
                 </div>
             </div>
-            <div className={styles.footerContainer}>
+            <div className={styles.textBox}>
                 <div className={styles.row}>
                     <div className={styles.column}>
                         <a href="/about" className={styles.heading}>About</a>

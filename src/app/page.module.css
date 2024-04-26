@@ -190,7 +190,6 @@ fonts:
     padding-inline: 15%;
     display: flex;
     flex-direction: column;
-    padding-bottom: 15rem;    /* Footer height */
   }
 
   .container h1 {

@@ -21,7 +21,7 @@ function socialButton(name:string, img:string, alt:string, link:string) {
 export default function Contact() {
 
     return (
-        <main className={styles.main}>
+        <div className={styles.main}>
             <div className={styles.container}>
                 <div className={styles.header}>
                     <h1>Contact</h1>
@@ -52,8 +52,10 @@ export default function Contact() {
                     {socialButton("Email", "/socials/email.png", "email icon", "mailto:gatechagora@gmail.com")}
                 </div>
             </div>
-            <Footer />
+            <div className={styles.footer}>
+                <Footer />
+            </div>
 
-        </main>
+        </div>
     )
 }

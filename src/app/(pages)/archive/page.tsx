@@ -40,7 +40,7 @@ export default async function Archive({ params }: any) {
     const issues = await getIssues();
     
     return (
-    <main className={styles.main}>
+    <div className={styles.main}>
         <h1>Past Issues</h1>
         <div className={styles.container}>
             {issues.map((issue:any, i:number) => (
@@ -49,7 +49,7 @@ export default async function Archive({ params }: any) {
         <div className={styles.footer}>
             <Footer />
         </div>
-    </main>
+    </div>
     )
 }
 

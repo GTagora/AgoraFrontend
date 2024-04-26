@@ -1,6 +1,7 @@
 import styles from './article.module.css'
 import { GetStaticPaths } from 'next'
 import Image from 'next/image'
+import Footer from '@/app/components/footer'
 
 interface Articles {
     article: { [key:string]: any };
@@ -49,6 +50,9 @@ export default async function Article({ params }: any) {
                     <h3 className={styles.date}>{date}</h3>
                     <div className={styles.text} dangerouslySetInnerHTML={{ __html: text.replace(/\\n/g, '\n')}}></div>
                 </div>
+            </div>
+            <div className={styles.footer}>
+                <Footer />
             </div>
         </div>
 )};

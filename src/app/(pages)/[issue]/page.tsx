@@ -58,9 +58,7 @@ export default async function Issue({ params }: any) {
                         ))}
                 </div>
             </div>
-            <div className={styles.footer}>
-                <Footer />
-            </div>
+            <Footer />
         </main>
 )};
 

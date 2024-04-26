@@ -1,12 +1,12 @@
 /* ---------DESKTOP VIEW----------- */
 @media screen and (min-width: 950px) {
 .main {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 8rem;
+  padding-block: 5rem;
   padding-inline: 15%;
   background-color: var(--bg-color);
 
@@ -16,7 +16,7 @@
 .main h1 {
   font-family: var(--font-playfair-sc);
   letter-spacing: .3rem;
-  margin-block: 3rem;
+  margin-block: 4rem;
 }
 
 .container {
@@ -64,7 +64,9 @@
 }
 
 .footer {
-  display: none;
+  display: show;
+  position: absolute;
+  bottom: 0;
 }
 
 }
