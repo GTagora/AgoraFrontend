@@ -1,10 +1,12 @@
 {
-  "/(pages)/archive/page": "app/(pages)/archive/page.js",
   "/(pages)/about/page": "app/(pages)/about/page.js",
+  "/_not-found": "app/_not-found.js",
   "/(pages)/about/staff/page": "app/(pages)/about/staff/page.js",
-  "/page": "app/page.js",
-  "/(pages)/[issue]/page": "app/(pages)/[issue]/page.js",
   "/(pages)/blog/page": "app/(pages)/blog/page.js",
   "/(pages)/contact/page": "app/(pages)/contact/page.js",
-  "/(pages)/[issue]/[article]/page": "app/(pages)/[issue]/[article]/page.js"
+  "/page": "app/page.js",
+  "/(pages)/archive/page": "app/(pages)/archive/page.js",
+  "/(pages)/blog/[article]/page": "app/(pages)/blog/[article]/page.js",
+  "/(pages)/[issue]/[article]/page": "app/(pages)/[issue]/[article]/page.js",
+  "/(pages)/[issue]/page": "app/(pages)/[issue]/page.js"
 }

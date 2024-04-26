@@ -25,13 +25,13 @@ export default async function Article({ params }: any) {
     const date = article.Date
     const text = article.Text
     const video = article.Video
-    const audio = [{
-        title: article.Title,
-        artist: String(article.Author),
-        color: '#E5ECE7',
-        image: article.Image,
-        audioSrc: article.Audio
-    }]
+    // const audio = [{
+    //     title: article.Title,
+    //     artist: String(article.Author),
+    //     color: '#E5ECE7',
+    //     image: article.Image,
+    //     audioSrc: article.Audio
+    // }]
 
     return (
         <div>

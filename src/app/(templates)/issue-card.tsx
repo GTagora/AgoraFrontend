@@ -14,6 +14,7 @@ export default function IssueCard({article}: IssueCard) {
     const genre = String(article.Content_Type).toUpperCase()
     const text = article.Text
     const issue = article.Issue
+    // const link = issue.toLowerCase().replaceAll(" ", "-")
     const link = issue.toLowerCase().replaceAll(" ", "-") + "/" + title.toLowerCase().replaceAll(" ", "-").replace(/[^a-zA-Z0-9 -]/g,"")
     return (
         <Link href={link}>

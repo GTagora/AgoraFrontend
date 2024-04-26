@@ -16,7 +16,7 @@ async function getIssues() {
   return data;
 }
 
-const IssueCard = ({ issue } : any ) => {
+const Card = ({ issue, key } : any ) => {
     const semester = issue.Semester;
     const theme = issue.Theme;
     const slug = issue.Slug;
@@ -44,7 +44,7 @@ export default async function Archive({ params }: any) {
         <h1>Past Issues</h1>
         <div className={styles.container}>
             {issues.map((issue:any, i:number) => (
-            <IssueCard issue={issues[issues.length - i - 1]} key="" />))} 
+            <Card issue={issues[issues.length - i - 1]} key="" />))} 
         </div>
         <div className={styles.footer}>
             <Footer />
@@ -54,14 +54,14 @@ export default async function Archive({ params }: any) {
 }
 
 
-export const getStaticPaths: GetStaticPaths = async () => {
-    const issues = await getIssues();
-    const paths = issues.map((issue: any) => ({
-        params: { slug: issue.Slug.toLowerCase().replaceAll(" ", "-") }
-    }));
+// export const getStaticPaths: GetStaticPaths = async () => {
+//     const issues = await getIssues();
+//     const paths = issues.map((issue: any) => ({
+//         params: { slug: issue.Slug.toLowerCase().replaceAll(" ", "-") }
+//     }));
   
-    return { paths, fallback: true };
-  };
+//     return { paths, fallback: false };
+//   };
 
   
 {/* 
