@@ -66,6 +66,7 @@
 .footer {
   display: show;
   position: absolute;
+  top: 80vh;
   bottom: 0;
 }
 
