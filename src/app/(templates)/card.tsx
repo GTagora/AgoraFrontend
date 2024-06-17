@@ -19,17 +19,16 @@ export default function Card({article}: Card) {
         <div className={styles.card}>
             {/* if there is no article id, then display a default color block */}
             {!title && <div className={styles.cardColor} />} 
-            { <Image 
-                    className={styles.cardImage}
-                    src={image ? image : pic}
-                    width={400}
-                    height={400}
-                    alt='article image'/>
-            }
+            <Image 
+                className={styles.cardImage}
+                src={image ? image : pic}
+                width={400}
+                height={400}
+                alt='article image'/>
             <div className={styles.text}> {/* hbox containing text */}
                 <h2>{title}</h2>
+                <h3>{genre}</h3>
             </div>
-            <h3>{genre}</h3>
         </div>
         </Link>
 )}

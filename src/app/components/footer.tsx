@@ -8,8 +8,8 @@ function socialButton(img:string, alt:string, link:string) {
                 <Image 
                     className={styles['social-images']}
                     src={img}
-                    width={34}
-                    height={34}
+                    width={28}
+                    height={28}
                     alt={alt}
                 />
             </div>
@@ -24,8 +24,8 @@ const Footer = () => {
                     <Image
                         className={styles.logo}
                         src="/logo-footer.png"
-                        width={205}
-                        height={60}
+                        width={160}
+                        height={50}
                         alt='Agora logo'
                     />
                 </Link>
@@ -36,7 +36,7 @@ const Footer = () => {
                     {socialButton("/socials/email.png", "email icon", "mailto:gatechagora@gmail.com")}
                 </div>
             </div>
-            <div className={styles.footerContainer}>
+            <div className={styles.textBox}>
                 <div className={styles.row}>
                     <div className={styles.column}>
                         <a href="/about" className={styles.heading}>About</a>
@@ -49,8 +49,8 @@ const Footer = () => {
                     </div>
                     <div className={styles.column}>
                         <a href="/archive" className={styles.heading}>Archive</a>
-                        <a className={styles.footerLink} href="/#fall-23-release">
-                            Fall &apos;23
+                        <a className={styles.footerLink} href="/#latest-issue">
+                            Latest Issue
                         </a>
                         <a className={styles.footerLink}  href="/archive">
                             Past Issues
@@ -58,8 +58,8 @@ const Footer = () => {
                     </div>
                     <div className={styles.column}>
                         <a href="/contact" className={styles.heading}>Contact</a>
-                        <a className={styles.footerLink}  href="https://linktr.ee/gtagora" target="_blank">
-                            Linktree
+                        <a className={styles.footerLink}  href="mailto:gatechagora@gmail.com" target="_blank">
+                            Email
                         </a>
                         <a className={styles.footerLink}  href="https://www.instagram.com/gt.agora/" target="_blank">
                             Instagram

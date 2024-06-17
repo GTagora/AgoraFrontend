@@ -1,4 +1,78 @@
 
+/* ---------MOBILE VIEW----------- */
+@media screen and (max-width: 699px) {
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-family: var(--font-ebgaramond);
+    background-color: whitesmoke;
+    position: relative;
+
+    }
+    
+.container {
+    margin-top: 100px;
+    min-height: 110vh;
+    width: 80vw;
+    padding: 50px;
+}
+
+.pageHeader {
+    font-family: var(--font-playfair-sc);
+    text-align: left;
+    letter-spacing: 5px;
+    color: black;
+}
+
+.section{
+    font-family: var(--font-ebgaramond);
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+.sectionHeader {
+    font-family: var(--font-playfair-sc);
+    font-size: 20pt;
+    letter-spacing: 3px;
+    font-weight: 550;
+    margin-block: 50px 20px;
+}
+
+.memberCard {
+    width: 100%;
+    font-family: var(--font-ebgaramond);
+    line-height: 30px;
+    margin-block: 3px;
+}
+    
+/* member name */
+.memberCard h1 {
+    font-size: 15pt;
+    letter-spacing: 1px;
+    line-height: 170%;
+}
+
+/* member roles */
+.memberCard h2 {
+    font-size: 12pt;
+    letter-spacing: .5px;
+    line-height: 130%;
+    font-weight: 400;
+    color: gray;
+
+}
+
+.headshot {
+    display: none;
+}
+
+}
+
+/* ---------DESKTOP VIEW----------- */
+@media screen and (min-width: 700px) {
 .main {
     display: flex;
     flex-direction: column;
@@ -15,11 +89,7 @@
     min-height: 110vh;
     width: 70vw;
     padding: 50px;
-    padding-bottom: 15rem;    /* Footer height */
-
-    @media screen and (max-width: 600px) {
-        padding-inline: 0px;
-    }
+    padding-bottom: 20rem;
   }
 
 .pageHeader {
@@ -30,7 +100,6 @@
 }
 
 .section{
-    margin-block: 30px;
     font-family: var(--font-ebgaramond);
 
     display: flex;
@@ -45,29 +114,21 @@
 }
 .sectionHeader {
     font-family: var(--font-playfair-sc);
-    font-size: 22pt;
+    font-size: 20pt;
     letter-spacing: 3px;
     font-weight: 550;
-    margin-top: 50px;
+    margin-block: 70px 20px;
 }
 
 .memberCard {
     width: 300px;
     border: 1px solid transparent;
     border-radius: 12px;
-    background-color: var(--light-light-green);
+    background-color: rgb(241, 241, 241);
     padding: 30px;
     font-family: var(--font-ebgaramond);
     line-height: 30px;
     filter: drop-shadow(4px 4px 6px rgba(210, 210, 210, 0.677));
-
-    @media screen and (max-width: 1000px) {
-        width: 50vw;
-    }
-
-    @media screen and (max-width: 600px) {
-        width: 60vw;
-    }
     
 }
 
@@ -85,6 +146,7 @@
     line-height: 130%;
     font-weight: 400;
     font-family: "Arial";
+    font-style: italic;
     color: gray;
 
 }
@@ -94,4 +156,5 @@
     height: auto;
     object-fit: cover;
     overflow: hidden;
+}
 }

@@ -1,9 +1,8 @@
 import styles from './page.module.css'
 import { GetStaticPaths } from 'next'
-import Card from '@/app/(templates)/card';
-import Image from 'next/image'
-import Link from 'next/link';
-import IssuButton from '@/app/components/issuButton';
+import IssueCard from '@/app/(templates)/issue-card';
+import IssuuButton from '@/app/components/issuuButton';
+import Footer from '@/app/components/footer';
 
 interface Article {
     theme: string
@@ -35,7 +34,7 @@ export default async function Issue({ params }: any) {
     const semester = issue.Semester;
     const letter = issue.Letter;
     const theme = issue.Theme;
-    const issu = issue.Issu;
+    const issuu = issue.Issuu;
     const image = issue.Image;
 
     let articles = await getArticles()
@@ -44,22 +43,23 @@ export default async function Issue({ params }: any) {
     });
 
     return (
-        <div>
-            <div className={styles.container}>
-                <h1>{theme}</h1>
-                <h5>{semester.toUpperCase()} | VOL. {volume}, NO. {iss}</h5>
-                {issu ? <IssuButton link={issu}/> : null}
-                    <div className={styles.letter}>
-                        <h3>Letter from the editors</h3>
-                        <RenderHTML HTML={letter} />
-                    </div>
+        <main className={styles.main}>
+            <h1>{theme}</h1>
+            <h5>{semester.toUpperCase()} | VOL. {volume}, NO. {iss}</h5>
+            {issuu ? <IssuuButton  link={issuu}/> : null}
+            <div className={styles.hbox}>
+                <div className={styles.letter}>
+                    <h3>Letter from the editors</h3>
+                    <RenderHTML HTML={letter} />
+                </div>
                 <div className={styles.articlesContainer}>
                     {articles && articles.map(async (article: any) => (
-                            <Card key={null} article={article}></Card>
+                            <IssueCard key={null} article={article}></IssueCard>
                         ))}
                 </div>
             </div>
-        </div>
+            <Footer />
+        </main>
 )};
 
 export const getStaticPaths: GetStaticPaths = async () => {
