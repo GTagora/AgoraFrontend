@@ -4,7 +4,7 @@ import IssueCard from '@/app/(templates)/issue-card';
 import IssuuButton from '@/app/components/issuuButton';
 import Footer from '@/app/components/footer';
 
-interface Article {
+interface Issue {
     theme: string
 }
   
@@ -21,6 +21,18 @@ async function getArticles() {
   
     return data;
 }
+
+export const getStaticPaths: GetStaticPaths = async () => {
+    const issues = await getIssues();
+    // const paths = issues.map((i: any) => ({
+    //     params: { issue: i.Slug.toLowerCase().replaceAll(" ", "-") }
+    // }));
+    const paths = [
+        { params: { issue: "spring-24" } },
+        { params: { issue: "fall-23" } },
+    ]
+    return { paths, fallback: false };
+};
 
 const RenderHTML = (props:any) => (<span dangerouslySetInnerHTML={{__html:props.HTML}}></span>)
 
@@ -61,13 +73,3 @@ export default async function Issue({ params }: any) {
             <Footer />
         </main>
 )};
-
-export const getStaticPaths: GetStaticPaths = async () => {
-    const issues = await getIssues();
-    const paths = issues.map((i: any) => ({
-        params: { issue: "",
-                  slug: i.Slug.toLowerCase().replaceAll(" ", "-") }
-    }));
-  
-    return { paths, fallback: true };
-  };
