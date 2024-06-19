@@ -44,7 +44,7 @@ export default async function Archive({ params }: any) {
         <h1>Past Issues</h1>
         <div className={styles.container}>
             {issues.map((issue:any, i:number) => (
-            <IssueCard issue={issues[issues.length - i - 1]} />))} 
+            <IssueCard key={i} issue={issues[issues.length - i - 1]} />))} 
         </div>
         <div className={styles.footer}>
             <Footer />

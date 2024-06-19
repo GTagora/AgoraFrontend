@@ -75,7 +75,7 @@ export default async function BlogArticle({ params }: any) {
                         a Father and His children<br/>
                         placed on a bench<br/><br/>
 
-                        Author's note:<br/>
+                        Author&apos;s note:<br/>
                         <p className={styles.summary}>
                             This piece is about an experience I had during Fall break last semester. It was the first time 
                             that I had come home from college and my dad and I decided to drive around after dinner. We 
