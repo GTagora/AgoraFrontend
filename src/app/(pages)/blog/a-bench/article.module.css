@@ -93,6 +93,13 @@
         max-width: 70vw;
         border-width: 0;
     }
+
+    .caption {
+        color: gray;
+        font-size: 9pt;
+        font-family: 'Arial';
+        margin-block: -10px 20px;
+    }
 }
 
 /* ---------DESKTOP VIEW----------- */
@@ -119,7 +126,7 @@
     }
 
     .image {
-        margin-block: 30px 40px;
+        margin-block: 30px;
         width: 100%;
         max-width: 70vw;
         max-height: 70vh;
@@ -171,5 +178,12 @@
         min-height: 60vh;
         max-width: 70vw;
         border-width: 0;
+    }
+
+    .caption {
+        color: gray;
+        font-size: 9pt;
+        font-family: 'Arial';
+        margin-block: -20px 30px;
     }
 }
