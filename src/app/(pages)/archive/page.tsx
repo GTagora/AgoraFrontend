@@ -56,7 +56,7 @@ export default async function Archive({ params }: any) {
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const issues = await getIssues();
-    const paths = issues.map((issue: any) => ({
+    const paths = issues.map((issue: any, i:number) => ({
         params: { slug: issue.Slug.toLowerCase().replaceAll(" ", "-") }
     }));
   
