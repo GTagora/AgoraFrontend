@@ -80,7 +80,7 @@ export default async function Home() {
                         <div className={styles.feature} >
                             <Image
                                 className={styles.img}
-                                src="/s24.jpg"
+                                src="/covers/s24.jpg"
                                 width={6000}
                                 height={4000}
                                 alt='Issue cover'
