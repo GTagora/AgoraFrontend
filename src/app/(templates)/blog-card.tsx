@@ -4,34 +4,22 @@ import Image from 'next/image'
 import pic from 'public/test.jpg'
 
 
-interface BlogCard {
-    article: { [key: string]: any };
-}
-
-export default function BlogCard({ article }: BlogCard) {
-    const image = article.Image
-    const title = article.Title
-    const genre = String(article.Content_Type).toUpperCase()
-    const issue = article.Issue
-    const date = article.Date
-    const link = issue.toLowerCase().replaceAll(" ", "-") + "/" + title.toLowerCase().replaceAll(" ", "-").replace(/[^a-zA-Z0-9 -]/g, "")
+export default function BlogCard({article}:any) {
     return (
-        <Link href={link}>
+        <Link href={article.slug}>
             <div className={styles.card}>
-                {/* if there is no article id, then display a default color block */}
-                {!title && <div className={styles.cardColor} />}
-                {<Image
+                <Image 
                     className={styles.cardImage}
-                    src={image ? image : pic}
+                    src={article.img}
                     width={400}
                     height={400}
-                    alt='article image' />
-                }
-                <div className={styles.text}> {/* hbox containing text */}
-                    <h2>{title}</h2>
-                </div>
-                <h3>{genre}</h3>
-                <h4><i>{date}</i></h4>
+                    alt='article image'/>
+                <div className={styles.box}>
+                    <div className={styles.hbox}>
+                        <h2>{article.title}</h2><h3>{article.genre.toUpperCase()}</h3>
+                    </div>
+                    <h4>{article.date}</h4>
+                </div>                
             </div>
         </Link>
     )
