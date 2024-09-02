@@ -1,7 +1,6 @@
 import styles from './card.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import pic from 'public/test.jpg'
 
 
 interface Card {
@@ -21,7 +20,7 @@ export default function Card({article}: Card) {
             {!title && <div className={styles.cardColor} />} 
             <Image 
                 className={styles.cardImage}
-                src={image ? image : pic}
+                src={image ? image : '/test.jpg'}
                 width={400}
                 height={400}
                 alt='article image'/>
