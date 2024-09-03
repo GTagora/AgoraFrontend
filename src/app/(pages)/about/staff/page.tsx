@@ -1,7 +1,6 @@
 import styles from './staff.module.css'
 import Image from 'next/image';
 import Footer from '@/app/components/footer'
-import defaultimg from 'public/npc.png'
 
 type MemberProps= {
     name: string;
@@ -21,7 +20,7 @@ function Member( { name, roles, img}:MemberProps) {
         <div className={styles.memberCard}>
             <Image
                 className={styles.headshot}
-                src={img === "" ? defaultimg : img}
+                src={img === "" ? "/default-member.jpg" : img}
                 width={450}
                 height={450}
                 alt={name + ' headshot'}
