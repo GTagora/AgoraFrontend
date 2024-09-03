@@ -15,9 +15,9 @@ const articles = [
     {
         title: "An Anthology of Joy and Thought Vol. 1",
         genre: "POEM",
-        img: "https://firebasestorage.googleapis.com/v0/b/agora-ca31b.appspot.com/o/Piece%20Title%20Cards%2FBlog%2Fa_bench.jpeg?alt=media&token=09e1c89b-63a7-458e-b9cc-c92f130e02dc",
-        slug: "blog/an-anthology-1",
-        date: "08.19.2024",
+        img: "/blog/an-anthology/3.jpg",
+        slug: "blog/an-anthology",
+        date: "09.02.2024",
     }
 ]
 
