@@ -1,7 +1,6 @@
 {
-  "/(pages)/blog/an-anthology/14/page": "app/(pages)/blog/an-anthology/14/page.js",
+  "/(pages)/blog/page": "app/(pages)/blog/page.js",
+  "/page": "app/page.js",
   "/(pages)/blog/an-anthology/page": "app/(pages)/blog/an-anthology/page.js",
-  "/(pages)/blog/an-anthology/15/page": "app/(pages)/blog/an-anthology/15/page.js",
-  "/(pages)/blog/an-anthology/16/page": "app/(pages)/blog/an-anthology/16/page.js",
-  "/(pages)/blog/an-anthology/17/page": "app/(pages)/blog/an-anthology/17/page.js"
+  "/(pages)/blog/an-anthology/2/page": "app/(pages)/blog/an-anthology/2/page.js"
 }

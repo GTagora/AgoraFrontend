@@ -16,7 +16,7 @@ export default async function Page() {
                         height={600}
                         alt='article image'/>
                     <p className = {styles.credit}>Image: Stephen Noh</p>
-                    <h1 className={styles.title}>reflection's vantage - the summit</h1>
+                    <h1 className={styles.title}>reflection&apos;s vantage - the summit</h1>
                     <div className={styles.text}>
                     at the peak i sit <br/>
                     the horizon stretches <br/>
