@@ -18,8 +18,16 @@
         @media screen and (max-width: 549px) {
             padding: 20px 10%;
         }
+    }
 
-    
+    .buttons {
+        font-size: 10pt;
+        font-family: 'Arial';
+        color: gray;
+        padding-inline: 20px;
+        margin-block: 40px;
+        display: flex;
+        justify-content: space-between;
     }
     
     .container {
@@ -37,6 +45,15 @@
         object-fit: cover;
         overflow: hidden;
         margin-block: 20px;
+    }
+
+    .credit {
+        text-align: center;
+        opacity: .7;
+        font-family: 'Arial';
+        font-size: 9pt;
+        letter-spacing: .03rem;
+        margin-bottom: 40px;
     }
     
     .title {
@@ -73,7 +90,7 @@
     }
     
     .text {
-        line-height: 200%;
+        line-height: 120%;
         font-size: 15pt;
         white-space: pre-line;
 
@@ -101,7 +118,7 @@
         display: flex;
         flex-direction: column;
         align-items: left;
-        padding-inline: 20vw;
+        padding-inline: 35vw;
         padding-block: 140px 100px;
         min-height: 100vh;
         font-family: var(--font-ebgaramond);
@@ -113,7 +130,7 @@
     .title {
         font-family: var(--font-playfair);
         font-weight: 500;
-        font-size: 40pt;
+        font-size: 30pt;
         margin-block: 20px 40px;
     }
 
@@ -150,7 +167,7 @@
     }
 
     .text {
-        line-height: 200%;
+        line-height: 120%;
         font-size: 13pt;
         white-space: pre-line;
     }
@@ -160,20 +177,28 @@
         justify-content: space-between;
     }
 
-    .rightAlign {
-        text-align: right;
+    .buttons {
+        font-size: 10pt;
+        font-family: 'Arial';
+        color: gray;
+        margin-block: 40px;
+        display: flex;
+        justify-content: space-between;
     }
+}
 
-    .audio {
-        position: fixed;
-        right: 5%;
-    }
+.href:hover {
+    color:black;
+    transition-duration: 150ms;
+}
 
-    .video {
-        margin-block: 30px 40px;
-        width: 100%;
-        min-height: 60vh;
-        max-width: 70vw;
-        border-width: 0;
-    }
+.breadcrumb {
+    font-size: 10pt;
+    font-family: 'Arial';
+    color: gray;
+}
+
+.breadcrumb:hover {
+    color:black;
+    transition-duration: 150ms;
 }

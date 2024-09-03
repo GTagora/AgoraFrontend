@@ -1,7 +1,6 @@
 import styles from './issue-card.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import pic from 'public/test.jpg'
 
 
 interface IssueCard {
@@ -25,7 +24,7 @@ export default function IssueCard({article}: IssueCard) {
             </div>
             <Image 
                 className={styles.cardImage}
-                src={image ? image : pic}
+                src={image ? image : '/text.jpg'}
                 width={400}
                 height={400}
                 alt='article image'/>

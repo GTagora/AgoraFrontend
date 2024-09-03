@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/(pages)/blog/an-anthology/page",{
+
+/***/ "(app-pages-browser)/./src/app/(pages)/blog/an-anthology/page.module.css":
+/*!***********************************************************!*\
+  !*** ./src/app/(pages)/blog/an-anthology/page.module.css ***!
+  \***********************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+eval(__webpack_require__.ts("// extracted by mini-css-extract-plugin\nmodule.exports = {\"main\":\"page_main__tCE7y\",\"image\":\"page_image__a3Oqc\",\"credit\":\"page_credit__hyEJJ\",\"title\":\"page_title__J3Cl0\",\"subtitle\":\"page_subtitle___tMc8\",\"author\":\"page_author__p7PUU\",\"text\":\"page_text__MW4gA\",\"contentsContainer\":\"page_contentsContainer__kYc9T\",\"hbox\":\"page_hbox__ECgt0\",\"col\":\"page_col__bngaO\",\"page\":\"page_page__pPtFr\",\"rightAlign\":\"page_rightAlign__m7KcU\",\"audio\":\"page_audio__AyoEq\",\"video\":\"page_video__DSCtS\",\"date\":\"page_date__f6l8p\",\"content\":\"page_content__ZsbUL\",\"href\":\"page_href___yZTW\"};\n    if(true) {\n      // 1725331185312\n      var cssReload = __webpack_require__(/*! ./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js */ \"(app-pages-browser)/./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js\")(module.id, {\"publicPath\":\"/_next/\",\"esModule\":false,\"locals\":true});\n      module.hot.dispose(cssReload);\n      \n    }\n  \nmodule.exports.__checksum = \"a3f9242c6cb6\"\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL3NyYy9hcHAvKHBhZ2VzKS9ibG9nL2FuLWFudGhvbG9neS9wYWdlLm1vZHVsZS5jc3MiLCJtYXBwaW5ncyI6IkFBQUE7QUFDQSxrQkFBa0I7QUFDbEIsT0FBTyxJQUFVO0FBQ2pCO0FBQ0Esc0JBQXNCLG1CQUFPLENBQUMsd01BQXdILGNBQWMsc0RBQXNEO0FBQzFOLE1BQU0sVUFBVTtBQUNoQjtBQUNBO0FBQ0E7QUFDQSx5QkFBeUIiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9fTl9FLy4vc3JjL2FwcC8ocGFnZXMpL2Jsb2cvYW4tYW50aG9sb2d5L3BhZ2UubW9kdWxlLmNzcz81MjExIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxubW9kdWxlLmV4cG9ydHMgPSB7XCJtYWluXCI6XCJwYWdlX21haW5fX3RDRTd5XCIsXCJpbWFnZVwiOlwicGFnZV9pbWFnZV9fYTNPcWNcIixcImNyZWRpdFwiOlwicGFnZV9jcmVkaXRfX2h5RUpKXCIsXCJ0aXRsZVwiOlwicGFnZV90aXRsZV9fSjNDbDBcIixcInN1YnRpdGxlXCI6XCJwYWdlX3N1YnRpdGxlX19fdE1jOFwiLFwiYXV0aG9yXCI6XCJwYWdlX2F1dGhvcl9fcDdQVVVcIixcInRleHRcIjpcInBhZ2VfdGV4dF9fTVc0Z0FcIixcImNvbnRlbnRzQ29udGFpbmVyXCI6XCJwYWdlX2NvbnRlbnRzQ29udGFpbmVyX19rWWM5VFwiLFwiaGJveFwiOlwicGFnZV9oYm94X19FQ2d0MFwiLFwiY29sXCI6XCJwYWdlX2NvbF9fYm5nYU9cIixcInBhZ2VcIjpcInBhZ2VfcGFnZV9fcFB0RnJcIixcInJpZ2h0QWxpZ25cIjpcInBhZ2VfcmlnaHRBbGlnbl9fbTdLY1VcIixcImF1ZGlvXCI6XCJwYWdlX2F1ZGlvX19BeW9FcVwiLFwidmlkZW9cIjpcInBhZ2VfdmlkZW9fX0RTQ3RTXCIsXCJkYXRlXCI6XCJwYWdlX2RhdGVfX2Y2bDhwXCIsXCJjb250ZW50XCI6XCJwYWdlX2NvbnRlbnRfX1pzYlVMXCIsXCJocmVmXCI6XCJwYWdlX2hyZWZfX195WlRXXCJ9O1xuICAgIGlmKG1vZHVsZS5ob3QpIHtcbiAgICAgIC8vIDE3MjUzMzExODUzMTJcbiAgICAgIHZhciBjc3NSZWxvYWQgPSByZXF1aXJlKFwiL1VzZXJzL29saXZpYWh1L2NvZGUvQWdvcmFGcm9udGVuZC9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2NvbXBpbGVkL21pbmktY3NzLWV4dHJhY3QtcGx1Z2luL2htci9ob3RNb2R1bGVSZXBsYWNlbWVudC5qc1wiKShtb2R1bGUuaWQsIHtcInB1YmxpY1BhdGhcIjpcIi9fbmV4dC9cIixcImVzTW9kdWxlXCI6ZmFsc2UsXCJsb2NhbHNcIjp0cnVlfSk7XG4gICAgICBtb2R1bGUuaG90LmRpc3Bvc2UoY3NzUmVsb2FkKTtcbiAgICAgIFxuICAgIH1cbiAgXG5tb2R1bGUuZXhwb3J0cy5fX2NoZWNrc3VtID0gXCJhM2Y5MjQyYzZjYjZcIlxuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(app-pages-browser)/./src/app/(pages)/blog/an-anthology/page.module.css\n"));
+
+/***/ })
+
+});

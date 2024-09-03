@@ -70,7 +70,7 @@ const contents = [
     },
     {
         id: 14,
-        title: 'fureworks - freedom',
+        title: 'fireworks - freedom',
         href: 'an-anthology/14'
     },
     {
@@ -95,27 +95,32 @@ export default function Page() {
         <div>
             <div className={styles.main}>
                 <div className={styles.container}>
-                    {/* <Image 
-                        className={styles.image}
-                        src="/blog/an-anthology/3.jpg"
-                        width={600}
-                        height={600}
-                        alt='article image'/>
-                    <p className = {styles.credit}>credit</p> */}
-                    <h1 className={styles.title}> An Anthology of Joy and Thought Vol. 1</h1>
-                    <h2 className={styles.author}>By Stephen Noh</h2>
-                    <h3 className={styles.date}>SUMMER 2024</h3>
-                    <h2 className={styles.subtitle}>0. Preface</h2>
+                    <div className={styles.hbox}>
+                        <div className={styles.col}>
+                            <Image 
+                                className={styles.image}
+                                src="/blog/an-anthology/3.jpg"
+                                width={600}
+                                height={600}
+                                alt='article image'/>
+                            <p className = {styles.credit}>Image: Stephen Noh</p>
+                        </div>
+                        <div className={styles.col}>
+                            <h1 className={styles.title}> An Anthology of Joy and Thought Vol. 1</h1>
+                            <h2 className={styles.author}>By Stephen Noh</h2>
+                            <h3 className={styles.date}>SUMMER 2024</h3>
+                        </div>
+                    </div>
+                    <h2 className={styles.subtitle}>Preface</h2>
                     <p className={styles.text}>
-                    As I’ve come to grow more in my faith and walk with Christ, I feel like my senses and observation skills have also heightened. In a way, I feel like my eyes and ears have truly been opened.
-                    <br/><br/>
-                    I think a lot. Like a lot. Sometimes that’s a helpful thing, other times it leads to overthinking. More often than not though, I think it helps me love Him more. I love just jotting down these thoughts as they pop into my head as I’m taking a walk, cooking, taking pictures, out with friends, whatever it may be. I feel like the Lord has continuously reminded me of His goodness as I’ve grown to think more creatively and observantly.
-                    <br/><br/>
-                    One thing I’ve been reflecting and thinking about a lot lately is a life with God. Not just a life for God or a life seeking God, but one that seeks to be with Him. Inherently, I believe a life with God implies that I do things for Him and that I seek Him in all things, but I believe that this concept of “with” stretches even further beyond. I think it’s how I choose to think and live on the daily. What is the first response in my head when I experience something? Who is the first one I turn to in peace or turmoil? In idleness or commotion? Why am I doing the things I do? Simple yet multi-faceted questions such as this. I believe a life with God seeks to have God be at the center of every aspect of my life. In walks. In boredom. In crying out. In sorrow. In joy. In victory. In everything. I’ve come to slowly see God in all these aspects of my life as I’ve continued to walk with Him and there is still so much more to see and learn.
-                    <br/><br/>
-                    With that said, here is An Anthology of Joy and Thought Vol. 1. Authored and taken by me, Stephen Noh, but ultimately by the Lord, my Father in Heaven. This is a collection of some raw thoughts in the day to day, reflections of life, and expressions of gratitude/love in the form of photography and attempted prose. Nothing in here is heavily edited, it is merely a reflection of what I’ve come to reminisce on at the moment. So with that said, reader, I welcome you to join me in a little walk I call life and to see a little testament of how He has spoken to me.
+                        As I’ve come to grow more in my faith and walk with Christ, I feel like my senses and observation skills have also heightened. In a way, I feel like my eyes and ears have truly been opened.
+                        <br/><br/>
+                        I think a lot. Like a lot. Sometimes that’s a helpful thing, other times it leads to overthinking. More often than not though, I think it helps me love Him more. I love just jotting down these thoughts as they pop into my head as I’m taking a walk, cooking, taking pictures, out with friends, whatever it may be. I feel like the Lord has continuously reminded me of His goodness as I’ve grown to think more creatively and observantly.
+                        <br/><br/>
+                        One thing I’ve been reflecting and thinking about a lot lately is a life with God. Not just a life for God or a life seeking God, but one that seeks to be with Him. Inherently, I believe a life with God implies that I do things for Him and that I seek Him in all things, but I believe that this concept of “with” stretches even further beyond. I think it’s how I choose to think and live on the daily. What is the first response in my head when I experience something? Who is the first one I turn to in peace or turmoil? In idleness or commotion? Why am I doing the things I do? Simple yet multi-faceted questions such as this. I believe a life with God seeks to have God be at the center of every aspect of my life. In walks. In boredom. In crying out. In sorrow. In joy. In victory. In everything. I’ve come to slowly see God in all these aspects of my life as I’ve continued to walk with Him and there is still so much more to see and learn.
+                        <br/><br/>
+                        With that said, here is An Anthology of Joy and Thought Vol. 1. Authored and taken by me, Stephen Noh, but ultimately by the Lord, my Father in Heaven. This is a collection of some raw thoughts in the day to day, reflections of life, and expressions of gratitude/love in the form of photography and attempted prose. Nothing in here is heavily edited, it is merely a reflection of what I’ve come to reminisce on at the moment. So with that said, reader, I welcome you to join me in a little walk I call life and to see a little testament of how He has spoken to me.
                     </p><br/> <br/>
-
                     <h2 className={styles.subtitle}>Contents</h2>
                     <div className={styles.contentsContainer}>
                         {contents.map(item => 

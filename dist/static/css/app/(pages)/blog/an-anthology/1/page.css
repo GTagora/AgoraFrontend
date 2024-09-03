@@ -21,8 +21,16 @@
         @media screen and (max-width: 549px) {
             padding: 20px 10%;
         }
+    }
 
-    
+    .article_buttons__WNCiS {
+        font-size: 10pt;
+        font-family: 'Arial';
+        color: gray;
+        padding-inline: 20px;
+        margin-block: 40px;
+        display: flex;
+        justify-content: space-between;
     }
     
     .article_container__QZBfP {
@@ -40,6 +48,15 @@
         object-fit: cover;
         overflow: hidden;
         margin-block: 20px;
+    }
+
+    .article_credit__0Bpcq {
+        text-align: center;
+        opacity: .7;
+        font-family: 'Arial';
+        font-size: 9pt;
+        letter-spacing: .03rem;
+        margin-bottom: 40px;
     }
     
     .article_title__e_gWJ {
@@ -76,7 +93,7 @@
     }
     
     .article_text__UBK_6 {
-        line-height: 200%;
+        line-height: 120%;
         font-size: 15pt;
         white-space: pre-line;
 
@@ -104,7 +121,7 @@
         display: flex;
         flex-direction: column;
         align-items: left;
-        padding-inline: 20vw;
+        padding-inline: 35vw;
         padding-block: 140px 100px;
         min-height: 100vh;
         font-family: var(--font-ebgaramond);
@@ -116,7 +133,7 @@
     .article_title__e_gWJ {
         font-family: var(--font-playfair);
         font-weight: 500;
-        font-size: 40pt;
+        font-size: 30pt;
         margin-block: 20px 40px;
     }
 
@@ -153,7 +170,7 @@
     }
 
     .article_text__UBK_6 {
-        line-height: 200%;
+        line-height: 120%;
         font-size: 13pt;
         white-space: pre-line;
     }
@@ -163,20 +180,28 @@
         justify-content: space-between;
     }
 
-    .article_rightAlign__da2mG {
-        text-align: right;
+    .article_buttons__WNCiS {
+        font-size: 10pt;
+        font-family: 'Arial';
+        color: gray;
+        margin-block: 40px;
+        display: flex;
+        justify-content: space-between;
     }
+}
 
-    .article_audio__2sxod {
-        position: fixed;
-        right: 5%;
-    }
+.article_href__XtGM_:hover {
+    color:black;
+    transition-duration: 150ms;
+}
 
-    .article_video__dL0zh {
-        margin-block: 30px 40px;
-        width: 100%;
-        min-height: 60vh;
-        max-width: 70vw;
-        border-width: 0;
-    }
+.article_breadcrumb__ZVudN {
+    font-size: 10pt;
+    font-family: 'Arial';
+    color: gray;
+}
+
+.article_breadcrumb__ZVudN:hover {
+    color:black;
+    transition-duration: 150ms;
 }

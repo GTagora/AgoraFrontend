@@ -17,7 +17,7 @@ const articles = [
         genre: "POEM",
         img: "/blog/an-anthology/3.jpg",
         slug: "blog/an-anthology",
-        date: "09.02.2024",
+        date: "Summer 2024",
     }
 ]
 
