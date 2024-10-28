@@ -8,7 +8,7 @@ const articles = [
     {
         title: "a bench",
         genre: "POEM",
-        img: "https://firebasestorage.googleapis.com/v0/b/agora-ca31b.appspot.com/o/Piece%20Title%20Cards%2FBlog%2Fa_bench.jpeg?alt=media&token=09e1c89b-63a7-458e-b9cc-c92f130e02dc",
+        img: '/blog/a-bench/a_bench.jpg',
         slug: "blog/a-bench",
         date: "06.19.2024",
     },
