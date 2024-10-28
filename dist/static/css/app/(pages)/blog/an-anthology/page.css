@@ -1,0 +1,215 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/(pages)/blog/an-anthology/page.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+/* ---------MOBILE VIEW----------- */
+@media screen and (max-width: 699px) {
+    .page_main__tCE7y {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    
+        padding: 1rem 10%;
+    
+        min-height: 100vh;
+        font-family: var(--font-ebgaramond);
+        background-color: var(--bg-color);
+    
+        position: relative;
+        padding-bottom: 15rem;
+
+        @media screen and (max-width: 549px) {
+            padding: 20px 10%;
+        }
+    }
+    
+    .page_image__a3Oqc {
+        width: 100%;
+        max-width: 80vw;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        margin-block: 100px 20px;
+    }
+
+    .page_credit__hyEJJ {
+        text-align: center;
+        opacity: .7;
+        font-family: 'Arial';
+        font-size: 9pt;
+        letter-spacing: .03rem;
+        margin-bottom: 40px;
+    }
+    
+    .page_title__J3Cl0 {
+        font-family: var(--font-playfair);
+        font-weight: 500;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 549px) {
+            font-size: 25pt;
+        }
+    }
+
+    .page_subtitle___tMc8 {
+        font-family: var(--font-playfair);
+        font-weight: 600;
+        font-size: 15pt;
+        margin-block: 20px;
+    }
+    
+    .page_author__p7PUU {
+        font-size: 15pt;
+        font-family: var(--font-cormorant);
+        font-weight: 600;
+        margin-block: 12px 7px;
+
+        @media screen and (max-width: 549px) {
+            font-size: 13.5pt;
+        }
+    }
+    
+    .page_text__MW4gA {
+        line-height: 180%;
+        font-size: 13pt;
+        white-space: pre-line;
+
+        @media screen and (max-width: 549px) {
+            font-size: 13.5pt;
+        }
+    }
+
+    .page_contentsContainer__kYc9T {
+        display: flex;
+        flex-direction: column
+    }
+}
+
+/* ---------DESKTOP VIEW----------- */
+@media screen and (min-width: 700px) {
+    .page_main__tCE7y {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding-inline: 20vw;
+        padding-block: 140px 100px;
+        min-height: 100vh;
+        font-family: var(--font-ebgaramond);
+        background-color: var(--bg-color);
+        position: relative;
+
+    }
+
+    .page_hbox__ECgt0 {
+        padding-inline: 5vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        gap: 50px;
+    }
+
+    .page_col__bngaO {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page_title__J3Cl0 {
+        font-family: var(--font-playfair);
+        font-weight: 500;
+        font-size: 40pt;
+        margin-block: 20px 40px;
+
+        @media screen and (max-width: 1099px) {
+            font-size: 30pt;
+        }
+    }
+
+
+    .page_subtitle___tMc8 {
+        padding-inline: 10vw;
+        font-family: var(--font-playfair);
+        font-weight: 600;
+        font-size: 20pt;
+        margin-block: 20px;
+    }
+
+    .page_image__a3Oqc {
+        margin-block: 30px 10px;
+        width: 100%;
+        max-width: 70vw;
+        max-height: 70vh;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .page_credit__hyEJJ {
+        text-align: center;
+        opacity: .7;
+        font-family: 'Arial';
+        font-size: 9pt;
+        letter-spacing: .03rem;
+        margin-bottom: 40px;
+    }
+
+    .page_author__p7PUU {
+        font-size: 16pt;
+        font-family: var(--font-cormorant);
+        font-weight: 600;
+    }
+
+    .page_text__MW4gA {
+        line-height: 200%;
+        font-size: 13pt;
+        white-space: pre-line;
+        padding-inline: 10vw;
+    }
+
+    .page_page__pPtFr {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page_rightAlign__m7KcU {
+        text-align: right;
+    }
+
+    .page_audio__AyoEq {
+        position: fixed;
+        right: 5%;
+    }
+
+    .page_video__DSCtS {
+        margin-block: 30px 40px;
+        width: 100%;
+        min-height: 60vh;
+        max-width: 70vw;
+        border-width: 0;
+    }
+
+    .page_contentsContainer__kYc9T {
+        padding-inline: 10vw;
+        display: grid;
+        grid-template-rows: repeat(10, 1fr);
+        grid-auto-flow: column;
+    }
+}
+
+.page_date__f6l8p {
+    font-size: 10pt;
+    font-family:'Arial';
+    color: #a1a1a1;
+    font-weight: 400;
+    margin-block: 10px 50px;
+}
+
+.page_content__ZsbUL {
+    line-height: 200%;
+    font-size: 13.5pt;
+    white-space: pre-line;
+    display: flex;
+}
+
+.page_href___yZTW:hover {
+    text-decoration: underline;
+}

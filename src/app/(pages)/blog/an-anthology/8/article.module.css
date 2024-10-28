@@ -1,0 +1,204 @@
+/* ---------MOBILE VIEW----------- */
+@media screen and (max-width: 699px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    
+        padding: 1rem 10%;
+        padding-top: 140px;
+    
+        min-height: 100vh;
+        font-family: var(--font-ebgaramond);
+        background-color: var(--bg-color);
+    
+        position: relative;
+        padding-bottom: 15rem;
+
+        @media screen and (max-width: 549px) {
+            padding: 20px 10%;
+        }
+    }
+
+    .buttons {
+        font-size: 10pt;
+        font-family: 'Arial';
+        color: gray;
+        padding-inline: 20px;
+        margin-block: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .container {
+        margin-top: 100px;
+
+        @media screen and (max-width: 549px) {
+            padding: 10px 10%;
+        }
+    }
+    
+    .image {
+        width: 100%;
+        max-width: 80vw;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        margin-block: 20px;
+    }
+
+    .credit {
+        text-align: center;
+        opacity: .7;
+        font-family: 'Arial';
+        font-size: 9pt;
+        letter-spacing: .03rem;
+        margin-bottom: 40px;
+    }
+    
+    .title {
+        font-family: var(--font-playfair);
+        font-weight: 500;
+        font-size: 20pt;
+        margin-block: 20px;
+
+        @media screen and (max-width: 549px) {
+            font-size: 25pt;
+        }
+    }
+    
+    .author {
+        font-size: 15pt;
+        font-family: var(--font-cormorant);
+        font-weight: 600;
+        margin-block: 12px 7px;
+
+        @media screen and (max-width: 549px) {
+            font-size: 13.5pt;
+        }
+    }
+    
+    .date {
+        font-size: 14pt;
+        font-family: var(--font-eb-garamond);
+        font-weight: 400;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 549px) {
+            font-size: 13.5pt;
+        }
+    }
+    
+    .text {
+        line-height:200%;
+        font-size: 15pt;
+        white-space: pre-line;
+
+        @media screen and (max-width: 549px) {
+            font-size: 13.5pt;
+        }
+    }
+    
+    .rightAlign {
+        text-align: right;
+    }
+
+    .video {
+        margin-block: 30px 40px;
+        width: 100%;
+        min-height: 30vh;
+        max-width: 70vw;
+        border-width: 0;
+    }
+}
+
+/* ---------DESKTOP VIEW----------- */
+@media screen and (min-width: 700px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding-inline: 35vw;
+        padding-block: 140px 100px;
+        min-height: 100vh;
+        font-family: var(--font-ebgaramond);
+        background-color: var(--bg-color);
+        position: relative;
+
+    }
+
+    .title {
+        font-family: var(--font-playfair);
+        font-weight: 500;
+        font-size: 30pt;
+        margin-block: 20px 40px;
+    }
+
+    .image {
+        margin-block: 30px 10px;
+        width: 100%;
+        max-width: 70vw;
+        max-height: 70vh;
+        height: 100%;
+        object-fit: contain;
+        overflow: hidden;
+    }
+
+    .credit {
+        text-align: center;
+        opacity: .7;
+        font-family: 'Arial';
+        font-size: 9pt;
+        letter-spacing: .03rem;
+        margin-bottom: 40px;
+    }
+
+    .author {
+        font-size: 16pt;
+        font-family: var(--font-cormorant);
+        font-weight: 600;
+    }
+
+    .date {
+        font-size: 14pt;
+        font-family: var(--font-eb-garamond);
+        font-weight: 400;
+        margin-block: 10px 50px;
+    }
+
+    .text {
+        line-height: 200%;
+        font-size: 13pt;
+        white-space: pre-line;
+    }
+
+    .page {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .buttons {
+        font-size: 10pt;
+        font-family: 'Arial';
+        color: gray;
+        margin-block: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.href:hover {
+    color:black;
+    transition-duration: 150ms;
+}
+
+.breadcrumb {
+    font-size: 10pt;
+    font-family: 'Arial';
+    color: gray;
+}
+
+.breadcrumb:hover {
+    color:black;
+    transition-duration: 150ms;
+}
