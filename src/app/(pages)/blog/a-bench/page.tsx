@@ -1,9 +1,8 @@
 import styles from './article.module.css'
 import Image from 'next/image'
 
-export default async function BlogArticle({ params }: any) {
+export default function BlogArticle() {
     const author = "Catherine Tian"
-    const image = "https://firebasestorage.googleapis.com/v0/b/agora-ca31b.appspot.com/o/Piece%20Title%20Cards%2FBlog%2Fa_bench.jpeg?alt=media&token=09e1c89b-63a7-458e-b9cc-c92f130e02dc"
     const title = "a bench"
     const date = "June 19, 2024"
 
@@ -13,7 +12,7 @@ export default async function BlogArticle({ params }: any) {
                 <div className={styles.container}>
                     <Image 
                         className={styles.image}
-                        src={image}
+                        src='/blog/a-bench/a_bench.jpg'
                         width={600}
                         height={600}
                         alt='a bench'/>
