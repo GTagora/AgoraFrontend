@@ -1,0 +1,218 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/(pages)/blog/an-anthology/5/article.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************/
+/* ---------MOBILE VIEW----------- */
+@media screen and (max-width: 699px) {
+    .article_main__69q89 {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    
+        padding: 1rem 10%;
+        padding-top: 140px;
+    
+        min-height: 100vh;
+        font-family: var(--font-ebgaramond);
+        background-color: var(--bg-color);
+    
+        position: relative;
+        padding-bottom: 15rem;
+
+        @media screen and (max-width: 549px) {
+            padding: 20px 10%;
+        }
+    }
+
+    .article_buttons__9o_k4 {
+        font-size: 10pt;
+        font-family: 'Arial';
+        color: gray;
+        padding-inline: 20px;
+        margin-block: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .article_container__vvc_i {
+        margin-top: 100px;
+
+        @media screen and (max-width: 549px) {
+            padding: 10px 10%;
+        }
+    }
+    
+    .article_image__5_QUC {
+        width: 100%;
+        max-width: 80vw;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        margin-block: 20px;
+    }
+
+    .article_credit__xaiLM {
+        text-align: center;
+        opacity: .7;
+        font-family: 'Arial';
+        font-size: 9pt;
+        letter-spacing: .03rem;
+        margin-bottom: 40px;
+    }
+    
+    .article_title__TCzvF {
+        font-family: var(--font-playfair);
+        font-weight: 500;
+        font-size: 20pt;
+        margin-block: 20px;
+
+        @media screen and (max-width: 549px) {
+            font-size: 25pt;
+        }
+    }
+    
+    .article_author__JFqmI {
+        font-size: 15pt;
+        font-family: var(--font-cormorant);
+        font-weight: 600;
+        margin-block: 12px 7px;
+
+        @media screen and (max-width: 549px) {
+            font-size: 13.5pt;
+        }
+    }
+    
+    .article_date__V_KpE {
+        font-size: 14pt;
+        font-family: var(--font-eb-garamond);
+        font-weight: 400;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 549px) {
+            font-size: 13.5pt;
+        }
+    }
+    
+    .article_mobile__EyAE_ {
+        line-height:200%;
+        font-size: 15pt;
+        white-space: pre-line;
+
+        @media screen and (max-width: 549px) {
+            font-size: 13.5pt;
+        }
+    }
+
+    .article_desk__FQSF7 {
+        display: none;
+    }
+
+    .article_note__KDcUn {
+        width: 100%;
+        padding: 15px;
+        border-radius: 9px;
+        background-color: #4a4a4a;
+        color: white;
+        font-family: 'Arial';
+        font-size: 10pt;
+        margin-block: 20px;
+    }
+}
+
+/* ---------DESKTOP VIEW----------- */
+@media screen and (min-width: 700px) {
+    .article_main__69q89 {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding-inline: 30vw;
+        padding-block: 140px 100px;
+        min-height: 100vh;
+        font-family: var(--font-ebgaramond);
+        background-color: var(--bg-color);
+        position: relative;
+
+    }
+
+    .article_title__TCzvF {
+        font-family: var(--font-playfair);
+        font-weight: 500;
+        font-size: 30pt;
+        margin-block: 20px 40px;
+    }
+
+    .article_image__5_QUC {
+        margin-block: 30px 10px;
+        width: 100%;
+        max-width: 70vw;
+        max-height: 70vh;
+        height: 100%;
+        object-fit: contain;
+        overflow: hidden;
+    }
+
+    .article_credit__xaiLM {
+        text-align: center;
+        opacity: .7;
+        font-family: 'Arial';
+        font-size: 9pt;
+        letter-spacing: .03rem;
+        margin-bottom: 40px;
+    }
+
+    .article_author__JFqmI {
+        font-size: 16pt;
+        font-family: var(--font-cormorant);
+        font-weight: 600;
+    }
+
+    .article_date__V_KpE {
+        font-size: 14pt;
+        font-family: var(--font-eb-garamond);
+        font-weight: 400;
+        margin-block: 10px 50px;
+    }
+
+    .article_desk__FQSF7 {
+        line-height: 200%;
+        font-size: 13pt;
+        white-space: pre-line;
+    }
+
+    .article_mobile__EyAE_ {
+        display: none;
+    }
+
+    .article_page___P0DJ {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .article_note__KDcUn {
+        display: none;
+    }
+
+    .article_buttons__9o_k4 {
+        font-size: 10pt;
+        font-family: 'Arial';
+        color: gray;
+        margin-block: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.article_href__5WzNi:hover {
+    color:black;
+    transition-duration: 150ms;
+}
+
+.article_breadcrumb__jVLLd {
+    font-size: 10pt;
+    font-family: 'Arial';
+    color: gray;
+}
+
+.article_breadcrumb__jVLLd:hover {
+    color:black;
+    transition-duration: 150ms;
+}
