@@ -29,11 +29,53 @@
       "static/css/app/(pages)/blog/page.css",
       "static/chunks/app/(pages)/blog/page.js"
     ],
-    "/(pages)/blog/a-bench/page": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(pages)/blog/a-bench/page.css",
-      "static/chunks/app/(pages)/blog/a-bench/page.js"
+      "static/css/app/_not-found/page.css",
+      "static/chunks/app/_not-found/page.js"
+    ],
+    "/(pages)/[issue]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/[issue]/page.css",
+      "static/chunks/app/(pages)/[issue]/page.js"
+    ],
+    "/(pages)/blog/an-anthology-2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/blog/an-anthology-2/page.css",
+      "static/chunks/app/(pages)/blog/an-anthology-2/page.js"
+    ],
+    "/(pages)/blog/an-anthology-2/1/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/blog/an-anthology-2/1/page.css",
+      "static/chunks/app/(pages)/blog/an-anthology-2/1/page.js"
+    ],
+    "/(pages)/blog/an-anthology/2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/blog/an-anthology/2/page.css",
+      "static/chunks/app/(pages)/blog/an-anthology/2/page.js"
+    ],
+    "/(pages)/blog/an-anthology/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/blog/an-anthology/page.css",
+      "static/chunks/app/(pages)/blog/an-anthology/page.js"
+    ],
+    "/(pages)/blog/an-anthology/6/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/blog/an-anthology/6/page.css",
+      "static/chunks/app/(pages)/blog/an-anthology/6/page.js"
+    ],
+    "/(pages)/blog/an-anthology-2/2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/blog/an-anthology-2/2/page.css",
+      "static/chunks/app/(pages)/blog/an-anthology-2/2/page.js"
     ]
   }
 }

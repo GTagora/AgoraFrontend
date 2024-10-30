@@ -18,6 +18,13 @@ const articles = [
         img: "/blog/an-anthology/3.jpg",
         slug: "blog/an-anthology",
         date: "Summer 2024",
+    },
+    {
+        title: "An Anthology of Joy and Thought Vol. 2",
+        genre: "POEM",
+        img: "/blog/an-anthology-2/3.jpg",
+        slug: "blog/an-anthology-2",
+        date: "Fall 2024",
     }
 ]
 
