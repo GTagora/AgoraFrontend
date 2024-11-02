@@ -60,7 +60,7 @@ const contents = [
     },
     {
         id: 12,
-        title: 'a prayer for despieration',
+        title: 'a prayer for desperation',
         href: 'an-anthology-2/12'
     },
     {
