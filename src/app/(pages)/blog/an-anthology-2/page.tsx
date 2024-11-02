@@ -56,7 +56,7 @@ const contents = [
     {
         id: 11,
         title: 'a longing',
-        href: '/an-anthology-2/11'
+        href: 'an-anthology-2/11'
     },
     {
         id: 12,
