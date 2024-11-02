@@ -24,19 +24,19 @@ export default async function Page() {
             <br />
             how do you do?
             <br />
-            i hope you've been doing wonderfully and that the Lord is blessing
+            i hope you&apos;ve been doing wonderfully and that the Lord is blessing
             you
             <br />
             life back in Dallas has been absolutely wonderful
             <br />
-            it's crazy how much can happen in 4 months,
+            it&apos;s crazy how much can happen in 4 months,
             <br />
-            but if you really think about it, that's about the same length as a
+            but if you really think about it, that&apos;s about the same length as a
             semester
             <br />
             anyways...
             <br />
-            sometimes it's strange and lonely
+            sometimes it&apos;s strange and lonely
             <br />
             to think that everyone i meet here only sees the transformed me
             <br />
@@ -48,7 +48,7 @@ export default async function Page() {
             and it also makes me think of yall <br />
             to those who loved and prayed for me <br />
             who supported and cried with me <br />
-            i can't wait to see you again <br />
+            i can&apos;t wait to see you again <br />
             whether on earth or in heaven <br />
             but until then, <br />
             until then... <br />

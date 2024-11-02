@@ -26,9 +26,9 @@ export default async function Page() {
             My ship turns at each crashing wave <br />
             In a seemingly never-ending storm, i am ready to sink <br />
             <br />
-            I've lost my hope
+            I&apos;ve lost my hope
             <br />
-            I've lost my direction <br />
+            I&apos;ve lost my direction <br />
             There is nowhere else for me to belong <br />
             Lost at sea, in this storm, i sit alone <br />
             <br />
