@@ -45,6 +45,7 @@ export default async function Page() {
                 </div>
 
                 <div className={styles.buttons}>
+                    <Link href="/blog/an-anthology/16" className={styles.href}>&lt;&nbsp; Previous</Link>
                     <Link href="/blog/an-anthology" className={styles.href}>&lt;&nbsp; Contents</Link>
                 </div>
             </div>

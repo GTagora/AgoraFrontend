@@ -33,7 +33,7 @@ export default async function Page() {
                 </div>
 
                 <div className={styles.buttons}>
-                    <Link href="/blog/an-anthology" className={styles.href}>&lt;&nbsp; Contents</Link>
+                    <Link href="/blog/an-anthology/8" className={styles.href}>&lt;&nbsp; Previous</Link>
                     <Link href="/blog/an-anthology/10" className={styles.href}>Next &nbsp;&gt;</Link>
                 </div>
             </div>
