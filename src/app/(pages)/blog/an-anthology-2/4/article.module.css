@@ -90,13 +90,20 @@
     }
     
     .text {
-        line-height: 120%;
+        line-height: 190%;
         font-size: 15pt;
         white-space: pre-line;
 
         @media screen and (max-width: 549px) {
             font-size: 13.5pt;
         }
+    }
+
+    .indented {
+        line-height: 190%;
+        font-size: 13pt;
+        white-space: pre-line;
+        padding-left: 8%;
     }
     
     .rightAlign {
@@ -167,9 +174,16 @@
     }
 
     .text {
-        line-height: 120%;
+        line-height: 190%;
         font-size: 13pt;
         white-space: pre-line;
+    }
+
+    .indented {
+        line-height: 190%;
+        font-size: 13pt;
+        white-space: pre-line;
+        padding-left: 6%;
     }
 
     .page {

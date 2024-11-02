@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/(pages)/blog/an-anthology-2/1/page",{
+
+/***/ "(app-pages-browser)/./src/app/(pages)/blog/an-anthology-2/1/article.module.css":
+/*!******************************************************************!*\
+  !*** ./src/app/(pages)/blog/an-anthology-2/1/article.module.css ***!
+  \******************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+eval(__webpack_require__.ts("// extracted by mini-css-extract-plugin\nmodule.exports = {\"main\":\"article_main__Wl9PI\",\"buttons\":\"article_buttons__tGDkE\",\"container\":\"article_container__vMeRP\",\"image\":\"article_image__AeBuK\",\"credit\":\"article_credit__7gr72\",\"title\":\"article_title___hwJH\",\"author\":\"article_author__0ZU95\",\"date\":\"article_date__14JFN\",\"text\":\"article_text__turON\",\"rightAlign\":\"article_rightAlign__OhFeU\",\"video\":\"article_video__p2Apr\",\"page\":\"article_page__Nv4_0\",\"href\":\"article_href__Hx59o\",\"breadcrumb\":\"article_breadcrumb__mi4sf\"};\n    if(true) {\n      // 1730560893537\n      var cssReload = __webpack_require__(/*! ./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js */ \"(app-pages-browser)/./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js\")(module.id, {\"publicPath\":\"/_next/\",\"esModule\":false,\"locals\":true});\n      module.hot.dispose(cssReload);\n      \n    }\n  \nmodule.exports.__checksum = \"f6bce8b97c48\"\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL3NyYy9hcHAvKHBhZ2VzKS9ibG9nL2FuLWFudGhvbG9neS0yLzEvYXJ0aWNsZS5tb2R1bGUuY3NzIiwibWFwcGluZ3MiOiJBQUFBO0FBQ0Esa0JBQWtCO0FBQ2xCLE9BQU8sSUFBVTtBQUNqQjtBQUNBLHNCQUFzQixtQkFBTyxDQUFDLHdNQUF3SCxjQUFjLHNEQUFzRDtBQUMxTixNQUFNLFVBQVU7QUFDaEI7QUFDQTtBQUNBO0FBQ0EseUJBQXlCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vX05fRS8uL3NyYy9hcHAvKHBhZ2VzKS9ibG9nL2FuLWFudGhvbG9neS0yLzEvYXJ0aWNsZS5tb2R1bGUuY3NzP2JjMmIiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5tb2R1bGUuZXhwb3J0cyA9IHtcIm1haW5cIjpcImFydGljbGVfbWFpbl9fV2w5UElcIixcImJ1dHRvbnNcIjpcImFydGljbGVfYnV0dG9uc19fdEdEa0VcIixcImNvbnRhaW5lclwiOlwiYXJ0aWNsZV9jb250YWluZXJfX3ZNZVJQXCIsXCJpbWFnZVwiOlwiYXJ0aWNsZV9pbWFnZV9fQWVCdUtcIixcImNyZWRpdFwiOlwiYXJ0aWNsZV9jcmVkaXRfXzdncjcyXCIsXCJ0aXRsZVwiOlwiYXJ0aWNsZV90aXRsZV9fX2h3SkhcIixcImF1dGhvclwiOlwiYXJ0aWNsZV9hdXRob3JfXzBaVTk1XCIsXCJkYXRlXCI6XCJhcnRpY2xlX2RhdGVfXzE0SkZOXCIsXCJ0ZXh0XCI6XCJhcnRpY2xlX3RleHRfX3R1ck9OXCIsXCJyaWdodEFsaWduXCI6XCJhcnRpY2xlX3JpZ2h0QWxpZ25fX09oRmVVXCIsXCJ2aWRlb1wiOlwiYXJ0aWNsZV92aWRlb19fcDJBcHJcIixcInBhZ2VcIjpcImFydGljbGVfcGFnZV9fTnY0XzBcIixcImhyZWZcIjpcImFydGljbGVfaHJlZl9fSHg1OW9cIixcImJyZWFkY3J1bWJcIjpcImFydGljbGVfYnJlYWRjcnVtYl9fbWk0c2ZcIn07XG4gICAgaWYobW9kdWxlLmhvdCkge1xuICAgICAgLy8gMTczMDU2MDg5MzUzN1xuICAgICAgdmFyIGNzc1JlbG9hZCA9IHJlcXVpcmUoXCIvVXNlcnMvb2xpdmlhaHUvY29kZS9BZ29yYUZyb250ZW5kL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvY29tcGlsZWQvbWluaS1jc3MtZXh0cmFjdC1wbHVnaW4vaG1yL2hvdE1vZHVsZVJlcGxhY2VtZW50LmpzXCIpKG1vZHVsZS5pZCwge1wicHVibGljUGF0aFwiOlwiL19uZXh0L1wiLFwiZXNNb2R1bGVcIjpmYWxzZSxcImxvY2Fsc1wiOnRydWV9KTtcbiAgICAgIG1vZHVsZS5ob3QuZGlzcG9zZShjc3NSZWxvYWQpO1xuICAgICAgXG4gICAgfVxuICBcbm1vZHVsZS5leHBvcnRzLl9fY2hlY2tzdW0gPSBcImY2YmNlOGI5N2M0OFwiXG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(app-pages-browser)/./src/app/(pages)/blog/an-anthology-2/1/article.module.css\n"));
+
+/***/ })
+
+});

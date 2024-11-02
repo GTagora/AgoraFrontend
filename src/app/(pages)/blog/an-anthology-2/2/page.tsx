@@ -50,7 +50,7 @@ export default async function Page() {
             And as I take these steps in these rushing waters <br />
             Remind me <br />
             <br />
-            "I am always with You."
+            <q>I am always with You.</q>
           </div>
 
           <div className={styles.buttons}>

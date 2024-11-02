@@ -89,7 +89,7 @@ export default function Page() {
                         <div className={styles.col}>
                             <Image 
                                 className={styles.image}
-                                src="/blog/an-anthology-2/3.jpg"
+                                src="/blog/an-anthology-2/15.jpg"
                                 width={600}
                                 height={600}
                                 alt='article image'/>

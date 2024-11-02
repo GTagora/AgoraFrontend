@@ -37,7 +37,7 @@ export default async function Page() {
             voices and these hindrances battle for my attention, I am reminded
             that we need to practice silence and solitude, and, in this silence
             and solitude, to listen. To sit still through all the noise and
-            listen…
+            <i>listen…</i>
             <br />
             <br />
             I think as of late, I’ve been constantly surrounded by people, a
@@ -57,14 +57,14 @@ export default async function Page() {
             <br />
             <br />
             <p className={styles.centered}>
-              <i>Talk to God → Talk with God → Listen to God → Be with God</i>
+              <i>Talk to God &rarr; Talk with God &rarr; Listen to God &rarr; Be with God</i>
             </p>
             <br />
             Learning to be with God is to sit with Him. In the solitude,
             enjoying His presence. It’s like sitting with someone you love
             dearly. Sometimes, you don’t need to say something to each other to
-            really enjoy and treasure the moment. Simply being with them is
-            enough. Only in silence and solitude can I really be with God.
+            really enjoy and treasure the moment. Simply <i>being</i> with them is
+            enough. Only in silence and solitude can I really <i>be</i> with God.
             <br />
             <br />
             ...

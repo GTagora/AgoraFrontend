@@ -9,7 +9,7 @@
         padding-top: 140px;
     
         min-height: 100vh;
-        font-family: var(--font-ebgaramond);
+        font-family: var(--font-cormorant);
         background-color: var(--bg-color);
     
         position: relative;
@@ -90,7 +90,7 @@
     }
     
     .text {
-        line-height: 120%;
+        line-height: 150%;
         font-size: 15pt;
         white-space: pre-line;
 
@@ -121,7 +121,7 @@
         padding-inline: 35vw;
         padding-block: 140px 100px;
         min-height: 100vh;
-        font-family: var(--font-ebgaramond);
+        font-family: var(--font-cormorant);
         background-color: var(--bg-color);
         position: relative;
 
@@ -167,7 +167,7 @@
     }
 
     .text {
-        line-height: 120%;
+        line-height: 150%;
         font-size: 13pt;
         white-space: pre-line;
     }

@@ -20,7 +20,7 @@ export default async function Page() {
           <p className={styles.credit}>Image: Stephen Noh</p>
           <h1 className={styles.title}>Living For Jesus</h1>
           <div className={styles.text}>
-            Today I read a prayer/devo titled “Living for Jesus”. <br />
+            Today I read a prayer/devo titled <q>Living for Jesus.</q> <br />
             <br />
             Lately it’s been hard. The idea and image of living for Jesus has
             been hard lately. I’ve been kicking myself down over it a lot,

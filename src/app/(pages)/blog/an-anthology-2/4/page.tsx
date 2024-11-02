@@ -22,36 +22,37 @@ export default async function Page() {
           <div className={styles.text}>
             Today I...
             <br />
-            &emsp;&emsp;&emsp;&emsp;took my first PTO day
+          </div>
+          <div className={styles.indented}>
+            took my first PTO day
             <br />
-            &emsp;&emsp;&emsp;&emsp;did QT outside at the pond in front of my
+            did QT outside at the pond in front of my
             house
             <br />
-            &emsp;&emsp;&emsp;&emsp;spent time with friends at a cafe doing work
+            spent time with friends at a cafe doing work
             <br />
-            &emsp;&emsp;&emsp;&emsp;got caught dancing in my car and the man in
+            got caught dancing in my car and the man in
             the car next to me joined me in dance
             <br />
-            &emsp;&emsp;&emsp;&emsp;enjoyed the brisk wind of the fall weather
+            enjoyed the brisk wind of the fall weather
             to come
             <br />
-            &emsp;&emsp;&emsp;&emsp;went on a nice photo walk with a brother
+            went on a nice photo walk with a brother
             <br />
-            &emsp;&emsp;&emsp;&emsp;saw a cute dog on the walk and a child
+            saw a cute dog on the walk and a child
             learning to walk
             <br />
-            &emsp;&emsp;&emsp;&emsp;spent time in prayer with the body of Christ
+            spent time in prayer with the body of Christ
             <br />
-            &emsp;&emsp;&emsp;&emsp;was reminded of the simple joy and beauty of
+            was reminded of the simple joy and beauty of
             living
             <br />
-            &emsp;&emsp;&emsp;&emsp;was reminded of what I truly need
+            was reminded of what I truly need
             <br />
-            &emsp;&emsp;&emsp;&emsp;was reminded of His presence in all that is
+            was reminded of His presence in all that is
             around me
             <br />
-            &emsp;&emsp;&emsp;&emsp;enjoyed rest in a day with God and His
-            creation
+            enjoyed rest in a day with God and His creation
             <br />
           </div>
 

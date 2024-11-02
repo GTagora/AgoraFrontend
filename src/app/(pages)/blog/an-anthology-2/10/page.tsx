@@ -38,7 +38,6 @@ export default async function Page() {
             <br />
             <br />
             <br />
-            <br />
             ah. that’s right…
             <br />
             it was never that complicated
