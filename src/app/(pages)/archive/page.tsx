@@ -43,8 +43,9 @@ export default async function Archive({ params }: any) {
     <div className={styles.main}>
         <h1>Past Issues</h1>
         <div className={styles.container}>
-            {issues.map((issue:any, i:number) => (
-            <IssueCard key={i} issue={issues[issues.length - i - 1]} />))} 
+            {issues.sort((a:any,b:any) => (b.Volume - a.Volume || b.Issue - a.Issue))
+                .map((issue:any, i:number) => (
+                <IssueCard key={i} issue={issues[i]} />))} 
         </div>
         <div className={styles.footer}>
             <Footer />
