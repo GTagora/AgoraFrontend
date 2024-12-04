@@ -93,7 +93,7 @@ export default async function Home() {
                             <p dangerouslySetInnerHTML={{ __html: letter.replace(/\\n/g, '\n')}} />
                         </div>
                     </div>
-                    <div className={styles.issuu}><IssuuButton link="https://issuu.com/gtagora/docs/agora_s24"/></div>
+                    <div className={styles.issuu}><IssuuButton link="https://issuu.com/gtagora/docs/agora_f24"/></div>
                     <div className={styles.articlesContainer}>
                         {articles && articles.map(async (article: any) => (
                                 <Card key={null} article={article}></Card>
