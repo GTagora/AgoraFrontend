@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predeploy": "npm run build",
+    "preinstall": "npx only-allow pnpm",
+    "predeploy": "pnpm run build",
     "deploy": "gh-pages -d dist",
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "pnpm next dev",
+    "build": "pnpm next build",
+    "start": "pnpm next start",
+    "lint": "pnpm next lint"
   },
   "dependencies": {
     "next": "^14.2.7",
