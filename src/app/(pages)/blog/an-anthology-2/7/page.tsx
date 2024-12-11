@@ -1,6 +1,6 @@
-import styles from "./article.module.css";
-import Image from "next/image";
-import Link from "next/link";
+import styles from './article.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default async function Page() {
   return (
@@ -39,13 +39,12 @@ export default async function Page() {
             and solitude, to listen. To sit still through all the noise and
             <i>listen…</i>
             <br />
-            <br />
-            I think as of late, I’ve been constantly surrounded by people, a
-            great blessing that I do not take for granted. In many ways, though,
-            it has caused me to neglect my private quiet time with God. Having
-            this silence and solitude is so important. How else can you grow a
-            relationship with someone if you don’t spend time privately with
-            them?
+            <br />I think as of late, I’ve been constantly surrounded by people,
+            a great blessing that I do not take for granted. In many ways,
+            though, it has caused me to neglect my private quiet time with God.
+            Having this silence and solitude is so important. How else can you
+            grow a relationship with someone if you don’t spend time privately
+            with them?
             <br />
             <br />
             So in the midst of all the noise, the distractions, sit still with
@@ -57,14 +56,18 @@ export default async function Page() {
             <br />
             <br />
             <p className={styles.centered}>
-              <i>Talk to God &rarr; Talk with God &rarr; Listen to God &rarr; Be with God</i>
+              <i>
+                Talk to God &rarr; Talk with God &rarr; Listen to God &rarr; Be
+                with God
+              </i>
             </p>
             <br />
             Learning to be with God is to sit with Him. In the solitude,
             enjoying His presence. It’s like sitting with someone you love
             dearly. Sometimes, you don’t need to say something to each other to
-            really enjoy and treasure the moment. Simply <i>being</i> with them is
-            enough. Only in silence and solitude can I really <i>be</i> with God.
+            really enjoy and treasure the moment. Simply <i>being</i> with them
+            is enough. Only in silence and solitude can I really <i>be</i> with
+            God.
             <br />
             <br />
             ...

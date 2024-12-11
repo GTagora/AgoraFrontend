@@ -1,76 +1,74 @@
-.navbar{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding-inline: 25px 15px;
-    font-size: 14pt;
-    background-color: var(--bg-color);
-    top: 0;
-    position: fixed;
-    z-index: 1;
+.navbar {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-inline: 25px 15px;
+  font-size: 14pt;
+  background-color: var(--bg-color);
+  top: 0;
+  position: fixed;
+  z-index: 1;
 }
 
 .logo {
-    padding-block: 20px 10px;
-    height: 80px;
-    width: auto;
+  padding-block: 20px 10px;
+  height: 80px;
+  width: auto;
 }
 
-.buttons{
-    height: 0px;
-    display: inherit;
-    align-items: flex-start;
-    padding-left: 30px;
-    margin-top: -40px;
+.buttons {
+  height: 0px;
+  display: inherit;
+  align-items: flex-start;
+  padding-left: 30px;
+  margin-top: -40px;
 
-    font-family: var(--font-cormorant);
-    letter-spacing: .1rem;
+  font-family: var(--font-cormorant);
+  letter-spacing: .1rem;
 }
 
 .label {
-    text-align: left;
-    margin-inline: 15px;
+  text-align: left;
+  margin-inline: 15px;
 }
 
 .item {
-    /* min-width: 12vw; */
-    padding: .5rem 1rem;
-    text-align: left;
+  /* min-width: 12vw; */
+  padding: .5rem 1rem;
+  text-align: left;
 }
 
 .dropdown {
-    font-size: large;
-    font-weight: 500;
-    color: var(--gray-text);
-    padding: .3rem 0;
-    margin-left: 16px;
-    text-align: left;
+  font-size: large;
+  font-weight: 500;
+  color: var(--gray-text);
+  padding: .3rem 0;
+  margin-left: 16px;
+  text-align: left;
 }
 
 .item:hover .label {
-    color: black;
+  color: black;
 }
 
 .buttons:hover .item {
-    color: var(--gray-text);
+  color: var(--gray-text);
 }
 
 .item:hover {
-    font-weight: 700;
-    background-color: var(--bg-color);
+  font-weight: 700;
+  background-color: var(--bg-color);
 }
-
 
 .dropdown:hover {
-    color: black;
-    font-weight: 600;
+  color: black;
+  font-weight: 600;
 }
 
-
 @media screen and (max-width: 699px) {
-    .navbar {
-        display: none;
-    }
+  .navbar {
+    display: none;
+  }
 }

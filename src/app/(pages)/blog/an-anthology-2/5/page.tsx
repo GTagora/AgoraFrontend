@@ -1,6 +1,6 @@
-import styles from "./article.module.css";
-import Image from "next/image";
-import Link from "next/link";
+import styles from './article.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default async function Page() {
   return (

@@ -9,21 +9,18 @@ dark green: 7C9D84
 darkest green: 2C4B33
 */
 
-
 :root {
-
-  --agora-green: #BFD8C5;
+  --agora-green: #bfd8c5;
   --light-green: #d8e4db;
-  --light-light-green: #E5ECE7;
-  --neutral-tan: #F0EDE9;
-  --gray-green: #D1D7D3;
+  --light-light-green: #e5ece7;
+  --neutral-tan: #f0ede9;
+  --gray-green: #d1d7d3;
   --dark-gray-green: #acb4b0;
-  --dark-green: #7C9D84;
-  --darkest-green: #2C4B33;
+  --dark-green: #7c9d84;
+  --darkest-green: #2c4b33;
 
   --gray-text: rgb(128, 128, 128);
   --bg-color: whitesmoke;
-
 }
 
 * {
@@ -39,7 +36,6 @@ body {
   color: rgb(59, 59, 59);
   background-color: var(--bg-color);
 }
-
 
 @media (prefers-color-scheme: dark) {
   :root {

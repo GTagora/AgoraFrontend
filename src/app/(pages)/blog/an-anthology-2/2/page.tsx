@@ -1,6 +1,6 @@
-import styles from "./article.module.css";
-import Image from "next/image";
-import Link from "next/link";
+import styles from './article.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default async function Page() {
   return (
@@ -31,11 +31,9 @@ export default async function Page() {
             I&apos;ve lost my direction <br />
             There is nowhere else for me to belong <br />
             Lost at sea, in this storm, i sit alone <br />
-            <br />
-            I ready myself to lose it all <br />
-            But in the distance a light appears <br />
-            A beacon of hope <br />
-            A ray of solace <br />
+            <br />I ready myself to lose it all <br />
+            But in the distance a light appears <br />A beacon of hope <br />A
+            ray of solace <br />
             And in the midst of the storm, i see You <br />
             <br />
             The same God who created these waters <br />

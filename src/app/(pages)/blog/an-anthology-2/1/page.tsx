@@ -1,6 +1,6 @@
-import styles from "./article.module.css";
-import Image from "next/image";
-import Link from "next/link";
+import styles from './article.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default async function Page() {
   return (
@@ -23,16 +23,15 @@ export default async function Page() {
             To my friends in all the places...
             <br />
             how do you do?
-            <br />
-            i hope you&apos;ve been doing wonderfully and that the Lord is blessing
-            you
+            <br />i hope you&apos;ve been doing wonderfully and that the Lord is
+            blessing you
             <br />
             life back in Dallas has been absolutely wonderful
             <br />
             it&apos;s crazy how much can happen in 4 months,
             <br />
-            but if you really think about it, that&apos;s about the same length as a
-            semester
+            but if you really think about it, that&apos;s about the same length
+            as a semester
             <br />
             anyways...
             <br />
@@ -47,12 +46,11 @@ export default async function Page() {
             and His love for me <br />
             and it also makes me think of yall <br />
             to those who loved and prayed for me <br />
-            who supported and cried with me <br />
-            i can&apos;t wait to see you again <br />
+            who supported and cried with me <br />i can&apos;t wait to see you
+            again <br />
             whether on earth or in heaven <br />
             but until then, <br />
-            until then... <br />
-            i hope you all continue to run after Him <br />
+            until then... <br />i hope you all continue to run after Him <br />
             and until I see you again... <br />
             may the Lord continue to bless you
           </div>

@@ -22,7 +22,7 @@
 
 //   // Refs
 //   const audioRef = useRef(new Audio(audioSrc));
-  
+
 //   const intervalRef:any = useRef(0);
 //   const isReady = useRef(false);
 
@@ -48,7 +48,7 @@
 //         return clearInterval(intervalRef.current);
 //     }, 1000);
 
-//   }, []); 
+//   }, []);
 
 //   const onScrub = (value:any) => {
 //     // Clear any timers already running
@@ -133,8 +133,6 @@
 
 // export default AudioPlayer;
 
-
-
 // /** These methods aren't needed because we'd only ever have one track per article page **/
 
 // // const toNextTrack = useCallback(() => {
@@ -144,7 +142,6 @@
 //   //       setTrackIndex(0);
 //   //     }
 //   // }, [trackIndex, tracks.length]);
-
 
 //   // const toPrevTrack = () => {
 //   //   if (trackIndex - 1 < 0) {

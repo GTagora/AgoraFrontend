@@ -1,6 +1,6 @@
-import styles from "./article.module.css";
-import Image from "next/image";
-import Link from "next/link";
+import styles from './article.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default async function Page() {
   return (
@@ -60,7 +60,7 @@ export default async function Page() {
             <br />
             It is indeed quite great. ENORMOUS actually. What a powerful prayer
             and a reflection of how truly broken I am. I’m so broken, so full of
-            brokenness. I’m trying. Trying to remind myself of <u>who</u> I am.{" "}
+            brokenness. I’m trying. Trying to remind myself of <u>who</u> I am.{' '}
             <u>Whose</u> I am. <u>What</u> I am. I am so broken. Still somehow,
             by grace, I am SO loved and SO forgiven. A child of the one true
             living God.

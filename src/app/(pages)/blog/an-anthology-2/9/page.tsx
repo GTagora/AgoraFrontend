@@ -1,6 +1,6 @@
-import styles from "./article.module.css";
-import Image from "next/image";
-import Link from "next/link";
+import styles from './article.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default async function Page() {
   return (
@@ -27,8 +27,7 @@ export default async function Page() {
             the warmth on my skin envelopes me
             <br />
             warmth embraces my heart as He covers thee
-            <br />
-            a peace like no other
+            <br />a peace like no other
             <br />
             to rest here with Your people
             <br />

@@ -1,6 +1,6 @@
-import styles from "./article.module.css";
-import Image from "next/image";
-import Link from "next/link";
+import styles from './article.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default async function Page() {
   return (
@@ -22,21 +22,25 @@ export default async function Page() {
           <div className={styles.text}>
             <b>Who Is the Greatest?</b>
             <br />
-            At that time the disciples came to Jesus, saying, <q>Who is the
-            greatest in the kingdom of heaven?</q> And calling to him a child, he
-            put him in the midst of them and said, <q>Truly, I say to you, unless
-            you turn and become like children, you will never enter the kingdom
-            of heaven. Whoever humbles himself like this child is the greatest
-            in the kingdom of heaven.</q>
+            At that time the disciples came to Jesus, saying,{' '}
+            <q>Who is the greatest in the kingdom of heaven?</q> And calling to
+            him a child, he put him in the midst of them and said,{' '}
+            <q>
+              Truly, I say to you, unless you turn and become like children, you
+              will never enter the kingdom of heaven. Whoever humbles himself
+              like this child is the greatest in the kingdom of heaven.
+            </q>
             <br />
             Matthew 18:1-4 ESV <br />
             <br />
             <b>Let the Children Come to Me</b> <br />
             Then children were brought to him that he might lay his hands on
             them and pray. The disciples rebuked the people, but Jesus said,
-            <q>Let the little children come to me and do not hinder them, for to
-            such belongs the kingdom of heaven.</q> And he laid his hands on them
-            and went away.
+            <q>
+              Let the little children come to me and do not hinder them, for to
+              such belongs the kingdom of heaven.
+            </q>{' '}
+            And he laid his hands on them and went away.
             <br />
             Matthew 19:13-15 ESV <br />
             <br />
@@ -50,21 +54,21 @@ export default async function Page() {
             more to me of this childlike faith.
             <br /> <br />
             When I observe them, I try to learn more and more about what it
-            means to have childlike faith. There is <i>childish</i> faith but that is
-            quite different from <i>childlike</i> faith. To be childish means to be
-            selfish, acting rashly or emotionally to fulfill your own desires.
-            When those things don’t come to fruition, we complain, we pout, and
-            we throw a tantrum (whatever that looks like as an adult). When I
-            think of being childlike, I see children and their honesty. They are
-            trusting, dependent on their parents. Trusting that their parents
-            know best and that their words are being spoken to protect them.
-            They are honest. Children wear their emotions on their sleeves. They
-            think they can hide it, but let’s be honest, when a kid is sad,
-            angry, happy, or in pain, it is quite obvious. Finally, children are
-            observant and curious. They are constantly learning, constantly
-            questioning and wondering why. They take in the information from
-            their senses about their surroundings and they absorb it, like
-            sponges.
+            means to have childlike faith. There is <i>childish</i> faith but
+            that is quite different from <i>childlike</i> faith. To be childish
+            means to be selfish, acting rashly or emotionally to fulfill your
+            own desires. When those things don’t come to fruition, we complain,
+            we pout, and we throw a tantrum (whatever that looks like as an
+            adult). When I think of being childlike, I see children and their
+            honesty. They are trusting, dependent on their parents. Trusting
+            that their parents know best and that their words are being spoken
+            to protect them. They are honest. Children wear their emotions on
+            their sleeves. They think they can hide it, but let’s be honest,
+            when a kid is sad, angry, happy, or in pain, it is quite obvious.
+            Finally, children are observant and curious. They are constantly
+            learning, constantly questioning and wondering why. They take in the
+            information from their senses about their surroundings and they
+            absorb it, like sponges.
             <br />
             <br />
             Looking at Matthew 18, we can see instances of Jesus sharing on how
@@ -75,8 +79,8 @@ export default async function Page() {
             That childlike heart. I wonder what Jesus saw in these children.
             Jesus was probably the ultimate child. In the eyes of the Lord, He
             was the ultimate child that belonged in heaven. The embodiment of
-            what it meant to have a <q>childlike faith</q> in the presence of The
-            Father.
+            what it meant to have a <q>childlike faith</q> in the presence of
+            The Father.
             <br />
             <br />
             Jesus saw that children see and understand more than adults seem to
@@ -92,9 +96,10 @@ export default async function Page() {
             watched more often than we think. This doesn’t mean putting on a
             facade. That will never work, and it will only tire you out. Rather,
             be transformed in Christ. Live out the same very words that we tell
-            our children daily. Don’t they say, <q>actions speak louder than
-            words?</q> So live out in action because these children—the next
-            generation—they are always observing and learning from our actions.
+            our children daily. Don’t they say,{' '}
+            <q>actions speak louder than words?</q> So live out in action
+            because these children—the next generation—they are always observing
+            and learning from our actions.
             <br />
             <br />
             So back to childlike faith. As we grow older, the world wears us
@@ -139,7 +144,8 @@ export default async function Page() {
                 children and everyone else is too!
               </li>
               <li>
-                live just as Jesus, the embodiment of <q>childlike faith,</q> lived
+                live just as Jesus, the embodiment of <q>childlike faith,</q>{' '}
+                lived
               </li>
             </ul>
           </div>

@@ -1,6 +1,6 @@
 /* ---------MOBILE VIEW----------- */
 @media screen and (max-width: 549px) {
-.main {
+  .main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,48 +9,48 @@
     font-family: var(--font-ebgaramond);
     background-color: whitesmoke;
     position: relative;
-}
+  }
 
-.container {
+  .container {
     margin-top: 100px;
     padding-bottom: 15rem;
     padding-inline: 30px;
     width: 90vw;
-}
+  }
 
-.page {
+  .page {
     font-family: var(--font-playfair-sc);
     letter-spacing: .3rem;
     margin-block: 3rem;
-}
+  }
 
-.mission-container {
+  .mission-container {
     background-color: var(--neutral-tan);
     border-radius: 1rem;
     padding: 3rem;
-}
+  }
 
-.section-header {
+  .section-header {
     font-family: var(--font-playfair);
     font-size: 22px;
     font-weight: bold;
     letter-spacing: 2px;
     height: 50px;
-}
+  }
 
-.section-text {
+  .section-text {
     font-family: var(--font-ebgaramond);
     font-size: 17px;
     letter-spacing: 0.4px;
     line-height: 30px;
-}
+  }
 
-.section-text > ul > li {
+  .section-text > ul > li {
     list-style-position: inside;
     padding-left: 15px;
-}
+  }
 
-.vision-container {
+  .vision-container {
     font-family: var(--font-ebgaramond);
     letter-spacing: 0.4px;
     margin-top: 10px;
@@ -58,43 +58,43 @@
 
     border-radius: 1rem;
     padding: 3rem;
-}
+  }
 
-.why-and-logo-container {
+  .why-and-logo-container {
     display: flex;
     flex-direction: column;
     border-radius: 1rem;
     padding: 3rem;
     background-color: var(--neutral-tan);
-}
+  }
 
-.why-and-logo-container .section-header {
+  .why-and-logo-container .section-header {
     margin-bottom: 1px;
-}
+  }
 
-.why-container {
+  .why-container {
     font-family: var(--font-ebgaramond);
     letter-spacing: 0.4px;
     margin-top: 10px;
     line-height: 27px;
-}
+  }
 
-.logo-container {
+  .logo-container {
     font-family: var(--font-ebgaramond);
     letter-spacing: 0.4px;
     margin-top: 50px;
     line-height: 27px;
 
     border-radius: 1rem;
-}
+  }
 
-.logo {
+  .logo {
     margin-bottom: 10px;
     height: 40px;
     width: auto;
-}
+  }
 
-.acvf-container {
+  .acvf-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -103,104 +103,103 @@
 
     min-width: 65%;
     margin-bottom: 125px;
-}
-
+  }
 }
 
 /* ---------DESKTOP VIEW----------- */
 @media screen and (min-width: 550px) {
-    .main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-inline: 20vw;
-        min-height: 100vh;
-        font-family: var(--font-ebgaramond);
-        background-color: whitesmoke;
-        position: relative;
-    }
-    
-    .container {
-        margin-top: 100px;
-        max-width: 1000px;
-    }
-    
-    .page {
-        font-family: var(--font-playfair-sc);
-        letter-spacing: .3rem;
-        margin-block: 3rem;
-    }
-    
-    .mission-container {
-        background-color: var(--neutral-tan);
-        border-radius: 1rem;
-        padding: 3rem;
-    }
-    
-    .section-header {
-        font-family: var(--font-playfair);
-        font-size: 24px;
-        font-weight: bold;
-        letter-spacing: .12rem;
-        height: 50px;
-        margin-bottom: 10px;
-    }
-    
-    .section-text {
-        font-family: var(--font-ebgaramond);
-        font-size: 20px;
-        letter-spacing: 0.4px;
-        line-height: 200%;
-    }
-    
-    .section-text > ul > li {
-        list-style-position: inside;
-        padding-left: 15px;
-    }
-    
-    .vision-container {
-        font-family: var(--font-ebgaramond);
-        letter-spacing: 0.4px;
-        margin-top: 10px;
-        line-height: 27px;
-    
-        border-radius: 1rem;
-        padding: 3rem;
-    }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 20vw;
+    min-height: 100vh;
+    font-family: var(--font-ebgaramond);
+    background-color: whitesmoke;
+    position: relative;
+  }
 
-    .why-and-logo-container {
-        display: flex;
-        flex-direction: column;
-        border-radius: 1rem;
-        padding: 3rem;
-        background-color: var(--neutral-tan);
-    }
-    
-    .why-container {
-        font-family: var(--font-ebgaramond);
-        letter-spacing: 0.4px;
-        margin-top: 10px;
-        line-height: 27px;
-    }
-    
-    .logo-container {
-        font-family: var(--font-ebgaramond);
-        letter-spacing: 0.4px;
-        margin-top: 50px;
-        line-height: 27px;
-    
-        border-radius: 1rem;
-    }
-    
-    .logo {
-        margin-bottom: 10px;
-        height: 50px;
-        width: auto;
-    }
-    
-    .acvf-container {
-        border-radius: 1rem;
-        padding: 3rem;
-        min-width: 65%;
-    }
+  .container {
+    margin-top: 100px;
+    max-width: 1000px;
+  }
+
+  .page {
+    font-family: var(--font-playfair-sc);
+    letter-spacing: .3rem;
+    margin-block: 3rem;
+  }
+
+  .mission-container {
+    background-color: var(--neutral-tan);
+    border-radius: 1rem;
+    padding: 3rem;
+  }
+
+  .section-header {
+    font-family: var(--font-playfair);
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .12rem;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .section-text {
+    font-family: var(--font-ebgaramond);
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    line-height: 200%;
+  }
+
+  .section-text > ul > li {
+    list-style-position: inside;
+    padding-left: 15px;
+  }
+
+  .vision-container {
+    font-family: var(--font-ebgaramond);
+    letter-spacing: 0.4px;
+    margin-top: 10px;
+    line-height: 27px;
+
+    border-radius: 1rem;
+    padding: 3rem;
+  }
+
+  .why-and-logo-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 3rem;
+    background-color: var(--neutral-tan);
+  }
+
+  .why-container {
+    font-family: var(--font-ebgaramond);
+    letter-spacing: 0.4px;
+    margin-top: 10px;
+    line-height: 27px;
+  }
+
+  .logo-container {
+    font-family: var(--font-ebgaramond);
+    letter-spacing: 0.4px;
+    margin-top: 50px;
+    line-height: 27px;
+
+    border-radius: 1rem;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    height: 50px;
+    width: auto;
+  }
+
+  .acvf-container {
+    border-radius: 1rem;
+    padding: 3rem;
+    min-width: 65%;
+  }
 }

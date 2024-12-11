@@ -1,0 +1,68 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": true,
+    "ignore": [],
+    "attributePosition": "auto",
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80,
+    "lineEnding": "lf"
+  },
+  "organizeImports": { "enabled": true },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": false,
+      "correctness": {
+        "noNewSymbol": "off",
+        "noUndeclaredVariables": "off",
+        "noUnusedVariables": "off",
+        "useArrayLiterals": "off",
+        "useHookAtTopLevel": "off",
+        "useJsxKeyInIterable": "off"
+      },
+      "style": {
+        "noArguments": "off",
+        "noNamespace": "off",
+        "noParameterAssign": "off",
+        "noVar": "off"
+      },
+      "suspicious": {
+        "noEmptyBlockStatements": "off",
+        "noExplicitAny": "off"
+      }
+    },
+    "ignore": [
+      "**/node_modules",
+      "**/_dist",
+      "**/*.json",
+      "**/*.config.json",
+      "**/*.js",
+      "**/*.yml",
+      "**/*.yaml",
+      "**/e2e",
+      "**/test-utils",
+      "**/*.mjs",
+      "**/.yarn",
+      "**/.olde2e"
+    ]
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "quoteStyle": "single",
+      "attributePosition": "auto"
+    }
+  },
+  "files": {
+    "maxSize": 10485760
+  }
+}

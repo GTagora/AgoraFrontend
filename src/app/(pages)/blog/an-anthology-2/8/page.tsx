@@ -1,6 +1,6 @@
-import styles from "./article.module.css";
-import Image from "next/image";
-import Link from "next/link";
+import styles from './article.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default async function Page() {
   return (
@@ -24,13 +24,14 @@ export default async function Page() {
             promise.
             <br />
             <br />
-            This <q>waiting</q> is what I feel the season I am in right now. Waiting
-            for new work or to be married. Not saying that I am on hiatus until
-            one of these happens, but waiting in the sense that these events are
-            my new big <q>checkpoints.</q> They divide my seasons. They may be long,
-            they may be short. Who knows. But what I do know is what I am called
-            to do in this moment. He calls me to wait on Him. To pray, to seek,
-            to chase after His presence. Praying is waiting on the Lord.
+            This <q>waiting</q> is what I feel the season I am in right now.
+            Waiting for new work or to be married. Not saying that I am on
+            hiatus until one of these happens, but waiting in the sense that
+            these events are my new big <q>checkpoints.</q> They divide my
+            seasons. They may be long, they may be short. Who knows. But what I
+            do know is what I am called to do in this moment. He calls me to
+            wait on Him. To pray, to seek, to chase after His presence. Praying
+            is waiting on the Lord.
             <br />
             <br />
             Bring to Him your desires, your fears.

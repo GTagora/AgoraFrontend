@@ -1,6 +1,6 @@
-import styles from "./article.module.css";
-import Image from "next/image";
-import Link from "next/link";
+import styles from './article.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default async function Page() {
   return (
@@ -27,8 +27,7 @@ export default async function Page() {
             <br />
             <br />
             yet why do I feel so incomplete?
-            <br />
-            I do all these things
+            <br />I do all these things
             <br />
             yet why do I still feel so suffocated?
             <br />

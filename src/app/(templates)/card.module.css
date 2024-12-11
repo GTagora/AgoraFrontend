@@ -13,7 +13,7 @@
     flex-direction: row;
     gap: 20px;
   }
-  
+
   /* article image */
   .cardImage {
     max-width: 150px;
@@ -27,28 +27,26 @@
     font-size: 17pt;
     font-weight: 600;
     text-align: left;
-  
+
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     overflow: hidden;
   }
-  
+
   .card h3 {
-    font-family: 'Arial';
+    font-family: "Arial";
     font-weight: 400;
     font-size: 9pt;
     font-style: bold;
     letter-spacing: .04rem;
-    opacity: .6;
-  } 
+    opacity: 0.6;
+  }
 }
-
 
 /* ---------DESKTOP VIEW----------- */
 @media screen and (min-width: 700px) {
- 
   .card {
     width: 20vw;
     max-width: 22vw;
@@ -56,7 +54,6 @@
     flex-grow: 1;
     margin-block: 2rem;
     line-height: 30px;
-
   }
 
   .text {
@@ -82,11 +79,11 @@
   }
 
   .card h3 {
-    font-family: 'Arial';
+    font-family: "Arial";
     font-weight: 400;
     /* font-style: italic; */
     font-size: 11pt;
-    opacity: .6;
+    opacity: 0.6;
   }
 
   /* preview text */
@@ -103,7 +100,7 @@
   }
 
   .readmore {
-    opacity: .5;
+    opacity: 0.5;
     padding-top: 10px;
   }
 
@@ -127,5 +124,4 @@
     object-fit: cover;
     overflow: hidden;
   }
-
 }

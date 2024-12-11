@@ -28,38 +28,38 @@ fonts:
     min-height: 100vh;
     padding-top: 30px;
     padding-inline: 20px;
-    
+
     font-family: var(--font-ebgaramond);
     position: relative;
     background-color: var(--bg-color);
-    }
-    
-    .logo {
+  }
+
+  .logo {
     width: 75px;
     height: auto;
-    }
-    
-    .heading {
+  }
+
+  .heading {
     display: inherit;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:100vw;
+    width: 100vw;
     height: 90vh;
-    }
-    
-    .heading h1 {
+  }
+
+  .heading h1 {
     color: black;
     font-family: var(--font-playfair-sc);
     font-weight: 500;
     font-size: 40px;
     letter-spacing: 1rem;
     text-indent: 1em;
-    
+
     margin-top: 40px;
-    }
-    
-    .heading h2 {
+  }
+
+  .heading h2 {
     color: black;
     font-style: italic;
     font-weight: 400;
@@ -69,59 +69,55 @@ fonts:
     text-align: center;
     line-height: 170%;
     padding-inline: 20px;
-    
-    margin-top: 80px;
-    }
-    
-    
-    .container {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .container h1 {
-        font-family: var(--font-playfair-sc);
-        font-weight: 550;
-        font-size: 20pt;
-        letter-spacing: .4rem;
-        text-align: center;
-        margin-block: 20px 25px;
-    }
-    .container h4 {
-      font-family: 'Geneva';
-      font-weight: 550;
-      font-size: 9pt;
-      letter-spacing: .15rem;
-      text-align: center;
-      margin-bottom: 15px;
-    }
-    
-    .container hr {
-        width: 50%;
-        margin-block: 50px;
-    }
-    
-    .articlesContainer {
-        margin-block: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 30px;
-        width: 100vw;
-    }
-    
-}
 
+    margin-top: 80px;
+  }
+
+  .container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container h1 {
+    font-family: var(--font-playfair-sc);
+    font-weight: 550;
+    font-size: 20pt;
+    letter-spacing: .4rem;
+    text-align: center;
+    margin-block: 20px 25px;
+  }
+  .container h4 {
+    font-family: "Geneva";
+    font-weight: 550;
+    font-size: 9pt;
+    letter-spacing: .15rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .container hr {
+    width: 50%;
+    margin-block: 50px;
+  }
+
+  .articlesContainer {
+    margin-block: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    width: 100vw;
+  }
+}
 
 /* ---------DESKTOP VIEW----------- */
 @media screen and (min-width: 700px) {
-
   .mobileView {
-    display:none;
+    display: none;
   }
 
   .desk {
@@ -140,7 +136,7 @@ fonts:
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    width:100vh;
+    width: 100vh;
     height: 90vh;
   }
   .heading h1 {
@@ -175,7 +171,7 @@ fonts:
   }
 
   .arrow {
-    opacity: .5;
+    opacity: 0.5;
     transition: .5s;
   }
 
@@ -201,13 +197,13 @@ fonts:
   }
 
   .container h4 {
-    font-family: 'Geneva';
+    font-family: "Geneva";
     font-weight: 550;
     font-size: 11pt;
     letter-spacing: .15rem;
     text-align: center;
     margin-block: 20px 25px;
-}
+  }
 
   .hbox {
     display: flex;
@@ -269,7 +265,6 @@ fonts:
     align-self: center;
   }
 
-
   .articlesContainer {
     margin-top: 3rem;
     display: flex;
@@ -285,5 +280,4 @@ fonts:
     align-items: baseline;
     justify-content: space-between;
   }
-
 }

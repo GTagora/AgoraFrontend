@@ -1,75 +1,74 @@
 /* ---------DESKTOP VIEW----------- */
 @media screen and (min-width: 950px) {
-.main {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding-block: 5rem;
-  padding-inline: 15%;
-  background-color: var(--bg-color);
+  .main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-block: 5rem;
+    padding-inline: 15%;
+    background-color: var(--bg-color);
 
-  font-family: var(--font-ebgaramond);
-}
+    font-family: var(--font-ebgaramond);
+  }
 
-.main h1 {
-  font-family: var(--font-playfair-sc);
-  letter-spacing: .3rem;
-  margin-block: 4rem;
-}
+  .main h1 {
+    font-family: var(--font-playfair-sc);
+    letter-spacing: .3rem;
+    margin-block: 4rem;
+  }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 40px;
-}
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
 
-.card {
-  width: 350px;
-  border: 1px solid transparent;
-  border-radius: 12px;
-  background-color: white;
-  padding: 30px;
-  font-family: var(--font-ebgaramond);
-  filter: drop-shadow(4px 4px 6px rgba(210, 210, 210, 0.677));
+  .card {
+    width: 350px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background-color: white;
+    padding: 30px;
+    font-family: var(--font-ebgaramond);
+    filter: drop-shadow(4px 4px 6px rgba(210, 210, 210, 0.677));
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-  
-.card h1 {
-  font-size: 15pt;
-  letter-spacing: 1px;
-  margin-block: 20px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-.card p {
-  font-size: 9.5pt;
-  font-family: 'Arial';
-  letter-spacing: .09rem;
-  font-style: italic;
-  opacity: .8;
-}
+  .card h1 {
+    font-size: 15pt;
+    letter-spacing: 1px;
+    margin-block: 20px;
+  }
 
-.img {
-  height: 330px;
-  width: 90%;
-  object-fit: cover;
-  overflow: hidden;
-}
+  .card p {
+    font-size: 9.5pt;
+    font-family: "Arial";
+    letter-spacing: .09rem;
+    font-style: italic;
+    opacity: 0.8;
+  }
 
-.footer {
-  display: show;
-  position: absolute;
-  top: 80vh;
-  bottom: 0;
-}
+  .img {
+    height: 330px;
+    width: 90%;
+    object-fit: cover;
+    overflow: hidden;
+  }
 
+  .footer {
+    display: show;
+    position: absolute;
+    top: 80vh;
+    bottom: 0;
+  }
 }
 
 /* ---------MOBILE VIEW----------- */
@@ -81,11 +80,11 @@
     align-items: center;
     padding-top: 7rem;
     background-color: var(--bg-color);
-  
+
     min-height: 100vh;
     font-family: var(--font-ebgaramond);
   }
-  
+
   .main h1 {
     font-family: var(--font-playfair-sc);
     letter-spacing: .3rem;
@@ -110,27 +109,27 @@
     padding: 30px;
     font-family: var(--font-ebgaramond);
     filter: drop-shadow(4px 4px 6px rgba(210, 210, 210, 0.677));
-  
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-    
+
   .card h1 {
     font-size: 15pt;
     letter-spacing: 1px;
     margin-block: 10px;
   }
-  
+
   .card p {
     font-size: 9.5pt;
-    font-family: 'Arial';
+    font-family: "Arial";
     letter-spacing: .09rem;
     font-style: italic;
-    opacity: .8;
+    opacity: 0.8;
   }
-  
+
   .img {
     height: 300px;
     width: 90%;
@@ -143,9 +142,7 @@
     margin-top: 100px;
     bottom: 0px;
   }
-  
 }
-
 
 /* archive coming soon box
 .container {

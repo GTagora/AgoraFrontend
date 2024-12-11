@@ -18,17 +18,17 @@
 }
 
 .button {
-    font-size: 14pt;
-    margin-top: 30px;
-    width: 150px;
-    padding: 10px;
-    border-radius: 4rem;
-    border: 2px solid var(--gray-green);
-    text-align: center;
-  }
-  
-  .button:hover {
-    background-color: var(--gray-green);
-    transition: .4s;
-    letter-spacing: .4px;
-  }
+  font-size: 14pt;
+  margin-top: 30px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 4rem;
+  border: 2px solid var(--gray-green);
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--gray-green);
+  transition: .4s;
+  letter-spacing: .4px;
+}

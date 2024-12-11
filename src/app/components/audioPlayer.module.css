@@ -1,33 +1,32 @@
 /* ---------MOBILE VIEW----------- */
 @media screen and (max-width: 699px) {
-
   .audio-player {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100vw;
     height: 14vh;
-    opacity: .9;
+    opacity: 0.9;
     padding: 20px;
     background-color: var(--bg-color);
     box-shadow: 35px 35px 35px 28px rgba(0, 0, 0, 0.2);
   }
-  
+
   .artwork {
     display: none;
   }
-  
+
   .track-info {
     text-align: center;
     z-index: 1;
     position: relative;
   }
-  
+
   .title {
     font-size: 13pt;
     margin-bottom: 10px;
   }
-  
+
   .artist {
     display: none;
   }
@@ -39,7 +38,7 @@
     align-items: center;
     gap: 10px;
   }
-  
+
   .audio-controls {
     display: flex;
     justify-content: center;
@@ -47,22 +46,26 @@
     width: 75%;
     margin: 15px;
   }
-  
-  .play, .pause, .increment {
+
+  .play,
+  .pause,
+  .increment {
     border: none;
-    background-color: transparent; 
+    background-color: transparent;
     padding-block: auto;
-    opacity: .9;
+    opacity: 0.9;
   }
 
   .increment {
     margin-inline: 9px;
     margin-bottom: 3px;
     transition: .2s;
-    opacity: .8;
+    opacity: 0.8;
   }
 
-  .play:hover, .pause:hover, .increment:hover {
+  .play:hover,
+  .pause:hover,
+  .increment:hover {
     cursor: pointer;
     opacity: 1;
     transition: .2s;
@@ -83,16 +86,13 @@
   }
 
   .timer {
-    font-family: 'Arial';
+    font-family: "Arial";
     font-size: 10.5pt;
   }
-  
-
 }
 
 /* ---------DESKTOP VIEW----------- */
 @media screen and (min-width: 700px) {
-
   .audio-player {
     max-width: 350px;
     padding: 24px;
@@ -101,7 +101,7 @@
     background-color: var(--bg-color);
     opacity: 95%;
   }
-  
+
   .artwork {
     border-radius: 120px;
     display: block;
@@ -109,18 +109,18 @@
     height: 200px;
     width: 200px;
   }
-  
+
   .track-info {
     text-align: center;
     z-index: 1;
     position: relative;
   }
-  
+
   .title {
     font-weight: 700;
     margin-block: 11px;
   }
-  
+
   .artist {
     display: none;
   }
@@ -133,29 +133,33 @@
     gap: 10px;
     margin-top: 9px;
   }
-  
+
   .audio-controls {
     display: flex;
     justify-content: space-between;
     width: 75%;
     margin: 15px;
   }
-  
-  .play, .pause, .increment {
+
+  .play,
+  .pause,
+  .increment {
     border: none;
     background-color: transparent;
-    opacity: .8; 
+    opacity: 0.8;
   }
 
   .increment {
     border: none;
-    background-color: transparent; 
+    background-color: transparent;
     margin-inline: 10px;
     margin-bottom: 4px;
-    opacity: .8;
+    opacity: 0.8;
   }
 
-  .play:hover, .pause:hover, .increment:hover {
+  .play:hover,
+  .pause:hover,
+  .increment:hover {
     cursor: pointer;
     opacity: 1;
   }
@@ -170,9 +174,7 @@
   }
 
   .timer {
-    font-family: 'Arial';
+    font-family: "Arial";
     font-size: 10.5pt;
   }
-  
-
 }
