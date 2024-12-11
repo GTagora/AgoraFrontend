@@ -23,8 +23,6 @@
     "@types/node": "^20",
     "@types/react": "^18.2.8",
     "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "13.5.6",
     "framer-motion": "^10.16.5",
     "gh-pages": "^6.1.0",
     "react-router-dom": "^6.19.0",
