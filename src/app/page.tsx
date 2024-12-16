@@ -7,6 +7,8 @@ import Card from './(templates)/card'
 import Link from 'next/link'
 import IssuuButton from './components/issuuButton'
 
+// UPDATE FOR EACH ISSUE
+const letter = "<p>It’s a joy and honor to bring you this third issue of <i>Agora</i>, enveloped and sealed in His gracious love for all of us. Each semester, we are astounded by God’s merciful provision of contributors, talents, time, and resources; the very journal you’re holding is a miracle in itself, and we invite you to join us in celebrating His goodness in these pages!<br/><br/>We’d like to introduce this installation’s theme, <i>Water</i>. It’s well known that water is essential to life: it sustains our individual beings, our ecosystems, our planet. It’s so fundamental that we often forget its necessity; instead, it’s one of many undercurrents that support our interests, obligations, and priorities. It’s only in seasons of drought that we realize how precious water is, how life-giving, and how frail we become without proper hydration. <br/><br/>We sometimes fall into a similar rhythm in our relationship with Christ, especially amidst the busyness and distraction of this world. Water, then, in its many forms can emulate our relationship with the Father, through both gentle streams and violent hurricanes. This semester, our writers meditated on water in its multidimensionality, especially as it has reflected God’s character and presence in their lives. Through their witness and His grace, we’ve seen the evidence of God’s love overflow onto these pages.<br/><br/>So take a moment, grab your favorite drink, and spend some time with these pieces. And as you dwell, may He fill your cup and nourish you with His precious living water.<br/><br/>Yours in Christ,<br /> Catherine &amp; Via<br /><i>Co-Editors-in-Chief</i></p>";
 
 function Mobile( { articles }:{ articles:Array<any> } ) {
     return (
@@ -24,9 +26,9 @@ function Mobile( { articles }:{ articles:Array<any> } ) {
 
             <div className={styles.container}>
                 <hr />
-                <h1>Cycles</h1>
-                <h4>SPRING &apos;24 | VOL. 1 NO. 2</h4>
-                <Letter/>
+                <h1>Water</h1>
+                <h4>FALL &apos;24 | VOL. 2 NO. 1</h4>
+                <Letter letter={letter}/>
             </div>
             <div className={styles.articlesContainer}>
                 {articles && articles.map(async (article: any) => (
@@ -50,7 +52,7 @@ async function getArticles() {
 export default async function Home() {
     let articles = await getArticles()
     articles = articles.filter(function(article:any) {
-        return article.Theme === "Cycles";
+        return article.Theme === "Water";
     });
         return (
         <>
@@ -73,14 +75,14 @@ export default async function Home() {
                 </div>
                 <a id="latest-issue" />
                 <div className={styles.container}>
-                    <h1>Cycles</h1>
-                    <h4>SPRING &apos;24 | VOL. 1 NO. 2</h4>
+                    <h1>Water</h1>
+                    <h4>FALL &apos;24 | VOL. 2 NO. 1</h4>
 
                     <div className={styles.hbox}>
                         <div className={styles.feature} >
                             <Image
                                 className={styles.img}
-                                src="/covers/s24.jpg"
+                                src="/covers/f24.jpg"
                                 width={6000}
                                 height={4000}
                                 alt='Issue cover'
@@ -88,17 +90,10 @@ export default async function Home() {
                         </div>
                         <div className={styles.letter}>
                             <h2>Letter from the EIC</h2>
-                            <p>Dear Reader, <br/><br/>
-                            What a blessing it is to bring you this second issue of <i>Agora</i>! I thank God that you&apos;re here, however it is that you&apos;ve happened upon this journal. And whether He is a stranger or an old friend, just know that He sits beside you as you flip through this issue on Cycles.<br/><br/>
-                            We all experience this world in a certain rhythm, as a life of constant novelty and unpredictability would be impossible to comprehend. So our lives are benchmarked by these patterns, which characterize the natural ebb and flow of the human experience: daily habits, transformation, the swell of seasons, in nature and in life. It follows that God speaks through these cycles as He shapes us, grows us, and brings us back to Him.<br/><br/>
-                            This semester, our writers reflected on this theme and now offer you their take on Cycles, in hurt or condemnation, in relationships, in iterations of sin, repentance, and restoration. This writing process, though arduous, was a revelation of God&apos;s provision and a gift of fellowship, and I hope its fruit is as much a blessing to you as it was to us.<br/><br/>
-                            And so, dear Reader, I invite you to take a breath, dwell here, and find nourishment in these reflections, knowing He is here with you.<br/><br/>
-                            Happy reading, until we meet face to face.<br/><br/>
-                            Yours in Christ,<br /> Via<br /><i>Editor-in-Chief</i>
-                            </p>
+                            <p dangerouslySetInnerHTML={{ __html: letter.replace(/\\n/g, '\n')}} />
                         </div>
                     </div>
-                    <div className={styles.issuu}><IssuuButton link="https://issuu.com/gtagora/docs/agora_s24"/></div>
+                    <div className={styles.issuu}><IssuuButton link="https://issuu.com/gtagora/docs/agora_f24"/></div>
                     <div className={styles.articlesContainer}>
                         {articles && articles.map(async (article: any) => (
                                 <Card key={null} article={article}></Card>
