@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/(pages)/blog/an-anthology-3/2/page",{
+
+/***/ "(app-pages-browser)/./src/app/(pages)/blog/an-anthology-3/2/article.module.css":
+/*!******************************************************************!*\
+  !*** ./src/app/(pages)/blog/an-anthology-3/2/article.module.css ***!
+  \******************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+eval(__webpack_require__.ts("// extracted by mini-css-extract-plugin\nmodule.exports = {\"main\":\"article_main__mKR_4\",\"buttons\":\"article_buttons__LpvJg\",\"container\":\"article_container__m3Me7\",\"image\":\"article_image__XL8Vl\",\"credit\":\"article_credit__MlOgA\",\"title\":\"article_title__0OOof\",\"author\":\"article_author__2MEuL\",\"date\":\"article_date__pZ5d_\",\"text\":\"article_text__kozD9\",\"rightAlign\":\"article_rightAlign__dOsVT\",\"video\":\"article_video__ubFBM\",\"page\":\"article_page__LRS9S\",\"href\":\"article_href__InH0w\",\"breadcrumb\":\"article_breadcrumb__7Uq3X\"};\n    if(true) {\n      // 1740698598413\n      var cssReload = __webpack_require__(/*! ./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js */ \"(app-pages-browser)/./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js\")(module.id, {\"publicPath\":\"/_next/\",\"esModule\":false,\"locals\":true});\n      module.hot.dispose(cssReload);\n      \n    }\n  \nmodule.exports.__checksum = \"bc6f1eba3943\"\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL3NyYy9hcHAvKHBhZ2VzKS9ibG9nL2FuLWFudGhvbG9neS0zLzIvYXJ0aWNsZS5tb2R1bGUuY3NzIiwibWFwcGluZ3MiOiJBQUFBO0FBQ0Esa0JBQWtCO0FBQ2xCLE9BQU8sSUFBVTtBQUNqQjtBQUNBLHNCQUFzQixtQkFBTyxDQUFDLHdNQUFtSixjQUFjLHNEQUFzRDtBQUNyUCxNQUFNLFVBQVU7QUFDaEI7QUFDQTtBQUNBO0FBQ0EseUJBQXlCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vX05fRS8uL3NyYy9hcHAvKHBhZ2VzKS9ibG9nL2FuLWFudGhvbG9neS0zLzIvYXJ0aWNsZS5tb2R1bGUuY3NzP2MyNDgiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5tb2R1bGUuZXhwb3J0cyA9IHtcIm1haW5cIjpcImFydGljbGVfbWFpbl9fbUtSXzRcIixcImJ1dHRvbnNcIjpcImFydGljbGVfYnV0dG9uc19fTHB2SmdcIixcImNvbnRhaW5lclwiOlwiYXJ0aWNsZV9jb250YWluZXJfX20zTWU3XCIsXCJpbWFnZVwiOlwiYXJ0aWNsZV9pbWFnZV9fWEw4VmxcIixcImNyZWRpdFwiOlwiYXJ0aWNsZV9jcmVkaXRfX01sT2dBXCIsXCJ0aXRsZVwiOlwiYXJ0aWNsZV90aXRsZV9fME9Pb2ZcIixcImF1dGhvclwiOlwiYXJ0aWNsZV9hdXRob3JfXzJNRXVMXCIsXCJkYXRlXCI6XCJhcnRpY2xlX2RhdGVfX3BaNWRfXCIsXCJ0ZXh0XCI6XCJhcnRpY2xlX3RleHRfX2tvekQ5XCIsXCJyaWdodEFsaWduXCI6XCJhcnRpY2xlX3JpZ2h0QWxpZ25fX2RPc1ZUXCIsXCJ2aWRlb1wiOlwiYXJ0aWNsZV92aWRlb19fdWJGQk1cIixcInBhZ2VcIjpcImFydGljbGVfcGFnZV9fTFJTOVNcIixcImhyZWZcIjpcImFydGljbGVfaHJlZl9fSW5IMHdcIixcImJyZWFkY3J1bWJcIjpcImFydGljbGVfYnJlYWRjcnVtYl9fN1VxM1hcIn07XG4gICAgaWYobW9kdWxlLmhvdCkge1xuICAgICAgLy8gMTc0MDY5ODU5ODQxM1xuICAgICAgdmFyIGNzc1JlbG9hZCA9IHJlcXVpcmUoXCIvVXNlcnMvam9zaHVhcGFyay9EZXNrdG9wL0NvZGluZy9Hcm91cCBQcm9qZWN0cy9BZ29yYUZyb250ZW5kL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvY29tcGlsZWQvbWluaS1jc3MtZXh0cmFjdC1wbHVnaW4vaG1yL2hvdE1vZHVsZVJlcGxhY2VtZW50LmpzXCIpKG1vZHVsZS5pZCwge1wicHVibGljUGF0aFwiOlwiL19uZXh0L1wiLFwiZXNNb2R1bGVcIjpmYWxzZSxcImxvY2Fsc1wiOnRydWV9KTtcbiAgICAgIG1vZHVsZS5ob3QuZGlzcG9zZShjc3NSZWxvYWQpO1xuICAgICAgXG4gICAgfVxuICBcbm1vZHVsZS5leHBvcnRzLl9fY2hlY2tzdW0gPSBcImJjNmYxZWJhMzk0M1wiXG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(app-pages-browser)/./src/app/(pages)/blog/an-anthology-3/2/article.module.css\n"));
+
+/***/ })
+
+});
