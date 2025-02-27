@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const contents = [
 	{
-		id: 1,
+		id: "1",
 		title: "a testimony",
 		href: "an-anthology-3/1",
 	},
