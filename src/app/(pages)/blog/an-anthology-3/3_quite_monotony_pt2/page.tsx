@@ -97,8 +97,11 @@ and when i am hidden, i am seen`}
 					</div>
 
 					<div className={styles.buttons}>
-						<Link href="/blog/an-anthology-3" className={styles.href}>
-							&lt;&nbsp; Contents
+						<Link
+							href="/blog/an-anthology-3/2_quite_monotony"
+							className={styles.href}
+						>
+							&lt;&nbsp; Previous
 						</Link>
 						<Link href="/blog/an-anthology-3/4" className={styles.href}>
 							Next &nbsp;&gt;

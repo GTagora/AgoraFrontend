@@ -4,19 +4,19 @@ import Image from "next/image";
 
 const contents = [
 	{
-		id: "1",
+		id: "1:",
 		title: "a testimony",
 		href: "an-anthology-3/1",
 	},
 	{
-		id: 2,
+		id: "id_wip_2:",
 		title: "quite_monotony",
-		href: "an-anthology-3/2",
+		href: "an-anthology-3/2_quite_monotony",
 	},
 	{
-		id: 3,
+		id: "id_wip_3:",
 		title: "quite_monotony_pt.2",
-		href: "an-anthology-3/3",
+		href: "an-anthology-3/3_quite_monotony_pt2",
 	},
 ];
 
