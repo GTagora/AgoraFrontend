@@ -184,6 +184,12 @@
       "static/chunks/main-app.js",
       "static/css/app/(pages)/blog/an-anthology-3/3_quite_monotony_pt2/page.css",
       "static/chunks/app/(pages)/blog/an-anthology-3/3_quite_monotony_pt2/page.js"
+    ],
+    "/(pages)/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/contact/page.css",
+      "static/chunks/app/(pages)/contact/page.js"
     ]
   }
 }

@@ -1,10 +1,15 @@
 import styles from "./page.module.css";
-import Link from "next/link";
-import Image from "next/image";
-import Footer from "@/app/components/footer";
 import BlogCard from "@/app/(templates)/blog-card";
 
-const articles = [
+interface Article {
+	title: string;
+	genre: string;
+	img: string;
+	slug: string;
+	date: string;
+}
+
+const articles: Article[] = [
 	{
 		title: "a bench",
 		genre: "POEM",
@@ -35,13 +40,13 @@ const articles = [
 	},
 ];
 
-export default async function Blog() {
+export default function Blog() {
 	return (
 		<main className={styles.main}>
 			<h1 className={styles.h1}>Blog</h1>
 			<div className={styles.allcards}>
-				{articles.map((article: any, i: number) => (
-					<BlogCard key={i} article={article} />
+				{articles.map((article) => (
+					<BlogCard key={article.slug} article={article} />
 				))}
 			</div>
 		</main>
