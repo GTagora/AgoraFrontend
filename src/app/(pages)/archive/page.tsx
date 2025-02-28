@@ -1,77 +1,80 @@
+import styles from "./page.module.css";
+import type { GetStaticPaths, GetStaticProps } from "next";
+import Link from "next/link";
+import Footer from "@/app/components/footer";
+import Image from "next/image";
 
-import styles from './page.module.css'
-import { GetStaticPaths } from 'next'
-import Link from 'next/link'
-import Footer from '@/app/components/footer'
-import Image from 'next/image'
-
-interface Issues {
-  slug: string;
+// First Fix: Define the Issue interface to match the expected structure
+interface Issue {
+	Semester: string;
+	Theme: string;
+	Slug: string;
+	Image: string;
+	Volume: number;
+	Issue: number;
 }
 
-async function getIssues() {
-  const res = await fetch(`https://agora-backend-sxd6.onrender.com/getIssues`, { cache: 'no-store' });
-  const data = res.json();
-
-  return data;
+interface IssuesProps {
+	issue: Issue;
 }
 
-const IssueCard = ({ issue } : any ) => {
-    const semester = issue.Semester;
-    const theme = issue.Theme;
-    const slug = issue.Slug;
-    const img = issue.Image;
-    return (<Link href={slug}>
-        <div className={styles.card}>
-            <Image
-                className={styles.img}
-                src={img}
-                width={300}
-                height={500}
-                alt='Issue cover'
-            />
-            <h1>{theme.toUpperCase()}</h1>
-            <p>{semester.toUpperCase()}</p>
-        </div>
-    </Link>);
+// Update the IssueCard component to use the proper types
+// Remove 'any' to remove unforseen errors and after-affects
+const IssueCard = ({ issue }: IssuesProps) => {
+	const { Semester, Theme, Slug, Image: imgSrc } = issue;
+	return (
+		<Link href={Slug}>
+			<div className={styles.card}>
+				{/* TypeScript will now correctly infer the types */}
+				<Image
+					className={styles.img}
+					src={imgSrc}
+					width={300}
+					height={500}
+					alt="Issue cover"
+				/>
+				<h1>{Theme.toUpperCase()}</h1>
+				<p>{Semester.toUpperCase()}</p>
+			</div>
+		</Link>
+	);
+};
+
+// Experimental -> Fetching issues from the API with proper type annotations
+async function getIssues(): Promise<Issue[]> {
+	const res = await fetch("https://agora-backend-sxd6.onrender.com/getIssues", {
+		cache: "no-store",
+	});
+	const data: Issue[] = await res.json(); // Type the returned data as an array of Issue objects
+	return data;
 }
 
-export default async function Archive({ params }: any) {
-    const issues = await getIssues();
-    
-    return (
-    <div className={styles.main}>
-        <h1>Past Issues</h1>
-        <div className={styles.container}>
-            {issues.sort((a:any,b:any) => (b.Volume - a.Volume || b.Issue - a.Issue))
-                .map((issue:any, i:number) => (
-                <IssueCard key={i} issue={issues[i]} />))} 
-        </div>
-        <div className={styles.footer}>
-            <Footer />
-        </div>
-    </div>
-    )
+export default async function Archive() {
+	const issues = await getIssues();
+
+	return (
+		<div className={styles.main}>
+			<h1>Past Issues</h1>
+			<div className={styles.container}>
+				{issues
+					.sort((a, b) => b.Volume - a.Volume || b.Issue - a.Issue)
+					.map((issue) => (
+						<IssueCard key={issue.Slug} issue={issue} />
+					))}
+			</div>
+			<div className={styles.footer}>
+				<Footer />
+			</div>
+		</div>
+	);
 }
 
-
+// Define the types for getStaticPaths and its expected return value -> removing any
 export const getStaticPaths: GetStaticPaths = async () => {
-    const issues = await getIssues();
-    const paths = issues.map((issue: any, i:number) => ({
-        params: { slug: issue.Slug.toLowerCase().replaceAll(" ", "-") }
-    }));
-  
-    return { paths, fallback: true };
-  };
+	const issues = await getIssues();
+	const paths = issues.map((issue) => ({
+		params: { slug: issue.Slug.toLowerCase().replaceAll(" ", "-") },
+	}));
 
-  
-{/* 
-OLD ARCHIVE PAGE IMPLEMENTATION
-<div className={styles.container}>
-    <h1>Archive page</h1>
-    <p>No archive yet, as this is our debut issue!</p>
-    <p>Check back in next semester!</p>
-    <Link href="/#fall-23-release">
-        <div className={styles.button}>&#x2192;&nbsp;&nbsp;&nbsp;&nbsp;Fall &apos;23 Release</div>
-    </Link>
-</div> */}
+	return { paths, fallback: true };
+};

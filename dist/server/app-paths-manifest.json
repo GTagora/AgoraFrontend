@@ -1,11 +1,7 @@
 {
   "/(pages)/blog/an-anthology-2/page": "app/(pages)/blog/an-anthology-2/page.js",
   "/(pages)/blog/an-anthology-2/1/page": "app/(pages)/blog/an-anthology-2/1/page.js",
-  "/(pages)/blog/an-anthology-3/page": "app/(pages)/blog/an-anthology-3/page.js",
-  "/(pages)/blog/an-anthology-3/1/page": "app/(pages)/blog/an-anthology-3/1/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/(pages)/blog/an-anthology-3/2_quite_monotony/page": "app/(pages)/blog/an-anthology-3/2_quite_monotony/page.js",
-  "/(pages)/blog/an-anthology-3/3_quite_monotony_pt2/page": "app/(pages)/blog/an-anthology-3/3_quite_monotony_pt2/page.js",
-  "/(pages)/[issue]/[article]/page": "app/(pages)/[issue]/[article]/page.js",
-  "/(pages)/[issue]/page": "app/(pages)/[issue]/page.js"
+  "/(pages)/about/page": "app/(pages)/about/page.js",
+  "/page": "app/page.js",
+  "/(pages)/archive/page": "app/(pages)/archive/page.js"
 }
