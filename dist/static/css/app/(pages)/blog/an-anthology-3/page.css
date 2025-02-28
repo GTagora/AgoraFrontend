@@ -34,7 +34,7 @@
 	.page_credit__Z1_rj {
 		text-align: center;
 		opacity: 0.7;
-		font-family: "Arial";
+		font-family: "Arial", sans-serif;
 		font-size: 9pt;
 		letter-spacing: .03rem;
 		margin-bottom: 40px;
@@ -144,7 +144,7 @@
 	.page_credit__Z1_rj {
 		text-align: center;
 		opacity: 0.7;
-		font-family: "Arial";
+		font-family: "Arial", sans-serif;
 		font-size: 9pt;
 		letter-spacing: .03rem;
 		margin-bottom: 40px;
@@ -195,7 +195,7 @@
 
 .page_date___ClsX {
 	font-size: 10pt;
-	font-family: "Arial";
+	font-family: "Arial", sans-serif;
 	color: #a1a1a1;
 	font-weight: 400;
 	margin-block: 10px 50px;

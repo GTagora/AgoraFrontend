@@ -25,7 +25,7 @@
 
 	.article_buttons__pc7Dh {
 		font-size: 10pt;
-		font-family: "Arial";
+		font-family: "Arial", sans-serif;
 		color: gray;
 		padding-inline: 20px;
 		margin-block: 40px;
@@ -53,7 +53,7 @@
 	.article_credit__P3Y4y {
 		text-align: center;
 		opacity: 0.7;
-		font-family: "Arial";
+		font-family: "Arial", sans-serif;
 		font-size: 9pt;
 		letter-spacing: .03rem;
 		margin-bottom: 40px;
@@ -149,7 +149,7 @@
 	.article_credit__P3Y4y {
 		text-align: center;
 		opacity: 0.7;
-		font-family: "Arial";
+		font-family: "Arial", sans-serif;
 		font-size: 9pt;
 		letter-spacing: .03rem;
 		margin-bottom: 40px;
@@ -181,7 +181,7 @@
 
 	.article_buttons__pc7Dh {
 		font-size: 10pt;
-		font-family: "Arial";
+		font-family: "Arial", sans-serif;
 		color: gray;
 		margin-block: 40px;
 		display: flex;
@@ -196,7 +196,7 @@
 
 .article_breadcrumb__rTDRQ {
 	font-size: 10pt;
-	font-family: "Arial";
+	font-family: "Arial", sans-serif;
 	color: gray;
 }
 
@@ -204,4 +204,3 @@
 	color: black;
 	transition-duration: 150ms;
 }
-

@@ -31,7 +31,7 @@
 	.credit {
 		text-align: center;
 		opacity: 0.7;
-		font-family: "Arial";
+		font-family: "Arial", sans-serif;
 		font-size: 9pt;
 		letter-spacing: .03rem;
 		margin-bottom: 40px;
@@ -140,7 +140,7 @@
 	.credit {
 		text-align: center;
 		opacity: 0.7;
-		font-family: "Arial";
+		font-family: "Arial", sans-serif;
 		font-size: 9pt;
 		letter-spacing: .03rem;
 		margin-bottom: 40px;
@@ -191,7 +191,7 @@
 
 .date {
 	font-size: 10pt;
-	font-family: "Arial";
+	font-family: "Arial", sans-serif;
 	color: #a1a1a1;
 	font-weight: 400;
 	margin-block: 10px 50px;

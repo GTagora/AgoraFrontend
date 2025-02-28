@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/(pages)/blog/an-anthology-3/2_quite_monotony/page",{
+
+/***/ "(app-pages-browser)/./src/app/(pages)/blog/an-anthology-3/2_quite_monotony/article.module.css":
+/*!*********************************************************************************!*\
+  !*** ./src/app/(pages)/blog/an-anthology-3/2_quite_monotony/article.module.css ***!
+  \*********************************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+eval(__webpack_require__.ts("// extracted by mini-css-extract-plugin\nmodule.exports = {\"main\":\"article_main__u6ueV\",\"buttons\":\"article_buttons__ARWRZ\",\"container\":\"article_container__uQha_\",\"image\":\"article_image__Ptx2m\",\"credit\":\"article_credit__Z8n2p\",\"title\":\"article_title__wY_38\",\"author\":\"article_author__fCW6J\",\"date\":\"article_date__23rgl\",\"text\":\"article_text__DOnp_\",\"rightAlign\":\"article_rightAlign__UPmkA\",\"video\":\"article_video__8MD1M\",\"page\":\"article_page__iFpto\",\"href\":\"article_href__4S1Fc\",\"breadcrumb\":\"article_breadcrumb__1gZAj\"};\n    if(true) {\n      // 1740706433722\n      var cssReload = __webpack_require__(/*! ./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js */ \"(app-pages-browser)/./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js\")(module.id, {\"publicPath\":\"/_next/\",\"esModule\":false,\"locals\":true});\n      module.hot.dispose(cssReload);\n      \n    }\n  \nmodule.exports.__checksum = \"3a4b97e8258d\"\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL3NyYy9hcHAvKHBhZ2VzKS9ibG9nL2FuLWFudGhvbG9neS0zLzJfcXVpdGVfbW9ub3RvbnkvYXJ0aWNsZS5tb2R1bGUuY3NzIiwibWFwcGluZ3MiOiJBQUFBO0FBQ0Esa0JBQWtCO0FBQ2xCLE9BQU8sSUFBVTtBQUNqQjtBQUNBLHNCQUFzQixtQkFBTyxDQUFDLHdNQUFtSixjQUFjLHNEQUFzRDtBQUNyUCxNQUFNLFVBQVU7QUFDaEI7QUFDQTtBQUNBO0FBQ0EseUJBQXlCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vX05fRS8uL3NyYy9hcHAvKHBhZ2VzKS9ibG9nL2FuLWFudGhvbG9neS0zLzJfcXVpdGVfbW9ub3RvbnkvYXJ0aWNsZS5tb2R1bGUuY3NzP2I0ZDciXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5tb2R1bGUuZXhwb3J0cyA9IHtcIm1haW5cIjpcImFydGljbGVfbWFpbl9fdTZ1ZVZcIixcImJ1dHRvbnNcIjpcImFydGljbGVfYnV0dG9uc19fQVJXUlpcIixcImNvbnRhaW5lclwiOlwiYXJ0aWNsZV9jb250YWluZXJfX3VRaGFfXCIsXCJpbWFnZVwiOlwiYXJ0aWNsZV9pbWFnZV9fUHR4Mm1cIixcImNyZWRpdFwiOlwiYXJ0aWNsZV9jcmVkaXRfX1o4bjJwXCIsXCJ0aXRsZVwiOlwiYXJ0aWNsZV90aXRsZV9fd1lfMzhcIixcImF1dGhvclwiOlwiYXJ0aWNsZV9hdXRob3JfX2ZDVzZKXCIsXCJkYXRlXCI6XCJhcnRpY2xlX2RhdGVfXzIzcmdsXCIsXCJ0ZXh0XCI6XCJhcnRpY2xlX3RleHRfX0RPbnBfXCIsXCJyaWdodEFsaWduXCI6XCJhcnRpY2xlX3JpZ2h0QWxpZ25fX1VQbWtBXCIsXCJ2aWRlb1wiOlwiYXJ0aWNsZV92aWRlb19fOE1EMU1cIixcInBhZ2VcIjpcImFydGljbGVfcGFnZV9faUZwdG9cIixcImhyZWZcIjpcImFydGljbGVfaHJlZl9fNFMxRmNcIixcImJyZWFkY3J1bWJcIjpcImFydGljbGVfYnJlYWRjcnVtYl9fMWdaQWpcIn07XG4gICAgaWYobW9kdWxlLmhvdCkge1xuICAgICAgLy8gMTc0MDcwNjQzMzcyMlxuICAgICAgdmFyIGNzc1JlbG9hZCA9IHJlcXVpcmUoXCIvVXNlcnMvam9zaHVhcGFyay9EZXNrdG9wL0NvZGluZy9Hcm91cCBQcm9qZWN0cy9BZ29yYUZyb250ZW5kL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvY29tcGlsZWQvbWluaS1jc3MtZXh0cmFjdC1wbHVnaW4vaG1yL2hvdE1vZHVsZVJlcGxhY2VtZW50LmpzXCIpKG1vZHVsZS5pZCwge1wicHVibGljUGF0aFwiOlwiL19uZXh0L1wiLFwiZXNNb2R1bGVcIjpmYWxzZSxcImxvY2Fsc1wiOnRydWV9KTtcbiAgICAgIG1vZHVsZS5ob3QuZGlzcG9zZShjc3NSZWxvYWQpO1xuICAgICAgXG4gICAgfVxuICBcbm1vZHVsZS5leHBvcnRzLl9fY2hlY2tzdW0gPSBcIjNhNGI5N2U4MjU4ZFwiXG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(app-pages-browser)/./src/app/(pages)/blog/an-anthology-3/2_quite_monotony/article.module.css\n"));
+
+/***/ })
+
+});
