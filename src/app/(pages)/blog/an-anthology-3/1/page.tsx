@@ -12,7 +12,7 @@ export default async function Page() {
 					</Link>
 					<Image
 						className={styles.image}
-						src="/blog/an-anthology-3/a testimony.JPG"
+						src="/blog/an-anthology-3/intermission.jpg"
 						width={600}
 						height={600}
 						alt="article image"

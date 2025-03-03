@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/(pages)/blog/an-anthology-3/page",{
+
+/***/ "(app-pages-browser)/./src/app/(pages)/blog/an-anthology-3/page.module.css":
+/*!*************************************************************!*\
+  !*** ./src/app/(pages)/blog/an-anthology-3/page.module.css ***!
+  \*************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+eval(__webpack_require__.ts("// extracted by mini-css-extract-plugin\nmodule.exports = {\"main\":\"page_main__b454a\",\"image\":\"page_image__a_A5w\",\"credit\":\"page_credit__Z1_rj\",\"title\":\"page_title__jf4GJ\",\"subtitle\":\"page_subtitle__fK2a7\",\"author\":\"page_author__PaCHl\",\"text\":\"page_text__LBnMi\",\"contentsContainer\":\"page_contentsContainer__j39A7\",\"hbox\":\"page_hbox__4O8ml\",\"col\":\"page_col__TjvRi\",\"page\":\"page_page__Uxpyl\",\"rightAlign\":\"page_rightAlign__RCdTv\",\"audio\":\"page_audio__6yZ3p\",\"video\":\"page_video___qr9s\",\"date\":\"page_date___ClsX\",\"content\":\"page_content__YARf8\",\"href\":\"page_href__sqyES\"};\n    if(true) {\n      // 1740973079408\n      var cssReload = __webpack_require__(/*! ./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js */ \"(app-pages-browser)/./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js\")(module.id, {\"publicPath\":\"/_next/\",\"esModule\":false,\"locals\":true});\n      module.hot.dispose(cssReload);\n      \n    }\n  \nmodule.exports.__checksum = \"0f509e4fbe5b\"\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL3NyYy9hcHAvKHBhZ2VzKS9ibG9nL2FuLWFudGhvbG9neS0zL3BhZ2UubW9kdWxlLmNzcyIsIm1hcHBpbmdzIjoiQUFBQTtBQUNBLGtCQUFrQjtBQUNsQixPQUFPLElBQVU7QUFDakI7QUFDQSxzQkFBc0IsbUJBQU8sQ0FBQyx3TUFBd0gsY0FBYyxzREFBc0Q7QUFDMU4sTUFBTSxVQUFVO0FBQ2hCO0FBQ0E7QUFDQTtBQUNBLHlCQUF5QiIsInNvdXJjZXMiOlsid2VicGFjazovL19OX0UvLi9zcmMvYXBwLyhwYWdlcykvYmxvZy9hbi1hbnRob2xvZ3ktMy9wYWdlLm1vZHVsZS5jc3M/OTAyMiJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbm1vZHVsZS5leHBvcnRzID0ge1wibWFpblwiOlwicGFnZV9tYWluX19iNDU0YVwiLFwiaW1hZ2VcIjpcInBhZ2VfaW1hZ2VfX2FfQTV3XCIsXCJjcmVkaXRcIjpcInBhZ2VfY3JlZGl0X19aMV9yalwiLFwidGl0bGVcIjpcInBhZ2VfdGl0bGVfX2pmNEdKXCIsXCJzdWJ0aXRsZVwiOlwicGFnZV9zdWJ0aXRsZV9fZksyYTdcIixcImF1dGhvclwiOlwicGFnZV9hdXRob3JfX1BhQ0hsXCIsXCJ0ZXh0XCI6XCJwYWdlX3RleHRfX0xCbk1pXCIsXCJjb250ZW50c0NvbnRhaW5lclwiOlwicGFnZV9jb250ZW50c0NvbnRhaW5lcl9fajM5QTdcIixcImhib3hcIjpcInBhZ2VfaGJveF9fNE84bWxcIixcImNvbFwiOlwicGFnZV9jb2xfX1RqdlJpXCIsXCJwYWdlXCI6XCJwYWdlX3BhZ2VfX1V4cHlsXCIsXCJyaWdodEFsaWduXCI6XCJwYWdlX3JpZ2h0QWxpZ25fX1JDZFR2XCIsXCJhdWRpb1wiOlwicGFnZV9hdWRpb19fNnlaM3BcIixcInZpZGVvXCI6XCJwYWdlX3ZpZGVvX19fcXI5c1wiLFwiZGF0ZVwiOlwicGFnZV9kYXRlX19fQ2xzWFwiLFwiY29udGVudFwiOlwicGFnZV9jb250ZW50X19ZQVJmOFwiLFwiaHJlZlwiOlwicGFnZV9ocmVmX19zcXlFU1wifTtcbiAgICBpZihtb2R1bGUuaG90KSB7XG4gICAgICAvLyAxNzQwOTczMDc5NDA4XG4gICAgICB2YXIgY3NzUmVsb2FkID0gcmVxdWlyZShcIi9Vc2Vycy9vbGl2aWFodS9jb2RlL0Fnb3JhRnJvbnRlbmQvbm9kZV9tb2R1bGVzL25leHQvZGlzdC9jb21waWxlZC9taW5pLWNzcy1leHRyYWN0LXBsdWdpbi9obXIvaG90TW9kdWxlUmVwbGFjZW1lbnQuanNcIikobW9kdWxlLmlkLCB7XCJwdWJsaWNQYXRoXCI6XCIvX25leHQvXCIsXCJlc01vZHVsZVwiOmZhbHNlLFwibG9jYWxzXCI6dHJ1ZX0pO1xuICAgICAgbW9kdWxlLmhvdC5kaXNwb3NlKGNzc1JlbG9hZCk7XG4gICAgICBcbiAgICB9XG4gIFxubW9kdWxlLmV4cG9ydHMuX19jaGVja3N1bSA9IFwiMGY1MDllNGZiZTViXCJcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(app-pages-browser)/./src/app/(pages)/blog/an-anthology-3/page.module.css\n"));
+
+/***/ })
+
+});

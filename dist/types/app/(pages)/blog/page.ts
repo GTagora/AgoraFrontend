@@ -1,4 +1,4 @@
-// File: /Users/joshuapark/Desktop/Coding/Group Projects/AgoraFrontend/src/app/(pages)/blog/page.tsx
+// File: /Users/oliviahu/code/AgoraFrontend/src/app/(pages)/blog/page.tsx
 import * as entry from '../../../../../src/app/(pages)/blog/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

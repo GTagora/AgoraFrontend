@@ -29,7 +29,7 @@ export default function Page() {
 						<div className={styles.col}>
 							<Image
 								className={styles.image}
-								src="/blog/an-anthology-2/15.jpg"
+								src="/blog/an-anthology-3/intermission.jpg"
 								width={600}
 								height={600}
 								alt="article image"
@@ -103,7 +103,7 @@ export default function Page() {
 						‘An Anthology of Joy and Thought’.
 						<br />
 						<br />
-						With love and blessing,
+						With love and blessings,
 						<br />
 						Stephen
 					</p>
