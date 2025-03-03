@@ -51,7 +51,7 @@ export default function Blog() {
 			<h1 className={styles.h1}>Blog</h1>
 			<div className={styles.allcards}>
 				{articles.map((article) => (
-					<BlogCard key={article.slug} article={article} />
+					<BlogCard key={article.id} article={article} />
 				))}
 			</div>
 		</main>
