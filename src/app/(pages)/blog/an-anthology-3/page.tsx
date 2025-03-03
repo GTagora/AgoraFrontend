@@ -72,7 +72,7 @@ export default function Page() {
 								An Anthology of Joy and Thought Vol. 3
 							</h1>
 							<h2 className={styles.author}>By Stephen Noh</h2>
-							<h3 className={styles.date}>FALL 2025</h3>
+							<h3 className={styles.date}>SPRING 2025</h3>
 						</div>
 					</div>
 					<h2 className={styles.subtitle}>Preface</h2>
