@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/page",{
+
+/***/ "(app-pages-browser)/./src/app/page.module.css":
+/*!*********************************!*\
+  !*** ./src/app/page.module.css ***!
+  \*********************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+eval(__webpack_require__.ts("// extracted by mini-css-extract-plugin\nmodule.exports = {\"desk\":\"page_desk__fBnxX\",\"main\":\"page_main__GlU4n\",\"logo\":\"page_logo__7fc9l\",\"heading\":\"page_heading__ZPgh_\",\"container\":\"page_container__aoG4z\",\"articlesContainer\":\"page_articlesContainer__Vbkpl\",\"notice\":\"page_notice__83mqD\",\"noticeText\":\"page_noticeText__8K341\",\"button\":\"page_button__vnlhW\",\"mobileView\":\"page_mobileView__5nm8u\",\"arrow\":\"page_arrow__cks_j\",\"hbox\":\"page_hbox__JuGrR\",\"letter\":\"page_letter__XfUe_\",\"feature\":\"page_feature__CrGCB\",\"img\":\"page_img__434ND\",\"line\":\"page_line__ZGPps\",\"issu\":\"page_issu__izaq3\",\"text\":\"page_text__LcLL2\"};\n    if(true) {\n      // 1740978881799\n      var cssReload = __webpack_require__(/*! ./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js */ \"(app-pages-browser)/./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js\")(module.id, {\"publicPath\":\"/_next/\",\"esModule\":false,\"locals\":true});\n      module.hot.dispose(cssReload);\n      \n    }\n  \nmodule.exports.__checksum = \"68d206b7d463\"\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL3NyYy9hcHAvcGFnZS5tb2R1bGUuY3NzIiwibWFwcGluZ3MiOiJBQUFBO0FBQ0Esa0JBQWtCO0FBQ2xCLE9BQU8sSUFBVTtBQUNqQjtBQUNBLHNCQUFzQixtQkFBTyxDQUFDLHdNQUF3SCxjQUFjLHNEQUFzRDtBQUMxTixNQUFNLFVBQVU7QUFDaEI7QUFDQTtBQUNBO0FBQ0EseUJBQXlCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vX05fRS8uL3NyYy9hcHAvcGFnZS5tb2R1bGUuY3NzP2RkNDgiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5tb2R1bGUuZXhwb3J0cyA9IHtcImRlc2tcIjpcInBhZ2VfZGVza19fZkJueFhcIixcIm1haW5cIjpcInBhZ2VfbWFpbl9fR2xVNG5cIixcImxvZ29cIjpcInBhZ2VfbG9nb19fN2ZjOWxcIixcImhlYWRpbmdcIjpcInBhZ2VfaGVhZGluZ19fWlBnaF9cIixcImNvbnRhaW5lclwiOlwicGFnZV9jb250YWluZXJfX2FvRzR6XCIsXCJhcnRpY2xlc0NvbnRhaW5lclwiOlwicGFnZV9hcnRpY2xlc0NvbnRhaW5lcl9fVmJrcGxcIixcIm5vdGljZVwiOlwicGFnZV9ub3RpY2VfXzgzbXFEXCIsXCJub3RpY2VUZXh0XCI6XCJwYWdlX25vdGljZVRleHRfXzhLMzQxXCIsXCJidXR0b25cIjpcInBhZ2VfYnV0dG9uX192bmxoV1wiLFwibW9iaWxlVmlld1wiOlwicGFnZV9tb2JpbGVWaWV3X181bm04dVwiLFwiYXJyb3dcIjpcInBhZ2VfYXJyb3dfX2Nrc19qXCIsXCJoYm94XCI6XCJwYWdlX2hib3hfX0p1R3JSXCIsXCJsZXR0ZXJcIjpcInBhZ2VfbGV0dGVyX19YZlVlX1wiLFwiZmVhdHVyZVwiOlwicGFnZV9mZWF0dXJlX19DckdDQlwiLFwiaW1nXCI6XCJwYWdlX2ltZ19fNDM0TkRcIixcImxpbmVcIjpcInBhZ2VfbGluZV9fWkdQcHNcIixcImlzc3VcIjpcInBhZ2VfaXNzdV9faXphcTNcIixcInRleHRcIjpcInBhZ2VfdGV4dF9fTGNMTDJcIn07XG4gICAgaWYobW9kdWxlLmhvdCkge1xuICAgICAgLy8gMTc0MDk3ODg4MTc5OVxuICAgICAgdmFyIGNzc1JlbG9hZCA9IHJlcXVpcmUoXCIvVXNlcnMvb2xpdmlhaHUvY29kZS9BZ29yYUZyb250ZW5kL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvY29tcGlsZWQvbWluaS1jc3MtZXh0cmFjdC1wbHVnaW4vaG1yL2hvdE1vZHVsZVJlcGxhY2VtZW50LmpzXCIpKG1vZHVsZS5pZCwge1wicHVibGljUGF0aFwiOlwiL19uZXh0L1wiLFwiZXNNb2R1bGVcIjpmYWxzZSxcImxvY2Fsc1wiOnRydWV9KTtcbiAgICAgIG1vZHVsZS5ob3QuZGlzcG9zZShjc3NSZWxvYWQpO1xuICAgICAgXG4gICAgfVxuICBcbm1vZHVsZS5leHBvcnRzLl9fY2hlY2tzdW0gPSBcIjY4ZDIwNmI3ZDQ2M1wiXG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(app-pages-browser)/./src/app/page.module.css\n"));
+
+/***/ })
+
+});

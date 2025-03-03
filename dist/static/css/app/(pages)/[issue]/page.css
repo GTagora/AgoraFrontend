@@ -340,15 +340,17 @@
     padding: 1rem;
     padding-inline: 2rem;
     border-radius: 4rem;
-    border: 2px solid var(--gray-green);
+    border: 2px solid var(--darkest-green);
     text-align: center;
+    color: var(--darkest-green);
 }
 
 .issuuButton_button__kuKSR:hover {
-    background-color: var(--gray-green);
-    font-weight: 500;
-    transition: .4s;
-    letter-spacing: .08rem;
+    background-color: var(--darkest-green);
+    font-weight: 400;
+    transition: .25s;
+    letter-spacing: .07rem;
+    color: var(--bg-color);
 }
 /*!********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/components/footer.module.css ***!

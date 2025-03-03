@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Header from "./components/header";
 import Footer from "./components/footer";
 import Subtitle from "./components/subtitle";
 import Card from "./(templates)/card";
@@ -20,12 +21,20 @@ const Mobile = () => {
 				<h1>AGORA</h1>
 				<h2>Georgia Tech’s Journal of Christian Thought</h2>
 			</div>
+            <div className={styles.container}>
+                <div className={styles.notice}>
+                    <h3>Hi there!</h3>
+                    <p className={styles.noticeText}>Our website is currently undergoing maintenance. Please visit our blog or view our print publications via the links below. Thank you for your patience &amp; continued support!</p>
+                    <Button link="/blog" />
+                    <IssuuButton link="https://issuu.com/gtagora/docs/agora_f24" />
+                </div>
+            </div>
 			<Footer />
 		</div>
 	);
 };
 
-export default async function Home() {
+export default function Home() {
 	return (
 		<>
 			<div className={styles.mobileView}>
@@ -47,13 +56,25 @@ export default async function Home() {
 					</Link>
 				</div>
 				<a id="latest-issue" href="#latest-issue">
-                    <div className="notice">
-                        Hi there! Our website is currently undergoing maintenance.
+				</a>
+                <div className={styles.container}>
+                    <div className={styles.notice}>
+                        <h3>Hi there!</h3>
+                        <p className={styles.noticeText}>Our website is currently undergoing maintenance. Please visit our blog or view our print publications via the links below. Thank you for your patience &amp; continued support!</p>
+                        <Button link="/blog" />
                         <IssuuButton link="https://issuu.com/gtagora/docs/agora_f24" />
                     </div>
-				</a>
+                </div>
 				<Footer />
 			</div>
 		</>
 	);
+}
+
+function Button({ link }:any) {
+    return (
+        <Link href={link} target="_blank">
+            <div className={styles.button}>Our blog &#x2192;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        </Link>
+    );
 }
