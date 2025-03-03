@@ -56,7 +56,7 @@ const contents = [
 	{
 		id: 11,
 		title: "two sparrows",
-		href: "blog/an-anthology/11",
+		href: "an-anthology/11",
 	},
 	{
 		id: 12,

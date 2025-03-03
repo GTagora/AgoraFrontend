@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import BlogCard from "@/app/(templates)/blog-card";
 
 interface Article {
+	id: number,
 	title: string;
 	genre: string;
 	img: string;
@@ -11,13 +12,15 @@ interface Article {
 
 const articles: Article[] = [
 	{
+		id: 4,
 		title: "An Anthology of Joy and Thought Vol. 3",
 		genre: "POEM",
 		img: "/blog/an-anthology-3/intermission.jpg",
 		slug: "blog/an-anthology-3",
-		date: "Fall 2025",
+		date: "Spring 2025",
 	},
 	{
+		id: 3,
 		title: "An Anthology of Joy and Thought Vol. 2",
 		genre: "POEM",
 		img: "/blog/an-anthology-2/15.jpg",
@@ -25,6 +28,7 @@ const articles: Article[] = [
 		date: "Fall 2024",
 	},
 	{
+		id: 2,
 		title: "An Anthology of Joy and Thought Vol. 1",
 		genre: "POEM",
 		img: "/blog/an-anthology/3.jpg",
@@ -32,6 +36,7 @@ const articles: Article[] = [
 		date: "Summer 2024",
 	},
 	{
+		id: 1,
 		title: "a bench",
 		genre: "POEM",
 		img: "/blog/a-bench/a_bench.jpg",
