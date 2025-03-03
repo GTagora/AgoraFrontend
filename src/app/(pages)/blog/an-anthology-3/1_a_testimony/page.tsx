@@ -15,7 +15,7 @@ export default async function Page() {
 						src="/blog/an-anthology-3/a testimony.jpg"
 						width={600}
 						height={600}
-						alt="article image"
+						alt="a testimony article image"
 					/>
 					<p className={styles.credit}>Image: Stephen Noh</p>
 					<h1 className={styles.title}>a testimony</h1>
