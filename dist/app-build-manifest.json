@@ -34,6 +34,30 @@
       "static/chunks/main-app.js",
       "static/css/app/(pages)/blog/an-anthology-3/1_a_testimony/page.css",
       "static/chunks/app/(pages)/blog/an-anthology-3/1_a_testimony/page.js"
+    ],
+    "/(pages)/blog/an-anthology/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/blog/an-anthology/page.css",
+      "static/chunks/app/(pages)/blog/an-anthology/page.js"
+    ],
+    "/(pages)/blog/an-anthology/17/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/blog/an-anthology/17/page.css",
+      "static/chunks/app/(pages)/blog/an-anthology/17/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/_not-found/page.css",
+      "static/chunks/app/_not-found/page.js"
+    ],
+    "/(pages)/blog/an-anthology/11/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/blog/an-anthology/11/page.css",
+      "static/chunks/app/(pages)/blog/an-anthology/11/page.js"
     ]
   }
 }
