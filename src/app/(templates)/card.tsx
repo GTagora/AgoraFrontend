@@ -13,6 +13,7 @@ export default function Card({article}: Card) {
     const genre = String(article.Content_Type).toUpperCase()
     const issue = article.Issue
     const link = issue.toLowerCase().replaceAll(" ", "-") + "/" + title.toLowerCase().replaceAll(" ", "-").replace(/[^a-zA-Z0-9 -]/g,"")
+
     return (
         <Link href={link}>
         <div className={styles.card}>

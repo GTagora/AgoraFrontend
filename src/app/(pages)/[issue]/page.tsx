@@ -28,6 +28,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     //     params: { issue: i.Slug.toLowerCase().replaceAll(" ", "-") }
     // }));
     const paths = [
+        { params: { issue: "fall-24" } },
         { params: { issue: "spring-24" } },
         { params: { issue: "fall-23" } },
     ]

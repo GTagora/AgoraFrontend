@@ -1,11 +1,11 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-import Footer from './components/footer'
-import Subtitle from './components/subtitle'
-import Letter from './components/letter'
-import Card from './(templates)/card'
-import Link from 'next/link'
-import IssuuButton from './components/issuuButton'
+import Image from "next/image";
+import styles from "./page.module.css";
+import Footer from "./components/footer";
+import Subtitle from "./components/subtitle";
+// import Letter from "./components/letter";
+import Card from "./(templates)/card";
+import Link from "next/link";
+import IssuuButton from "./components/issuuButton";
 
 export default function Home() {
         return (
@@ -17,5 +17,3 @@ export default function Home() {
         </>
 )}
     
-
-
