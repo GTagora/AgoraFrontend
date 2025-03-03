@@ -18,6 +18,36 @@ const contents = [
 		title: "quiet monotony pt.2",
 		href: "an-anthology-3/3_quiet_monotony_pt2",
 	},
+	{
+		id: 4,
+		title: "A merciful God in a harsh wilderness",
+		href: "an-anthology-3/4_a-merciful-God-in-a-harsh-wilderness",
+	},
+	{
+		id: 5,
+		title: "intermission",
+		href: "an-anthology-3/5_intermission",
+	},
+	{
+		id: 6,
+		title: "honor and faith",
+		href: "an-anthology-3/6_honor-and-faith",
+	},
+	{
+		id: 7,
+		title: "my sin scares me",
+		href: "an-anthology-3/7_my-sin-scares-me",
+	},
+	{
+		id: 8,
+		title: "ataraxia",
+		href: "an-anthology-3/8_ataraxia",
+	},
+	{
+		id: 9,
+		title: "\"I\'m proud of you\"",
+		href: "an-anthology-3/9_im-proud-of-you",
+	},
 ];
 
 export default function Page() {

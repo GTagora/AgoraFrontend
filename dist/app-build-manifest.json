@@ -1,16 +1,10 @@
 {
   "pages": {
-    "/not-found": [
+    "/(pages)/blog/an-anthology-3/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/not-found.css",
-      "static/chunks/app/not-found.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/_not-found/page.css",
-      "static/chunks/app/_not-found/page.js"
+      "static/css/app/(pages)/blog/an-anthology-3/page.css",
+      "static/chunks/app/(pages)/blog/an-anthology-3/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -23,47 +17,35 @@
       "static/chunks/main-app.js",
       "static/chunks/app/error.js"
     ],
-    "/(pages)/blog/an-anthology-3/page": [
+    "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(pages)/blog/an-anthology-3/page.css",
-      "static/chunks/app/(pages)/blog/an-anthology-3/page.js"
+      "static/css/app/not-found.css",
+      "static/chunks/app/not-found.js"
     ],
-    "/(pages)/[issue]/[article]/page": [
+    "/(pages)/blog/an-anthology-3/9_im-proud-of-you/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(pages)/[issue]/[article]/page.css",
-      "static/chunks/app/(pages)/[issue]/[article]/page.js"
-    ],
-    "/(pages)/blog/an-anthology-3/2_quiet_monotony/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(pages)/blog/an-anthology-3/2_quiet_monotony/page.css",
-      "static/chunks/app/(pages)/blog/an-anthology-3/2_quiet_monotony/page.js"
-    ],
-    "/(pages)/blog/an-anthology-3/1_a_testimony/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(pages)/blog/an-anthology-3/1_a_testimony/page.css",
-      "static/chunks/app/(pages)/blog/an-anthology-3/1_a_testimony/page.js"
-    ],
-    "/(pages)/blog/an-anthology-3/3_quiet_monotony_pt2/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(pages)/blog/an-anthology-3/3_quiet_monotony_pt2/page.css",
-      "static/chunks/app/(pages)/blog/an-anthology-3/3_quiet_monotony_pt2/page.js"
+      "static/css/app/(pages)/blog/an-anthology-3/9_im-proud-of-you/page.css",
+      "static/chunks/app/(pages)/blog/an-anthology-3/9_im-proud-of-you/page.js"
     ],
     "/(pages)/blog/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(pages)/blog/page.js",
-      "static/css/app/(pages)/blog/page.css"
+      "static/css/app/(pages)/blog/page.css",
+      "static/chunks/app/(pages)/blog/page.js"
     ],
-    "/(pages)/[issue]/page": [
+    "/(pages)/blog/an-anthology/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(pages)/[issue]/page.css",
-      "static/chunks/app/(pages)/[issue]/page.js"
+      "static/css/app/(pages)/blog/an-anthology/page.css",
+      "static/chunks/app/(pages)/blog/an-anthology/page.js"
+    ],
+    "/(pages)/blog/an-anthology/17/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/blog/an-anthology/17/page.css",
+      "static/chunks/app/(pages)/blog/an-anthology/17/page.js"
     ]
   }
 }

@@ -103,7 +103,7 @@ export default async function Page() {
 						>
 							&lt;&nbsp; Previous
 						</Link>
-						<Link href="/blog/an-anthology-3/4" className={styles.href}>
+						<Link href="/blog/an-anthology-3/4_a-merciful-God-in-a-harsh-wilderness" className={styles.href}>
 							Next &nbsp;&gt;
 						</Link>
 					</div>
