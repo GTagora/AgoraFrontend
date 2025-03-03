@@ -75,26 +75,26 @@ export default function Header() {
             </motion.div>
 
         {/* ARCHIVE */}
-            <motion.div 
+            {/* <motion.div 
                 className={styles.item}
                 variants={itemVars}
                 initial="initial"
                 whileHover="hover">
-                <Link href="/archive"><div className={styles.label} >ARCHIVE</div></Link>
+                <Link href="/archive"><div className={styles.label} >ARCHIVE</div></Link> */}
 
             {/* CURRENT ISSUE */}
-                <Link href="/#latest-issue">
+                {/* <Link href="/#latest-issue">
                     <motion.div 
                         className={styles.dropdown}
                         variants={dropdownVars}>
-                    Latest Issue</motion.div></Link>
+                    Latest Issue</motion.div></Link> */}
             {/* PAST ISSUES */}
-                <Link href="/archive">
+                {/* <Link href="/archive">
                     <motion.div 
                         className={styles.dropdown}
                         variants={dropdownVars}>
                     Past Issues</motion.div></Link>
-            </motion.div>
+            </motion.div> */}
 
         {/* BLOG */}
             <motion.div 

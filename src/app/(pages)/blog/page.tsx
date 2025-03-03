@@ -11,18 +11,11 @@ interface Article {
 
 const articles: Article[] = [
 	{
-		title: "a bench",
+		title: "An Anthology of Joy and Thought Vol. 3",
 		genre: "POEM",
-		img: "/blog/a-bench/a_bench.jpg",
-		slug: "blog/a-bench",
-		date: "06.19.2024",
-	},
-	{
-		title: "An Anthology of Joy and Thought Vol. 1",
-		genre: "POEM",
-		img: "/blog/an-anthology/3.jpg",
-		slug: "blog/an-anthology",
-		date: "Summer 2024",
+		img: "/blog/an-anthology-3/intermission.jpg",
+		slug: "blog/an-anthology-3",
+		date: "Fall 2025",
 	},
 	{
 		title: "An Anthology of Joy and Thought Vol. 2",
@@ -32,11 +25,18 @@ const articles: Article[] = [
 		date: "Fall 2024",
 	},
 	{
-		title: "An Anthology of Joy and Thought Vol. 3",
+		title: "An Anthology of Joy and Thought Vol. 1",
 		genre: "POEM",
-		img: "/blog/an-anthology-3/intermission.jpg",
-		slug: "blog/an-anthology-3",
-		date: "Fall 2025",
+		img: "/blog/an-anthology/3.jpg",
+		slug: "blog/an-anthology",
+		date: "Summer 2024",
+	},
+	{
+		title: "a bench",
+		genre: "POEM",
+		img: "/blog/a-bench/a_bench.jpg",
+		slug: "blog/a-bench",
+		date: "06.19.2024",
 	},
 ];
 
