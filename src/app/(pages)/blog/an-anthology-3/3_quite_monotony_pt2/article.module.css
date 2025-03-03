@@ -52,12 +52,10 @@
 		opacity: 0.7;
 		font-family: "Arial", sans-serif;
 		font-size: 9pt;
-		letter-spacing: 0.03rem;
+		letter-spacing: .03rem;
 		margin-bottom: 40px;
 	}
-	.list {
-		padding-left: 20px;
-	}
+
 	.title {
 		font-family: var(--font-playfair);
 		font-weight: 500;
@@ -92,7 +90,7 @@
 	}
 
 	.text {
-		line-height: 170%;
+		line-height: 200%;
 		font-size: 15pt;
 		white-space: pre-line;
 
@@ -120,7 +118,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: left;
-		padding-inline: 30vw;
+		padding-inline: 35vw;
 		padding-block: 140px 100px;
 		min-height: 100vh;
 		font-family: var(--font-ebgaramond);
@@ -150,12 +148,10 @@
 		opacity: 0.7;
 		font-family: "Arial", sans-serif;
 		font-size: 9pt;
-		letter-spacing: 0.03rem;
+		letter-spacing: .03rem;
 		margin-bottom: 40px;
 	}
-	.list {
-		padding-left: 20px;
-	}
+
 	.author {
 		font-size: 16pt;
 		font-family: var(--font-cormorant);
@@ -170,7 +166,7 @@
 	}
 
 	.text {
-		line-height: 170%;
+		line-height: 200%;
 		font-size: 13pt;
 		white-space: pre-line;
 	}

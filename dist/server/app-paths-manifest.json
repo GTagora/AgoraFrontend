@@ -1,6 +1,0 @@
-{
-  "/(pages)/blog/page": "app/(pages)/blog/page.js",
-  "/(pages)/blog/an-anthology-3/page": "app/(pages)/blog/an-anthology-3/page.js",
-  "/(pages)/[issue]/page": "app/(pages)/[issue]/page.js",
-  "/page": "app/page.js"
-}
