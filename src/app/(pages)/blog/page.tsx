@@ -17,7 +17,7 @@ const articles: Article[] = [
 		genre: "POEM",
 		img: "/blog/an-anthology-3/intermission.jpg",
 		slug: "blog/an-anthology-3",
-		date: "Fall 2025",
+		date: "Spring 2025",
 	},
 	{
 		id: 3,

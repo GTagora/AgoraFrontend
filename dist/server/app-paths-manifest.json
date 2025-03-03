@@ -1,11 +1,5 @@
 {
-<<<<<<< Updated upstream
-  "/(pages)/blog/an-anthology/page": "app/(pages)/blog/an-anthology/page.js",
-  "/(pages)/blog/an-anthology-3/7_my-sin-scares-me/page": "app/(pages)/blog/an-anthology-3/7_my-sin-scares-me/page.js",
-  "/(pages)/blog/an-anthology-3/5_intermission/page": "app/(pages)/blog/an-anthology-3/5_intermission/page.js",
-  "/(pages)/blog/an-anthology-3/6_honor-and-faith/page": "app/(pages)/blog/an-anthology-3/6_honor-and-faith/page.js",
+  "/(pages)/blog/an-anthology-3/1_a_testimony/page": "app/(pages)/blog/an-anthology-3/1_a_testimony/page.js",
+  "/(pages)/blog/page": "app/(pages)/blog/page.js",
   "/(pages)/blog/an-anthology-3/page": "app/(pages)/blog/an-anthology-3/page.js"
-=======
-  "/(pages)/blog/page": "app/(pages)/blog/page.js"
->>>>>>> Stashed changes
 }
