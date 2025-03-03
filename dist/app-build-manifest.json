@@ -46,6 +46,24 @@
       "static/chunks/main-app.js",
       "static/css/app/(pages)/blog/an-anthology/17/page.css",
       "static/chunks/app/(pages)/blog/an-anthology/17/page.js"
+    ],
+    "/(pages)/blog/an-anthology-3/7_my-sin-scares-me/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/blog/an-anthology-3/7_my-sin-scares-me/page.css",
+      "static/chunks/app/(pages)/blog/an-anthology-3/7_my-sin-scares-me/page.js"
+    ],
+    "/(pages)/blog/an-anthology-3/5_intermission/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/blog/an-anthology-3/5_intermission/page.css",
+      "static/chunks/app/(pages)/blog/an-anthology-3/5_intermission/page.js"
+    ],
+    "/(pages)/blog/an-anthology-3/6_honor-and-faith/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/blog/an-anthology-3/6_honor-and-faith/page.css",
+      "static/chunks/app/(pages)/blog/an-anthology-3/6_honor-and-faith/page.js"
     ]
   }
 }
