@@ -91,8 +91,6 @@
 /******/ 		};
 /******/ 	}();
 /******/ 	
-<<<<<<< HEAD
-=======
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	!function() {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -105,7 +103,6 @@
 /******/ 		};
 /******/ 	}();
 /******/ 	
->>>>>>> blog/anthology3
 /******/ 	/* webpack/runtime/create fake namespace object */
 /******/ 	!function() {
 /******/ 		var getProto = Object.getPrototypeOf ? function(obj) { return Object.getPrototypeOf(obj); } : function(obj) { return obj.__proto__; };
@@ -195,11 +192,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-<<<<<<< HEAD
-/******/ 		__webpack_require__.h = function() { return "7e307ad7c8bce9cc"; }
-=======
-/******/ 		__webpack_require__.h = function() { return "1f06ea2410051b68"; }
->>>>>>> blog/anthology3
+/******/ 		__webpack_require__.h = function() { return "84ce0e7fe403610a"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

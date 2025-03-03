@@ -1,5 +1,166 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/components/subtitle.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.subtitle_container__vlpe0 {
+    /* background-color: var(--agora-green); */
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:85vh;
+    height: 80vh;
+    margin-top: 90px;
+}
+
+.subtitle_logo__N67w_ {
+    margin-top: -50px;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/page.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+/*
+CUSTOM VARIABLES
+colors:
+--agora-green: BFD8C5
+--light-green: E5ECE7
+--neutral-tan: F0EDE9
+--gray-green: D1D7D3
+--dark-green: 7C9D84
+--darkest-green: 2C4B33
+
+fonts:
+--font-ebgaramond
+--font-playfair
+--font-playfair-sc
+--font-cormorant
+*/
+
+.page_notice__83mqD {
+  width: 20rem;
+  height: 20rem;
+  margin-inline: auto;
+  background-color: aliceblue;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/components/footer.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+/* ---------DESKTOP VIEW----------- */
+@media screen and (min-width: 950px) {
+    .footer_box__f2GXS {
+        background: var(--bg-color);
+        padding-inline: 80px;
+        padding-block: 200px 80px;
+        height: 15rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+
+        letter-spacing: .03rem;
+        font-size: 10pt;
+        font-family: var(--font-ebgaramond);
+
+    }
+
+    .footer_column__bKAIp {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        min-width: 100px;
+    }
+
+    .footer_logo__3VAec {
+        height: 45px;
+        width: 150px;
+    }
+
+    .footer_socialRow__Yk2NK {
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+        margin-top: 13px;
+    }
+
+    .footer_socialImages__ekmGS {
+        float: left;
+        clear: both;
+        border-radius: 30px;
+    }
+
+    .footer_textBox__gpO7A {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0;
+    }
+
+    .footer_row__AvUsW {
+        display: flex;
+        justify-content: flex-end;
+        gap: 80px;
+
+    }
+
+    .footer_heading__y3ULN {
+        font-size: 20px;
+        color: black;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    .footer_footerLink__KfIK8 {
+        color: rgb(78, 78, 78);
+        margin-bottom: 8px;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .footer_footerLink__KfIK8:hover {
+        color: rgb(0, 0, 0);
+        transition: 200ms ease-in;
+    }
+
+}
+
+
+/* ---------MOBILE & HALF SCREN VIEW----------- */
+@media screen and (max-width: 949px) {
+
+    .footer_textBox__gpO7A {
+        display: none;
+    }
+
+    .footer_box__f2GXS {
+        margin-block: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_logo__3VAec {
+        height: auto;
+        width: 140px;
+        margin-bottom: 15px;
+    }
+
+    .footer_socialRow__Yk2NK {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer_social-images__UK7yX {
+        height: 25px;
+        width: auto;
+    }
+}
+
 /*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/issuuButton.module.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/components/issuuButton.module.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************/
 .issuuButton_button__kuKSR {
     font-size: 12pt;
