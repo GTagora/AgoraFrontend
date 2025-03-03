@@ -41,7 +41,7 @@ export default async function Page() {
             me, but also a man who can lead His family in Christ. I&rsquo;m more
             than blessed to say that my entire family pursues after the Lord, a
             blessing that I do not take for granted and a blessing I seldom
-            hear. In the midst of that, when I looked upon my grandfather's
+            hear. In the midst of that, when I looked upon my grandfather&apos;s
             grave, I couldn&rsquo;t help but be brought to tears. I had nothing
             but gratitude to the Lord for using him to lead three generations of
             my family in Christ.

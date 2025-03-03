@@ -125,7 +125,7 @@ export default function Page() {
 						reminder as He brings me to my knees and as I cry out to Him in full
 						remembrance that I am so desperately in need of Him. This is a life
 						with God. A realization, a need, a hunger, for the presence of the
-						Lord in all that I do. Nobody's perfect, of course. To reach this
+						Lord in all that I do. Nobody&apos;s perfect, of course. To reach this
 						realization and need 24/7 is something only Jesus did, but the
 						Father calls us with open arms, constantly waiting as we cyclically
 						come back to this epiphany. His yoke is easy after all (Matthew
