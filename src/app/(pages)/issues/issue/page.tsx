@@ -34,14 +34,9 @@ export default async function Issue() {
     const volume = 2;
     const issue = 1;
     const semester = 'Fall 2024'
-    const theme = 'Water';
+    const theme = 'Sample Issue';
     const issuu = 'https://issuu.com/gtagora/docs/agora_f24';
     const image = '/covers/f24.jpg';
-
-    // let articles = await getArticles()
-    // articles = articles.filter(function(article:any) {
-    //     return article.Theme === theme;
-    // });
 
     return (
         <main className={styles.main}>
@@ -59,9 +54,6 @@ export default async function Issue() {
                     </div>
                 </div>
                 <div className={styles.articlesContainer}>
-                    {/* {articles && articles.map(async (article: any) => (
-                            <IssueCard key={null} article={article}></IssueCard>
-                        ))} */}
                     {articles && articles.map((article: any) => (
                         <IssueCard key={null} article={article}></IssueCard>
                     ))}
