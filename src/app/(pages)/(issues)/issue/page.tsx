@@ -1,16 +1,9 @@
 
 import styles from './page.module.css'
-import { GetStaticPaths } from 'next'
 import IssueCard from '@/app/(templates)/issue-card';
 import IssuuButton from '@/app/components/issuuButton';
 import Footer from '@/app/components/footer';
 
-async function getArticles() {
-    const res = await fetch(`https://agora-backend-sxd6.onrender.com/getJournalEntries`, { cache: 'no-store' });
-    const data = res.json();
-  
-    return data;
-}
 
 const articles = [
     {
@@ -18,14 +11,14 @@ const articles = [
         image: '/issues/issue/test.png',
         genre: 'poem',
         issue: 'Water',
-        link: '24f-water/article-1-name'
+        link: '/issue/article-1-name'
     },
     {
         title: 'article 2 name',
         image: '/issues/issue/test.png',
         genre: 'poem',
         issue: 'Water',
-        link: '24f-water/article-2-name'
+        link: '/issue/article-2-name'
     }
 ]
 

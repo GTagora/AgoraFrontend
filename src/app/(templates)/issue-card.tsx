@@ -11,9 +11,9 @@ export default function IssueCard({article}: IssueCard) {
     const image = article.image;
     const title = article.title;
     const genre = article.genre.toUpperCase();
-    // const link = issue.toLowerCase().replaceAll(" ", "-") + "/" + title.toLowerCase().replaceAll(" ", "-").replace(/[^a-zA-Z0-9 -]/g,"")
+    const link = article.link;
     return (
-        <Link href='/'>
+        <Link href={link}>
         <div className={styles.card}>
             <div className={styles.text}>
                 <h2>{title}</h2>
