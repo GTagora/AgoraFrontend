@@ -1,4 +1,4 @@
 {
-  "/(pages)/(issues)/issue/page": "app/(pages)/(issues)/issue/page.js",
-  "/_not-found/page": "app/_not-found/page.js"
+  "/(pages)/(issues)/issue/article-1/page": "app/(pages)/(issues)/issue/article-1/page.js",
+  "/(pages)/(issues)/issue/page": "app/(pages)/(issues)/issue/page.js"
 }
