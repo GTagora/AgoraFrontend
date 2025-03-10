@@ -1,65 +1,72 @@
 import styles from "./page.module.css";
-import type { GetStaticPaths, GetStaticProps } from "next";
 import Link from "next/link";
 import Footer from "@/app/components/footer";
 import Image from "next/image";
 
-// First Fix: Define the Issue interface to match the expected structure
-interface Issue {
-	Semester: string;
-	Theme: string;
-	Slug: string;
-	Image: string;
-	Volume: number;
-	Issue: number;
-}
-
-interface IssuesProps {
-	issue: Issue;
+type Issue = {
+	semester: string;
+	theme: string;
+	slug: string;
+	image: string;
+	volume: number;
+	issue: number;
 }
 
 // Update the IssueCard component to use the proper types
-// Remove 'any' to remove unforseen errors and after-affects
-const IssueCard = ({ issue }: IssuesProps) => {
-	const { Semester, Theme, Slug, Image: imgSrc } = issue;
+const Card = ({ issue }: any ) => { //figure out how to change this from any type
 	return (
-		<Link href={Slug}>
+		<Link href={issue.slug}>
 			<div className={styles.card}>
 				{/* TypeScript will now correctly infer the types */}
 				<Image
 					className={styles.img}
-					src={imgSrc}
+					src={issue.image}
 					width={300}
 					height={500}
 					alt="Issue cover"
 				/>
-				<h1>{Theme.toUpperCase()}</h1>
-				<p>{Semester.toUpperCase()}</p>
+				<h1>{issue.theme.toUpperCase()}</h1>
+				<p>{issue.semester.toUpperCase()}</p>
 			</div>
 		</Link>
 	);
 };
 
-// Experimental -> Fetching issues from the API with proper type annotations
-async function getIssues(): Promise<Issue[]> {
-	const res = await fetch("https://agora-backend-sxd6.onrender.com/getIssues", {
-		cache: "no-store",
-	});
-	const data: Issue[] = await res.json(); // Type the returned data as an array of Issue objects
-	return data;
-}
+const issues = [
+	{
+		semester: 'Fall 2024',
+		theme: 'Water',
+		slug: '/24f-water',
+		image: '/covers/f24.jpg',
+		volume: 2,
+		issue: 1,
+	},
+	{
+		semester: 'Spring 2024',
+		theme: 'Cycles',
+		slug: '/24s-cycles',
+		image: '/covers/s24.jpg',
+		volume: 1,
+		issue: 2,
+	},
+	{
+		semester: 'Fall 2023',
+		theme: 'Fall 2023',
+		slug: '/23f',
+		image: '/covers/f23.jpg',
+		volume: 1,
+		issue: 1,
+	}
+]
 
 export default async function Archive() {
-	const issues = await getIssues();
-
 	return (
 		<div className={styles.main}>
 			<h1>Past Issues</h1>
 			<div className={styles.container}>
 				{issues
-					.sort((a, b) => b.Volume - a.Volume || b.Issue - a.Issue)
 					.map((issue) => (
-						<IssueCard key={issue.Slug} issue={issue} />
+						<Card key={issue.slug} issue={issue} />
 					))}
 			</div>
 			<div className={styles.footer}>
@@ -68,13 +75,3 @@ export default async function Archive() {
 		</div>
 	);
 }
-
-// Define the types for getStaticPaths and its expected return value -> removing any
-export const getStaticPaths: GetStaticPaths = async () => {
-	const issues = await getIssues();
-	const paths = issues.map((issue) => ({
-		params: { slug: issue.Slug.toLowerCase().replaceAll(" ", "-") },
-	}));
-
-	return { paths, fallback: true };
-};

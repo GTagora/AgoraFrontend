@@ -34,6 +34,18 @@
       "static/chunks/main-app.js",
       "static/css/app/(pages)/(issues)/issue/article-1/page.css",
       "static/chunks/app/(pages)/(issues)/issue/article-1/page.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/(pages)/archive/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(pages)/archive/page.css",
+      "static/chunks/app/(pages)/archive/page.js"
     ]
   }
 }
