@@ -1,6 +1,10 @@
 {
-  "/page": "app/page.js",
-  "/(pages)/(issues)/issue/page": "app/(pages)/(issues)/issue/page.js",
-  "/(pages)/(issues)/issue/article-1/page": "app/(pages)/(issues)/issue/article-1/page.js",
-  "/(pages)/archive/page": "app/(pages)/archive/page.js"
+  "/(pages)/(issues)/23f/page": "app/(pages)/(issues)/23f/page.js",
+  "/(pages)/(issues)/23f/3-zacchaeus-song-esther/page": "app/(pages)/(issues)/23f/3-zacchaeus-song-esther/page.js",
+  "/(pages)/(issues)/23f/4-you-olivia/page": "app/(pages)/(issues)/23f/4-you-olivia/page.js",
+  "/(pages)/(issues)/23f/5-god-sin-raphael/page": "app/(pages)/(issues)/23f/5-god-sin-raphael/page.js",
+  "/(pages)/(issues)/23f/2-a-letter-to-my-father-chris/page": "app/(pages)/(issues)/23f/2-a-letter-to-my-father-chris/page.js",
+  "/(pages)/(issues)/23f/6-why-love-simon/page": "app/(pages)/(issues)/23f/6-why-love-simon/page.js",
+  "/(pages)/(issues)/23f/7-the-one-who-will-never-leave-stephen/page": "app/(pages)/(issues)/23f/7-the-one-who-will-never-leave-stephen/page.js",
+  "/(pages)/(issues)/23f/1-is-it-good-abel/page": "app/(pages)/(issues)/23f/1-is-it-good-abel/page.js"
 }
