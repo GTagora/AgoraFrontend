@@ -20,13 +20,17 @@ export default async function Page() {
 					<p className={styles.credit}>Image: Stephen Noh</p>
 					<h1 className={styles.title}>a testimony</h1>
 					<div className={styles.text}>
-						For context, in my journal, there was a single entry written before I began to fill it with entries in 2024. It was written in June 2017. That frail 14 year old who had hope has now seen the fruits of those desperate prayers 7 years later. This is a letter to that same 14 year old boy and a small piece of my testimony.
-						<br/>
-						<br/>
-						A letter to myself in 2017. To the past, and to the hope of what is to come.
-						<br/>
-						<br/>
-						<br/>
+						For context, in my journal, there was a single entry written before
+						I began to fill it with entries in 2024. It was written in June
+						2017. That frail 14 year old who had hope has now seen the fruits of
+						those desperate prayers 7 years later. This is a letter to that same
+						14 year old boy and a small piece of my testimony.
+						<br />
+						<br />A letter to myself in 2017. To the past, and to the hope of
+						what is to come.
+						<br />
+						<br />
+						<br />
 						Dear Stephen,
 						<br />
 						<br />I remember clearly the days where every day felt like it
