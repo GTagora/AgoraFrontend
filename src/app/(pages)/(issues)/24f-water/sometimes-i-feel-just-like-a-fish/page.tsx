@@ -14,7 +14,7 @@ export default async function Article() {
         <div className={styles.container}>
           <Image
             className={styles.image}
-            src="/issues/24f-water/sometimes-i-feel-just-like-a-fish.png"
+            src="/issues/24f-water/sometimes-i-feel-just-like-a-fish.webp"
             width={600}
             height={600}
             alt="article image"

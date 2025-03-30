@@ -14,7 +14,7 @@ export default async function Article() {
         <div className={styles.container}>
           <Image
             className={styles.image}
-            src="/issues/24f-water/the-donkey-and-the-lake.png"
+            src="/issues/24f-water/the-donkey-and-the-lake.webp"
             width={600}
             height={600}
             alt="article image"
