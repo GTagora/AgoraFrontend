@@ -34,6 +34,14 @@ const Card = ({ issue }: any ) => { //figure out how to change this from any typ
 
 const issues = [
 	{
+		semester: 'Spring 2025',
+		theme: 'Garden',
+		slug: '/25s',
+		image: '/covers/25s.webp',
+		volume: 2,
+		issue: 2,
+	},
+	{
 		semester: 'Fall 2024',
 		theme: 'Water',
 		slug: '/24f-water',
