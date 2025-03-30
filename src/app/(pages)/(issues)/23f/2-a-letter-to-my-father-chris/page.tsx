@@ -4,7 +4,7 @@ import Footer from "@/app/components/footer";
 
 export default function Article() {
 	const author = "Chris Moon";
-	const credit = "Photo by Stock Photo";
+	const credit = "Photo by Chris Moon";
 	const title = "a letter to my Father";
 	const date = "December 8, 2023";
 

@@ -4,7 +4,7 @@ import Footer from "@/app/components/footer";
 
 export default function Article() {
 	const author = "Raphael Cheng";
-	const credit = "Photo by Stock Photo";
+	const credit = "Photo by Raphael Cheng";
 	const title = "God + Sin: The Problem of Evil";
 	const date = "December 8, 2023";
 
