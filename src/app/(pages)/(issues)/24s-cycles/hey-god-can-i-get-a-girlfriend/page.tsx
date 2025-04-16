@@ -46,7 +46,7 @@ export default async function Article() {
             have done the same. I mean, it&apos;s natural. We pray for what we
             desire. I&apos;m at the point in my life where I&apos;ve almost got
             my master&apos;s degree, I have a job lined up, a good church
-            community and friend group… There's only one thing missing, so
+            community and friend group… There&apos;s only one thing missing, so
             that&apos;s what I pray for. <br />
             <br />
             For all the sad, lonely people who are already regretting their
@@ -141,8 +141,8 @@ export default async function Article() {
             <br />
             So how do I break out of this pattern of desire? This is something
             I&apos;m still struggling with today, and honestly I&apos;m not sure
-            if it&apos;s one I'll ever overcome. But I&apos;ll try. I know that
-            what I pursue, first and foremost, cannot be my worldly desire.
+            if it&apos;s one I&apos;ll ever overcome. But I&apos;ll try. I know
+            that what I pursue, first and foremost, cannot be my worldly desire.
             Every time I&apos;ve done this I&apos;ve been left unsatisfied no
             matter the result. Instead, breaking the cycle of pursuit requires
             me to pursue God above all. If you think about it, that makes sense.
