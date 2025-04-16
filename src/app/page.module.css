@@ -101,7 +101,7 @@ fonts:
     
     .container hr {
         width: 50%;
-        margin-block: 50px;
+        margin-block: 10px;
     }
     
     .articlesContainer {
@@ -112,6 +112,42 @@ fonts:
         align-items: center;
         gap: 30px;
         width: 100vw;
+    }
+
+    .notice {
+      width: 90vw;
+      margin-inline: auto;
+      margin-top: 5rem;
+      padding: 5rem;
+      border-radius: 2rem;
+      background-color: var(--neutral-tan);
+      margin-bottom: 10rem;
+    }
+  
+    .noticeText {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+  
+    .button {
+      font-size: 12pt;
+      letter-spacing: .05rem;
+      padding: 1rem;
+      padding-inline: 2rem;
+      border-radius: 4rem;
+      border: 2px solid var(--darkest-green);
+      text-align: center;
+      color: var(--darkest-green);
+      margin-bottom: 1rem;
+    }
+  
+    .button:hover {
+        background-color: var(--darkest-green);
+        font-weight: 400;
+        transition: .25s;
+        letter-spacing: .07rem;
+        color: var(--bg-color);
     }
     
 }
@@ -186,6 +222,7 @@ fonts:
 
   .container {
     width: 100vw;
+    height: 60vh;
     margin-top: 7rem;
     padding-inline: 15%;
     display: flex;
@@ -284,6 +321,41 @@ fonts:
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+  }
+
+  .notice {
+    width: 40rem;
+    margin-inline: auto;
+    margin-top: 5rem;
+    padding: 5rem;
+    border-radius: 2rem;
+    background-color: var(--neutral-tan);
+  }
+
+  .noticeText {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .button {
+    font-size: 12pt;
+    letter-spacing: .05rem;
+    padding: 1rem;
+    padding-inline: 2rem;
+    border-radius: 4rem;
+    border: 2px solid var(--darkest-green);
+    text-align: center;
+    color: var(--darkest-green);
+    margin-bottom: 1rem;
+  }
+
+  .button:hover {
+      background-color: var(--darkest-green);
+      font-weight: 400;
+      transition: .25s;
+      letter-spacing: .07rem;
+      color: var(--bg-color);
   }
 
 }

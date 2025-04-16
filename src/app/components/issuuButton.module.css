@@ -4,13 +4,15 @@
     padding: 1rem;
     padding-inline: 2rem;
     border-radius: 4rem;
-    border: 2px solid var(--gray-green);
+    border: 2px solid var(--darkest-green);
     text-align: center;
+    color: var(--darkest-green);
 }
 
 .button:hover {
-    background-color: var(--gray-green);
-    font-weight: 500;
-    transition: .4s;
-    letter-spacing: .08rem;
+    background-color: var(--darkest-green);
+    font-weight: 400;
+    transition: .25s;
+    letter-spacing: .07rem;
+    color: var(--bg-color);
 }
